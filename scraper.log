@@ -1,0 +1,91 @@
+Loaded 961 artists from my_artists.json
+Found 961 artists already processed - skipping them
+Will process 0 new artists
+Starting scraping process...
+
+
+============================================================
+Scraping complete!
+  Already had: 961
+  Newly processed: 0
+  ✓ Total successful: 291
+  ✗ Total errors: 670
+  Output: output/similar_artists_map.json
+============================================================
+Loaded 961 artists from my_artists.json
+Found 291 artists already processed - skipping them
+Will process 670 new artists
+Starting scraping process...
+
+[1/670] Adam McInnis
+Scraping: Adam McInnis
+  ✗ Artist not found: Adam McInnis
+[2/670] Ae:ther
+Scraping: Ae:ther
+  ✗ Artist not found: Ae:ther
+[3/670] Afnan Prince
+Scraping: Afnan Prince
+  ✗ Artist not found: Afnan Prince
+[4/670] Afronaut Zu
+Scraping: Afronaut Zu
+  ✗ Artist not found: Afronaut Zu
+[5/670] Aktive
+Scraping: Aktive
+  ✗ Artist not found: Aktive
+[6/670] Alex Tomb
+Scraping: Alex Tomb
+  ✗ Artist not found: Alex Tomb
+[7/670] Almek
+Scraping: Almek
+  ✗ Artist not found: Almek
+[8/670] Amber of Dirty Projectors
+Scraping: Amber of Dirty Projectors
+  ✗ Artist not found: Amber of Dirty Projectors
+[9/670] Andy Bianchini
+Scraping: Andy Bianchini
+  ✗ Artist not found: Andy Bianchini
+[10/670] Anna Leyne
+Scraping: Anna Leyne
+  ✗ Artist not found: Anna Leyne
+[11/670] Architectural
+Scraping: Architectural
+  ✗ Artist not found: Architectural
+[12/670] Ashibah
+Scraping: Ashibah
+  ✗ Artist not found: Ashibah
+[13/670] Auggië
+Scraping: Auggië
+  ✗ Artist not found: Auggië
+[14/670] Avan7
+Scraping: Avan7
+  ✗ Artist not found: Avan7
+[15/670] Bankewitz
+Scraping: Bankewitz
+  ✗ Artist not found: Bankewitz
+[16/670] Blue Mora
+Scraping: Blue Mora
+  ✗ Artist not found: Blue Mora
+[17/670] Boris Daenen
+Scraping: Boris Daenen
+  ✗ Artist not found: Boris Daenen
+[18/670] CAPSUL
+Scraping: CAPSUL
+  ✗ Artist not found: CAPSUL
+[19/670] Caroline Koch
+Scraping: Caroline Koch
+  ✗ Artist not found: Caroline Koch
+[20/670] Cat Connors
+Scraping: Cat Connors
+  ✗ Artist not found: Cat Connors
+[21/670] Channing
+Scraping: Channing
+  ✗ Artist not found: Channing
+[22/670] Chantal Kashala
+Scraping: Chantal Kashala
+  ✗ Artist not found: Chantal Kashala
+[23/670] Charlotte Puppinck
+Scraping: Charlotte Puppinck
+  ✗ Artist not found: Charlotte Puppinck
+[24/670] Cherry Lena
+Scraping: Cherry Lena
+  ✗ Artist not found: Cherry Lena

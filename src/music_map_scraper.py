@@ -194,10 +194,10 @@ def scrape_artist(artist_name: str) -> ScraperResult:
 
 def load_artists() -> list[str]:
     """Load artists from my_artists.json."""
-    artists_file = Path("my_artists.json")
+    artists_file = Path("output/my_artists.json")
 
     if not artists_file.exists():
-        raise FileNotFoundError("my_artists.json not found!")
+        raise FileNotFoundError("my_artists.json not found in output/ directory!")
 
     with open(artists_file, 'r') as f:
         data = json.load(f)
@@ -254,9 +254,9 @@ def main():
     artists = load_artists()
     log(f"Loaded {len(artists)} artists from my_artists.json")
 
-    # Check which artists already have results
-    already_processed = {artist for artist in artists if artist in existing_data}
-    to_process = [artist for artist in artists if artist not in existing_data]
+    # Check which artists already have successful results
+    already_processed = {artist for artist in artists if artist in existing_data and existing_data[artist].get("status") == "success"}
+    to_process = [artist for artist in artists if artist not in existing_data or existing_data[artist].get("status") == "error"]
 
     if already_processed:
         log(f"Found {len(already_processed)} artists already processed - skipping them")
