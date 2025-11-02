@@ -1,16 +1,31 @@
 """CLI entry point for the artists-to-see-live scraper."""
 
-import sys
 import json
+import logging
+import sys
 from dataclasses import asdict
 from pathlib import Path
+
 from src.techno_queers_email_scraper import parse_html_file
+
+logger = logging.getLogger(__name__)
 
 
 def main():
     """Main CLI function."""
+    # Configure logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.FileHandler("app.log", encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+
     if len(sys.argv) < 2:
-        print("Usage: python main.py <html_file> [--output <output_file>]")
+        logger.error("Usage: python main.py <html_file> [--output <output_file>]")
         sys.exit(1)
 
     html_file = sys.argv[1]
@@ -32,9 +47,9 @@ def main():
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2)
-        print(f"Wrote {len(events)} events to {output_file}")
+        logger.info("Wrote %d events to %s", len(events), output_file)
     else:
-        print(json.dumps(result, indent=2))
+        logger.info(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":
