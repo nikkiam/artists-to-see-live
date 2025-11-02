@@ -229,13 +229,90 @@ def save_results(results: dict[str, ScraperResult], output_file: Path):
         json.dump(serializable_results, f, indent=2, ensure_ascii=False)
 
 
+def git_push_with_retry() -> bool:
+    """
+    Push to remote with exponential backoff retry logic.
+
+    Returns:
+        True if push succeeded, False otherwise
+    """
+    # Get current branch name
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        branch_name = result.stdout.strip()
+    except subprocess.CalledProcessError as e:
+        log(f"  ✗ Could not get current branch name: {e}")
+        return False
+
+    # Retry logic with exponential backoff: 2s, 4s, 8s, 16s
+    retry_delays = [2, 4, 8, 16]
+    max_attempts = len(retry_delays) + 1  # Initial attempt + 4 retries = 5 total
+
+    for attempt in range(max_attempts):
+        try:
+            subprocess.run(
+                ["git", "push", "-u", "origin", branch_name],
+                check=True,
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            log(f"  ✓ Git push successful to origin/{branch_name}")
+            return True
+
+        except subprocess.TimeoutExpired:
+            # Network timeout - retry
+            if attempt < max_attempts - 1:
+                delay = retry_delays[attempt]
+                log(f"  ⚠ Push timeout, retrying in {delay}s (attempt {attempt + 1}/{max_attempts})...")
+                time.sleep(delay)
+            else:
+                log(f"  ✗ Push failed after {max_attempts} attempts (timeout)")
+                return False
+
+        except subprocess.CalledProcessError as e:
+            # Check if it's a network error by examining stderr
+            stderr = e.stderr.decode() if isinstance(e.stderr, bytes) else str(e.stderr)
+
+            # Network-related errors that warrant retry
+            network_errors = [
+                "could not read from remote",
+                "connection timed out",
+                "connection refused",
+                "temporary failure",
+                "network is unreachable"
+            ]
+
+            is_network_error = any(err in stderr.lower() for err in network_errors)
+
+            if is_network_error and attempt < max_attempts - 1:
+                delay = retry_delays[attempt]
+                log(f"  ⚠ Network error, retrying in {delay}s (attempt {attempt + 1}/{max_attempts})...")
+                time.sleep(delay)
+            else:
+                # Non-network error or final attempt - don't retry
+                log(f"  ✗ Git push failed: {stderr.strip()}")
+                return False
+
+    return False
+
+
 def git_commit_results(output_file: Path, count: int):
-    """Create a git commit with current results."""
+    """Create a git commit with current results and push to remote."""
     try:
         subprocess.run(["git", "add", str(output_file), str(LOG_FILE)], check=True, capture_output=True)
         commit_msg = f"Update similar artists map ({count} artists processed)"
         subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
         log(f"  ✓ Git commit created")
+
+        # Push to remote
+        git_push_with_retry()
+
     except subprocess.CalledProcessError:
         pass
 
