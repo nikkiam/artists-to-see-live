@@ -5,6 +5,7 @@ Scrapes similar artist data from music-map.com including relationship strength s
 """
 
 import json
+import logging
 import re
 import subprocess
 import time
@@ -14,20 +15,13 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-LOG_FILE = Path("scraper.log")
-
-
-def log(message: str):
-    """Log message to both console and file, with immediate flush."""
-    print(message, flush=True)
-    with open(LOG_FILE, 'a', encoding='utf-8') as f:
-        f.write(message + '\n')
-        f.flush()
+logger = logging.getLogger(__name__)
 
 
 @dataclass
 class SimilarArtist:
     """Similar artist with relationship data."""
+
     name: str
     rank: int
     relationship_strength: float | None = None
@@ -36,6 +30,7 @@ class SimilarArtist:
 @dataclass
 class ScraperResult:
     """Result from scraping an artist."""
+
     status: str
     similar_artists: list[SimilarArtist] | None = None
     error: str | None = None
@@ -51,11 +46,11 @@ class ScraperResult:
                 {
                     "name": a.name,
                     "rank": a.rank,
-                    "relationship_strength": a.relationship_strength
+                    "relationship_strength": a.relationship_strength,
                 }
                 for a in (self.similar_artists or [])
             ],
-            "total_count": len(self.similar_artists or [])
+            "total_count": len(self.similar_artists or []),
         }
 
 
@@ -70,28 +65,30 @@ def fetch_artist_page(artist_name: str) -> str | None:
         HTML content as string, or None if request fails
     """
     # Convert artist name to URL format (spaces to +)
-    url_artist = artist_name.replace(' ', '+').lower()
+    url_artist = artist_name.replace(" ", "+").lower()
     url = f"https://www.music-map.com/{url_artist}"
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+        )
     }
 
     try:
         response = requests.get(url, headers=headers, timeout=10)
 
         if response.status_code == 404:
-            log(f"  ✗ Artist not found: {artist_name}")
+            logger.info("  ✗ Artist not found: %s", artist_name)
             return None
 
         response.raise_for_status()
         return response.text
 
     except requests.Timeout:
-        log(f"  ✗ Timeout fetching: {artist_name}")
+        logger.warning("  ✗ Timeout fetching: %s", artist_name)
         return None
     except requests.RequestException as e:
-        log(f"  ✗ Error fetching {artist_name}: {e}")
+        logger.error("  ✗ Error fetching %s: %s", artist_name, e)
         return None
 
 
@@ -106,8 +103,8 @@ def parse_artist_names(html: str) -> list[str]:
         List of artist name strings
     """
     try:
-        soup = BeautifulSoup(html, 'html.parser')
-        artist_links = soup.find_all('a', class_='S')
+        soup = BeautifulSoup(html, "html.parser")
+        artist_links = soup.find_all("a", class_="S")
         artists = [link.get_text(strip=True) for link in artist_links]
 
         # First artist is the queried artist itself, remove it
@@ -117,7 +114,7 @@ def parse_artist_names(html: str) -> list[str]:
         return artists[1:]
 
     except Exception as e:
-        log(f"  ✗ Error parsing artist names: {e}")
+        logger.error("  ✗ Error parsing artist names: %s", e)
         return []
 
 
@@ -134,16 +131,16 @@ def parse_relationship_data(html: str) -> list[float]:
     try:
         # Find the Aid array definition in JavaScript
         # Pattern: Aid[0]=new Array(-1,12.7927,4.52047,...);
-        pattern = r'Aid\[0\]=new Array\(([^)]+)\);'
+        pattern = r"Aid\[0\]=new Array\(([^)]+)\);"
         match = re.search(pattern, html)
 
         if not match:
-            log("  ✗ Could not find Aid array in HTML")
+            logger.warning("  ✗ Could not find Aid array in HTML")
             return []
 
         # Extract the array values
         values_str = match.group(1)
-        values = [float(v.strip()) for v in values_str.split(',')]
+        values = [float(v.strip()) for v in values_str.split(",")]
 
         # First value is -1 (self-relationship), remove it
         if not values or values[0] != -1:
@@ -152,7 +149,7 @@ def parse_relationship_data(html: str) -> list[float]:
         return values[1:]
 
     except Exception as e:
-        log(f"  ✗ Error parsing relationship data: {e}")
+        logger.error("  ✗ Error parsing relationship data: %s", e)
         return []
 
 
@@ -166,7 +163,7 @@ def scrape_artist(artist_name: str) -> ScraperResult:
     Returns:
         ScraperResult with similar artists data or error information
     """
-    log(f"Scraping: {artist_name}")
+    logger.info("Scraping: %s", artist_name)
 
     # Fetch the page
     html = fetch_artist_page(artist_name)
@@ -199,7 +196,7 @@ def load_artists() -> list[str]:
     if not artists_file.exists():
         raise FileNotFoundError("my_artists.json not found in output/ directory!")
 
-    with open(artists_file, 'r') as f:
+    with open(artists_file) as f:
         data = json.load(f)
         return data.get("artists", [])
 
@@ -210,10 +207,10 @@ def load_existing_results(output_file: Path) -> dict[str, dict]:
         return {}
 
     try:
-        with open(output_file, 'r', encoding='utf-8') as f:
+        with open(output_file, encoding="utf-8") as f:
             return json.load(f)
-    except (json.JSONDecodeError, IOError) as e:
-        log(f"  ⚠ Warning: Could not load existing results: {e}")
+    except (OSError, json.JSONDecodeError) as e:
+        logger.warning("  ⚠ Warning: Could not load existing results: %s", e)
         return {}
 
 
@@ -221,11 +218,10 @@ def save_results(results: dict[str, ScraperResult], output_file: Path):
     """Save results to JSON file."""
     # Convert ScraperResult objects to dictionaries
     serializable_results = {
-        artist: result.to_dict()
-        for artist, result in results.items()
+        artist: result.to_dict() for artist, result in results.items()
     }
 
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(serializable_results, f, indent=2, ensure_ascii=False)
 
 
@@ -242,11 +238,11 @@ def git_push_with_retry() -> bool:
             ["git", "rev-parse", "--abbrev-ref", "HEAD"],
             check=True,
             capture_output=True,
-            text=True
+            text=True,
         )
         branch_name = result.stdout.strip()
     except subprocess.CalledProcessError as e:
-        log(f"  ✗ Could not get current branch name: {e}")
+        logger.error("  ✗ Could not get current branch name: %s", e)
         return False
 
     # Retry logic with exponential backoff: 2s, 4s, 8s, 16s
@@ -260,19 +256,26 @@ def git_push_with_retry() -> bool:
                 check=True,
                 capture_output=True,
                 text=True,
-                timeout=30
+                timeout=30,
             )
-            log(f"  ✓ Git push successful to origin/{branch_name}")
+            logger.info("  ✓ Git push successful to origin/%s", branch_name)
             return True
 
         except subprocess.TimeoutExpired:
             # Network timeout - retry
             if attempt < max_attempts - 1:
                 delay = retry_delays[attempt]
-                log(f"  ⚠ Push timeout, retrying in {delay}s (attempt {attempt + 1}/{max_attempts})...")
+                logger.warning(
+                    "  ⚠ Push timeout, retrying in %ds (attempt %d/%d)...",
+                    delay,
+                    attempt + 1,
+                    max_attempts,
+                )
                 time.sleep(delay)
             else:
-                log(f"  ✗ Push failed after {max_attempts} attempts (timeout)")
+                logger.error(
+                    "  ✗ Push failed after %d attempts (timeout)", max_attempts
+                )
                 return False
 
         except subprocess.CalledProcessError as e:
@@ -285,18 +288,23 @@ def git_push_with_retry() -> bool:
                 "connection timed out",
                 "connection refused",
                 "temporary failure",
-                "network is unreachable"
+                "network is unreachable",
             ]
 
             is_network_error = any(err in stderr.lower() for err in network_errors)
 
             if is_network_error and attempt < max_attempts - 1:
                 delay = retry_delays[attempt]
-                log(f"  ⚠ Network error, retrying in {delay}s (attempt {attempt + 1}/{max_attempts})...")
+                logger.warning(
+                    "  ⚠ Network error, retrying in %ds (attempt %d/%d)...",
+                    delay,
+                    attempt + 1,
+                    max_attempts,
+                )
                 time.sleep(delay)
             else:
                 # Non-network error or final attempt - don't retry
-                log(f"  ✗ Git push failed: {stderr.strip()}")
+                logger.error("  ✗ Git push failed: %s", stderr.strip())
                 return False
 
     return False
@@ -305,10 +313,16 @@ def git_push_with_retry() -> bool:
 def git_commit_results(output_file: Path, count: int):
     """Create a git commit with current results and push to remote."""
     try:
-        subprocess.run(["git", "add", str(output_file), str(LOG_FILE)], check=True, capture_output=True)
+        subprocess.run(
+            ["git", "add", str(output_file), "scraper.log"],
+            check=True,
+            capture_output=True,
+        )
         commit_msg = f"Update similar artists map ({count} artists processed)"
-        subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
-        log(f"  ✓ Git commit created")
+        subprocess.run(
+            ["git", "commit", "-m", commit_msg], check=True, capture_output=True
+        )
+        logger.info("  ✓ Git commit created")
 
         # Push to remote
         git_push_with_retry()
@@ -319,6 +333,17 @@ def git_commit_results(output_file: Path, count: int):
 
 def main():
     """Main function to process all artists from my_artists.json."""
+    # Configure logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.FileHandler("scraper.log", encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+
     # Setup output directory
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
@@ -329,17 +354,27 @@ def main():
 
     # Load artists
     artists = load_artists()
-    log(f"Loaded {len(artists)} artists from my_artists.json")
+    logger.info("Loaded %d artists from my_artists.json", len(artists))
 
     # Check which artists already have successful results
-    already_processed = {artist for artist in artists if artist in existing_data and existing_data[artist].get("status") == "success"}
-    to_process = [artist for artist in artists if artist not in existing_data or existing_data[artist].get("status") == "error"]
+    already_processed = {
+        artist
+        for artist in artists
+        if artist in existing_data and existing_data[artist].get("status") == "success"
+    }
+    to_process = [
+        artist
+        for artist in artists
+        if artist not in existing_data or existing_data[artist].get("status") == "error"
+    ]
 
     if already_processed:
-        log(f"Found {len(already_processed)} artists already processed - skipping them")
+        logger.info(
+            "Found %d artists already processed - skipping them", len(already_processed)
+        )
 
-    log(f"Will process {len(to_process)} new artists")
-    log("Starting scraping process...\n")
+    logger.info("Will process %d new artists", len(to_process))
+    logger.info("Starting scraping process...")
 
     # Convert existing data to ScraperResult objects
     results = {}
@@ -349,7 +384,7 @@ def main():
                 SimilarArtist(
                     name=a["name"],
                     rank=a["rank"],
-                    relationship_strength=a.get("relationship_strength")
+                    relationship_strength=a.get("relationship_strength"),
                 )
                 for a in data.get("similar_artists", [])
             ]
@@ -360,7 +395,7 @@ def main():
     # Process each new artist
     processed_count = 0
     for i, artist in enumerate(to_process, 1):
-        log(f"[{i}/{len(to_process)}] {artist}")
+        logger.info("[%d/%d] %s", i, len(to_process), artist)
 
         result = scrape_artist(artist)
         results[artist] = result
@@ -369,13 +404,13 @@ def main():
         # Show success/error
         if result.status == "success":
             count = len(result.similar_artists or [])
-            log(f"  ✓ Found {count} similar artists")
+            logger.info("  ✓ Found %d similar artists", count)
 
         # Save progress and commit every 50 artists
         if processed_count % 50 == 0:
             save_results(results, output_file)
             git_commit_results(output_file, len(results))
-            log(f"  💾 Progress saved ({len(results)} total artists)")
+            logger.info("  💾 Progress saved (%d total artists)", len(results))
 
         # Be nice to the server - delay between requests
         if i < len(to_process):
@@ -388,14 +423,14 @@ def main():
     success_count = sum(1 for r in results.values() if r.status == "success")
     error_count = len(results) - success_count
 
-    log(f"\n{'='*60}")
-    log(f"Scraping complete!")
-    log(f"  Already had: {len(already_processed)}")
-    log(f"  Newly processed: {processed_count}")
-    log(f"  ✓ Total successful: {success_count}")
-    log(f"  ✗ Total errors: {error_count}")
-    log(f"  Output: {output_file}")
-    log(f"{'='*60}")
+    logger.info("=" * 60)
+    logger.info("Scraping complete!")
+    logger.info("  Already had: %d", len(already_processed))
+    logger.info("  Newly processed: %d", processed_count)
+    logger.info("  ✓ Total successful: %d", success_count)
+    logger.info("  ✗ Total errors: %d", error_count)
+    logger.info("  Output: %s", output_file)
+    logger.info("=" * 60)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,17 @@
 """HTML parser for extracting event information from email content."""
 
+import json
+import logging
 import re
+import sys
+from dataclasses import asdict
 from pathlib import Path
+
 from bs4 import BeautifulSoup
-from src.models import Event, Artist
+
+from src.models import Artist, Event
+
+logger = logging.getLogger(__name__)
 
 
 def parse_html_file(filepath: str) -> list[Event]:
@@ -16,14 +24,14 @@ def parse_html_file(filepath: str) -> list[Event]:
     Returns:
         List of Event objects extracted from the HTML
     """
-    with open(filepath, 'r', encoding='utf-8') as f:
+    with open(filepath, encoding="utf-8") as f:
         html_content = f.read()
 
-    soup = BeautifulSoup(html_content, 'lxml')
+    soup = BeautifulSoup(html_content, "lxml")
     events = []
 
     # Find all divs that might contain events (divs with '+' character)
-    all_divs = soup.find_all('div')
+    all_divs = soup.find_all("div")
     non_event_streak = 0
     seen_urls = set()  # Track URLs to avoid duplicates
 
@@ -31,17 +39,17 @@ def parse_html_file(filepath: str) -> list[Event]:
         text = div.get_text(strip=True)
 
         # Check if this div starts with a '+'
-        if not text.startswith('+'):
+        if not text.startswith("+"):
             continue
 
         # Event divs must have both '+' and a link
-        link = div.find('a')
+        link = div.find("a")
         if not link:
             continue
 
         # Check if this has bracket patterns (indicating it's an event)
         # Just check for opening bracket - simpler and more reliable
-        has_brackets = '[' in text
+        has_brackets = "[" in text
 
         if not has_brackets:
             # If we've already found events and now hitting non-bracket content,
@@ -59,14 +67,12 @@ def parse_html_file(filepath: str) -> list[Event]:
         # Try to parse as an event
         try:
             event = _parse_event_div(div)
-            if event:
-                # Deduplicate by URL
-                if event.ticket_url not in seen_urls:
-                    seen_urls.add(event.ticket_url)
-                    events.append(event)
+            if event and event.ticket_url not in seen_urls:
+                seen_urls.add(event.ticket_url)
+                events.append(event)
         except Exception as e:
             # Log and skip malformed events
-            print(f"Warning: Failed to parse event: {e}")
+            logger.warning("Failed to parse event: %s", e)
             continue
 
     return events
@@ -83,41 +89,41 @@ def _parse_event_div(div) -> Event | None:
         Event object or None if parsing fails
     """
     # Get the full text content
-    full_text = div.get_text(separator=' ', strip=False)
+    full_text = div.get_text(separator=" ", strip=False)
 
     # Check for day marker: + [Day] +
     day_marker = None
-    day_match = re.search(r'\+\s*\[([A-Z][a-z]{2})\]\s*\+', full_text)
+    day_match = re.search(r"\+\s*\[([A-Z][a-z]{2})\]\s*\+", full_text)
     if day_match:
         day_marker = day_match.group(1)
 
     # Find the first link (event name and URL)
-    link = div.find('a')
+    link = div.find("a")
     if not link:
         return None
 
     event_name = link.get_text(strip=True)
-    ticket_url = link.get('href', '')
+    ticket_url = link.get("href", "")
 
     # Get text after the link for parsing metadata
     # We need to extract the text that comes after the </a> tag
     link_parent = link.parent
-    text_after_link = ''
+    text_after_link = ""
 
     # Try to get text after the link
     for element in link.next_siblings:
-        if hasattr(element, 'get_text'):
-            text_after_link += element.get_text(separator=' ')
+        if hasattr(element, "get_text"):
+            text_after_link += element.get_text(separator=" ")
         else:
             text_after_link += str(element)
 
     # Also check if there's text in the same element after the link
     if link_parent:
-        parent_text = link_parent.get_text(separator=' ')
+        parent_text = link_parent.get_text(separator=" ")
         link_text = link.get_text()
         if link_text in parent_text:
             idx = parent_text.find(link_text) + len(link_text)
-            text_after_link = parent_text[idx:] + ' ' + text_after_link
+            text_after_link = parent_text[idx:] + " " + text_after_link
 
     # Parse bracket patterns from the text after the link
     venue, event_time, tags, artists = _parse_metadata(text_after_link)
@@ -129,11 +135,13 @@ def _parse_event_div(div) -> Event | None:
         event_time=event_time,
         artists=artists,
         tags=tags,
-        day_marker=day_marker
+        day_marker=day_marker,
     )
 
 
-def _parse_metadata(text: str) -> tuple[str | None, str | None, list[str], list[Artist]]:
+def _parse_metadata(
+    text: str,
+) -> tuple[str | None, str | None, list[str], list[Artist]]:
     """
     Parse venue, time, tags, and artists from bracket-delimited text.
 
@@ -144,7 +152,7 @@ def _parse_metadata(text: str) -> tuple[str | None, str | None, list[str], list[
         Tuple of (venue, event_time, tags, artists)
     """
     # Find all bracket patterns
-    bracket_pattern = r'\[([^\]]+)\]'
+    bracket_pattern = r"\[([^\]]+)\]"
     matches = re.findall(bracket_pattern, text)
 
     if not matches:
@@ -160,9 +168,9 @@ def _parse_metadata(text: str) -> tuple[str | None, str | None, list[str], list[
         content = match.strip()
 
         # Check if it's a tag (starts with #)
-        if content.startswith('#'):
+        if content.startswith("#"):
             # Extract all hashtags from this bracket
-            tag_matches = re.findall(r'#(\w+)', content)
+            tag_matches = re.findall(r"#(\w+)", content)
             tags.extend(tag_matches)
 
         # Check if it's a time pattern
@@ -192,7 +200,9 @@ def _parse_metadata(text: str) -> tuple[str | None, str | None, list[str], list[
                 if venue_candidates:
                     venue_bracket = venue_candidates[-1]
                     venue = venue_bracket[1]
-                    artist_brackets = [b for b in artist_brackets if b[0] < venue_bracket[0]]
+                    artist_brackets = [
+                        b for b in artist_brackets if b[0] < venue_bracket[0]
+                    ]
 
         # If no venue found yet, assume last bracket is venue
         if not venue and artist_brackets:
@@ -225,8 +235,9 @@ def _is_time_pattern(text: str) -> bool:
 
     Examples: 8p-4a, 10p-?, 7-11p, 10p-10p|Sunday, 10:30p-7a
     """
-    # Pattern: number + optional :minutes + optional p/a, dash/hyphen, number + optional :minutes + optional p/a/?, optional |Day
-    time_regex = r'^\d{1,2}(:\d{2})?[ap]?[-–]\d{0,2}(:\d{2})?[ap\?]?(\|[A-Za-z]+)?$'
+    # Pattern: number + optional :minutes + optional p/a, dash/hyphen,
+    # number + optional :minutes + optional p/a/?, optional |Day
+    time_regex = r"^\d{1,2}(:\d{2})?[ap]?[-]\d{0,2}(:\d{2})?[ap\?]?(\|[A-Za-z]+)?$"
     return bool(re.match(time_regex, text.strip()))
 
 
@@ -248,28 +259,76 @@ def _parse_artists(artist_text: str) -> list[Artist]:
     artists = []
 
     # Remove leading/trailing ellipsis and whitespace
-    artist_text = artist_text.strip().strip('.')
+    artist_text = artist_text.strip().strip(".")
 
     # Check if this is a timed format (contains time: pattern)
     # Pattern: number-number: Artist Name
-    timed_pattern = r'(\d{1,2}(?::\d{2})?-\d{1,2}(?::\d{2})?):?\s*([^,]+)'
+    timed_pattern = r"(\d{1,2}(?::\d{2})?-\d{1,2}(?::\d{2})?):?\s*([^,]+)"
     timed_matches = re.findall(timed_pattern, artist_text)
 
     if timed_matches:
         # Parse timed artists
         for time, name in timed_matches:
             # Clean up name: strip whitespace and normalize newlines/spaces
-            name = re.sub(r'\s+', ' ', name.strip())
-            if name and name.lower() not in ['', '...']:
+            name = re.sub(r"\s+", " ", name.strip())
+            if name and name.lower() not in ["", "..."]:
                 artists.append(Artist(name=name, set_time=time))
     else:
         # Parse simple comma-separated list
-        names = re.split(r',\s*', artist_text)
+        names = re.split(r",\s*", artist_text)
         for name in names:
             # Clean up name: strip whitespace and normalize newlines/spaces
-            name = re.sub(r'\s+', ' ', name.strip())
+            name = re.sub(r"\s+", " ", name.strip())
             # Skip empty, ellipsis, or very short names
-            if name and len(name) > 1 and name != '...':
+            if name and len(name) > 1 and name != "...":
                 artists.append(Artist(name=name, set_time=None))
 
     return artists
+
+
+def main():
+    """Main CLI function for running the email scraper directly."""
+    # Configure logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.FileHandler("email_scraper.log", encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+
+    if len(sys.argv) < 2:
+        logger.error(
+            "Usage: python -m src.techno_queers_email_scraper <html_file> "
+            "[--output <output_file>]"
+        )
+        sys.exit(1)
+
+    html_file = sys.argv[1]
+    output_file = None
+
+    # Check for --output flag
+    if len(sys.argv) >= 4 and sys.argv[2] == "--output":
+        output_file = sys.argv[3]
+
+    # Parse the HTML file
+    events = parse_html_file(html_file)
+
+    # Convert events to dictionaries for JSON serialization
+    events_data = [asdict(event) for event in events]
+    result = {"events": events_data, "count": len(events)}
+
+    # Output results
+    if output_file:
+        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2)
+        logger.info("Wrote %d events to %s", len(events), output_file)
+    else:
+        logger.info(json.dumps(result, indent=2))
+
+
+if __name__ == "__main__":
+    main()

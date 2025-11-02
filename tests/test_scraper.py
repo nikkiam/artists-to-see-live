@@ -1,8 +1,6 @@
 """Tests for the HTML scraper."""
 
-import pytest
 from src.techno_queers_email_scraper import _is_time_pattern, _parse_artists
-from src.models import Artist
 
 
 def test_time_pattern_detection():

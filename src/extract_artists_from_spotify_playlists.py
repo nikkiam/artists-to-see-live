@@ -4,14 +4,18 @@ Script to extract unique artist names from Spotify playlists and save to JSON.
 """
 
 import json
-import requests
+import logging
 from pathlib import Path
+
+import requests
+
+logger = logging.getLogger(__name__)
 
 
 def load_spotify_config():
     """Load Spotify credentials from spotify-config.json."""
     config_path = Path(__file__).parent / "spotify-config.json"
-    with open(config_path, 'r') as f:
+    with open(config_path) as f:
         return json.load(f)
 
 
@@ -22,7 +26,7 @@ def refresh_access_token(config):
         "grant_type": "refresh_token",
         "refresh_token": config["refreshToken"],
         "client_id": config["clientId"],
-        "client_secret": config["clientSecret"]
+        "client_secret": config["clientSecret"],
     }
 
     response = requests.post(url, data=data)
@@ -38,19 +42,19 @@ def get_playlist_tracks(playlist_id, access_token):
     offset = 0
     limit = 50
 
-    headers = {
-        "Authorization": f"Bearer {access_token}"
-    }
+    headers = {"Authorization": f"Bearer {access_token}"}
 
     while True:
         url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
         params = {
             "limit": limit,
             "offset": offset,
-            "fields": "items(track(artists(name))),total"
+            "fields": "items(track(artists(name))),total",
         }
 
-        print(f"Fetching tracks from playlist {playlist_id}, offset {offset}...")
+        logger.info(
+            "Fetching tracks from playlist %s, offset %d...", playlist_id, offset
+        )
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
 
@@ -82,15 +86,26 @@ def extract_artist_names(playlist_ids, access_token):
 
 
 def main():
+    # Configure logging
+    logging.basicConfig(
+        level=logging.DEBUG,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        handlers=[
+            logging.FileHandler("spotify_extract.log", encoding="utf-8"),
+            logging.StreamHandler(),
+        ],
+    )
+
     # Load Spotify credentials
-    print("Loading Spotify credentials...")
+    logger.info("Loading Spotify credentials...")
     config = load_spotify_config()
 
     # Try to use existing access token, refresh if needed
     try:
         access_token = config["accessToken"]
     except Exception:
-        print("Refreshing access token...")
+        logger.info("Refreshing access token...")
         access_token = refresh_access_token(config)
 
     # Playlist IDs for "First Decade - Collection" and "Collection"
@@ -99,25 +114,25 @@ def main():
         "1mLkKgbsqAfkmM4byW93dF",  # Collection (236 tracks)
     ]
 
-    print("Extracting artist names from playlists...")
+    logger.info("Extracting artist names from playlists...")
     try:
         artists = extract_artist_names(playlist_ids, access_token)
     except requests.exceptions.HTTPError as e:
         if e.response.status_code == 401:
-            print("Access token expired, refreshing...")
+            logger.info("Access token expired, refreshing...")
             access_token = refresh_access_token(config)
             artists = extract_artist_names(playlist_ids, access_token)
         else:
             raise
 
-    print(f"Found {len(artists)} unique artists")
+    logger.info("Found %d unique artists", len(artists))
 
     # Save to JSON file
     output_file = "my_artists.json"
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump({"artists": artists}, f, indent=2, ensure_ascii=False)
 
-    print(f"Artists saved to {output_file}")
+    logger.info("Artists saved to %s", output_file)
 
 
 if __name__ == "__main__":

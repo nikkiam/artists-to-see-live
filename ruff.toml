@@ -1,0 +1,18 @@
+# Ruff configuration
+# Only non-default settings are specified here
+
+# Target Python 3.12 (default is py38)
+target-version = "py312"
+
+[lint]
+# Extend Ruff's defaults (E4, E7, E9, F) with additional rule sets
+select = [
+    "E",   # All pycodestyle errors (extends E4, E7, E9 defaults)
+    "W",   # pycodestyle warnings
+    "I",   # isort (import sorting)
+    "UP",  # pyupgrade (upgrade syntax for newer Python)
+    "B",   # flake8-bugbear (common bugs)
+    "SIM", # flake8-simplify
+    "T20", # flake8-print (ban print statements - use logging instead)
+    "RUF", # Ruff-specific rules
+]
