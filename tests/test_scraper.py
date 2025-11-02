@@ -1,7 +1,7 @@
 """Tests for the HTML scraper."""
 
 import pytest
-from src.scraper import _is_time_pattern, _parse_artists
+from src.techno_queers_email_scraper import _is_time_pattern, _parse_artists
 from src.models import Artist
 
 

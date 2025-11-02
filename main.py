@@ -4,7 +4,7 @@ import sys
 import json
 from dataclasses import asdict
 from pathlib import Path
-from src.scraper import parse_html_file
+from src.techno_queers_email_scraper import parse_html_file
 
 
 def main():
@@ -30,7 +30,7 @@ def main():
     # Output results
     if output_file:
         Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, 'w') as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2)
         print(f"Wrote {len(events)} events to {output_file}")
     else:
