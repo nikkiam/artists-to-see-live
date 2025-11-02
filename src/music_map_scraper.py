@@ -6,12 +6,23 @@ Scrapes similar artist data from music-map.com including relationship strength s
 
 import json
 import re
+import subprocess
 import time
 from dataclasses import dataclass
 from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+LOG_FILE = Path("scraper.log")
+
+
+def log(message: str):
+    """Log message to both console and file, with immediate flush."""
+    print(message, flush=True)
+    with open(LOG_FILE, 'a', encoding='utf-8') as f:
+        f.write(message + '\n')
+        f.flush()
 
 
 @dataclass
@@ -70,17 +81,17 @@ def fetch_artist_page(artist_name: str) -> str | None:
         response = requests.get(url, headers=headers, timeout=10)
 
         if response.status_code == 404:
-            print(f"  ✗ Artist not found: {artist_name}")
+            log(f"  ✗ Artist not found: {artist_name}")
             return None
 
         response.raise_for_status()
         return response.text
 
     except requests.Timeout:
-        print(f"  ✗ Timeout fetching: {artist_name}")
+        log(f"  ✗ Timeout fetching: {artist_name}")
         return None
     except requests.RequestException as e:
-        print(f"  ✗ Error fetching {artist_name}: {e}")
+        log(f"  ✗ Error fetching {artist_name}: {e}")
         return None
 
 
@@ -106,7 +117,7 @@ def parse_artist_names(html: str) -> list[str]:
         return artists[1:]
 
     except Exception as e:
-        print(f"  ✗ Error parsing artist names: {e}")
+        log(f"  ✗ Error parsing artist names: {e}")
         return []
 
 
@@ -127,7 +138,7 @@ def parse_relationship_data(html: str) -> list[float]:
         match = re.search(pattern, html)
 
         if not match:
-            print("  ✗ Could not find Aid array in HTML")
+            log("  ✗ Could not find Aid array in HTML")
             return []
 
         # Extract the array values
@@ -141,7 +152,7 @@ def parse_relationship_data(html: str) -> list[float]:
         return values[1:]
 
     except Exception as e:
-        print(f"  ✗ Error parsing relationship data: {e}")
+        log(f"  ✗ Error parsing relationship data: {e}")
         return []
 
 
@@ -155,7 +166,7 @@ def scrape_artist(artist_name: str) -> ScraperResult:
     Returns:
         ScraperResult with similar artists data or error information
     """
-    print(f"Scraping: {artist_name}")
+    log(f"Scraping: {artist_name}")
 
     # Fetch the page
     html = fetch_artist_page(artist_name)
@@ -205,17 +216,33 @@ def save_results(results: dict[str, ScraperResult], output_file: Path):
         json.dump(serializable_results, f, indent=2, ensure_ascii=False)
 
 
+def git_commit_results(output_file: Path, count: int):
+    """Create a git commit with current results."""
+    try:
+        subprocess.run(["git", "add", str(output_file), str(LOG_FILE)], check=True, capture_output=True)
+        commit_msg = f"Update similar artists map ({count} artists processed)"
+        subprocess.run(["git", "commit", "-m", commit_msg], check=True, capture_output=True)
+        log(f"  ✓ Git commit created")
+    except subprocess.CalledProcessError:
+        pass
+
+
 def main():
     """Main function to process all artists from my_artists.json."""
     # Load artists
     artists = load_artists()
-    print(f"Loaded {len(artists)} artists from my_artists.json")
-    print("Starting scraping process...\n")
+    log(f"Loaded {len(artists)} artists from my_artists.json")
+    log("Starting scraping process...\n")
+
+    # Setup output directory
+    output_dir = Path("output")
+    output_dir.mkdir(exist_ok=True)
+    output_file = output_dir / "similar_artists_map.json"
 
     # Process each artist
     results = {}
     for i, artist in enumerate(artists, 1):
-        print(f"[{i}/{len(artists)}] ", end="")
+        log(f"[{i}/{len(artists)}] {artist}")
 
         result = scrape_artist(artist)
         results[artist] = result
@@ -223,26 +250,31 @@ def main():
         # Show success/error
         if result.status == "success":
             count = len(result.similar_artists or [])
-            print(f"  ✓ Found {count} similar artists")
+            log(f"  ✓ Found {count} similar artists")
 
-        # Be nice to the server - small delay between requests
+        # Save progress and commit every 50 artists
+        if i % 50 == 0:
+            save_results(results, output_file)
+            git_commit_results(output_file, i)
+            log(f"  💾 Progress saved ({i} artists)")
+
+        # Be nice to the server - delay between requests
         if i < len(artists):
-            time.sleep(0.5)
+            time.sleep(2.0)
 
-    # Save results
-    output_file = Path("similar_artists_map.json")
+    # Save final results
     save_results(results, output_file)
 
     # Summary
     success_count = sum(1 for r in results.values() if r.status == "success")
     error_count = len(results) - success_count
 
-    print(f"\n{'='*60}")
-    print(f"Scraping complete!")
-    print(f"  ✓ Successful: {success_count}")
-    print(f"  ✗ Errors: {error_count}")
-    print(f"  Output: {output_file}")
-    print(f"{'='*60}")
+    log(f"\n{'='*60}")
+    log(f"Scraping complete!")
+    log(f"  ✓ Successful: {success_count}")
+    log(f"  ✗ Errors: {error_count}")
+    log(f"  Output: {output_file}")
+    log(f"{'='*60}")
 
 
 if __name__ == "__main__":
