@@ -11,3 +11,6 @@ wheels/
 
 # Spotify API credentials
 spotify-config.json
+
+# Apple ds_store files
+.DS_Store

@@ -1986,3 +1986,74 @@ Scraping: Zak Joshua
 [650/670] Zedd
 Scraping: Zedd
   ✓ Found 48 similar artists
+  ✓ Git commit created
+  💾 Progress saved (961 total artists)
+[651/670] Zeds Dead
+Scraping: Zeds Dead
+  ✓ Found 48 similar artists
+[652/670] Zero T
+Scraping: Zero T
+  ✓ Found 21 similar artists
+[653/670] Zonderling
+Scraping: Zonderling
+  ✓ Found 48 similar artists
+[654/670] Zyra
+Scraping: Zyra
+  ✓ Found 13 similar artists
+[655/670] deadmau5
+Scraping: deadmau5
+  ✓ Found 48 similar artists
+[656/670] dilemma
+Scraping: dilemma
+  ✓ Found 44 similar artists
+[657/670] ero808
+Scraping: ero808
+  ✓ Found 33 similar artists
+[658/670] graves
+Scraping: graves
+  ✓ Found 48 similar artists
+[659/670] i_o
+Scraping: i_o
+  ✓ Found 48 similar artists
+[660/670] it's murph
+Scraping: it's murph
+  ✓ Found 48 similar artists
+[661/670] josh pan
+Scraping: josh pan
+  ✓ Found 48 similar artists
+[662/670] k?d
+Scraping: k?d
+  ✓ Found 48 similar artists
+[663/670] kai
+Scraping: kai
+  ✓ Found 48 similar artists
+[664/670] longstoryshort
+Scraping: longstoryshort
+  ✓ Found 48 similar artists
+[665/670] mossy.
+Scraping: mossy.
+  ✗ Artist not found: mossy.
+[666/670] plumpy
+Scraping: plumpy
+  ✓ Found 9 similar artists
+[667/670] skantia
+Scraping: skantia
+  ✓ Found 20 similar artists
+[668/670] twoloud
+Scraping: twoloud
+  ✓ Found 48 similar artists
+[669/670] veggi
+Scraping: veggi
+  ✓ Found 48 similar artists
+[670/670] Öwnboss
+Scraping: Öwnboss
+  ✓ Found 43 similar artists
+
+============================================================
+Scraping complete!
+  Already had: 291
+  Newly processed: 670
+  ✓ Total successful: 767
+  ✗ Total errors: 194
+  Output: output/similar_artists_map.json
+============================================================
