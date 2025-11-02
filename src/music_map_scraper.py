@@ -204,6 +204,19 @@ def load_artists() -> list[str]:
         return data.get("artists", [])
 
 
+def load_existing_results(output_file: Path) -> dict[str, dict]:
+    """Load existing results from JSON file if it exists."""
+    if not output_file.exists():
+        return {}
+
+    try:
+        with open(output_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (json.JSONDecodeError, IOError) as e:
+        log(f"  ⚠ Warning: Could not load existing results: {e}")
+        return {}
+
+
 def save_results(results: dict[str, ScraperResult], output_file: Path):
     """Save results to JSON file."""
     # Convert ScraperResult objects to dictionaries
@@ -229,23 +242,52 @@ def git_commit_results(output_file: Path, count: int):
 
 def main():
     """Main function to process all artists from my_artists.json."""
-    # Load artists
-    artists = load_artists()
-    log(f"Loaded {len(artists)} artists from my_artists.json")
-    log("Starting scraping process...\n")
-
     # Setup output directory
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
     output_file = output_dir / "similar_artists_map.json"
 
-    # Process each artist
+    # Load existing results
+    existing_data = load_existing_results(output_file)
+
+    # Load artists
+    artists = load_artists()
+    log(f"Loaded {len(artists)} artists from my_artists.json")
+
+    # Check which artists already have results
+    already_processed = {artist for artist in artists if artist in existing_data}
+    to_process = [artist for artist in artists if artist not in existing_data]
+
+    if already_processed:
+        log(f"Found {len(already_processed)} artists already processed - skipping them")
+
+    log(f"Will process {len(to_process)} new artists")
+    log("Starting scraping process...\n")
+
+    # Convert existing data to ScraperResult objects
     results = {}
-    for i, artist in enumerate(artists, 1):
-        log(f"[{i}/{len(artists)}] {artist}")
+    for artist, data in existing_data.items():
+        if data.get("status") == "success":
+            similar = [
+                SimilarArtist(
+                    name=a["name"],
+                    rank=a["rank"],
+                    relationship_strength=a.get("relationship_strength")
+                )
+                for a in data.get("similar_artists", [])
+            ]
+            results[artist] = ScraperResult(status="success", similar_artists=similar)
+        else:
+            results[artist] = ScraperResult(status="error", error=data.get("error"))
+
+    # Process each new artist
+    processed_count = 0
+    for i, artist in enumerate(to_process, 1):
+        log(f"[{i}/{len(to_process)}] {artist}")
 
         result = scrape_artist(artist)
         results[artist] = result
+        processed_count += 1
 
         # Show success/error
         if result.status == "success":
@@ -253,13 +295,13 @@ def main():
             log(f"  ✓ Found {count} similar artists")
 
         # Save progress and commit every 50 artists
-        if i % 50 == 0:
+        if processed_count % 50 == 0:
             save_results(results, output_file)
-            git_commit_results(output_file, i)
-            log(f"  💾 Progress saved ({i} artists)")
+            git_commit_results(output_file, len(results))
+            log(f"  💾 Progress saved ({len(results)} total artists)")
 
         # Be nice to the server - delay between requests
-        if i < len(artists):
+        if i < len(to_process):
             time.sleep(2.0)
 
     # Save final results
@@ -271,8 +313,10 @@ def main():
 
     log(f"\n{'='*60}")
     log(f"Scraping complete!")
-    log(f"  ✓ Successful: {success_count}")
-    log(f"  ✗ Errors: {error_count}")
+    log(f"  Already had: {len(already_processed)}")
+    log(f"  Newly processed: {processed_count}")
+    log(f"  ✓ Total successful: {success_count}")
+    log(f"  ✗ Total errors: {error_count}")
     log(f"  Output: {output_file}")
     log(f"{'='*60}")
 
