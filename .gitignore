@@ -11,3 +11,7 @@ wheels/
 
 # Spotify API credentials
 spotify-config.json
+
+# Scraper logs
+scraper.log
+scraper_output.log
