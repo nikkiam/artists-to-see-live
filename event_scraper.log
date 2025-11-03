@@ -130,3 +130,45 @@
 2025-11-03 00:53:06 - ERROR -   ✗ Error fetching Cocolyn: 403 Client Error: Forbidden for url: https://www.music-map.com/cocolyn
 2025-11-03 00:53:06 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:53:07 - INFO -   💾 Progress saved (30/196)
+2025-11-03 00:53:08 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:53:09 - INFO - [31/196] Scraping: Concon
+2025-11-03 00:53:09 - INFO - Scraping: Concon
+2025-11-03 00:53:09 - ERROR -   ✗ Error fetching Concon: 403 Client Error: Forbidden for url: https://www.music-map.com/concon
+2025-11-03 00:53:09 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:10 - INFO - [32/196] Scraping: Connor Wrong
+2025-11-03 00:53:10 - INFO - Scraping: Connor Wrong
+2025-11-03 00:53:10 - ERROR -   ✗ Error fetching Connor Wrong: 403 Client Error: Forbidden for url: https://www.music-map.com/connor+wrong
+2025-11-03 00:53:10 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:11 - INFO - [33/196] Scraping: Cyan Twin
+2025-11-03 00:53:11 - INFO - Scraping: Cyan Twin
+2025-11-03 00:53:11 - ERROR -   ✗ Error fetching Cyan Twin: 403 Client Error: Forbidden for url: https://www.music-map.com/cyan+twin
+2025-11-03 00:53:11 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:12 - INFO - [34/196] Scraping: DJ Bone
+2025-11-03 00:53:12 - INFO - Scraping: DJ Bone
+2025-11-03 00:53:12 - ERROR -   ✗ Error fetching DJ Bone: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+bone
+2025-11-03 00:53:12 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:13 - INFO - [35/196] Scraping: DJ Chamberlain Zhang
+2025-11-03 00:53:13 - INFO - Scraping: DJ Chamberlain Zhang
+2025-11-03 00:53:13 - ERROR -   ✗ Error fetching DJ Chamberlain Zhang: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+chamberlain+zhang
+2025-11-03 00:53:13 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:14 - INFO - [36/196] Scraping: DJ Gay Panic
+2025-11-03 00:53:14 - INFO - Scraping: DJ Gay Panic
+2025-11-03 00:53:14 - ERROR -   ✗ Error fetching DJ Gay Panic: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+gay+panic
+2025-11-03 00:53:14 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:15 - INFO - [37/196] Scraping: DJ Miai
+2025-11-03 00:53:15 - INFO - Scraping: DJ Miai
+2025-11-03 00:53:15 - ERROR -   ✗ Error fetching DJ Miai: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+miai
+2025-11-03 00:53:15 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:16 - INFO - [38/196] Scraping: DJ Minx
+2025-11-03 00:53:16 - INFO - Scraping: DJ Minx
+2025-11-03 00:53:17 - ERROR -   ✗ Error fetching DJ Minx: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+minx
+2025-11-03 00:53:17 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:18 - INFO - [39/196] Scraping: DJ T-100
+2025-11-03 00:53:18 - INFO - Scraping: DJ T-100
+2025-11-03 00:53:18 - ERROR -   ✗ Error fetching DJ T-100: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+t-100
+2025-11-03 00:53:18 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:19 - INFO - [40/196] Scraping: DJ Warning
+2025-11-03 00:53:19 - INFO - Scraping: DJ Warning
+2025-11-03 00:53:19 - ERROR -   ✗ Error fetching DJ Warning: 403 Client Error: Forbidden for url: https://www.music-map.com/dj+warning
+2025-11-03 00:53:19 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:19 - INFO -   💾 Progress saved (40/196)
