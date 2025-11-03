@@ -718,3 +718,45 @@
 2025-11-03 00:56:01 - ERROR -   ✗ Error fetching Sissies of Mercy: 403 Client Error: Forbidden for url: https://www.music-map.com/sissies+of+mercy
 2025-11-03 00:56:01 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:56:02 - INFO -   💾 Progress saved (170/196)
+2025-11-03 00:56:03 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:56:04 - INFO - [171/196] Scraping: Skin
+2025-11-03 00:56:04 - INFO - Scraping: Skin
+2025-11-03 00:56:04 - ERROR -   ✗ Error fetching Skin: 403 Client Error: Forbidden for url: https://www.music-map.com/skin
+2025-11-03 00:56:04 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:05 - INFO - [172/196] Scraping: Solofan
+2025-11-03 00:56:05 - INFO - Scraping: Solofan
+2025-11-03 00:56:05 - ERROR -   ✗ Error fetching Solofan: 403 Client Error: Forbidden for url: https://www.music-map.com/solofan
+2025-11-03 00:56:05 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:06 - INFO - [173/196] Scraping: Special Guest TBA
+2025-11-03 00:56:06 - INFO - Scraping: Special Guest TBA
+2025-11-03 00:56:06 - ERROR -   ✗ Error fetching Special Guest TBA: 403 Client Error: Forbidden for url: https://www.music-map.com/special+guest+tba
+2025-11-03 00:56:06 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:07 - INFO - [174/196] Scraping: Spike Einbiner
+2025-11-03 00:56:07 - INFO - Scraping: Spike Einbiner
+2025-11-03 00:56:07 - ERROR -   ✗ Error fetching Spike Einbiner: 403 Client Error: Forbidden for url: https://www.music-map.com/spike+einbiner
+2025-11-03 00:56:07 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:08 - INFO - [175/196] Scraping: Spiral Generator
+2025-11-03 00:56:08 - INFO - Scraping: Spiral Generator
+2025-11-03 00:56:08 - ERROR -   ✗ Error fetching Spiral Generator: 403 Client Error: Forbidden for url: https://www.music-map.com/spiral+generator
+2025-11-03 00:56:08 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:09 - INFO - [176/196] Scraping: Sprklbb
+2025-11-03 00:56:09 - INFO - Scraping: Sprklbb
+2025-11-03 00:56:09 - ERROR -   ✗ Error fetching Sprklbb: 403 Client Error: Forbidden for url: https://www.music-map.com/sprklbb
+2025-11-03 00:56:09 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:10 - INFO - [177/196] Scraping: Sri
+2025-11-03 00:56:10 - INFO - Scraping: Sri
+2025-11-03 00:56:10 - ERROR -   ✗ Error fetching Sri: 403 Client Error: Forbidden for url: https://www.music-map.com/sri
+2025-11-03 00:56:10 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:11 - INFO - [178/196] Scraping: Sweaty Eddie
+2025-11-03 00:56:11 - INFO - Scraping: Sweaty Eddie
+2025-11-03 00:56:12 - ERROR -   ✗ Error fetching Sweaty Eddie: 403 Client Error: Forbidden for url: https://www.music-map.com/sweaty+eddie
+2025-11-03 00:56:12 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:13 - INFO - [179/196] Scraping: TBA/QNCC
+2025-11-03 00:56:13 - INFO - Scraping: TBA/QNCC
+2025-11-03 00:56:13 - ERROR -   ✗ Error fetching TBA/QNCC: 403 Client Error: Forbidden for url: https://www.music-map.com/tba/qncc
+2025-11-03 00:56:13 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:14 - INFO - [180/196] Scraping: Taimur
+2025-11-03 00:56:14 - INFO - Scraping: Taimur
+2025-11-03 00:56:14 - ERROR -   ✗ Error fetching Taimur: 403 Client Error: Forbidden for url: https://www.music-map.com/taimur
+2025-11-03 00:56:14 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:14 - INFO -   💾 Progress saved (180/196)
