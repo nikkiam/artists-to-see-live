@@ -256,3 +256,45 @@
 2025-11-03 00:53:44 - ERROR -   ✗ Error fetching G-style: 403 Client Error: Forbidden for url: https://www.music-map.com/g-style
 2025-11-03 00:53:44 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:53:44 - INFO -   💾 Progress saved (60/196)
+2025-11-03 00:53:46 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:53:47 - INFO - [61/196] Scraping: Gabriela
+2025-11-03 00:53:47 - INFO - Scraping: Gabriela
+2025-11-03 00:53:47 - ERROR -   ✗ Error fetching Gabriela: 403 Client Error: Forbidden for url: https://www.music-map.com/gabriela
+2025-11-03 00:53:47 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:48 - INFO - [62/196] Scraping: Gio Luciano
+2025-11-03 00:53:48 - INFO - Scraping: Gio Luciano
+2025-11-03 00:53:48 - ERROR -   ✗ Error fetching Gio Luciano: 403 Client Error: Forbidden for url: https://www.music-map.com/gio+luciano
+2025-11-03 00:53:48 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:49 - INFO - [63/196] Scraping: Grace Arribas
+2025-11-03 00:53:49 - INFO - Scraping: Grace Arribas
+2025-11-03 00:53:49 - ERROR -   ✗ Error fetching Grace Arribas: 403 Client Error: Forbidden for url: https://www.music-map.com/grace+arribas
+2025-11-03 00:53:49 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:50 - INFO - [64/196] Scraping: Greg Fox
+2025-11-03 00:53:50 - INFO - Scraping: Greg Fox
+2025-11-03 00:53:50 - ERROR -   ✗ Error fetching Greg Fox: 403 Client Error: Forbidden for url: https://www.music-map.com/greg+fox
+2025-11-03 00:53:50 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:51 - INFO - [65/196] Scraping: Gui Machado
+2025-11-03 00:53:51 - INFO - Scraping: Gui Machado
+2025-11-03 00:53:51 - ERROR -   ✗ Error fetching Gui Machado: 403 Client Error: Forbidden for url: https://www.music-map.com/gui+machado
+2025-11-03 00:53:51 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:52 - INFO - [66/196] Scraping: Hawa
+2025-11-03 00:53:52 - INFO - Scraping: Hawa
+2025-11-03 00:53:52 - ERROR -   ✗ Error fetching Hawa: 403 Client Error: Forbidden for url: https://www.music-map.com/hawa
+2025-11-03 00:53:52 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:53 - INFO - [67/196] Scraping: Helena Hauff
+2025-11-03 00:53:53 - INFO - Scraping: Helena Hauff
+2025-11-03 00:53:53 - ERROR -   ✗ Error fetching Helena Hauff: 403 Client Error: Forbidden for url: https://www.music-map.com/helena+hauff
+2025-11-03 00:53:53 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:54 - INFO - [68/196] Scraping: Henri B
+2025-11-03 00:53:54 - INFO - Scraping: Henri B
+2025-11-03 00:53:54 - ERROR -   ✗ Error fetching Henri B: 403 Client Error: Forbidden for url: https://www.music-map.com/henri+b
+2025-11-03 00:53:54 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:55 - INFO - [69/196] Scraping: Honey Bun
+2025-11-03 00:53:55 - INFO - Scraping: Honey Bun
+2025-11-03 00:53:55 - ERROR -   ✗ Error fetching Honey Bun: 403 Client Error: Forbidden for url: https://www.music-map.com/honey+bun
+2025-11-03 00:53:55 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:56 - INFO - [70/196] Scraping: Huny
+2025-11-03 00:53:56 - INFO - Scraping: Huny
+2025-11-03 00:53:56 - ERROR -   ✗ Error fetching Huny: 403 Client Error: Forbidden for url: https://www.music-map.com/huny
+2025-11-03 00:53:56 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:57 - INFO -   💾 Progress saved (70/196)
