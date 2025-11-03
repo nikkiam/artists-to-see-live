@@ -214,3 +214,45 @@
 2025-11-03 00:53:32 - ERROR -   ✗ Error fetching Dreamcrusher: 403 Client Error: Forbidden for url: https://www.music-map.com/dreamcrusher
 2025-11-03 00:53:32 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:53:32 - INFO -   💾 Progress saved (50/196)
+2025-11-03 00:53:33 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:53:34 - INFO - [51/196] Scraping: Eamon Harkin
+2025-11-03 00:53:34 - INFO - Scraping: Eamon Harkin
+2025-11-03 00:53:34 - ERROR -   ✗ Error fetching Eamon Harkin: 403 Client Error: Forbidden for url: https://www.music-map.com/eamon+harkin
+2025-11-03 00:53:34 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:35 - INFO - [52/196] Scraping: Egyptian Lover
+2025-11-03 00:53:35 - INFO - Scraping: Egyptian Lover
+2025-11-03 00:53:36 - ERROR -   ✗ Error fetching Egyptian Lover: 403 Client Error: Forbidden for url: https://www.music-map.com/egyptian+lover
+2025-11-03 00:53:36 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:37 - INFO - [53/196] Scraping: Eli Escobar
+2025-11-03 00:53:37 - INFO - Scraping: Eli Escobar
+2025-11-03 00:53:37 - ERROR -   ✗ Error fetching Eli Escobar: 403 Client Error: Forbidden for url: https://www.music-map.com/eli+escobar
+2025-11-03 00:53:37 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:38 - INFO - [54/196] Scraping: Eva Loveless
+2025-11-03 00:53:38 - INFO - Scraping: Eva Loveless
+2025-11-03 00:53:38 - ERROR -   ✗ Error fetching Eva Loveless: 403 Client Error: Forbidden for url: https://www.music-map.com/eva+loveless
+2025-11-03 00:53:38 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:39 - INFO - [55/196] Scraping: False Witness
+2025-11-03 00:53:39 - INFO - Scraping: False Witness
+2025-11-03 00:53:39 - ERROR -   ✗ Error fetching False Witness: 403 Client Error: Forbidden for url: https://www.music-map.com/false+witness
+2025-11-03 00:53:39 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:40 - INFO - [56/196] Scraping: Fashion
+2025-11-03 00:53:40 - INFO - Scraping: Fashion
+2025-11-03 00:53:40 - ERROR -   ✗ Error fetching Fashion: 403 Client Error: Forbidden for url: https://www.music-map.com/fashion
+2025-11-03 00:53:40 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:41 - INFO - [57/196] Scraping: Fieldtalk
+2025-11-03 00:53:41 - INFO - Scraping: Fieldtalk
+2025-11-03 00:53:41 - ERROR -   ✗ Error fetching Fieldtalk: 403 Client Error: Forbidden for url: https://www.music-map.com/fieldtalk
+2025-11-03 00:53:41 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:42 - INFO - [58/196] Scraping: Fleet.dreams
+2025-11-03 00:53:42 - INFO - Scraping: Fleet.dreams
+2025-11-03 00:53:42 - ERROR -   ✗ Error fetching Fleet.dreams: 403 Client Error: Forbidden for url: https://www.music-map.com/fleet.dreams
+2025-11-03 00:53:42 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:43 - INFO - [59/196] Scraping: Flores Negras
+2025-11-03 00:53:43 - INFO - Scraping: Flores Negras
+2025-11-03 00:53:43 - ERROR -   ✗ Error fetching Flores Negras: 403 Client Error: Forbidden for url: https://www.music-map.com/flores+negras
+2025-11-03 00:53:43 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:44 - INFO - [60/196] Scraping: G-style
+2025-11-03 00:53:44 - INFO - Scraping: G-style
+2025-11-03 00:53:44 - ERROR -   ✗ Error fetching G-style: 403 Client Error: Forbidden for url: https://www.music-map.com/g-style
+2025-11-03 00:53:44 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:53:44 - INFO -   💾 Progress saved (60/196)
