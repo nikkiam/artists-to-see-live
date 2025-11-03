@@ -760,3 +760,45 @@
 2025-11-03 00:56:14 - ERROR -   ✗ Error fetching Taimur: 403 Client Error: Forbidden for url: https://www.music-map.com/taimur
 2025-11-03 00:56:14 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:56:14 - INFO -   💾 Progress saved (180/196)
+2025-11-03 00:56:15 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:56:16 - INFO - [181/196] Scraping: Tama Sumo
+2025-11-03 00:56:16 - INFO - Scraping: Tama Sumo
+2025-11-03 00:56:16 - ERROR -   ✗ Error fetching Tama Sumo: 403 Client Error: Forbidden for url: https://www.music-map.com/tama+sumo
+2025-11-03 00:56:16 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:17 - INFO - [182/196] Scraping: Testu
+2025-11-03 00:56:17 - INFO - Scraping: Testu
+2025-11-03 00:56:18 - ERROR -   ✗ Error fetching Testu: 403 Client Error: Forbidden for url: https://www.music-map.com/testu
+2025-11-03 00:56:18 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:19 - INFO - [183/196] Scraping: Thousands of Dead Gods
+2025-11-03 00:56:19 - INFO - Scraping: Thousands of Dead Gods
+2025-11-03 00:56:19 - ERROR -   ✗ Error fetching Thousands of Dead Gods: 403 Client Error: Forbidden for url: https://www.music-map.com/thousands+of+dead+gods
+2025-11-03 00:56:19 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:20 - INFO - [184/196] Scraping: Timewharp
+2025-11-03 00:56:20 - INFO - Scraping: Timewharp
+2025-11-03 00:56:20 - ERROR -   ✗ Error fetching Timewharp: 403 Client Error: Forbidden for url: https://www.music-map.com/timewharp
+2025-11-03 00:56:20 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:21 - INFO - [185/196] Scraping: Toribio
+2025-11-03 00:56:21 - INFO - Scraping: Toribio
+2025-11-03 00:56:21 - ERROR -   ✗ Error fetching Toribio: 403 Client Error: Forbidden for url: https://www.music-map.com/toribio
+2025-11-03 00:56:21 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:22 - INFO - [186/196] Scraping: Traumer
+2025-11-03 00:56:22 - INFO - Scraping: Traumer
+2025-11-03 00:56:22 - ERROR -   ✗ Error fetching Traumer: 403 Client Error: Forbidden for url: https://www.music-map.com/traumer
+2025-11-03 00:56:22 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:23 - INFO - [187/196] Scraping: Um
+2025-11-03 00:56:23 - INFO - Scraping: Um
+2025-11-03 00:56:23 - ERROR -   ✗ Error fetching Um: 403 Client Error: Forbidden for url: https://www.music-map.com/um
+2025-11-03 00:56:23 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:24 - INFO - [188/196] Scraping: Via App
+2025-11-03 00:56:24 - INFO - Scraping: Via App
+2025-11-03 00:56:24 - ERROR -   ✗ Error fetching Via App: 403 Client Error: Forbidden for url: https://www.music-map.com/via+app
+2025-11-03 00:56:24 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:25 - INFO - [189/196] Scraping: Vial Recordings
+2025-11-03 00:56:25 - INFO - Scraping: Vial Recordings
+2025-11-03 00:56:25 - ERROR -   ✗ Error fetching Vial Recordings: 403 Client Error: Forbidden for url: https://www.music-map.com/vial+recordings
+2025-11-03 00:56:25 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:26 - INFO - [190/196] Scraping: Vile
+2025-11-03 00:56:26 - INFO - Scraping: Vile
+2025-11-03 00:56:26 - ERROR -   ✗ Error fetching Vile: 403 Client Error: Forbidden for url: https://www.music-map.com/vile
+2025-11-03 00:56:26 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:26 - INFO -   💾 Progress saved (190/196)
