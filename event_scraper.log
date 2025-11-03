@@ -676,3 +676,45 @@
 2025-11-03 00:55:49 - ERROR -   ✗ Error fetching Saturn Lavender: 403 Client Error: Forbidden for url: https://www.music-map.com/saturn+lavender
 2025-11-03 00:55:49 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:55:49 - INFO -   💾 Progress saved (160/196)
+2025-11-03 00:55:51 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:55:52 - INFO - [161/196] Scraping: Sauci Soni
+2025-11-03 00:55:52 - INFO - Scraping: Sauci Soni
+2025-11-03 00:55:52 - ERROR -   ✗ Error fetching Sauci Soni: 403 Client Error: Forbidden for url: https://www.music-map.com/sauci+soni
+2025-11-03 00:55:52 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:53 - INFO - [162/196] Scraping: Second Contact
+2025-11-03 00:55:53 - INFO - Scraping: Second Contact
+2025-11-03 00:55:53 - ERROR -   ✗ Error fetching Second Contact: 403 Client Error: Forbidden for url: https://www.music-map.com/second+contact
+2025-11-03 00:55:53 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:54 - INFO - [163/196] Scraping: Serge Devant
+2025-11-03 00:55:54 - INFO - Scraping: Serge Devant
+2025-11-03 00:55:54 - ERROR -   ✗ Error fetching Serge Devant: 403 Client Error: Forbidden for url: https://www.music-map.com/serge+devant
+2025-11-03 00:55:54 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:55 - INFO - [164/196] Scraping: Shaun J. Wright
+2025-11-03 00:55:55 - INFO - Scraping: Shaun J. Wright
+2025-11-03 00:55:55 - ERROR -   ✗ Error fetching Shaun J. Wright: 403 Client Error: Forbidden for url: https://www.music-map.com/shaun+j.+wright
+2025-11-03 00:55:55 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:56 - INFO - [165/196] Scraping: Shawna Solaris
+2025-11-03 00:55:56 - INFO - Scraping: Shawna Solaris
+2025-11-03 00:55:56 - ERROR -   ✗ Error fetching Shawna Solaris: 403 Client Error: Forbidden for url: https://www.music-map.com/shawna+solaris
+2025-11-03 00:55:56 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:57 - INFO - [166/196] Scraping: Shekdash
+2025-11-03 00:55:57 - INFO - Scraping: Shekdash
+2025-11-03 00:55:57 - ERROR -   ✗ Error fetching Shekdash: 403 Client Error: Forbidden for url: https://www.music-map.com/shekdash
+2025-11-03 00:55:57 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:58 - INFO - [167/196] Scraping: Shirlz
+2025-11-03 00:55:58 - INFO - Scraping: Shirlz
+2025-11-03 00:55:58 - ERROR -   ✗ Error fetching Shirlz: 403 Client Error: Forbidden for url: https://www.music-map.com/shirlz
+2025-11-03 00:55:58 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:59 - INFO - [168/196] Scraping: Shyboi
+2025-11-03 00:55:59 - INFO - Scraping: Shyboi
+2025-11-03 00:55:59 - ERROR -   ✗ Error fetching Shyboi: 403 Client Error: Forbidden for url: https://www.music-map.com/shyboi
+2025-11-03 00:55:59 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:00 - INFO - [169/196] Scraping: Simon Heyliger
+2025-11-03 00:56:00 - INFO - Scraping: Simon Heyliger
+2025-11-03 00:56:00 - ERROR -   ✗ Error fetching Simon Heyliger: 403 Client Error: Forbidden for url: https://www.music-map.com/simon+heyliger
+2025-11-03 00:56:00 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:01 - INFO - [170/196] Scraping: Sissies of Mercy
+2025-11-03 00:56:01 - INFO - Scraping: Sissies of Mercy
+2025-11-03 00:56:01 - ERROR -   ✗ Error fetching Sissies of Mercy: 403 Client Error: Forbidden for url: https://www.music-map.com/sissies+of+mercy
+2025-11-03 00:56:01 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:02 - INFO -   💾 Progress saved (170/196)
