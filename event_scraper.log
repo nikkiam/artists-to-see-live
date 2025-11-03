@@ -592,3 +592,45 @@
 2025-11-03 00:55:24 - ERROR -   ✗ Error fetching Patrick Russell: 403 Client Error: Forbidden for url: https://www.music-map.com/patrick+russell
 2025-11-03 00:55:24 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:55:24 - INFO -   💾 Progress saved (140/196)
+2025-11-03 00:55:26 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:55:27 - INFO - [141/196] Scraping: Phantazn
+2025-11-03 00:55:27 - INFO - Scraping: Phantazn
+2025-11-03 00:55:27 - ERROR -   ✗ Error fetching Phantazn: 403 Client Error: Forbidden for url: https://www.music-map.com/phantazn
+2025-11-03 00:55:27 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:28 - INFO - [142/196] Scraping: Physical Therapy
+2025-11-03 00:55:28 - INFO - Scraping: Physical Therapy
+2025-11-03 00:55:28 - ERROR -   ✗ Error fetching Physical Therapy: 403 Client Error: Forbidden for url: https://www.music-map.com/physical+therapy
+2025-11-03 00:55:28 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:29 - INFO - [143/196] Scraping: Pinkyy
+2025-11-03 00:55:29 - INFO - Scraping: Pinkyy
+2025-11-03 00:55:29 - ERROR -   ✗ Error fetching Pinkyy: 403 Client Error: Forbidden for url: https://www.music-map.com/pinkyy
+2025-11-03 00:55:29 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:30 - INFO - [144/196] Scraping: Poisonfrog
+2025-11-03 00:55:30 - INFO - Scraping: Poisonfrog
+2025-11-03 00:55:30 - ERROR -   ✗ Error fetching Poisonfrog: 403 Client Error: Forbidden for url: https://www.music-map.com/poisonfrog
+2025-11-03 00:55:30 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:31 - INFO - [145/196] Scraping: Punkal0id
+2025-11-03 00:55:31 - INFO - Scraping: Punkal0id
+2025-11-03 00:55:31 - ERROR -   ✗ Error fetching Punkal0id: 403 Client Error: Forbidden for url: https://www.music-map.com/punkal0id
+2025-11-03 00:55:31 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:32 - INFO - [146/196] Scraping: Puppy Tapes
+2025-11-03 00:55:32 - INFO - Scraping: Puppy Tapes
+2025-11-03 00:55:32 - ERROR -   ✗ Error fetching Puppy Tapes: 403 Client Error: Forbidden for url: https://www.music-map.com/puppy+tapes
+2025-11-03 00:55:32 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:33 - INFO - [147/196] Scraping: Purp
+2025-11-03 00:55:33 - INFO - Scraping: Purp
+2025-11-03 00:55:33 - ERROR -   ✗ Error fetching Purp: 403 Client Error: Forbidden for url: https://www.music-map.com/purp
+2025-11-03 00:55:33 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:34 - INFO - [148/196] Scraping: Purr
+2025-11-03 00:55:34 - INFO - Scraping: Purr
+2025-11-03 00:55:34 - ERROR -   ✗ Error fetching Purr: 403 Client Error: Forbidden for url: https://www.music-map.com/purr
+2025-11-03 00:55:34 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:35 - INFO - [149/196] Scraping: Pwincesa
+2025-11-03 00:55:35 - INFO - Scraping: Pwincesa
+2025-11-03 00:55:35 - ERROR -   ✗ Error fetching Pwincesa: 403 Client Error: Forbidden for url: https://www.music-map.com/pwincesa
+2025-11-03 00:55:35 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:36 - INFO - [150/196] Scraping: Qasim Naqvi
+2025-11-03 00:55:36 - INFO - Scraping: Qasim Naqvi
+2025-11-03 00:55:36 - ERROR -   ✗ Error fetching Qasim Naqvi: 403 Client Error: Forbidden for url: https://www.music-map.com/qasim+naqvi
+2025-11-03 00:55:36 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:37 - INFO -   💾 Progress saved (150/196)
