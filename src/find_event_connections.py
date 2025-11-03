@@ -13,7 +13,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-from artist_connection_search import build_sparse_graph, find_optimal_paths
+from src.artist_connection_search import build_sparse_graph, find_optimal_paths
 
 logger = logging.getLogger(__name__)
 
