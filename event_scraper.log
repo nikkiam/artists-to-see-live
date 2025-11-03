@@ -46,3 +46,45 @@
 2025-11-03 00:52:41 - ERROR -   ✗ Error fetching Ali Berger: 403 Client Error: Forbidden for url: https://www.music-map.com/ali+berger
 2025-11-03 00:52:41 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:52:41 - INFO -   💾 Progress saved (10/196)
+2025-11-03 00:52:43 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:52:44 - INFO - [11/196] Scraping: Ali-k
+2025-11-03 00:52:44 - INFO - Scraping: Ali-k
+2025-11-03 00:52:44 - ERROR -   ✗ Error fetching Ali-k: 403 Client Error: Forbidden for url: https://www.music-map.com/ali-k
+2025-11-03 00:52:44 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:45 - INFO - [12/196] Scraping: Aline Umber
+2025-11-03 00:52:45 - INFO - Scraping: Aline Umber
+2025-11-03 00:52:45 - ERROR -   ✗ Error fetching Aline Umber: 403 Client Error: Forbidden for url: https://www.music-map.com/aline+umber
+2025-11-03 00:52:45 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:46 - INFO - [13/196] Scraping: Amelia Holt
+2025-11-03 00:52:46 - INFO - Scraping: Amelia Holt
+2025-11-03 00:52:46 - ERROR -   ✗ Error fetching Amelia Holt: 403 Client Error: Forbidden for url: https://www.music-map.com/amelia+holt
+2025-11-03 00:52:46 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:47 - INFO - [14/196] Scraping: Amita
+2025-11-03 00:52:47 - INFO - Scraping: Amita
+2025-11-03 00:52:47 - ERROR -   ✗ Error fetching Amita: 403 Client Error: Forbidden for url: https://www.music-map.com/amita
+2025-11-03 00:52:47 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:48 - INFO - [15/196] Scraping: Amp
+2025-11-03 00:52:48 - INFO - Scraping: Amp
+2025-11-03 00:52:48 - ERROR -   ✗ Error fetching Amp: 403 Client Error: Forbidden for url: https://www.music-map.com/amp
+2025-11-03 00:52:48 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:49 - INFO - [16/196] Scraping: Andy Pry
+2025-11-03 00:52:49 - INFO - Scraping: Andy Pry
+2025-11-03 00:52:49 - ERROR -   ✗ Error fetching Andy Pry: 403 Client Error: Forbidden for url: https://www.music-map.com/andy+pry
+2025-11-03 00:52:49 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:51 - INFO - [17/196] Scraping: Archangel
+2025-11-03 00:52:51 - INFO - Scraping: Archangel
+2025-11-03 00:52:51 - ERROR -   ✗ Error fetching Archangel: 403 Client Error: Forbidden for url: https://www.music-map.com/archangel
+2025-11-03 00:52:51 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:52 - INFO - [18/196] Scraping: Armana Khan
+2025-11-03 00:52:52 - INFO - Scraping: Armana Khan
+2025-11-03 00:52:52 - ERROR -   ✗ Error fetching Armana Khan: 403 Client Error: Forbidden for url: https://www.music-map.com/armana+khan
+2025-11-03 00:52:52 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:53 - INFO - [19/196] Scraping: Basement
+2025-11-03 00:52:53 - INFO - Scraping: Basement
+2025-11-03 00:52:53 - ERROR -   ✗ Error fetching Basement: 403 Client Error: Forbidden for url: https://www.music-map.com/basement
+2025-11-03 00:52:53 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:54 - INFO - [20/196] Scraping: Blackberry Knuckleduster
+2025-11-03 00:52:54 - INFO - Scraping: Blackberry Knuckleduster
+2025-11-03 00:52:54 - ERROR -   ✗ Error fetching Blackberry Knuckleduster: 403 Client Error: Forbidden for url: https://www.music-map.com/blackberry+knuckleduster
+2025-11-03 00:52:54 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:52:54 - INFO -   💾 Progress saved (20/196)
