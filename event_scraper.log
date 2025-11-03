@@ -424,3 +424,45 @@
 2025-11-03 00:54:34 - ERROR -   ✗ Error fetching Kudzu Audio: 403 Client Error: Forbidden for url: https://www.music-map.com/kudzu+audio
 2025-11-03 00:54:34 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:54:34 - INFO -   💾 Progress saved (100/196)
+2025-11-03 00:54:36 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:54:37 - INFO - [101/196] Scraping: Kurilo
+2025-11-03 00:54:37 - INFO - Scraping: Kurilo
+2025-11-03 00:54:37 - ERROR -   ✗ Error fetching Kurilo: 403 Client Error: Forbidden for url: https://www.music-map.com/kurilo
+2025-11-03 00:54:37 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:38 - INFO - [102/196] Scraping: Kye
+2025-11-03 00:54:38 - INFO - Scraping: Kye
+2025-11-03 00:54:38 - ERROR -   ✗ Error fetching Kye: 403 Client Error: Forbidden for url: https://www.music-map.com/kye
+2025-11-03 00:54:38 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:39 - INFO - [103/196] Scraping: Kyruh
+2025-11-03 00:54:39 - INFO - Scraping: Kyruh
+2025-11-03 00:54:39 - ERROR -   ✗ Error fetching Kyruh: 403 Client Error: Forbidden for url: https://www.music-map.com/kyruh
+2025-11-03 00:54:39 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:40 - INFO - [104/196] Scraping: Lady Jmw
+2025-11-03 00:54:40 - INFO - Scraping: Lady Jmw
+2025-11-03 00:54:40 - ERROR -   ✗ Error fetching Lady Jmw: 403 Client Error: Forbidden for url: https://www.music-map.com/lady+jmw
+2025-11-03 00:54:40 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:41 - INFO - [105/196] Scraping: Lakuti
+2025-11-03 00:54:41 - INFO - Scraping: Lakuti
+2025-11-03 00:54:41 - ERROR -   ✗ Error fetching Lakuti: 403 Client Error: Forbidden for url: https://www.music-map.com/lakuti
+2025-11-03 00:54:41 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:42 - INFO - [106/196] Scraping: Lauren Lane
+2025-11-03 00:54:42 - INFO - Scraping: Lauren Lane
+2025-11-03 00:54:42 - ERROR -   ✗ Error fetching Lauren Lane: 403 Client Error: Forbidden for url: https://www.music-map.com/lauren+lane
+2025-11-03 00:54:42 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:43 - INFO - [107/196] Scraping: Lil2hood
+2025-11-03 00:54:43 - INFO - Scraping: Lil2hood
+2025-11-03 00:54:43 - ERROR -   ✗ Error fetching Lil2hood: 403 Client Error: Forbidden for url: https://www.music-map.com/lil2hood
+2025-11-03 00:54:43 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:44 - INFO - [108/196] Scraping: Linda Felcher
+2025-11-03 00:54:44 - INFO - Scraping: Linda Felcher
+2025-11-03 00:54:44 - ERROR -   ✗ Error fetching Linda Felcher: 403 Client Error: Forbidden for url: https://www.music-map.com/linda+felcher
+2025-11-03 00:54:44 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:45 - INFO - [109/196] Scraping: Lisas
+2025-11-03 00:54:45 - INFO - Scraping: Lisas
+2025-11-03 00:54:45 - ERROR -   ✗ Error fetching Lisas: 403 Client Error: Forbidden for url: https://www.music-map.com/lisas
+2025-11-03 00:54:46 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:47 - INFO - [110/196] Scraping: Lloyd
+2025-11-03 00:54:47 - INFO - Scraping: Lloyd
+2025-11-03 00:54:47 - ERROR -   ✗ Error fetching Lloyd: 403 Client Error: Forbidden for url: https://www.music-map.com/lloyd
+2025-11-03 00:54:47 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:47 - INFO -   💾 Progress saved (110/196)
