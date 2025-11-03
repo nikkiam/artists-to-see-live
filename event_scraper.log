@@ -466,3 +466,45 @@
 2025-11-03 00:54:47 - ERROR -   ✗ Error fetching Lloyd: 403 Client Error: Forbidden for url: https://www.music-map.com/lloyd
 2025-11-03 00:54:47 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:54:47 - INFO -   💾 Progress saved (110/196)
+2025-11-03 00:54:48 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:54:49 - INFO - [111/196] Scraping: Lore
+2025-11-03 00:54:49 - INFO - Scraping: Lore
+2025-11-03 00:54:49 - ERROR -   ✗ Error fetching Lore: 403 Client Error: Forbidden for url: https://www.music-map.com/lore
+2025-11-03 00:54:49 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:50 - INFO - [112/196] Scraping: Love Letters
+2025-11-03 00:54:50 - INFO - Scraping: Love Letters
+2025-11-03 00:54:50 - ERROR -   ✗ Error fetching Love Letters: 403 Client Error: Forbidden for url: https://www.music-map.com/love+letters
+2025-11-03 00:54:50 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:51 - INFO - [113/196] Scraping: Lyra Pramuk
+2025-11-03 00:54:51 - INFO - Scraping: Lyra Pramuk
+2025-11-03 00:54:51 - ERROR -   ✗ Error fetching Lyra Pramuk: 403 Client Error: Forbidden for url: https://www.music-map.com/lyra+pramuk
+2025-11-03 00:54:51 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:52 - INFO - [114/196] Scraping: Lysis
+2025-11-03 00:54:52 - INFO - Scraping: Lysis
+2025-11-03 00:54:52 - ERROR -   ✗ Error fetching Lysis: 403 Client Error: Forbidden for url: https://www.music-map.com/lysis
+2025-11-03 00:54:52 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:53 - INFO - [115/196] Scraping: M.o.n.r.o.e.
+2025-11-03 00:54:53 - INFO - Scraping: M.o.n.r.o.e.
+2025-11-03 00:54:54 - ERROR -   ✗ Error fetching M.o.n.r.o.e.: 403 Client Error: Forbidden for url: https://www.music-map.com/m.o.n.r.o.e.
+2025-11-03 00:54:54 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:55 - INFO - [116/196] Scraping: Magda
+2025-11-03 00:54:55 - INFO - Scraping: Magda
+2025-11-03 00:54:55 - ERROR -   ✗ Error fetching Magda: 403 Client Error: Forbidden for url: https://www.music-map.com/magda
+2025-11-03 00:54:55 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:56 - INFO - [117/196] Scraping: Manu Miran
+2025-11-03 00:54:56 - INFO - Scraping: Manu Miran
+2025-11-03 00:54:56 - ERROR -   ✗ Error fetching Manu Miran: 403 Client Error: Forbidden for url: https://www.music-map.com/manu+miran
+2025-11-03 00:54:56 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:57 - INFO - [118/196] Scraping: Mario Polanco
+2025-11-03 00:54:57 - INFO - Scraping: Mario Polanco
+2025-11-03 00:54:57 - ERROR -   ✗ Error fetching Mario Polanco: 403 Client Error: Forbidden for url: https://www.music-map.com/mario+polanco
+2025-11-03 00:54:57 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:58 - INFO - [119/196] Scraping: Martín Y Corazón
+2025-11-03 00:54:58 - INFO - Scraping: Martín Y Corazón
+2025-11-03 00:54:58 - ERROR -   ✗ Error fetching Martín Y Corazón: 403 Client Error: Forbidden for url: https://www.music-map.com/mart%C3%ADn+y+coraz%C3%B3n
+2025-11-03 00:54:58 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:59 - INFO - [120/196] Scraping: Matthew Ryals
+2025-11-03 00:54:59 - INFO - Scraping: Matthew Ryals
+2025-11-03 00:54:59 - ERROR -   ✗ Error fetching Matthew Ryals: 403 Client Error: Forbidden for url: https://www.music-map.com/matthew+ryals
+2025-11-03 00:54:59 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:59 - INFO -   💾 Progress saved (120/196)
