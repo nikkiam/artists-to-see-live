@@ -802,3 +802,33 @@
 2025-11-03 00:56:26 - ERROR -   ✗ Error fetching Vile: 403 Client Error: Forbidden for url: https://www.music-map.com/vile
 2025-11-03 00:56:26 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:56:26 - INFO -   💾 Progress saved (190/196)
+2025-11-03 00:56:28 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:56:29 - INFO - [191/196] Scraping: Vivi Santana
+2025-11-03 00:56:29 - INFO - Scraping: Vivi Santana
+2025-11-03 00:56:29 - ERROR -   ✗ Error fetching Vivi Santana: 403 Client Error: Forbidden for url: https://www.music-map.com/vivi+santana
+2025-11-03 00:56:29 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:30 - INFO - [192/196] Scraping: Von
+2025-11-03 00:56:30 - INFO - Scraping: Von
+2025-11-03 00:56:30 - ERROR -   ✗ Error fetching Von: 403 Client Error: Forbidden for url: https://www.music-map.com/von
+2025-11-03 00:56:30 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:31 - INFO - [193/196] Scraping: Wilhelmina
+2025-11-03 00:56:31 - INFO - Scraping: Wilhelmina
+2025-11-03 00:56:31 - ERROR -   ✗ Error fetching Wilhelmina: 403 Client Error: Forbidden for url: https://www.music-map.com/wilhelmina
+2025-11-03 00:56:31 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:32 - INFO - [194/196] Scraping: World Research Lab
+2025-11-03 00:56:32 - INFO - Scraping: World Research Lab
+2025-11-03 00:56:32 - ERROR -   ✗ Error fetching World Research Lab: 403 Client Error: Forbidden for url: https://www.music-map.com/world+research+lab
+2025-11-03 00:56:32 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:33 - INFO - [195/196] Scraping: Yaki
+2025-11-03 00:56:33 - INFO - Scraping: Yaki
+2025-11-03 00:56:33 - ERROR -   ✗ Error fetching Yaki: 403 Client Error: Forbidden for url: https://www.music-map.com/yaki
+2025-11-03 00:56:33 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:34 - INFO - [196/196] Scraping: Zah
+2025-11-03 00:56:34 - INFO - Scraping: Zah
+2025-11-03 00:56:34 - ERROR -   ✗ Error fetching Zah: 403 Client Error: Forbidden for url: https://www.music-map.com/zah
+2025-11-03 00:56:34 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:56:35 - INFO - ============================================================
+2025-11-03 00:56:35 - INFO - Event artist scraping completed!
+2025-11-03 00:56:35 - INFO - Total artists in map: 1157
+2025-11-03 00:56:35 - INFO - New artists added: 196
+2025-11-03 00:56:35 - INFO - ============================================================
