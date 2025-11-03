@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-11-03T00:03:43.251464",
+  "stats": {
+    "total_connections": 0,
+    "unique_event_artists_connected": 0,
+    "unique_favorites_connected": 0,
+    "avg_path_length": 0.0,
+    "avg_path_score": 0.0
+  },
+  "connections": []
+}
