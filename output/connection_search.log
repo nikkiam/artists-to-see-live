@@ -36,3 +36,6 @@
 2025-11-03 00:06:29 - INFO -   ✓ Loaded similar artists map: 961 artists
 2025-11-03 00:06:29 - INFO -   ✓ Loaded events: 42 events
 2025-11-03 00:06:29 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-03 00:06:30 - INFO - ✓ Git commit and push successful: Step 1: Loaded data files
+2025-11-03 00:06:30 - INFO - Step 2: Extracting unique artists from events...
+2025-11-03 00:06:30 - INFO -   ✓ Found 197 unique artists across events
