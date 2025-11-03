@@ -298,3 +298,45 @@
 2025-11-03 00:53:56 - ERROR -   ✗ Error fetching Huny: 403 Client Error: Forbidden for url: https://www.music-map.com/huny
 2025-11-03 00:53:56 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:53:57 - INFO -   💾 Progress saved (70/196)
+2025-11-03 00:53:58 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:53:59 - INFO - [71/196] Scraping: Indie
+2025-11-03 00:53:59 - INFO - Scraping: Indie
+2025-11-03 00:53:59 - ERROR -   ✗ Error fetching Indie: 403 Client Error: Forbidden for url: https://www.music-map.com/indie
+2025-11-03 00:53:59 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:00 - INFO - [72/196] Scraping: Infinite Coles
+2025-11-03 00:54:00 - INFO - Scraping: Infinite Coles
+2025-11-03 00:54:00 - ERROR -   ✗ Error fetching Infinite Coles: 403 Client Error: Forbidden for url: https://www.music-map.com/infinite+coles
+2025-11-03 00:54:00 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:01 - INFO - [73/196] Scraping: Ivan Monegro
+2025-11-03 00:54:01 - INFO - Scraping: Ivan Monegro
+2025-11-03 00:54:01 - ERROR -   ✗ Error fetching Ivan Monegro: 403 Client Error: Forbidden for url: https://www.music-map.com/ivan+monegro
+2025-11-03 00:54:01 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:02 - INFO - [74/196] Scraping: J. Richards
+2025-11-03 00:54:02 - INFO - Scraping: J. Richards
+2025-11-03 00:54:03 - ERROR -   ✗ Error fetching J. Richards: 403 Client Error: Forbidden for url: https://www.music-map.com/j.+richards
+2025-11-03 00:54:03 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:04 - INFO - [75/196] Scraping: Jadalareign
+2025-11-03 00:54:04 - INFO - Scraping: Jadalareign
+2025-11-03 00:54:04 - ERROR -   ✗ Error fetching Jadalareign: 403 Client Error: Forbidden for url: https://www.music-map.com/jadalareign
+2025-11-03 00:54:04 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:05 - INFO - [76/196] Scraping: Jade Seatle
+2025-11-03 00:54:05 - INFO - Scraping: Jade Seatle
+2025-11-03 00:54:05 - ERROR -   ✗ Error fetching Jade Seatle: 403 Client Error: Forbidden for url: https://www.music-map.com/jade+seatle
+2025-11-03 00:54:05 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:06 - INFO - [77/196] Scraping: Jaql
+2025-11-03 00:54:06 - INFO - Scraping: Jaql
+2025-11-03 00:54:06 - ERROR -   ✗ Error fetching Jaql: 403 Client Error: Forbidden for url: https://www.music-map.com/jaql
+2025-11-03 00:54:06 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:07 - INFO - [78/196] Scraping: Jason Wynters
+2025-11-03 00:54:07 - INFO - Scraping: Jason Wynters
+2025-11-03 00:54:07 - ERROR -   ✗ Error fetching Jason Wynters: 403 Client Error: Forbidden for url: https://www.music-map.com/jason+wynters
+2025-11-03 00:54:07 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:08 - INFO - [79/196] Scraping: Jennifer
+2025-11-03 00:54:08 - INFO - Scraping: Jennifer
+2025-11-03 00:54:08 - ERROR -   ✗ Error fetching Jennifer: 403 Client Error: Forbidden for url: https://www.music-map.com/jennifer
+2025-11-03 00:54:08 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:09 - INFO - [80/196] Scraping: Johanna Constantine
+2025-11-03 00:54:09 - INFO - Scraping: Johanna Constantine
+2025-11-03 00:54:09 - ERROR -   ✗ Error fetching Johanna Constantine: 403 Client Error: Forbidden for url: https://www.music-map.com/johanna+constantine
+2025-11-03 00:54:09 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:09 - INFO -   💾 Progress saved (80/196)
