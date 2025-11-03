@@ -382,3 +382,45 @@
 2025-11-03 00:54:22 - ERROR -   ✗ Error fetching Kasra V: 403 Client Error: Forbidden for url: https://www.music-map.com/kasra+v
 2025-11-03 00:54:22 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:54:22 - INFO -   💾 Progress saved (90/196)
+2025-11-03 00:54:23 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:54:24 - INFO - [91/196] Scraping: Katarra
+2025-11-03 00:54:24 - INFO - Scraping: Katarra
+2025-11-03 00:54:24 - ERROR -   ✗ Error fetching Katarra: 403 Client Error: Forbidden for url: https://www.music-map.com/katarra
+2025-11-03 00:54:24 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:25 - INFO - [92/196] Scraping: Katie Rex
+2025-11-03 00:54:25 - INFO - Scraping: Katie Rex
+2025-11-03 00:54:25 - ERROR -   ✗ Error fetching Katie Rex: 403 Client Error: Forbidden for url: https://www.music-map.com/katie+rex
+2025-11-03 00:54:25 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:26 - INFO - [93/196] Scraping: Keiyaa
+2025-11-03 00:54:26 - INFO - Scraping: Keiyaa
+2025-11-03 00:54:27 - ERROR -   ✗ Error fetching Keiyaa: 403 Client Error: Forbidden for url: https://www.music-map.com/keiyaa
+2025-11-03 00:54:27 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:28 - INFO - [94/196] Scraping: Kellie Allen
+2025-11-03 00:54:28 - INFO - Scraping: Kellie Allen
+2025-11-03 00:54:28 - ERROR -   ✗ Error fetching Kellie Allen: 403 Client Error: Forbidden for url: https://www.music-map.com/kellie+allen
+2025-11-03 00:54:28 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:29 - INFO - [95/196] Scraping: Kenni Javon
+2025-11-03 00:54:29 - INFO - Scraping: Kenni Javon
+2025-11-03 00:54:29 - ERROR -   ✗ Error fetching Kenni Javon: 403 Client Error: Forbidden for url: https://www.music-map.com/kenni+javon
+2025-11-03 00:54:29 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:30 - INFO - [96/196] Scraping: Kim Anh
+2025-11-03 00:54:30 - INFO - Scraping: Kim Anh
+2025-11-03 00:54:30 - ERROR -   ✗ Error fetching Kim Anh: 403 Client Error: Forbidden for url: https://www.music-map.com/kim+anh
+2025-11-03 00:54:30 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:31 - INFO - [97/196] Scraping: Kjon
+2025-11-03 00:54:31 - INFO - Scraping: Kjon
+2025-11-03 00:54:31 - ERROR -   ✗ Error fetching Kjon: 403 Client Error: Forbidden for url: https://www.music-map.com/kjon
+2025-11-03 00:54:31 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:32 - INFO - [98/196] Scraping: Kneaku
+2025-11-03 00:54:32 - INFO - Scraping: Kneaku
+2025-11-03 00:54:32 - ERROR -   ✗ Error fetching Kneaku: 403 Client Error: Forbidden for url: https://www.music-map.com/kneaku
+2025-11-03 00:54:32 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:33 - INFO - [99/196] Scraping: Kristen London
+2025-11-03 00:54:33 - INFO - Scraping: Kristen London
+2025-11-03 00:54:33 - ERROR -   ✗ Error fetching Kristen London: 403 Client Error: Forbidden for url: https://www.music-map.com/kristen+london
+2025-11-03 00:54:33 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:34 - INFO - [100/196] Scraping: Kudzu Audio
+2025-11-03 00:54:34 - INFO - Scraping: Kudzu Audio
+2025-11-03 00:54:34 - ERROR -   ✗ Error fetching Kudzu Audio: 403 Client Error: Forbidden for url: https://www.music-map.com/kudzu+audio
+2025-11-03 00:54:34 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:54:34 - INFO -   💾 Progress saved (100/196)
