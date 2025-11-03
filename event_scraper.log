@@ -508,3 +508,45 @@
 2025-11-03 00:54:59 - ERROR -   ✗ Error fetching Matthew Ryals: 403 Client Error: Forbidden for url: https://www.music-map.com/matthew+ryals
 2025-11-03 00:54:59 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:54:59 - INFO -   💾 Progress saved (120/196)
+2025-11-03 00:55:01 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:55:02 - INFO - [121/196] Scraping: Mecca NYC
+2025-11-03 00:55:02 - INFO - Scraping: Mecca NYC
+2025-11-03 00:55:02 - ERROR -   ✗ Error fetching Mecca NYC: 403 Client Error: Forbidden for url: https://www.music-map.com/mecca+nyc
+2025-11-03 00:55:02 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:03 - INFO - [122/196] Scraping: Michael Magnan
+2025-11-03 00:55:03 - INFO - Scraping: Michael Magnan
+2025-11-03 00:55:03 - ERROR -   ✗ Error fetching Michael Magnan: 403 Client Error: Forbidden for url: https://www.music-map.com/michael+magnan
+2025-11-03 00:55:03 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:04 - INFO - [123/196] Scraping: Mike Servito
+2025-11-03 00:55:04 - INFO - Scraping: Mike Servito
+2025-11-03 00:55:04 - ERROR -   ✗ Error fetching Mike Servito: 403 Client Error: Forbidden for url: https://www.music-map.com/mike+servito
+2025-11-03 00:55:04 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:05 - INFO - [124/196] Scraping: Miles Mercer
+2025-11-03 00:55:05 - INFO - Scraping: Miles Mercer
+2025-11-03 00:55:05 - ERROR -   ✗ Error fetching Miles Mercer: 403 Client Error: Forbidden for url: https://www.music-map.com/miles+mercer
+2025-11-03 00:55:05 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:06 - INFO - [125/196] Scraping: Military Scientist
+2025-11-03 00:55:06 - INFO - Scraping: Military Scientist
+2025-11-03 00:55:06 - ERROR -   ✗ Error fetching Military Scientist: 403 Client Error: Forbidden for url: https://www.music-map.com/military+scientist
+2025-11-03 00:55:06 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:07 - INFO - [126/196] Scraping: Miss Parker
+2025-11-03 00:55:07 - INFO - Scraping: Miss Parker
+2025-11-03 00:55:07 - ERROR -   ✗ Error fetching Miss Parker: 403 Client Error: Forbidden for url: https://www.music-map.com/miss+parker
+2025-11-03 00:55:07 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:08 - INFO - [127/196] Scraping: Moderna
+2025-11-03 00:55:08 - INFO - Scraping: Moderna
+2025-11-03 00:55:08 - ERROR -   ✗ Error fetching Moderna: 403 Client Error: Forbidden for url: https://www.music-map.com/moderna
+2025-11-03 00:55:08 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:09 - INFO - [128/196] Scraping: Morenxxx b2b Shyboi
+2025-11-03 00:55:09 - INFO - Scraping: Morenxxx b2b Shyboi
+2025-11-03 00:55:09 - ERROR -   ✗ Error fetching Morenxxx b2b Shyboi: 403 Client Error: Forbidden for url: https://www.music-map.com/morenxxx+b2b+shyboi
+2025-11-03 00:55:09 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:10 - INFO - [129/196] Scraping: Morgan
+2025-11-03 00:55:10 - INFO - Scraping: Morgan
+2025-11-03 00:55:10 - ERROR -   ✗ Error fetching Morgan: 403 Client Error: Forbidden for url: https://www.music-map.com/morgan
+2025-11-03 00:55:10 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:11 - INFO - [130/196] Scraping: Mpc
+2025-11-03 00:55:11 - INFO - Scraping: Mpc
+2025-11-03 00:55:11 - ERROR -   ✗ Error fetching Mpc: 403 Client Error: Forbidden for url: https://www.music-map.com/mpc
+2025-11-03 00:55:11 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:12 - INFO -   💾 Progress saved (130/196)
