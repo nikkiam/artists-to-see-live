@@ -634,3 +634,45 @@
 2025-11-03 00:55:36 - ERROR -   ✗ Error fetching Qasim Naqvi: 403 Client Error: Forbidden for url: https://www.music-map.com/qasim+naqvi
 2025-11-03 00:55:36 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:55:37 - INFO -   💾 Progress saved (150/196)
+2025-11-03 00:55:38 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:55:39 - INFO - [151/196] Scraping: Raisara
+2025-11-03 00:55:39 - INFO - Scraping: Raisara
+2025-11-03 00:55:39 - ERROR -   ✗ Error fetching Raisara: 403 Client Error: Forbidden for url: https://www.music-map.com/raisara
+2025-11-03 00:55:39 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:40 - INFO - [152/196] Scraping: Rank+File
+2025-11-03 00:55:40 - INFO - Scraping: Rank+File
+2025-11-03 00:55:40 - ERROR -   ✗ Error fetching Rank+File: 403 Client Error: Forbidden for url: https://www.music-map.com/rank+file
+2025-11-03 00:55:40 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:41 - INFO - [153/196] Scraping: Reagan Holiday
+2025-11-03 00:55:41 - INFO - Scraping: Reagan Holiday
+2025-11-03 00:55:41 - ERROR -   ✗ Error fetching Reagan Holiday: 403 Client Error: Forbidden for url: https://www.music-map.com/reagan+holiday
+2025-11-03 00:55:41 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:42 - INFO - [154/196] Scraping: Ron Like Hell
+2025-11-03 00:55:42 - INFO - Scraping: Ron Like Hell
+2025-11-03 00:55:42 - ERROR -   ✗ Error fetching Ron Like Hell: 403 Client Error: Forbidden for url: https://www.music-map.com/ron+like+hell
+2025-11-03 00:55:42 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:43 - INFO - [155/196] Scraping: Rubie Lee
+2025-11-03 00:55:43 - INFO - Scraping: Rubie Lee
+2025-11-03 00:55:43 - ERROR -   ✗ Error fetching Rubie Lee: 403 Client Error: Forbidden for url: https://www.music-map.com/rubie+lee
+2025-11-03 00:55:43 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:44 - INFO - [156/196] Scraping: SPF 50
+2025-11-03 00:55:44 - INFO - Scraping: SPF 50
+2025-11-03 00:55:45 - ERROR -   ✗ Error fetching SPF 50: 403 Client Error: Forbidden for url: https://www.music-map.com/spf+50
+2025-11-03 00:55:45 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:46 - INFO - [157/196] Scraping: Sabrina Salamone
+2025-11-03 00:55:46 - INFO - Scraping: Sabrina Salamone
+2025-11-03 00:55:46 - ERROR -   ✗ Error fetching Sabrina Salamone: 403 Client Error: Forbidden for url: https://www.music-map.com/sabrina+salamone
+2025-11-03 00:55:46 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:47 - INFO - [158/196] Scraping: Salome
+2025-11-03 00:55:47 - INFO - Scraping: Salome
+2025-11-03 00:55:47 - ERROR -   ✗ Error fetching Salome: 403 Client Error: Forbidden for url: https://www.music-map.com/salome
+2025-11-03 00:55:47 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:48 - INFO - [159/196] Scraping: Sandy Spectral
+2025-11-03 00:55:48 - INFO - Scraping: Sandy Spectral
+2025-11-03 00:55:48 - ERROR -   ✗ Error fetching Sandy Spectral: 403 Client Error: Forbidden for url: https://www.music-map.com/sandy+spectral
+2025-11-03 00:55:48 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:49 - INFO - [160/196] Scraping: Saturn Lavender
+2025-11-03 00:55:49 - INFO - Scraping: Saturn Lavender
+2025-11-03 00:55:49 - ERROR -   ✗ Error fetching Saturn Lavender: 403 Client Error: Forbidden for url: https://www.music-map.com/saturn+lavender
+2025-11-03 00:55:49 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:49 - INFO -   💾 Progress saved (160/196)
