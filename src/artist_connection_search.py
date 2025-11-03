@@ -4,7 +4,7 @@ import numpy as np
 import scipy.sparse as sp
 from scipy.sparse.csgraph import dijkstra
 
-from models import ConnectionPath
+from src.models import ConnectionPath
 
 
 def build_sparse_graph(
@@ -92,23 +92,27 @@ def find_relationship_strength(
 
 
 def reconstruct_path(
-    predecessors: np.ndarray, source_idx: int, target_idx: int, idx_to_artist: dict
+    predecessors: np.ndarray,
+    source_array_idx: int,
+    source_node_idx: int,
+    target_idx: int,
+    idx_to_artist: dict,
 ) -> list[str] | None:
     """Reconstruct path from source to target using predecessors array."""
     # Check if target is reachable
-    if predecessors[source_idx, target_idx] == -9999:
+    if predecessors[source_array_idx, target_idx] == -9999:
         return None
 
     path = []
     current = target_idx
 
-    while current != source_idx:
+    while current != source_node_idx:
         path.append(idx_to_artist[current])
-        current = predecessors[source_idx, current]
+        current = predecessors[source_array_idx, current]
         if current == -9999:
             return None
 
-    path.append(idx_to_artist[source_idx])
+    path.append(idx_to_artist[source_node_idx])
     return list(reversed(path))
 
 
@@ -257,7 +261,9 @@ def find_optimal_paths(
                 continue
 
             # Reconstruct path
-            path = reconstruct_path(predecessors, source_array_idx, target_idx, idx_to_artist)
+            path = reconstruct_path(
+                predecessors, source_array_idx, source_idx, target_idx, idx_to_artist
+            )
             if not path:
                 continue
 
