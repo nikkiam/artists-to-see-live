@@ -550,3 +550,45 @@
 2025-11-03 00:55:11 - ERROR -   ✗ Error fetching Mpc: 403 Client Error: Forbidden for url: https://www.music-map.com/mpc
 2025-11-03 00:55:11 - WARNING -   ✗ Error: Failed to fetch page
 2025-11-03 00:55:12 - INFO -   💾 Progress saved (130/196)
+2025-11-03 00:55:13 - INFO -   ✓ Git commit and push successful
+2025-11-03 00:55:14 - INFO - [131/196] Scraping: Naim Zarzour
+2025-11-03 00:55:14 - INFO - Scraping: Naim Zarzour
+2025-11-03 00:55:14 - ERROR -   ✗ Error fetching Naim Zarzour: 403 Client Error: Forbidden for url: https://www.music-map.com/naim+zarzour
+2025-11-03 00:55:14 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:15 - INFO - [132/196] Scraping: Nana Xoxo
+2025-11-03 00:55:15 - INFO - Scraping: Nana Xoxo
+2025-11-03 00:55:15 - ERROR -   ✗ Error fetching Nana Xoxo: 403 Client Error: Forbidden for url: https://www.music-map.com/nana+xoxo
+2025-11-03 00:55:15 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:16 - INFO - [133/196] Scraping: Nick Boyd
+2025-11-03 00:55:16 - INFO - Scraping: Nick Boyd
+2025-11-03 00:55:16 - ERROR -   ✗ Error fetching Nick Boyd: 403 Client Error: Forbidden for url: https://www.music-map.com/nick+boyd
+2025-11-03 00:55:16 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:17 - INFO - [134/196] Scraping: No Promises
+2025-11-03 00:55:17 - INFO - Scraping: No Promises
+2025-11-03 00:55:17 - ERROR -   ✗ Error fetching No Promises: 403 Client Error: Forbidden for url: https://www.music-map.com/no+promises
+2025-11-03 00:55:17 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:18 - INFO - [135/196] Scraping: Nowadays
+2025-11-03 00:55:18 - INFO - Scraping: Nowadays
+2025-11-03 00:55:19 - ERROR -   ✗ Error fetching Nowadays: 403 Client Error: Forbidden for url: https://www.music-map.com/nowadays
+2025-11-03 00:55:19 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:20 - INFO - [136/196] Scraping: Nuran
+2025-11-03 00:55:20 - INFO - Scraping: Nuran
+2025-11-03 00:55:20 - ERROR -   ✗ Error fetching Nuran: 403 Client Error: Forbidden for url: https://www.music-map.com/nuran
+2025-11-03 00:55:20 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:21 - INFO - [137/196] Scraping: Odalys
+2025-11-03 00:55:21 - INFO - Scraping: Odalys
+2025-11-03 00:55:21 - ERROR -   ✗ Error fetching Odalys: 403 Client Error: Forbidden for url: https://www.music-map.com/odalys
+2025-11-03 00:55:21 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:22 - INFO - [138/196] Scraping: Oto
+2025-11-03 00:55:22 - INFO - Scraping: Oto
+2025-11-03 00:55:22 - ERROR -   ✗ Error fetching Oto: 403 Client Error: Forbidden for url: https://www.music-map.com/oto
+2025-11-03 00:55:22 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:23 - INFO - [139/196] Scraping: Paragon
+2025-11-03 00:55:23 - INFO - Scraping: Paragon
+2025-11-03 00:55:23 - ERROR -   ✗ Error fetching Paragon: 403 Client Error: Forbidden for url: https://www.music-map.com/paragon
+2025-11-03 00:55:23 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:24 - INFO - [140/196] Scraping: Patrick Russell
+2025-11-03 00:55:24 - INFO - Scraping: Patrick Russell
+2025-11-03 00:55:24 - ERROR -   ✗ Error fetching Patrick Russell: 403 Client Error: Forbidden for url: https://www.music-map.com/patrick+russell
+2025-11-03 00:55:24 - WARNING -   ✗ Error: Failed to fetch page
+2025-11-03 00:55:24 - INFO -   💾 Progress saved (140/196)
