@@ -1,0 +1,104 @@
+2025-11-03 00:03:38 - INFO - ============================================================
+2025-11-03 00:03:38 - INFO - Starting artist connection search
+2025-11-03 00:03:38 - INFO - ============================================================
+2025-11-03 00:03:38 - INFO - Step 1: Loading data files...
+2025-11-03 00:03:38 - INFO -   ✓ Loaded similar artists map: 961 artists
+2025-11-03 00:03:38 - INFO -   ✓ Loaded events: 42 events
+2025-11-03 00:03:38 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-03 00:03:39 - INFO - ✓ Git commit and push successful: Step 1: Loaded data files
+2025-11-03 00:03:39 - INFO - Step 2: Extracting unique artists from events...
+2025-11-03 00:03:39 - INFO -   ✓ Found 197 unique artists across events
+2025-11-03 00:03:40 - INFO - ✓ Git commit and push successful: Step 2: Extracted event artists
+2025-11-03 00:03:40 - INFO - Step 3: Building sparse graph from similarity data...
+2025-11-03 00:03:40 - INFO -   ✓ Graph built: 16174 nodes, 32710 edges
+2025-11-03 00:03:41 - INFO - ✓ Git commit and push successful: Step 3: Built sparse graph
+2025-11-03 00:03:41 - INFO - Step 4: Running Dijkstra search to find optimal paths...
+2025-11-03 00:03:41 - INFO -   ✓ Found 0 total connections
+2025-11-03 00:03:42 - INFO - ✓ Git commit and push successful: Step 4: Found connections via Dijkstra search
+2025-11-03 00:03:42 - INFO - Step 5: Grouping connections by tier and calculating stats...
+2025-11-03 00:03:43 - INFO - ✓ Git commit and push successful: Step 5: Grouped connections by tier
+2025-11-03 00:03:43 - INFO - Step 6: Generating output reports...
+2025-11-03 00:03:43 - INFO - Markdown report saved to: output/event_connections.md
+2025-11-03 00:03:43 - INFO - JSON report saved to: output/event_connections.json
+2025-11-03 00:03:43 - INFO -   ✓ Reports generated
+2025-11-03 00:03:44 - INFO - ✓ Git commit and push successful: Step 6: Generated connection reports
+2025-11-03 00:03:44 - INFO - ============================================================
+2025-11-03 00:03:44 - INFO - Artist connection search completed successfully
+2025-11-03 00:03:44 - INFO - Total connections found: 0
+2025-11-03 00:03:44 - INFO - Reports saved to:
+2025-11-03 00:03:44 - INFO -   - output/event_connections.md
+2025-11-03 00:03:44 - INFO -   - output/event_connections.json
+2025-11-03 00:03:44 - INFO - ============================================================
+2025-11-03 00:06:29 - INFO - ============================================================
+2025-11-03 00:06:29 - INFO - Starting artist connection search
+2025-11-03 00:06:29 - INFO - ============================================================
+2025-11-03 00:06:29 - INFO - Step 1: Loading data files...
+2025-11-03 00:06:29 - INFO -   ✓ Loaded similar artists map: 961 artists
+2025-11-03 00:06:29 - INFO -   ✓ Loaded events: 42 events
+2025-11-03 00:06:29 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-03 00:06:30 - INFO - ✓ Git commit and push successful: Step 1: Loaded data files
+2025-11-03 00:06:30 - INFO - Step 2: Extracting unique artists from events...
+2025-11-03 00:06:30 - INFO -   ✓ Found 197 unique artists across events
+2025-11-03 00:06:31 - INFO - ✓ Git commit and push successful: Step 2: Extracted event artists
+2025-11-03 00:06:31 - INFO - Step 3: Building sparse graph from similarity data...
+2025-11-03 00:06:31 - INFO -   ✓ Graph built: 16174 nodes, 32710 edges
+2025-11-03 00:06:32 - INFO - ✓ Git commit and push successful: Step 3: Built sparse graph
+2025-11-03 00:06:32 - INFO - Step 4: Running Dijkstra search to find optimal paths...
+2025-11-03 00:06:32 - INFO -   ✓ Found 452 total connections
+2025-11-03 00:06:33 - INFO - ✓ Git commit and push successful: Step 4: Found connections via Dijkstra search
+2025-11-03 00:06:33 - INFO - Step 5: Grouping connections by tier and calculating stats...
+2025-11-03 00:06:33 - INFO -   - Distantly Related Artists: 194
+2025-11-03 00:06:33 - INFO -   - Moderately Related Artists: 238
+2025-11-03 00:06:33 - INFO -   - Similar Artists: 20
+2025-11-03 00:06:34 - INFO - ✓ Git commit and push successful: Step 5: Grouped connections by tier
+2025-11-03 00:06:34 - INFO - Step 6: Generating output reports...
+2025-11-03 00:06:34 - INFO - Markdown report saved to: output/event_connections.md
+2025-11-03 00:06:34 - INFO - JSON report saved to: output/event_connections.json
+2025-11-03 00:06:34 - INFO -   ✓ Reports generated
+2025-11-03 00:06:35 - INFO - ✓ Git commit and push successful: Step 6: Generated connection reports
+2025-11-03 00:06:35 - INFO - ============================================================
+2025-11-03 00:06:35 - INFO - Artist connection search completed successfully
+2025-11-03 00:06:35 - INFO - Total connections found: 452
+2025-11-03 00:06:35 - INFO - Reports saved to:
+2025-11-03 00:06:35 - INFO -   - output/event_connections.md
+2025-11-03 00:06:35 - INFO -   - output/event_connections.json
+2025-11-03 00:06:35 - INFO - ============================================================
+2025-11-04 04:15:05 - INFO - ============================================================
+2025-11-04 04:15:05 - INFO - Starting artist connection search
+2025-11-04 04:15:05 - INFO - ============================================================
+2025-11-04 04:15:05 - INFO - Step 1: Loading data files...
+2025-11-04 04:15:05 - INFO - Loaded 767 successful artists (390 failed/skipped)
+2025-11-04 04:15:05 - INFO -   ✓ Loaded similar artists map: 767 artists
+2025-11-04 04:15:05 - INFO - Loaded 42 events
+2025-11-04 04:15:05 - INFO -   ✓ Loaded events: 42 events
+2025-11-04 04:15:05 - INFO - Loaded 961 artists
+2025-11-04 04:15:05 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-04 04:15:06 - INFO - ✓ Git commit and push successful: Step 1: Loaded data files
+2025-11-04 04:15:06 - INFO - Step 2: Extracting unique artists from events...
+2025-11-04 04:15:06 - INFO -   ✓ Found 197 unique artists across events
+2025-11-04 04:15:06 - INFO - ✓ Git commit and push successful: Step 2: Extracted event artists
+2025-11-04 04:15:06 - INFO - Step 3: Building sparse graph from similarity data...
+2025-11-04 04:15:06 - INFO -   ✓ Graph built: 15975 nodes, 32710 edges
+2025-11-04 04:15:06 - INFO -   Building strength lookup for fast path reconstruction...
+2025-11-04 04:15:06 - INFO -   ✓ Strength lookup built: 32710 edges
+2025-11-04 04:15:07 - INFO - ✓ Git commit and push successful: Step 3: Built sparse graph and strength lookup
+2025-11-04 04:15:07 - INFO - Step 4: Running Dijkstra search to find optimal paths...
+2025-11-04 04:15:07 - INFO -   ✓ Found 452 total connections
+2025-11-04 04:15:08 - INFO - ✓ Git commit and push successful: Step 4: Found connections via Dijkstra search
+2025-11-04 04:15:08 - INFO - Step 5: Grouping connections by tier and calculating stats...
+2025-11-04 04:15:08 - INFO -   - Distantly Related Artists: 194
+2025-11-04 04:15:08 - INFO -   - Moderately Related Artists: 238
+2025-11-04 04:15:08 - INFO -   - Similar Artists: 20
+2025-11-04 04:15:08 - INFO - ✓ Git commit and push successful: Step 5: Grouped connections by tier
+2025-11-04 04:15:08 - INFO - Step 6: Generating output reports...
+2025-11-04 04:15:08 - INFO - Markdown report saved to: output/event_connections.md
+2025-11-04 04:15:08 - INFO - JSON report saved to: output/event_connections.json
+2025-11-04 04:15:08 - INFO -   ✓ Reports generated
+2025-11-04 04:15:09 - INFO - ✓ Git commit and push successful: Step 6: Generated connection reports
+2025-11-04 04:15:09 - INFO - ============================================================
+2025-11-04 04:15:09 - INFO - Artist connection search completed successfully
+2025-11-04 04:15:09 - INFO - Total connections found: 452
+2025-11-04 04:15:09 - INFO - Reports saved to:
+2025-11-04 04:15:09 - INFO -   - output/event_connections.md
+2025-11-04 04:15:09 - INFO -   - output/event_connections.json
+2025-11-04 04:15:09 - INFO - ============================================================

@@ -1,7 +1,40 @@
 """Data models for events and artists."""
 
 from dataclasses import dataclass, field
-from typing import Optional
+
+# Tier classification thresholds for artist connections
+TIER_VERY_SIMILAR_THRESHOLD = 7.0
+TIER_SIMILAR_THRESHOLD = 5.0
+TIER_MODERATELY_RELATED_THRESHOLD = 3.0
+
+TIER_NAMES = {
+    "very_similar": "Very Similar Artists",
+    "similar": "Similar Artists",
+    "moderately_related": "Moderately Related Artists",
+    "distantly_related": "Distantly Related Artists",
+}
+
+
+@dataclass(frozen=True)
+class SimilarArtist:
+    """Represents a similar artist with relationship metrics."""
+
+    name: str
+    rank: int
+    relationship_strength: float
+
+
+@dataclass(frozen=True)
+class ArtistSimilarityData:
+    """
+    Contains similarity data for a successfully scraped artist.
+
+    Note: Only successful scrapes should be loaded into this structure.
+    Failed/skipped scrapes are filtered out at load time.
+    """
+
+    artist_name: str
+    similar_artists: tuple[SimilarArtist, ...]
 
 
 @dataclass
@@ -23,3 +56,23 @@ class Event:
     artists: list[Artist] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     day_marker: str | None = None
+
+
+@dataclass(frozen=True)
+class ConnectionPath:
+    """Represents a connection between an event artist and a favorite artist."""
+
+    event_artist: str
+    favorite_artist: str
+    path: tuple[str, ...]  # Full path including source and target
+    path_strengths: tuple[float, ...]  # Relationship strength for each edge
+    total_cost: float  # Sum of 1/strength (Dijkstra cost)
+    path_score: float  # 1/total_cost (higher = better)
+    min_strength: float  # Weakest link
+    max_strength: float  # Strongest link
+    avg_strength: float  # Average edge strength
+    hops: int  # Path length - 1
+    tier: str  # Classification based on avg_strength
+    event_name: str
+    event_venue: str | None
+    event_url: str
