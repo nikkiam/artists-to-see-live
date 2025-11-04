@@ -244,14 +244,10 @@ def main():
     favorites = load_artist_list(favorites_file)
     logger.info("  ✓ Loaded favorites: %d artists", len(favorites))
 
-    git_commit_and_push("Step 1: Loaded data files", [log_file])
-
     # Step 2: Extract event artists
     logger.info("Step 2: Extracting unique artists from events...")
     event_artists = extract_unique_artists(events)
     logger.info("  ✓ Found %d unique artists across events", len(event_artists))
-
-    git_commit_and_push("Step 2: Extracted event artists", [log_file])
 
     # Step 3: Build sparse graph and strength lookup
     logger.info("Step 3: Building sparse graph from similarity data...")
@@ -267,8 +263,6 @@ def main():
     strength_lookup = build_strength_lookup(similar_artists_map)
     logger.info("  ✓ Strength lookup built: %d edges", len(strength_lookup))
 
-    git_commit_and_push("Step 3: Built sparse graph and strength lookup", [log_file])
-
     # Step 4: Find connections
     logger.info("Step 4: Running Dijkstra search to find optimal paths...")
     connections = find_optimal_paths(
@@ -283,8 +277,6 @@ def main():
     )
     logger.info("  ✓ Found %d total connections", len(connections))
 
-    git_commit_and_push("Step 4: Found connections via Dijkstra search", [log_file])
-
     # Step 5: Group and analyze
     logger.info("Step 5: Grouping connections by tier and calculating stats...")
     tiers = group_by_tier(connections)
@@ -293,15 +285,15 @@ def main():
     for tier, count in stats.get("tier_counts", {}).items():
         logger.info("  - %s: %d", tier, count)
 
-    git_commit_and_push("Step 5: Grouped connections by tier", [log_file])
-
     # Step 6: Generate reports
     logger.info("Step 6: Generating output reports...")
 
-    md_output = output_dir / "event_connections.md"
+    # Generate timestamped filenames
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    md_output = output_dir / f"event_connections_{timestamp}.md"
     generate_markdown_report(tiers, stats, md_output)
 
-    json_output = output_dir / "event_connections.json"
+    json_output = output_dir / f"event_connections_{timestamp}.json"
     save_json_report(connections, stats, json_output)
 
     logger.info("  ✓ Reports generated")
