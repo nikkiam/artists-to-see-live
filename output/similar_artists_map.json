@@ -174771,8 +174771,230 @@
     "error": "Failed to fetch page"
   },
   "Salome": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Konvent",
+        "rank": 1,
+        "relationship_strength": 5.91716
+      },
+      {
+        "name": "Goats Of Hell",
+        "rank": 2,
+        "relationship_strength": 5.71429
+      },
+      {
+        "name": "Massiel",
+        "rank": 3,
+        "relationship_strength": 4.81928
+      },
+      {
+        "name": "Ki/ki",
+        "rank": 4,
+        "relationship_strength": 4.24403
+      },
+      {
+        "name": "Isabelle Aubret",
+        "rank": 5,
+        "relationship_strength": 4.16667
+      },
+      {
+        "name": "Denial of Life",
+        "rank": 6,
+        "relationship_strength": 3.27869
+      },
+      {
+        "name": "Thorr's Hammer",
+        "rank": 7,
+        "relationship_strength": 2.32558
+      },
+      {
+        "name": "Horehound",
+        "rank": 8,
+        "relationship_strength": 2.01005
+      },
+      {
+        "name": "Jucifer",
+        "rank": 9,
+        "relationship_strength": 1.75631
+      },
+      {
+        "name": "Sourvein",
+        "rank": 10,
+        "relationship_strength": 1.40647
+      },
+      {
+        "name": "Death Breath",
+        "rank": 11,
+        "relationship_strength": 1.3986
+      },
+      {
+        "name": "Toadliquor",
+        "rank": 12,
+        "relationship_strength": 1.30933
+      },
+      {
+        "name": "Pindar Ku",
+        "rank": 13,
+        "relationship_strength": 1.16959
+      },
+      {
+        "name": "DJ Daddy Trance",
+        "rank": 14,
+        "relationship_strength": 1.05263
+      },
+      {
+        "name": "Vtss",
+        "rank": 15,
+        "relationship_strength": 1.04167
+      },
+      {
+        "name": "Steve Gabry",
+        "rank": 16,
+        "relationship_strength": 0.97561
+      },
+      {
+        "name": "Millions",
+        "rank": 17,
+        "relationship_strength": 0.968523
+      },
+      {
+        "name": "Gel",
+        "rank": 18,
+        "relationship_strength": 0.866739
+      },
+      {
+        "name": "Sagan Hawkes",
+        "rank": 19,
+        "relationship_strength": 0.775194
+      },
+      {
+        "name": "Gallhammer",
+        "rank": 20,
+        "relationship_strength": 0.714286
+      },
+      {
+        "name": "Made Out Of Babies",
+        "rank": 21,
+        "relationship_strength": 0.682594
+      },
+      {
+        "name": "DATSKO",
+        "rank": 22,
+        "relationship_strength": 0.673401
+      },
+      {
+        "name": "The Evens",
+        "rank": 23,
+        "relationship_strength": 0.522876
+      },
+      {
+        "name": "Mischluft",
+        "rank": 24,
+        "relationship_strength": 0.503778
+      },
+      {
+        "name": "A Storm Of Light",
+        "rank": 25,
+        "relationship_strength": 0.473934
+      },
+      {
+        "name": "Burning Witch",
+        "rank": 26,
+        "relationship_strength": 0.45584
+      },
+      {
+        "name": "Goatsnake",
+        "rank": 27,
+        "relationship_strength": 0.41841
+      },
+      {
+        "name": "Monarch",
+        "rank": 28,
+        "relationship_strength": 0.40568
+      },
+      {
+        "name": "Church Of Misery",
+        "rank": 29,
+        "relationship_strength": 0.405474
+      },
+      {
+        "name": "Anetha",
+        "rank": 30,
+        "relationship_strength": 0.396432
+      },
+      {
+        "name": "Mythic",
+        "rank": 31,
+        "relationship_strength": 0.384986
+      },
+      {
+        "name": "Marlon Hoffstadt",
+        "rank": 32,
+        "relationship_strength": 0.342759
+      },
+      {
+        "name": "Battle Of Mice",
+        "rank": 33,
+        "relationship_strength": 0.326531
+      },
+      {
+        "name": "Otehi",
+        "rank": 34,
+        "relationship_strength": 0.302572
+      },
+      {
+        "name": "Cathedral",
+        "rank": 35,
+        "relationship_strength": 0.248293
+      },
+      {
+        "name": "EyeHateGod",
+        "rank": 36,
+        "relationship_strength": 0.152759
+      },
+      {
+        "name": "Cough",
+        "rank": 37,
+        "relationship_strength": 0.148644
+      },
+      {
+        "name": "Windhand",
+        "rank": 38,
+        "relationship_strength": 0.114025
+      },
+      {
+        "name": "Celtic Frost",
+        "rank": 39,
+        "relationship_strength": 0.0622471
+      },
+      {
+        "name": "Raven",
+        "rank": 40,
+        "relationship_strength": 0.0376081
+      },
+      {
+        "name": "Destroy Boys",
+        "rank": 41,
+        "relationship_strength": 0.0173966
+      },
+      {
+        "name": "Boris",
+        "rank": 42,
+        "relationship_strength": 0.0135382
+      },
+      {
+        "name": "Led Zeppelin",
+        "rank": 43,
+        "relationship_strength": 0.000727225
+      },
+      {
+        "name": "System Of A Down",
+        "rank": 44,
+        "relationship_strength": 0.000656853
+      }
+    ],
+    "total_count": 44
   },
   "Sandy Spectral": {
     "status": "error",
@@ -174791,8 +175013,250 @@
     "error": "Failed to fetch page"
   },
   "Serge Devant": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Benassi Bros",
+        "rank": 1,
+        "relationship_strength": 8.82159
+      },
+      {
+        "name": "David Vendetta",
+        "rank": 2,
+        "relationship_strength": 4.70127
+      },
+      {
+        "name": "Lakshminarayana Subramaniam",
+        "rank": 3,
+        "relationship_strength": 3.48259
+      },
+      {
+        "name": "Krystal Klear",
+        "rank": 4,
+        "relationship_strength": 3.14033
+      },
+      {
+        "name": "Ben Delay",
+        "rank": 5,
+        "relationship_strength": 2.04342
+      },
+      {
+        "name": "Trampsta",
+        "rank": 6,
+        "relationship_strength": 1.94384
+      },
+      {
+        "name": "Jordan Brando",
+        "rank": 7,
+        "relationship_strength": 1.68634
+      },
+      {
+        "name": "NikitaUtkin",
+        "rank": 8,
+        "relationship_strength": 1.68634
+      },
+      {
+        "name": "Syclops",
+        "rank": 9,
+        "relationship_strength": 1.60858
+      },
+      {
+        "name": "Dj Riga",
+        "rank": 10,
+        "relationship_strength": 1.5949
+      },
+      {
+        "name": "BAILE",
+        "rank": 11,
+        "relationship_strength": 1.54839
+      },
+      {
+        "name": "4 Strings",
+        "rank": 12,
+        "relationship_strength": 1.47965
+      },
+      {
+        "name": "Luke Alessi",
+        "rank": 13,
+        "relationship_strength": 1.36286
+      },
+      {
+        "name": "Phlux",
+        "rank": 14,
+        "relationship_strength": 1.2685
+      },
+      {
+        "name": "Louie Devito",
+        "rank": 15,
+        "relationship_strength": 1.26422
+      },
+      {
+        "name": "Guau",
+        "rank": 16,
+        "relationship_strength": 1.23457
+      },
+      {
+        "name": "Benny Benassi",
+        "rank": 17,
+        "relationship_strength": 1.1757
+      },
+      {
+        "name": "Solid Snake",
+        "rank": 18,
+        "relationship_strength": 1.16618
+      },
+      {
+        "name": "Emma Hewitt",
+        "rank": 19,
+        "relationship_strength": 1.14478
+      },
+      {
+        "name": "Hadley",
+        "rank": 20,
+        "relationship_strength": 1.11888
+      },
+      {
+        "name": "First State",
+        "rank": 21,
+        "relationship_strength": 1.04167
+      },
+      {
+        "name": "B Tribe",
+        "rank": 22,
+        "relationship_strength": 0.959233
+      },
+      {
+        "name": "Ohmme",
+        "rank": 23,
+        "relationship_strength": 0.925926
+      },
+      {
+        "name": "Altrice",
+        "rank": 24,
+        "relationship_strength": 0.881057
+      },
+      {
+        "name": "Jiggler",
+        "rank": 25,
+        "relationship_strength": 0.862999
+      },
+      {
+        "name": "Joachim Garraud",
+        "rank": 26,
+        "relationship_strength": 0.840336
+      },
+      {
+        "name": "Durante",
+        "rank": 27,
+        "relationship_strength": 0.789733
+      },
+      {
+        "name": "Beacon",
+        "rank": 28,
+        "relationship_strength": 0.769231
+      },
+      {
+        "name": "Damian Lazarus",
+        "rank": 29,
+        "relationship_strength": 0.686106
+      },
+      {
+        "name": "Matteo Marini",
+        "rank": 30,
+        "relationship_strength": 0.626959
+      },
+      {
+        "name": "Kuplay",
+        "rank": 31,
+        "relationship_strength": 0.623053
+      },
+      {
+        "name": "Matt Nash",
+        "rank": 32,
+        "relationship_strength": 0.613497
+      },
+      {
+        "name": "Ruff Stuff",
+        "rank": 33,
+        "relationship_strength": 0.613497
+      },
+      {
+        "name": "Jetfire",
+        "rank": 34,
+        "relationship_strength": 0.603015
+      },
+      {
+        "name": "Aldo Cadiz",
+        "rank": 35,
+        "relationship_strength": 0.596125
+      },
+      {
+        "name": "seth Schwarz",
+        "rank": 36,
+        "relationship_strength": 0.588235
+      },
+      {
+        "name": "Dave Echo",
+        "rank": 37,
+        "relationship_strength": 0.555556
+      },
+      {
+        "name": "Ellie Lawson",
+        "rank": 38,
+        "relationship_strength": 0.536193
+      },
+      {
+        "name": "Shit Robot",
+        "rank": 39,
+        "relationship_strength": 0.525855
+      },
+      {
+        "name": "Stine Grove",
+        "rank": 40,
+        "relationship_strength": 0.451977
+      },
+      {
+        "name": "Tim Green",
+        "rank": 41,
+        "relationship_strength": 0.447427
+      },
+      {
+        "name": "Katty Heath",
+        "rank": 42,
+        "relationship_strength": 0.446761
+      },
+      {
+        "name": "Flamenco",
+        "rank": 43,
+        "relationship_strength": 0.440044
+      },
+      {
+        "name": "Fight Facilities",
+        "rank": 44,
+        "relationship_strength": 0.433839
+      },
+      {
+        "name": "Wayne Shorter Quartet",
+        "rank": 45,
+        "relationship_strength": 0.392927
+      },
+      {
+        "name": "Mndr",
+        "rank": 46,
+        "relationship_strength": 0.373483
+      },
+      {
+        "name": "Alok",
+        "rank": 47,
+        "relationship_strength": 0.361745
+      },
+      {
+        "name": "TKNO",
+        "rank": 48,
+        "relationship_strength": 0.339559
+      }
+    ],
+    "total_count": 48
   },
   "Shaun J. Wright": {
     "status": "error",
@@ -174823,8 +175287,250 @@
     "error": "Failed to fetch page"
   },
   "Skin": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Skunk Anansie",
+        "rank": 1,
+        "relationship_strength": 21.5409
+      },
+      {
+        "name": "Lamya",
+        "rank": 2,
+        "relationship_strength": 1.97276
+      },
+      {
+        "name": "Fallgrapp",
+        "rank": 3,
+        "relationship_strength": 1.81034
+      },
+      {
+        "name": "Dorthia Cottrell",
+        "rank": 4,
+        "relationship_strength": 1.73833
+      },
+      {
+        "name": "P. J. Harvey",
+        "rank": 5,
+        "relationship_strength": 1.35497
+      },
+      {
+        "name": "Temple Invisible",
+        "rank": 6,
+        "relationship_strength": 1.2884
+      },
+      {
+        "name": "Tina Dico",
+        "rank": 7,
+        "relationship_strength": 0.935016
+      },
+      {
+        "name": "Dragonette",
+        "rank": 8,
+        "relationship_strength": 0.920528
+      },
+      {
+        "name": "The Mummers",
+        "rank": 9,
+        "relationship_strength": 0.845865
+      },
+      {
+        "name": "Palodine",
+        "rank": 10,
+        "relationship_strength": 0.805234
+      },
+      {
+        "name": "Anna Aaron",
+        "rank": 11,
+        "relationship_strength": 0.625978
+      },
+      {
+        "name": "Furykane",
+        "rank": 12,
+        "relationship_strength": 0.57995
+      },
+      {
+        "name": "Vicious Hairy Mary",
+        "rank": 13,
+        "relationship_strength": 0.524705
+      },
+      {
+        "name": "Purist",
+        "rank": 14,
+        "relationship_strength": 0.507357
+      },
+      {
+        "name": "PHASES",
+        "rank": 15,
+        "relationship_strength": 0.471698
+      },
+      {
+        "name": "Serena Ryder",
+        "rank": 16,
+        "relationship_strength": 0.464846
+      },
+      {
+        "name": "Mr. President",
+        "rank": 17,
+        "relationship_strength": 0.443951
+      },
+      {
+        "name": "Wild Heart",
+        "rank": 18,
+        "relationship_strength": 0.433369
+      },
+      {
+        "name": "DJ Artak",
+        "rank": 19,
+        "relationship_strength": 0.426212
+      },
+      {
+        "name": "Fresh Out Of The Bus",
+        "rank": 20,
+        "relationship_strength": 0.40568
+      },
+      {
+        "name": "BlakRoc",
+        "rank": 21,
+        "relationship_strength": 0.402415
+      },
+      {
+        "name": "Dj Alice",
+        "rank": 22,
+        "relationship_strength": 0.392349
+      },
+      {
+        "name": "Rosey",
+        "rank": 23,
+        "relationship_strength": 0.381316
+      },
+      {
+        "name": "Sia",
+        "rank": 24,
+        "relationship_strength": 0.37876
+      },
+      {
+        "name": "Katy Tiz",
+        "rank": 25,
+        "relationship_strength": 0.377003
+      },
+      {
+        "name": "Nine Horses",
+        "rank": 26,
+        "relationship_strength": 0.363306
+      },
+      {
+        "name": "12 Stones",
+        "rank": 27,
+        "relationship_strength": 0.356295
+      },
+      {
+        "name": "Peter townsend",
+        "rank": 28,
+        "relationship_strength": 0.319319
+      },
+      {
+        "name": "Disemballerina",
+        "rank": 29,
+        "relationship_strength": 0.316122
+      },
+      {
+        "name": "The Gift",
+        "rank": 30,
+        "relationship_strength": 0.314762
+      },
+      {
+        "name": "Animal Alpha",
+        "rank": 31,
+        "relationship_strength": 0.297177
+      },
+      {
+        "name": "MARIE MADELEINE",
+        "rank": 32,
+        "relationship_strength": 0.287253
+      },
+      {
+        "name": "The Story Of The Year",
+        "rank": 33,
+        "relationship_strength": 0.27972
+      },
+      {
+        "name": "Elisa",
+        "rank": 34,
+        "relationship_strength": 0.258065
+      },
+      {
+        "name": "Mahmut Tuncer",
+        "rank": 35,
+        "relationship_strength": 0.247142
+      },
+      {
+        "name": "Catatonia",
+        "rank": 36,
+        "relationship_strength": 0.240385
+      },
+      {
+        "name": "Apulanta",
+        "rank": 37,
+        "relationship_strength": 0.218639
+      },
+      {
+        "name": "Esquerita",
+        "rank": 38,
+        "relationship_strength": 0.214592
+      },
+      {
+        "name": "Letters To Cleo",
+        "rank": 39,
+        "relationship_strength": 0.207792
+      },
+      {
+        "name": "Alex Parks",
+        "rank": 40,
+        "relationship_strength": 0.207254
+      },
+      {
+        "name": "Thayer Cabin",
+        "rank": 41,
+        "relationship_strength": 0.206718
+      },
+      {
+        "name": "Grashopper",
+        "rank": 42,
+        "relationship_strength": 0.205761
+      },
+      {
+        "name": "Mereki",
+        "rank": 43,
+        "relationship_strength": 0.187705
+      },
+      {
+        "name": "Devon Sproule",
+        "rank": 44,
+        "relationship_strength": 0.184587
+      },
+      {
+        "name": "Hecate",
+        "rank": 45,
+        "relationship_strength": 0.182815
+      },
+      {
+        "name": "Speech Debelle",
+        "rank": 46,
+        "relationship_strength": 0.181324
+      },
+      {
+        "name": "Amatorski",
+        "rank": 47,
+        "relationship_strength": 0.178891
+      },
+      {
+        "name": "Lavender Diamond",
+        "rank": 48,
+        "relationship_strength": 0.174825
+      }
+    ],
+    "total_count": 48
   },
   "Solofan": {
     "status": "error",
@@ -174848,7 +175554,7 @@
   },
   "Sri": {
     "status": "error",
-    "error": "Failed to fetch page"
+    "error": "No similar artists found"
   },
   "Sweaty Eddie": {
     "status": "error",
@@ -174863,8 +175569,20 @@
     "error": "Failed to fetch page"
   },
   "Tama Sumo": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Marcel Dettmann",
+        "rank": 1,
+        "relationship_strength": 0.717489
+      },
+      {
+        "name": "Ben Klock",
+        "rank": 2,
+        "relationship_strength": 0.260586
+      }
+    ],
+    "total_count": 2
   },
   "Testu": {
     "status": "error",
@@ -174883,12 +175601,386 @@
     "error": "Failed to fetch page"
   },
   "Traumer": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Microtrauma",
+        "rank": 1,
+        "relationship_strength": 5.54622
+      },
+      {
+        "name": "Silat Beksi",
+        "rank": 2,
+        "relationship_strength": 4.31818
+      },
+      {
+        "name": "Mario Ochoa",
+        "rank": 3,
+        "relationship_strength": 4.0282
+      },
+      {
+        "name": "Tobias Thomas",
+        "rank": 4,
+        "relationship_strength": 3.38664
+      },
+      {
+        "name": "Priku",
+        "rank": 5,
+        "relationship_strength": 2.6264
+      },
+      {
+        "name": "Arapu",
+        "rank": 6,
+        "relationship_strength": 2.27671
+      },
+      {
+        "name": "Gene On Earth",
+        "rank": 7,
+        "relationship_strength": 2.19512
+      },
+      {
+        "name": "Mihai Pol",
+        "rank": 8,
+        "relationship_strength": 2.15285
+      },
+      {
+        "name": "Tiger Stripes",
+        "rank": 9,
+        "relationship_strength": 1.99336
+      },
+      {
+        "name": "Mehlor",
+        "rank": 10,
+        "relationship_strength": 1.94411
+      },
+      {
+        "name": "Len Faki",
+        "rank": 11,
+        "relationship_strength": 1.90767
+      },
+      {
+        "name": "Archie Hamilton",
+        "rank": 12,
+        "relationship_strength": 1.88828
+      },
+      {
+        "name": "Phunk Investigation",
+        "rank": 13,
+        "relationship_strength": 1.65631
+      },
+      {
+        "name": "Anders Ilar",
+        "rank": 14,
+        "relationship_strength": 1.60584
+      },
+      {
+        "name": "SWOY",
+        "rank": 15,
+        "relationship_strength": 1.566
+      },
+      {
+        "name": "Truncate",
+        "rank": 16,
+        "relationship_strength": 1.50788
+      },
+      {
+        "name": "Dragomir",
+        "rank": 17,
+        "relationship_strength": 1.45103
+      },
+      {
+        "name": "Underset",
+        "rank": 18,
+        "relationship_strength": 1.37825
+      },
+      {
+        "name": "Rebuke",
+        "rank": 19,
+        "relationship_strength": 1.2975
+      },
+      {
+        "name": "iO (Mulen)",
+        "rank": 20,
+        "relationship_strength": 1.29032
+      },
+      {
+        "name": "Easy Changes",
+        "rank": 21,
+        "relationship_strength": 1.25786
+      },
+      {
+        "name": "Hostox",
+        "rank": 22,
+        "relationship_strength": 1.21827
+      },
+      {
+        "name": "Manual",
+        "rank": 23,
+        "relationship_strength": 1.19205
+      },
+      {
+        "name": "Denis Kaznacheev",
+        "rank": 24,
+        "relationship_strength": 1.18343
+      },
+      {
+        "name": "Vidna Obmana",
+        "rank": 25,
+        "relationship_strength": 1.07207
+      },
+      {
+        "name": "Lucalag",
+        "rank": 26,
+        "relationship_strength": 1.03093
+      },
+      {
+        "name": "Ben Klock",
+        "rank": 27,
+        "relationship_strength": 1.01807
+      },
+      {
+        "name": "ImThatIM",
+        "rank": 28,
+        "relationship_strength": 0.997506
+      },
+      {
+        "name": "Chris lattner",
+        "rank": 29,
+        "relationship_strength": 0.995025
+      },
+      {
+        "name": "Enzo Leep",
+        "rank": 30,
+        "relationship_strength": 0.981595
+      },
+      {
+        "name": "Diego Palacio",
+        "rank": 31,
+        "relationship_strength": 0.979192
+      },
+      {
+        "name": "Mihai Popoviciu",
+        "rank": 32,
+        "relationship_strength": 0.916031
+      },
+      {
+        "name": "Re.You",
+        "rank": 33,
+        "relationship_strength": 0.887902
+      },
+      {
+        "name": "Furfriend",
+        "rank": 34,
+        "relationship_strength": 0.877193
+      },
+      {
+        "name": "Djuma Soundsystem",
+        "rank": 35,
+        "relationship_strength": 0.877193
+      },
+      {
+        "name": "Masomenos",
+        "rank": 36,
+        "relationship_strength": 0.868621
+      },
+      {
+        "name": "Tobi Kramer",
+        "rank": 37,
+        "relationship_strength": 0.854701
+      },
+      {
+        "name": "Da Sunlounge",
+        "rank": 38,
+        "relationship_strength": 0.845666
+      },
+      {
+        "name": "Kyle Bobby Dunn",
+        "rank": 39,
+        "relationship_strength": 0.813008
+      },
+      {
+        "name": "James Dexter",
+        "rank": 40,
+        "relationship_strength": 0.772201
+      },
+      {
+        "name": "Audio Werner",
+        "rank": 41,
+        "relationship_strength": 0.764088
+      },
+      {
+        "name": "Roman Poncet",
+        "rank": 42,
+        "relationship_strength": 0.756859
+      },
+      {
+        "name": "Anas M",
+        "rank": 43,
+        "relationship_strength": 0.75662
+      },
+      {
+        "name": "Hot Since 82",
+        "rank": 44,
+        "relationship_strength": 0.745871
+      },
+      {
+        "name": "Guliano Lomonte",
+        "rank": 45,
+        "relationship_strength": 0.738007
+      },
+      {
+        "name": "Paul C",
+        "rank": 46,
+        "relationship_strength": 0.734394
+      },
+      {
+        "name": "Lola Palmer",
+        "rank": 47,
+        "relationship_strength": 0.733496
+      },
+      {
+        "name": "Never Alone In A Dark Room",
+        "rank": 48,
+        "relationship_strength": 0.724638
+      }
+    ],
+    "total_count": 48
   },
   "Um": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Dunno",
+        "rank": 1,
+        "relationship_strength": 11.5385
+      },
+      {
+        "name": "Don't Know",
+        "rank": 2,
+        "relationship_strength": 9.81595
+      },
+      {
+        "name": "Uh",
+        "rank": 3,
+        "relationship_strength": 5.37634
+      },
+      {
+        "name": "Sheldon Cooper",
+        "rank": 4,
+        "relationship_strength": 4.44444
+      },
+      {
+        "name": "Bruno Hovard",
+        "rank": 5,
+        "relationship_strength": 2.54237
+      },
+      {
+        "name": "Cena",
+        "rank": 6,
+        "relationship_strength": 2.24719
+      },
+      {
+        "name": "Wanna",
+        "rank": 7,
+        "relationship_strength": 1.6129
+      },
+      {
+        "name": "I",
+        "rank": 8,
+        "relationship_strength": 1.59292
+      },
+      {
+        "name": "Dont",
+        "rank": 9,
+        "relationship_strength": 1.51899
+      },
+      {
+        "name": "Know",
+        "rank": 10,
+        "relationship_strength": 1.38889
+      },
+      {
+        "name": "Stupid",
+        "rank": 11,
+        "relationship_strength": 1.31148
+      },
+      {
+        "name": "Fucking",
+        "rank": 12,
+        "relationship_strength": 0.985222
+      },
+      {
+        "name": "The code",
+        "rank": 13,
+        "relationship_strength": 0.592593
+      },
+      {
+        "name": "Pryapisme",
+        "rank": 14,
+        "relationship_strength": 0.315209
+      },
+      {
+        "name": "Satanicpornocultshop",
+        "rank": 15,
+        "relationship_strength": 0.191571
+      },
+      {
+        "name": "Ruby My Dear",
+        "rank": 16,
+        "relationship_strength": 0.10124
+      },
+      {
+        "name": "Staubkind",
+        "rank": 17,
+        "relationship_strength": 0.0996512
+      },
+      {
+        "name": "Corpo-Mente",
+        "rank": 18,
+        "relationship_strength": 0.06639
+      },
+      {
+        "name": "Venetian Snares",
+        "rank": 19,
+        "relationship_strength": 0.066346
+      },
+      {
+        "name": "Igorrr",
+        "rank": 20,
+        "relationship_strength": 0.0576037
+      },
+      {
+        "name": "RudeLies",
+        "rank": 21,
+        "relationship_strength": 0.0151837
+      },
+      {
+        "name": "Martin garrix",
+        "rank": 22,
+        "relationship_strength": 0.00794549
+      },
+      {
+        "name": "Skillet",
+        "rank": 23,
+        "relationship_strength": 0.007629
+      },
+      {
+        "name": "Imagine Dragons",
+        "rank": 24,
+        "relationship_strength": 0.00131184
+      },
+      {
+        "name": "Iron Maiden",
+        "rank": 25,
+        "relationship_strength": 0.00115836
+      },
+      {
+        "name": "Tame Impala",
+        "rank": 26,
+        "relationship_strength": 0.00113729
+      }
+    ],
+    "total_count": 26
   },
   "Via App": {
     "status": "error",
@@ -174899,16 +175991,445 @@
     "error": "Failed to fetch page"
   },
   "Vile": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Purtenance",
+        "rank": 1,
+        "relationship_strength": 5.91716
+      },
+      {
+        "name": "Comecon",
+        "rank": 2,
+        "relationship_strength": 3.6036
+      },
+      {
+        "name": "Macrodex",
+        "rank": 3,
+        "relationship_strength": 3.22581
+      },
+      {
+        "name": "Interment",
+        "rank": 4,
+        "relationship_strength": 3.10078
+      },
+      {
+        "name": "Tananai",
+        "rank": 5,
+        "relationship_strength": 1.82371
+      },
+      {
+        "name": "Catacomb",
+        "rank": 6,
+        "relationship_strength": 1.45985
+      },
+      {
+        "name": "Blanco",
+        "rank": 7,
+        "relationship_strength": 0.457143
+      },
+      {
+        "name": "Sarcasm",
+        "rank": 8,
+        "relationship_strength": 0.358423
+      },
+      {
+        "name": "Disgorge",
+        "rank": 9,
+        "relationship_strength": 0.294118
+      },
+      {
+        "name": "Extortion",
+        "rank": 10,
+        "relationship_strength": 0.273224
+      },
+      {
+        "name": "Demilich",
+        "rank": 11,
+        "relationship_strength": 0.250784
+      },
+      {
+        "name": "Pestilence",
+        "rank": 12,
+        "relationship_strength": 0.2003
+      },
+      {
+        "name": "Absu",
+        "rank": 13,
+        "relationship_strength": 0.199203
+      },
+      {
+        "name": "Violator",
+        "rank": 14,
+        "relationship_strength": 0.192493
+      },
+      {
+        "name": "Demigod",
+        "rank": 15,
+        "relationship_strength": 0.184162
+      },
+      {
+        "name": "Mortician",
+        "rank": 16,
+        "relationship_strength": 0.148754
+      },
+      {
+        "name": "Phobia",
+        "rank": 17,
+        "relationship_strength": 0.138985
+      },
+      {
+        "name": "Possessed",
+        "rank": 18,
+        "relationship_strength": 0.136799
+      },
+      {
+        "name": "WizTheMc",
+        "rank": 19,
+        "relationship_strength": 0.118977
+      },
+      {
+        "name": "Pentakill",
+        "rank": 20,
+        "relationship_strength": 0.118029
+      },
+      {
+        "name": "Cesare Cremonini",
+        "rank": 21,
+        "relationship_strength": 0.109051
+      },
+      {
+        "name": "Magrudergrind",
+        "rank": 22,
+        "relationship_strength": 0.10433
+      },
+      {
+        "name": "Wormrot",
+        "rank": 23,
+        "relationship_strength": 0.104058
+      },
+      {
+        "name": "Insect Warfare",
+        "rank": 24,
+        "relationship_strength": 0.100503
+      },
+      {
+        "name": "Terrorizer",
+        "rank": 25,
+        "relationship_strength": 0.0990589
+      },
+      {
+        "name": "Deicide",
+        "rank": 26,
+        "relationship_strength": 0.0755073
+      },
+      {
+        "name": "Kataklysm",
+        "rank": 27,
+        "relationship_strength": 0.0519683
+      },
+      {
+        "name": "Pinguini Tattici Nucleari",
+        "rank": 28,
+        "relationship_strength": 0.0397456
+      },
+      {
+        "name": "Nile",
+        "rank": 29,
+        "relationship_strength": 0.0354704
+      },
+      {
+        "name": "Dying Fetus",
+        "rank": 30,
+        "relationship_strength": 0.0344828
+      },
+      {
+        "name": "Obituary",
+        "rank": 31,
+        "relationship_strength": 0.0343407
+      },
+      {
+        "name": "Carcass",
+        "rank": 32,
+        "relationship_strength": 0.0320051
+      },
+      {
+        "name": "Napalm Death",
+        "rank": 33,
+        "relationship_strength": 0.0248401
+      },
+      {
+        "name": "One Ok Rock",
+        "rank": 34,
+        "relationship_strength": 0.0180975
+      },
+      {
+        "name": "Cannibal Corpse",
+        "rank": 35,
+        "relationship_strength": 0.012912
+      },
+      {
+        "name": "Gorillaz",
+        "rank": 36,
+        "relationship_strength": 0.00189204
+      },
+      {
+        "name": "Arctic Monkeys",
+        "rank": 37,
+        "relationship_strength": 0.000830345
+      }
+    ],
+    "total_count": 37
   },
   "Vivi Santana": {
     "status": "error",
     "error": "Failed to fetch page"
   },
   "Von": {
-    "status": "error",
-    "error": "Failed to fetch page"
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Nunslaughter",
+        "rank": 1,
+        "relationship_strength": 2.85714
+      },
+      {
+        "name": "Throat",
+        "rank": 2,
+        "relationship_strength": 2.45902
+      },
+      {
+        "name": "Child Bite",
+        "rank": 3,
+        "relationship_strength": 2.15054
+      },
+      {
+        "name": "Emily Jeffri",
+        "rank": 4,
+        "relationship_strength": 2.01511
+      },
+      {
+        "name": "Cuntz",
+        "rank": 5,
+        "relationship_strength": 1.96353
+      },
+      {
+        "name": "Coffins",
+        "rank": 6,
+        "relationship_strength": 1.84843
+      },
+      {
+        "name": "Deathpile",
+        "rank": 7,
+        "relationship_strength": 1.76545
+      },
+      {
+        "name": "Fonik",
+        "rank": 8,
+        "relationship_strength": 1.52866
+      },
+      {
+        "name": "Burmese",
+        "rank": 9,
+        "relationship_strength": 1.38728
+      },
+      {
+        "name": "The M Machine",
+        "rank": 10,
+        "relationship_strength": 1.33531
+      },
+      {
+        "name": "Omg",
+        "rank": 11,
+        "relationship_strength": 1.28205
+      },
+      {
+        "name": "Indian",
+        "rank": 12,
+        "relationship_strength": 1.21951
+      },
+      {
+        "name": "Jinco",
+        "rank": 13,
+        "relationship_strength": 1.0989
+      },
+      {
+        "name": "Abruptum",
+        "rank": 14,
+        "relationship_strength": 0.960384
+      },
+      {
+        "name": "Couch Slut",
+        "rank": 15,
+        "relationship_strength": 0.85592
+      },
+      {
+        "name": "Liimanarina",
+        "rank": 16,
+        "relationship_strength": 0.83682
+      },
+      {
+        "name": "Wtf",
+        "rank": 17,
+        "relationship_strength": 0.766284
+      },
+      {
+        "name": "Vowl.",
+        "rank": 18,
+        "relationship_strength": 0.699912
+      },
+      {
+        "name": "Brainbombs",
+        "rank": 19,
+        "relationship_strength": 0.586081
+      },
+      {
+        "name": "Repulsion",
+        "rank": 20,
+        "relationship_strength": 0.507614
+      },
+      {
+        "name": "Omnitica",
+        "rank": 21,
+        "relationship_strength": 0.488998
+      },
+      {
+        "name": "Pornography",
+        "rank": 22,
+        "relationship_strength": 0.45045
+      },
+      {
+        "name": "Hellhammer",
+        "rank": 23,
+        "relationship_strength": 0.426348
+      },
+      {
+        "name": "Lung",
+        "rank": 24,
+        "relationship_strength": 0.37594
+      },
+      {
+        "name": "Mythic",
+        "rank": 25,
+        "relationship_strength": 0.369344
+      },
+      {
+        "name": "NuTone",
+        "rank": 26,
+        "relationship_strength": 0.362976
+      },
+      {
+        "name": "Dragged Into Sunlight",
+        "rank": 27,
+        "relationship_strength": 0.333333
+      },
+      {
+        "name": "Nihilist",
+        "rank": 28,
+        "relationship_strength": 0.300526
+      },
+      {
+        "name": "Lord Mantis",
+        "rank": 29,
+        "relationship_strength": 0.296956
+      },
+      {
+        "name": "Anna F.",
+        "rank": 30,
+        "relationship_strength": 0.255102
+      },
+      {
+        "name": "B-Complex",
+        "rank": 31,
+        "relationship_strength": 0.238521
+      },
+      {
+        "name": "Miss Li",
+        "rank": 32,
+        "relationship_strength": 0.210526
+      },
+      {
+        "name": "MitiS",
+        "rank": 33,
+        "relationship_strength": 0.177846
+      },
+      {
+        "name": "COBRAH",
+        "rank": 34,
+        "relationship_strength": 0.176874
+      },
+      {
+        "name": "Mya",
+        "rank": 35,
+        "relationship_strength": 0.153905
+      },
+      {
+        "name": "Azedia",
+        "rank": 36,
+        "relationship_strength": 0.102564
+      },
+      {
+        "name": "Rock",
+        "rank": 37,
+        "relationship_strength": 0.0893855
+      },
+      {
+        "name": "Rameses B",
+        "rank": 38,
+        "relationship_strength": 0.0892326
+      },
+      {
+        "name": "Kill Paris",
+        "rank": 39,
+        "relationship_strength": 0.0653275
+      },
+      {
+        "name": "Godflesh",
+        "rank": 40,
+        "relationship_strength": 0.0635324
+      },
+      {
+        "name": "MDKTN",
+        "rank": 41,
+        "relationship_strength": 0.057282
+      },
+      {
+        "name": "Stan SB",
+        "rank": 42,
+        "relationship_strength": 0.0418323
+      },
+      {
+        "name": "Blackmill",
+        "rank": 43,
+        "relationship_strength": 0.0343348
+      },
+      {
+        "name": "CNCO",
+        "rank": 44,
+        "relationship_strength": 0.0292579
+      },
+      {
+        "name": "Name",
+        "rank": 45,
+        "relationship_strength": 0.0189753
+      },
+      {
+        "name": "Infected Mushroom",
+        "rank": 46,
+        "relationship_strength": 0.00847458
+      },
+      {
+        "name": "Skrillex",
+        "rank": 47,
+        "relationship_strength": 0.00366851
+      },
+      {
+        "name": "Foo Fighters",
+        "rank": 48,
+        "relationship_strength": 0.00184262
+      }
+    ],
+    "total_count": 48
   },
   "Wilhelmina": {
     "status": "error",
