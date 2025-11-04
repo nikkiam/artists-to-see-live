@@ -5,6 +5,7 @@ Script to extract unique artist names from Spotify playlists and save to JSON.
 
 import json
 import logging
+from http import HTTPStatus
 from pathlib import Path
 
 import requests
@@ -15,7 +16,7 @@ logger = logging.getLogger(__name__)
 def load_spotify_config():
     """Load Spotify credentials from spotify-config.json."""
     config_path = Path(__file__).parent / "spotify-config.json"
-    with open(config_path) as f:
+    with open(config_path, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -29,7 +30,7 @@ def refresh_access_token(config):
         "client_secret": config["clientSecret"],
     }
 
-    response = requests.post(url, data=data)
+    response = requests.post(url, data=data, timeout=30)
     response.raise_for_status()
 
     token_data = response.json()
@@ -55,7 +56,7 @@ def get_playlist_tracks(playlist_id, access_token):
         logger.info(
             "Fetching tracks from playlist %s, offset %d...", playlist_id, offset
         )
-        response = requests.get(url, headers=headers, params=params)
+        response = requests.get(url, headers=headers, params=params, timeout=30)
         response.raise_for_status()
 
         data = response.json()
@@ -104,7 +105,7 @@ def main():
     # Try to use existing access token, refresh if needed
     try:
         access_token = config["accessToken"]
-    except Exception:
+    except KeyError:
         logger.info("Refreshing access token...")
         access_token = refresh_access_token(config)
 
@@ -118,7 +119,7 @@ def main():
     try:
         artists = extract_artist_names(playlist_ids, access_token)
     except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 401:
+        if e.response.status_code == HTTPStatus.UNAUTHORIZED:
             logger.info("Access token expired, refreshing...")
             access_token = refresh_access_token(config)
             artists = extract_artist_names(playlist_ids, access_token)

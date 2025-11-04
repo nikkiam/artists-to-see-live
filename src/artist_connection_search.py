@@ -13,6 +13,9 @@ from src.models import (
     Event,
 )
 
+# Sentinel value indicating no path exists in the predecessors array
+NO_PATH_SENTINEL = -9999
+
 
 def build_strength_lookup(
     similarity_map: dict[str, ArtistSimilarityData],
@@ -73,7 +76,13 @@ def build_sparse_graph(
     ]
 
     # Unpack into separate lists
-    rows, cols, costs = zip(*edges, strict=True) if edges else ([], [], [])
+    if edges:
+        rows_tuple, cols_tuple, costs_tuple = zip(*edges, strict=True)
+        rows = list(rows_tuple)
+        cols = list(cols_tuple)
+        costs = list(costs_tuple)
+    else:
+        rows, cols, costs = [], [], []
 
     # Create sparse matrix
     n = len(all_artists)
@@ -102,7 +111,7 @@ def reconstruct_path(
 ) -> list[str] | None:
     """Reconstruct path from source to target using predecessors array."""
     # Check if target is reachable
-    if predecessors[source_array_idx, target_idx] == -9999:
+    if predecessors[source_array_idx, target_idx] == NO_PATH_SENTINEL:
         return None
 
     path = []
@@ -111,7 +120,7 @@ def reconstruct_path(
     while current != source_node_idx:
         path.append(idx_to_artist[current])
         current = predecessors[source_array_idx, current]
-        if current == -9999:
+        if current == NO_PATH_SENTINEL:
             return None
 
     path.append(idx_to_artist[source_node_idx])

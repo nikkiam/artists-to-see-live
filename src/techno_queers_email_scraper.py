@@ -13,6 +13,11 @@ from src.models import Artist, Event
 
 logger = logging.getLogger(__name__)
 
+# Constants
+NON_EVENT_STREAK_THRESHOLD = 3
+MIN_ARGV_LENGTH = 2
+ARGV_LENGTH_WITH_OUTPUT = 4
+
 
 def parse_html_file(filepath: str) -> list[Event]:
     """
@@ -57,7 +62,7 @@ def parse_html_file(filepath: str) -> list[Event]:
             non_event_streak += 1
 
             # If we've seen 3+ non-event divs in a row, stop
-            if non_event_streak >= 3 and len(events) > 0:
+            if non_event_streak >= NON_EVENT_STREAK_THRESHOLD and len(events) > 0:
                 break
             continue
 
@@ -70,7 +75,7 @@ def parse_html_file(filepath: str) -> list[Event]:
             if event and event.ticket_url not in seen_urls:
                 seen_urls.add(event.ticket_url)
                 events.append(event)
-        except Exception as e:
+        except (AttributeError, ValueError, IndexError, TypeError, KeyError) as e:
             # Log and skip malformed events
             logger.warning("Failed to parse event: %s", e)
             continue
@@ -270,18 +275,18 @@ def _parse_artists(artist_text: str) -> list[Artist]:
         # Parse timed artists
         for time, name in timed_matches:
             # Clean up name: strip whitespace and normalize newlines/spaces
-            name = re.sub(r"\s+", " ", name.strip())
-            if name and name.lower() not in ["", "..."]:
-                artists.append(Artist(name=name, set_time=time))
+            cleaned_name = re.sub(r"\s+", " ", name.strip())
+            if cleaned_name and cleaned_name.lower() not in ["", "..."]:
+                artists.append(Artist(name=cleaned_name, set_time=time))
     else:
         # Parse simple comma-separated list
         names = re.split(r",\s*", artist_text)
         for name in names:
             # Clean up name: strip whitespace and normalize newlines/spaces
-            name = re.sub(r"\s+", " ", name.strip())
+            cleaned_name = re.sub(r"\s+", " ", name.strip())
             # Skip empty, ellipsis, or very short names
-            if name and len(name) > 1 and name != "...":
-                artists.append(Artist(name=name, set_time=None))
+            if cleaned_name and len(cleaned_name) > 1 and cleaned_name != "...":
+                artists.append(Artist(name=cleaned_name, set_time=None))
 
     return artists
 
@@ -299,7 +304,7 @@ def main():
         ],
     )
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) < MIN_ARGV_LENGTH:
         logger.error(
             "Usage: python -m src.techno_queers_email_scraper <html_file> "
             "[--output <output_file>]"
@@ -310,7 +315,7 @@ def main():
     output_file = None
 
     # Check for --output flag
-    if len(sys.argv) >= 4 and sys.argv[2] == "--output":
+    if len(sys.argv) >= ARGV_LENGTH_WITH_OUTPUT and sys.argv[2] == "--output":
         output_file = sys.argv[3]
 
     # Parse the HTML file

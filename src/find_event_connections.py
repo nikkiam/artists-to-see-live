@@ -13,6 +13,8 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
+import scipy.sparse as sp
+
 from src.artist_connection_search import (
     build_sparse_graph,
     build_strength_lookup,
@@ -63,9 +65,7 @@ def calculate_stats(connections: list, tiers: dict) -> dict:
     }
 
 
-def generate_markdown_report(
-    connections: list, tiers: dict, stats: dict, output_file: Path
-):
+def generate_markdown_report(tiers: dict, stats: dict, output_file: Path):
     """Generate markdown report of connections."""
     with open(output_file, "w", encoding="utf-8") as f:
         # Header
@@ -144,7 +144,7 @@ def generate_markdown_report(
     logger.info("Markdown report saved to: %s", output_file)
 
 
-def save_json_report(connections: list, tiers: dict, stats: dict, output_file: Path):
+def save_json_report(connections: list, stats: dict, output_file: Path):
     """Save JSON report of connections."""
     # Convert connections to dictionaries
     connections_data = [
@@ -255,6 +255,9 @@ def main():
 
     # Step 3: Build sparse graph and strength lookup
     logger.info("Step 3: Building sparse graph from similarity data...")
+    graph: sp.csr_matrix
+    artist_to_idx: dict[str, int]
+    idx_to_artist: dict[int, str]
     graph, artist_to_idx, idx_to_artist = build_sparse_graph(similar_artists_map)
     logger.info(
         "  ✓ Graph built: %d nodes, %d edges", graph.shape[0], graph.nnz
@@ -296,10 +299,10 @@ def main():
     logger.info("Step 6: Generating output reports...")
 
     md_output = output_dir / "event_connections.md"
-    generate_markdown_report(connections, tiers, stats, md_output)
+    generate_markdown_report(tiers, stats, md_output)
 
     json_output = output_dir / "event_connections.json"
-    save_json_report(connections, tiers, stats, json_output)
+    save_json_report(connections, stats, json_output)
 
     logger.info("  ✓ Reports generated")
 

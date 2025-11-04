@@ -14,5 +14,19 @@ select = [
     "B",   # flake8-bugbear (common bugs)
     "SIM", # flake8-simplify
     "T20", # flake8-print (ban print statements - use logging instead)
+    "S",   # flake8-bandit (security checks like missing timeout)
+    "BLE", # flake8-blind-except (catch specific exceptions)
+    "PL",  # Pylint (includes encoding checks)
+    "ARG", # flake8-unused-arguments (detect unused function arguments)
     "RUF", # Ruff-specific rules
+]
+
+# Ignore overly strict or context-inappropriate rules
+ignore = [
+    "S101",    # Use of assert - normal in tests
+    "S603",    # subprocess without shell=True - safe for known commands like git
+    "S607",    # Starting process with partial path - safe for git
+    "PLR0913", # Too many arguments - sometimes necessary
+    "PLR0915", # Too many statements - sometimes necessary
+    "PLR0912", # Too many branches - sometimes necessary
 ]

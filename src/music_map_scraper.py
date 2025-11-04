@@ -10,6 +10,7 @@ import re
 import subprocess
 import time
 from dataclasses import dataclass
+from http import HTTPStatus
 from pathlib import Path
 
 import requests
@@ -77,7 +78,7 @@ def fetch_artist_page(artist_name: str) -> str | None:
     try:
         response = requests.get(url, headers=headers, timeout=10)
 
-        if response.status_code == 404:
+        if response.status_code == HTTPStatus.NOT_FOUND:
             logger.info("  ✗ Artist not found: %s", artist_name)
             return None
 
@@ -113,7 +114,7 @@ def parse_artist_names(html: str) -> list[str]:
 
         return artists[1:]
 
-    except Exception as e:
+    except (AttributeError, ValueError, IndexError, TypeError) as e:
         logger.error("  ✗ Error parsing artist names: %s", e)
         return []
 
@@ -148,7 +149,7 @@ def parse_relationship_data(html: str) -> list[float]:
 
         return values[1:]
 
-    except Exception as e:
+    except (AttributeError, ValueError, IndexError, TypeError) as e:
         logger.error("  ✗ Error parsing relationship data: %s", e)
         return []
 
