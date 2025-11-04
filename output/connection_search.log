@@ -89,3 +89,8 @@
 2025-11-04 04:15:08 - INFO -   - Distantly Related Artists: 194
 2025-11-04 04:15:08 - INFO -   - Moderately Related Artists: 238
 2025-11-04 04:15:08 - INFO -   - Similar Artists: 20
+2025-11-04 04:15:08 - INFO - ✓ Git commit and push successful: Step 5: Grouped connections by tier
+2025-11-04 04:15:08 - INFO - Step 6: Generating output reports...
+2025-11-04 04:15:08 - INFO - Markdown report saved to: output/event_connections.md
+2025-11-04 04:15:08 - INFO - JSON report saved to: output/event_connections.json
+2025-11-04 04:15:08 - INFO -   ✓ Reports generated
