@@ -73,3 +73,6 @@
 2025-11-04 04:15:05 - INFO -   ✓ Loaded events: 42 events
 2025-11-04 04:15:05 - INFO - Loaded 961 artists
 2025-11-04 04:15:05 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-04 04:15:06 - INFO - ✓ Git commit and push successful: Step 1: Loaded data files
+2025-11-04 04:15:06 - INFO - Step 2: Extracting unique artists from events...
+2025-11-04 04:15:06 - INFO -   ✓ Found 197 unique artists across events
