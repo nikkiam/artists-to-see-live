@@ -237,7 +237,7 @@ def save_results(results: dict[str, ScraperResult], output_file: Path):
 
 
 def git_commit_results(output_file: Path, count: int):
-    """Create a git commit with current results."""
+    """Create a git commit and push with current results."""
     try:
         subprocess.run(
             ["git", "add", str(output_file), "scraper.log"],
@@ -248,7 +248,12 @@ def git_commit_results(output_file: Path, count: int):
         subprocess.run(
             ["git", "commit", "-m", commit_msg], check=True, capture_output=True
         )
-        logger.info("  ✓ Git commit created")
+        subprocess.run(
+            ["git", "push"],
+            check=True,
+            capture_output=True,
+        )
+        logger.info("  ✓ Git commit and push successful")
     except subprocess.CalledProcessError:
         pass
 
@@ -340,6 +345,10 @@ def main():
 
     # Save final results
     save_results(results, output_file)
+
+    # Final git commit
+    git_commit_results(output_file, len(results))
+    logger.info("  ✓ Final results committed to git")
 
     # Summary
     success_count = sum(1 for r in results.values() if r.status == "success")
