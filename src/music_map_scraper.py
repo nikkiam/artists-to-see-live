@@ -190,15 +190,25 @@ def scrape_artist(artist_name: str) -> ScraperResult:
 
 
 def load_artists() -> list[str]:
-    """Load artists from my_artists.json."""
-    artists_file = Path("output/my_artists.json")
+    """Load unique artists from events.json."""
+    events_file = Path("output/events.json")
 
-    if not artists_file.exists():
-        raise FileNotFoundError("my_artists.json not found in output/ directory!")
+    if not events_file.exists():
+        raise FileNotFoundError("events.json not found in output/ directory!")
 
-    with open(artists_file) as f:
+    with open(events_file, encoding="utf-8") as f:
         data = json.load(f)
-        return data.get("artists", [])
+        events = data.get("events", [])
+
+    # Extract unique artist names from all events
+    artist_names = {
+        artist["name"]
+        for event in events
+        for artist in event.get("artists", [])
+        if artist.get("name")
+    }
+
+    return sorted(artist_names)
 
 
 def load_existing_results(output_file: Path) -> dict[str, dict]:
@@ -265,7 +275,7 @@ def main():
 
     # Load artists
     artists = load_artists()
-    logger.info("Loaded %d artists from my_artists.json", len(artists))
+    logger.info("Loaded %d unique artists from events.json", len(artists))
 
     # Check which artists already have successful results
     already_processed = {
