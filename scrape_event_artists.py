@@ -9,7 +9,7 @@ import subprocess
 import time
 from pathlib import Path
 
-from src.music_map_scraper import scrape_artist, save_results, ScraperResult
+from src.music_map_scraper import ScraperResult, save_results, scrape_artist
 
 logger = logging.getLogger(__name__)
 

@@ -1,7 +1,10 @@
 """Extract unique event artists for scraping."""
 
 import json
-from pathlib import Path
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Load events
 with open("output/events.json") as f:
@@ -21,5 +24,5 @@ output = {"artists": event_artists_list}
 with open("output/event_artists.json", "w", encoding="utf-8") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 
-print(f"Extracted {len(event_artists_list)} unique event artists")
-print(f"Saved to: output/event_artists.json")
+logger.info("Extracted %d unique event artists", len(event_artists_list))
+logger.info("Saved to: output/event_artists.json")

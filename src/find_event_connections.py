@@ -13,32 +13,20 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-from src.artist_connection_search import build_sparse_graph, find_optimal_paths
+from src.artist_connection_search import (
+    build_sparse_graph,
+    build_strength_lookup,
+    find_optimal_paths,
+)
+from src.data_loader import load_artist_list, load_events, load_similar_artists_map
+from src.models import Event
 
 logger = logging.getLogger(__name__)
 
 
-def load_json(filepath: Path) -> dict:
-    """Load JSON file with error handling."""
-    if not filepath.exists():
-        logger.error("File not found: %s", filepath)
-        raise FileNotFoundError(f"File not found: {filepath}")
-
-    try:
-        with open(filepath, encoding="utf-8") as f:
-            return json.load(f)
-    except json.JSONDecodeError as e:
-        logger.error("Invalid JSON in %s: %s", filepath, e)
-        raise
-
-
-def extract_unique_artists(events: list[dict]) -> list[str]:
+def extract_unique_artists(events: list[Event]) -> list[str]:
     """Extract unique artist names from events."""
-    artists = set()
-    for event in events:
-        for artist_data in event.get("artists", []):
-            artists.add(artist_data["name"])
-    return sorted(artists)
+    return sorted({artist.name for event in events for artist in event.artists})
 
 
 def group_by_tier(connections: list) -> dict[str, list]:
@@ -87,12 +75,10 @@ def generate_markdown_report(
         # Summary stats
         f.write("## Summary\n\n")
         f.write(f"- **Total Connections:** {stats['total_connections']}\n")
-        f.write(
-            f"- **Event Artists Connected:** {stats['unique_event_artists_connected']}\n"
-        )
-        f.write(
-            f"- **Favorite Artists Connected:** {stats['unique_favorites_connected']}\n"
-        )
+        event_artists_count = stats["unique_event_artists_connected"]
+        f.write(f"- **Event Artists Connected:** {event_artists_count}\n")
+        favorites_count = stats["unique_favorites_connected"]
+        f.write(f"- **Favorite Artists Connected:** {favorites_count}\n")
         f.write(f"- **Average Path Length:** {stats['avg_path_length']} hops\n")
         f.write(f"- **Average Path Score:** {stats['avg_path_score']}\n\n")
 
@@ -136,8 +122,11 @@ def generate_markdown_report(
                 f.write(f"**URL:** {event_conns[0].event_url}\n\n")
                 f.write(f"**Connections ({len(event_conns)}):**\n\n")
 
-                # Sort by path score
-                for conn in sorted(event_conns, key=lambda c: c.path_score, reverse=True):
+                # Sort by path score (best first)
+                sorted_conns = sorted(
+                    event_conns, key=lambda c: c.path_score, reverse=True
+                )
+                for conn in sorted_conns:
                     # Path display
                     path_str = " → ".join(conn.path)
                     f.write(f"- **{conn.favorite_artist}** (from your favorites)\n")
@@ -246,15 +235,13 @@ def main():
     events_file = output_dir / "events.json"
     favorites_file = output_dir / "my_artists.json"
 
-    similar_artists_map = load_json(similar_artists_file)
+    similar_artists_map = load_similar_artists_map(similar_artists_file)
     logger.info("  ✓ Loaded similar artists map: %d artists", len(similar_artists_map))
 
-    events_data = load_json(events_file)
-    events = events_data["events"]
+    events = load_events(events_file)
     logger.info("  ✓ Loaded events: %d events", len(events))
 
-    favorites_data = load_json(favorites_file)
-    favorites = favorites_data["artists"]
+    favorites = load_artist_list(favorites_file)
     logger.info("  ✓ Loaded favorites: %d artists", len(favorites))
 
     git_commit_and_push("Step 1: Loaded data files", [log_file])
@@ -266,14 +253,18 @@ def main():
 
     git_commit_and_push("Step 2: Extracted event artists", [log_file])
 
-    # Step 3: Build sparse graph
+    # Step 3: Build sparse graph and strength lookup
     logger.info("Step 3: Building sparse graph from similarity data...")
     graph, artist_to_idx, idx_to_artist = build_sparse_graph(similar_artists_map)
     logger.info(
         "  ✓ Graph built: %d nodes, %d edges", graph.shape[0], graph.nnz
     )
 
-    git_commit_and_push("Step 3: Built sparse graph", [log_file])
+    logger.info("  Building strength lookup for fast path reconstruction...")
+    strength_lookup = build_strength_lookup(similar_artists_map)
+    logger.info("  ✓ Strength lookup built: %d edges", len(strength_lookup))
+
+    git_commit_and_push("Step 3: Built sparse graph and strength lookup", [log_file])
 
     # Step 4: Find connections
     logger.info("Step 4: Running Dijkstra search to find optimal paths...")
@@ -283,7 +274,7 @@ def main():
         idx_to_artist,
         event_artists,
         favorites,
-        similar_artists_map,
+        strength_lookup,
         events,
         max_paths_per_pair=5,
     )

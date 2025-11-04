@@ -38,6 +38,26 @@ The example email in `example_emails/2025-10-31.html` is ~3800 lines of HTML tab
 - Functions should be pure when possible (no side effects)
 - Avoid mutation of data structures
 
+### Typed Dataclasses and Data Loading
+- **Always use dataclasses** for structured data instead of raw dictionaries
+- Parse JSON into typed dataclasses at load time using dedicated loader functions (see `src/data_loader.py`)
+- Filter invalid/incomplete data during parsing, not during processing
+- This approach:
+  - Eliminates `.get()` calls throughout the codebase
+  - Provides clear visibility into what data is actually loaded
+  - Catches data issues early at the boundary
+  - Makes the code more maintainable with type checking
+- Example:
+  ```python
+  # Good: Load and filter at boundary
+  artists_map = load_similar_artists_map(filepath)  # Returns dict[str, ArtistSimilarityData]
+  # Now you can safely access: artist_data.similar_artists (no .get() needed)
+
+  # Avoid: Passing raw JSON dicts around and checking everywhere
+  raw_data = json.load(f)
+  if raw_data.get("status") == "success":  # Repeated checks everywhere
+  ```
+
 ### Early Exit Pattern
 - Always use **early exit** style of coding
 - Check for error conditions and edge cases at the start of functions
@@ -53,6 +73,28 @@ The example email in `example_emails/2025-10-31.html` is ~3800 lines of HTML tab
 
       # Main logic after
       return transform(data)
+  ```
+
+### List Comprehensions and Functional Constructs
+- **Prefer list/dict/set comprehensions** over for loops for filtering and mapping operations
+- Use comprehensions for simple transformations; use regular loops for complex logic
+- Filter data at load time, not in the middle of processing
+- Example (good):
+  ```python
+  # Filter at load time
+  valid_artists = [a for a in artists if a.status == "success"]
+
+  # Use comprehensions for transformations
+  artist_names = [artist.name for artist in valid_artists]
+  artist_map = {a.name: a.id for a in valid_artists}
+  ```
+- Example (avoid):
+  ```python
+  # Don't filter mid-loop with .get() and status checks
+  for artist in all_artists:
+      if artist.get("status") != "success":
+          continue
+      # process artist...
   ```
 
 ### Logging

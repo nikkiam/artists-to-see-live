@@ -1,7 +1,40 @@
 """Data models for events and artists."""
 
 from dataclasses import dataclass, field
-from typing import Optional
+
+# Tier classification thresholds for artist connections
+TIER_VERY_SIMILAR_THRESHOLD = 7.0
+TIER_SIMILAR_THRESHOLD = 5.0
+TIER_MODERATELY_RELATED_THRESHOLD = 3.0
+
+TIER_NAMES = {
+    "very_similar": "Very Similar Artists",
+    "similar": "Similar Artists",
+    "moderately_related": "Moderately Related Artists",
+    "distantly_related": "Distantly Related Artists",
+}
+
+
+@dataclass(frozen=True)
+class SimilarArtist:
+    """Represents a similar artist with relationship metrics."""
+
+    name: str
+    rank: int
+    relationship_strength: float
+
+
+@dataclass(frozen=True)
+class ArtistSimilarityData:
+    """
+    Contains similarity data for a successfully scraped artist.
+
+    Note: Only successful scrapes should be loaded into this structure.
+    Failed/skipped scrapes are filtered out at load time.
+    """
+
+    artist_name: str
+    similar_artists: tuple[SimilarArtist, ...]
 
 
 @dataclass

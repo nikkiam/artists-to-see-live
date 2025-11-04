@@ -4,17 +4,47 @@ import numpy as np
 import scipy.sparse as sp
 from scipy.sparse.csgraph import dijkstra
 
-from src.models import ConnectionPath
+from src.models import (
+    TIER_MODERATELY_RELATED_THRESHOLD,
+    TIER_SIMILAR_THRESHOLD,
+    TIER_VERY_SIMILAR_THRESHOLD,
+    ArtistSimilarityData,
+    ConnectionPath,
+    Event,
+)
+
+
+def build_strength_lookup(
+    similarity_map: dict[str, ArtistSimilarityData],
+) -> dict[tuple[str, str], float]:
+    """
+    Build a pre-computed lookup for (source, target) -> strength.
+
+    This avoids O(n) list iteration during path reconstruction.
+
+    Args:
+        similarity_map: Dict of artist similarity data
+
+    Returns:
+        Dict mapping (source_artist, target_artist) to relationship strength
+    """
+    lookup = {}
+    for source_artist, artist_data in similarity_map.items():
+        for similar_artist in artist_data.similar_artists:
+            lookup[(source_artist, similar_artist.name)] = (
+                similar_artist.relationship_strength
+            )
+    return lookup
 
 
 def build_sparse_graph(
-    similar_artists_map: dict,
+    similarity_map: dict[str, ArtistSimilarityData],
 ) -> tuple[sp.csr_matrix, dict[str, int], dict[int, str]]:
     """
-    Convert similar_artists_map to sparse CSR matrix with costs.
+    Convert similarity map to sparse CSR matrix with costs.
 
     Args:
-        similar_artists_map: Dict mapping artist names to their similar artists
+        similarity_map: Dict mapping artist names to their similarity data
 
     Returns:
         Tuple of (csr_matrix, artist_to_idx, idx_to_artist)
@@ -22,41 +52,28 @@ def build_sparse_graph(
         - artist_to_idx: Maps artist name to matrix index
         - idx_to_artist: Maps matrix index to artist name
     """
-    # Build complete artist index
-    all_artists = set(similar_artists_map.keys())
-    for artist_data in similar_artists_map.values():
-        if artist_data.get("status") != "success":
-            continue
-        for similar_artist in artist_data.get("similar_artists", []):
-            all_artists.add(similar_artist["name"])
+    # Collect all unique artist names
+    all_artists = set(similarity_map.keys())
+    for artist_data in similarity_map.values():
+        all_artists.update(sim.name for sim in artist_data.similar_artists)
 
     # Create bidirectional index mappings
     artist_to_idx = {artist: idx for idx, artist in enumerate(sorted(all_artists))}
     idx_to_artist = {idx: artist for artist, idx in artist_to_idx.items()}
 
-    # Build edge lists
-    rows = []
-    cols = []
-    costs = []
+    # Build edge lists using list comprehensions
+    edges = [
+        (
+            artist_to_idx[source_artist],
+            artist_to_idx[sim.name],
+            1.0 / sim.relationship_strength,
+        )
+        for source_artist, artist_data in similarity_map.items()
+        for sim in artist_data.similar_artists
+    ]
 
-    for source_artist, artist_data in similar_artists_map.items():
-        if artist_data.get("status") != "success":
-            continue
-
-        source_idx = artist_to_idx[source_artist]
-
-        for similar_artist in artist_data.get("similar_artists", []):
-            target_idx = artist_to_idx[similar_artist["name"]]
-            strength = similar_artist["relationship_strength"]
-
-            # Skip invalid strengths
-            if strength <= 0:
-                continue
-
-            cost = 1.0 / strength
-            rows.append(source_idx)
-            cols.append(target_idx)
-            costs.append(cost)
+    # Unpack into separate lists
+    rows, cols, costs = zip(*edges, strict=True) if edges else ([], [], [])
 
     # Create sparse matrix
     n = len(all_artists)
@@ -67,28 +84,13 @@ def build_sparse_graph(
 
 def classify_tier(avg_strength: float) -> str:
     """Classify connection into tier based on average strength."""
-    if avg_strength >= 7.0:
+    if avg_strength >= TIER_VERY_SIMILAR_THRESHOLD:
         return "Very Similar Artists"
-    if avg_strength >= 5.0:
+    if avg_strength >= TIER_SIMILAR_THRESHOLD:
         return "Similar Artists"
-    if avg_strength >= 3.0:
+    if avg_strength >= TIER_MODERATELY_RELATED_THRESHOLD:
         return "Moderately Related Artists"
     return "Distantly Related Artists"
-
-
-def find_relationship_strength(
-    similar_artists_map: dict, source: str, target: str
-) -> float | None:
-    """Find relationship strength from source artist to target artist."""
-    artist_data = similar_artists_map.get(source)
-    if not artist_data or artist_data.get("status") != "success":
-        return None
-
-    for similar_artist in artist_data.get("similar_artists", []):
-        if similar_artist["name"] == target:
-            return similar_artist["relationship_strength"]
-
-    return None
 
 
 def reconstruct_path(
@@ -117,25 +119,26 @@ def reconstruct_path(
 
 
 def calculate_path_metrics(
-    path: list[str], similar_artists_map: dict
+    path: list[str], strength_lookup: dict[tuple[str, str], float]
 ) -> tuple[list[float], float, float, float, float] | None:
     """
-    Calculate metrics for a path.
+    Calculate metrics for a path using pre-computed strength lookup.
+
+    Args:
+        path: List of artist names forming the path
+        strength_lookup: Pre-computed (source, target) -> strength mapping
 
     Returns:
         Tuple of (path_strengths, total_cost, min_strength, max_strength, avg_strength)
         or None if path is invalid
     """
+    # Build list of strengths, checking each exists
     strengths = []
-
     for i in range(len(path) - 1):
-        source = path[i]
-        target = path[i + 1]
-
-        strength = find_relationship_strength(similar_artists_map, source, target)
+        strength = strength_lookup.get((path[i], path[i + 1]))
+        # Early exit if any edge is missing
         if strength is None:
             return None
-
         strengths.append(strength)
 
     # Early exit if no edges
@@ -184,8 +187,8 @@ def find_optimal_paths(
     idx_to_artist: dict[int, str],
     source_artists: list[str],
     target_artists: list[str],
-    similar_artists_map: dict,
-    events: list[dict],
+    strength_lookup: dict[tuple[str, str], float],
+    events: list[Event],
     max_paths_per_pair: int = 5,
 ) -> list[ConnectionPath]:
     """
@@ -197,31 +200,36 @@ def find_optimal_paths(
         idx_to_artist: Mapping from index to artist name
         source_artists: List of event artist names
         target_artists: List of favorite artist names
-        similar_artists_map: Original artist similarity data
-        events: List of event dictionaries
+        strength_lookup: Pre-computed (source, target) -> strength mapping
+        events: List of Event objects
         max_paths_per_pair: Maximum paths to keep per event artist → favorite pair
 
     Returns:
         List of ConnectionPath objects, sorted by path_score (best first)
     """
-    # Get indices for source artists that exist in graph
-    source_indices = []
-    source_idx_to_artist = {}
-    for artist in source_artists:
-        if artist in artist_to_idx:
-            idx = artist_to_idx[artist]
-            source_indices.append(idx)
-            source_idx_to_artist[idx] = artist
+    # Filter to artists that exist in graph (using list comprehension)
+    valid_sources = [
+        (artist, artist_to_idx[artist])
+        for artist in source_artists
+        if artist in artist_to_idx
+    ]
 
     # Early exit if no valid sources
-    if not source_indices:
+    if not valid_sources:
         return []
 
-    # Get indices for target artists that exist in graph
-    target_indices = set()
-    for artist in target_artists:
-        if artist in artist_to_idx:
-            target_indices.add(artist_to_idx[artist])
+    # Extract indices
+    source_artists_valid, source_indices = zip(*valid_sources, strict=True)
+    source_idx_to_artist = dict(
+        zip(source_indices, source_artists_valid, strict=True)
+    )
+
+    # Get target indices (using set comprehension)
+    target_indices = {
+        artist_to_idx[artist]
+        for artist in target_artists
+        if artist in artist_to_idx
+    }
 
     # Early exit if no valid targets
     if not target_indices:
@@ -232,17 +240,16 @@ def find_optimal_paths(
         graph, indices=source_indices, return_predecessors=True
     )
 
-    # Build event lookup for artist names
-    event_lookup = {}
-    for event in events:
-        for artist_data in event["artists"]:
-            artist_name = artist_data["name"]
-            if artist_name not in event_lookup:
-                event_lookup[artist_name] = {
-                    "name": event["name"],
-                    "venue": event.get("venue"),
-                    "url": event["ticket_url"],
-                }
+    # Build event lookup using dict comprehension
+    event_lookup = {
+        artist.name: {
+            "name": event.name,
+            "venue": event.venue,
+            "url": event.ticket_url,
+        }
+        for event in events
+        for artist in event.artists
+    }
 
     # Collect all connections
     connections = []
@@ -267,8 +274,8 @@ def find_optimal_paths(
             if not path:
                 continue
 
-            # Calculate metrics
-            metrics = calculate_path_metrics(path, similar_artists_map)
+            # Calculate metrics using pre-computed lookup
+            metrics = calculate_path_metrics(path, strength_lookup)
             if not metrics:
                 continue
 
