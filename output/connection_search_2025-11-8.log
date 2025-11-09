@@ -1,0 +1,27 @@
+2025-11-08 21:05:56 - INFO - ============================================================
+2025-11-08 21:05:56 - INFO - Starting artist connection search for 2025-11-8
+2025-11-08 21:05:56 - INFO - ============================================================
+2025-11-08 21:05:56 - INFO - Step 1: Loading data files...
+2025-11-08 21:05:56 - INFO - Loaded 854 successful artists (453 failed/skipped)
+2025-11-08 21:05:56 - INFO -   ✓ Loaded similar artists map: 854 artists
+2025-11-08 21:05:56 - INFO - Loaded 66 events
+2025-11-08 21:05:56 - INFO -   ✓ Loaded events: 66 events
+2025-11-08 21:05:56 - INFO - Loaded 961 artists
+2025-11-08 21:05:56 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-08 21:05:56 - INFO - Step 2: Extracting unique artists from events...
+2025-11-08 21:05:56 - INFO -   ✓ Found 161 unique artists across events
+2025-11-08 21:05:56 - INFO - Step 3: Building sparse graph from similarity data...
+2025-11-08 21:05:56 - INFO -   ✓ Graph built: 18048 nodes, 35512 edges
+2025-11-08 21:05:56 - INFO -   Building strength lookup for fast path reconstruction...
+2025-11-08 21:05:56 - INFO -   ✓ Strength lookup built: 35512 edges
+2025-11-08 21:05:56 - INFO - Step 4: Running Dijkstra search to find optimal paths...
+2025-11-08 21:05:56 - INFO -   ✓ Found 5896 total connections
+2025-11-08 21:05:56 - INFO - Step 5: Grouping connections by tier and calculating stats...
+2025-11-08 21:05:56 - INFO -   - Moderately Related Artists: 3209
+2025-11-08 21:05:56 - INFO -   - Distantly Related Artists: 2292
+2025-11-08 21:05:56 - INFO -   - Similar Artists: 384
+2025-11-08 21:05:56 - INFO -   - Very Similar Artists: 11
+2025-11-08 21:05:56 - INFO - Step 6: Generating output reports...
+2025-11-08 21:05:56 - INFO - Markdown report saved to: output/event_connections_2025-11-8.md
+2025-11-08 21:05:56 - INFO - JSON report saved to: output/event_connections_2025-11-8.json
+2025-11-08 21:05:56 - INFO -   ✓ Reports generated
