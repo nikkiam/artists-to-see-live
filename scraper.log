@@ -3812,3 +3812,35 @@ Scraping complete!
 2025-11-08 21:05:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
 2025-11-08 21:05:26 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /and+seems+to+be+doing+just+fine HTTP/1.1" 404 1049
 2025-11-08 21:05:26 - __main__ - INFO -   ✗ Artist not found: and seems to be doing just fine
+2025-11-08 21:05:27 - __main__ - INFO -   ✓ Git commit and push successful
+2025-11-08 21:05:27 - __main__ - INFO -   💾 Progress saved (1301 total artists)
+2025-11-08 21:05:29 - __main__ - INFO - [151/156] dining spot for gay brunchers
+2025-11-08 21:05:29 - __main__ - INFO - Scraping: dining spot for gay brunchers
+2025-11-08 21:05:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:30 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /dining+spot+for+gay+brunchers HTTP/1.1" 404 1049
+2025-11-08 21:05:30 - __main__ - INFO -   ✗ Artist not found: dining spot for gay brunchers
+2025-11-08 21:05:32 - __main__ - INFO - [152/156] one of Staten Island’s few openly LGBTQ+ venues at the turn of the millennium
+2025-11-08 21:05:32 - __main__ - INFO - Scraping: one of Staten Island’s few openly LGBTQ+ venues at the turn of the millennium
+2025-11-08 21:05:32 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:32 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /one+of+staten+island%E2%80%99s+few+openly+lgbtq++venues+at+the+turn+of+the+millennium HTTP/1.1" 404 1049
+2025-11-08 21:05:32 - __main__ - INFO -   ✗ Artist not found: one of Staten Island’s few openly LGBTQ+ venues at the turn of the millennium
+2025-11-08 21:05:34 - __main__ - INFO - [153/156] part of Hell’s Kitchen’s late-night food scene for nearly 2 decades
+2025-11-08 21:05:34 - __main__ - INFO - Scraping: part of Hell’s Kitchen’s late-night food scene for nearly 2 decades
+2025-11-08 21:05:34 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:34 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /part+of+hell%E2%80%99s+kitchen%E2%80%99s+late-night+food+scene+for+nearly+2+decades HTTP/1.1" 404 1049
+2025-11-08 21:05:34 - __main__ - INFO -   ✗ Artist not found: part of Hell’s Kitchen’s late-night food scene for nearly 2 decades
+2025-11-08 21:05:36 - __main__ - INFO - [154/156] the platform has quietly continued to do its own thing
+2025-11-08 21:05:36 - __main__ - INFO - Scraping: the platform has quietly continued to do its own thing
+2025-11-08 21:05:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:37 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /the+platform+has+quietly+continued+to+do+its+own+thing HTTP/1.1" 404 1049
+2025-11-08 21:05:37 - __main__ - INFO -   ✗ Artist not found: the platform has quietly continued to do its own thing
+2025-11-08 21:05:39 - __main__ - INFO - [155/156] them
+2025-11-08 21:05:39 - __main__ - INFO - Scraping: them
+2025-11-08 21:05:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:39 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /them HTTP/1.1" 200 4642
+2025-11-08 21:05:39 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-08 21:05:41 - __main__ - INFO - [156/156] trans
+2025-11-08 21:05:41 - __main__ - INFO - Scraping: trans
+2025-11-08 21:05:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-08 21:05:41 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /trans HTTP/1.1" 200 1233
+2025-11-08 21:05:41 - __main__ - INFO -   ✓ Found 6 similar artists

@@ -184246,5 +184246,303 @@
   "and seems to be doing just fine": {
     "status": "error",
     "error": "Failed to fetch page"
+  },
+  "dining spot for gay brunchers": {
+    "status": "error",
+    "error": "Failed to fetch page"
+  },
+  "one of Staten Island’s few openly LGBTQ+ venues at the turn of the millennium": {
+    "status": "error",
+    "error": "Failed to fetch page"
+  },
+  "part of Hell’s Kitchen’s late-night food scene for nearly 2 decades": {
+    "status": "error",
+    "error": "Failed to fetch page"
+  },
+  "the platform has quietly continued to do its own thing": {
+    "status": "error",
+    "error": "Failed to fetch page"
+  },
+  "them": {
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Themselves",
+        "rank": 1,
+        "relationship_strength": 7.38748
+      },
+      {
+        "name": "Subtle",
+        "rank": 2,
+        "relationship_strength": 6.00043
+      },
+      {
+        "name": "Why?",
+        "rank": 3,
+        "relationship_strength": 5.60726
+      },
+      {
+        "name": "13 And God",
+        "rank": 4,
+        "relationship_strength": 5.4136
+      },
+      {
+        "name": "Clouddead",
+        "rank": 5,
+        "relationship_strength": 5.2597
+      },
+      {
+        "name": "Astronautalis",
+        "rank": 6,
+        "relationship_strength": 4.18529
+      },
+      {
+        "name": "Spencer Davis Group",
+        "rank": 7,
+        "relationship_strength": 2.63915
+      },
+      {
+        "name": "Jim Capaldi",
+        "rank": 8,
+        "relationship_strength": 2.45195
+      },
+      {
+        "name": "Casiotone For The Painfully Alone",
+        "rank": 9,
+        "relationship_strength": 1.86957
+      },
+      {
+        "name": "Soso",
+        "rank": 10,
+        "relationship_strength": 1.59536
+      },
+      {
+        "name": "Bike For Three!",
+        "rank": 11,
+        "relationship_strength": 1.5043
+      },
+      {
+        "name": "Graham Bond Organization",
+        "rank": 12,
+        "relationship_strength": 1.46466
+      },
+      {
+        "name": "Epic",
+        "rank": 13,
+        "relationship_strength": 1.4218
+      },
+      {
+        "name": "Jeremy Spencer",
+        "rank": 14,
+        "relationship_strength": 1.42096
+      },
+      {
+        "name": "Gary Farr",
+        "rank": 15,
+        "relationship_strength": 1.26493
+      },
+      {
+        "name": "Yoni Wolf",
+        "rank": 16,
+        "relationship_strength": 1.25937
+      },
+      {
+        "name": "The Corporation",
+        "rank": 17,
+        "relationship_strength": 1.15607
+      },
+      {
+        "name": "Yoni & Geti",
+        "rank": 18,
+        "relationship_strength": 1.04133
+      },
+      {
+        "name": ")EIB(",
+        "rank": 19,
+        "relationship_strength": 0.948188
+      },
+      {
+        "name": "Edgar Broughton",
+        "rank": 20,
+        "relationship_strength": 0.916784
+      },
+      {
+        "name": "Alexis Korner",
+        "rank": 21,
+        "relationship_strength": 0.893855
+      },
+      {
+        "name": "Restiform Bodies",
+        "rank": 22,
+        "relationship_strength": 0.848438
+      },
+      {
+        "name": "Hugh Dillon",
+        "rank": 23,
+        "relationship_strength": 0.745005
+      },
+      {
+        "name": "The Bony King of Nowhere",
+        "rank": 24,
+        "relationship_strength": 0.643087
+      },
+      {
+        "name": "Tomorrow's Gift",
+        "rank": 25,
+        "relationship_strength": 0.566974
+      },
+      {
+        "name": "Mick Fleetwood",
+        "rank": 26,
+        "relationship_strength": 0.532927
+      },
+      {
+        "name": "Grian Chatten",
+        "rank": 27,
+        "relationship_strength": 0.526442
+      },
+      {
+        "name": "Cause 4 Concern",
+        "rank": 28,
+        "relationship_strength": 0.50204
+      },
+      {
+        "name": "Brian Auger",
+        "rank": 29,
+        "relationship_strength": 0.440205
+      },
+      {
+        "name": "Moot The Hoople",
+        "rank": 30,
+        "relationship_strength": 0.436205
+      },
+      {
+        "name": "The Animals",
+        "rank": 31,
+        "relationship_strength": 0.379221
+      },
+      {
+        "name": "Sebutones",
+        "rank": 32,
+        "relationship_strength": 0.33741
+      },
+      {
+        "name": "Dakila",
+        "rank": 33,
+        "relationship_strength": 0.330033
+      },
+      {
+        "name": "The Passage",
+        "rank": 34,
+        "relationship_strength": 0.329489
+      },
+      {
+        "name": "Jimmy Campbell",
+        "rank": 35,
+        "relationship_strength": 0.328272
+      },
+      {
+        "name": "Jon Kennedy",
+        "rank": 36,
+        "relationship_strength": 0.318066
+      },
+      {
+        "name": "Spook",
+        "rank": 37,
+        "relationship_strength": 0.31746
+      },
+      {
+        "name": "Wishful thinking",
+        "rank": 38,
+        "relationship_strength": 0.309238
+      },
+      {
+        "name": "The Yardbirds",
+        "rank": 39,
+        "relationship_strength": 0.309193
+      },
+      {
+        "name": "Heather Eatman",
+        "rank": 40,
+        "relationship_strength": 0.296626
+      },
+      {
+        "name": "Tucker Zimmerman",
+        "rank": 41,
+        "relationship_strength": 0.294442
+      },
+      {
+        "name": "Creation",
+        "rank": 42,
+        "relationship_strength": 0.292398
+      },
+      {
+        "name": "D*note",
+        "rank": 43,
+        "relationship_strength": 0.291333
+      },
+      {
+        "name": "Twin Warriors",
+        "rank": 44,
+        "relationship_strength": 0.2886
+      },
+      {
+        "name": "Luscious Jackson",
+        "rank": 45,
+        "relationship_strength": 0.259909
+      },
+      {
+        "name": "Turtlenecked",
+        "rank": 46,
+        "relationship_strength": 0.236873
+      },
+      {
+        "name": "The Chocolate Watchband",
+        "rank": 47,
+        "relationship_strength": 0.231974
+      },
+      {
+        "name": "Davenport cabinet",
+        "rank": 48,
+        "relationship_strength": 0.22892
+      }
+    ],
+    "total_count": 48
+  },
+  "trans": {
+    "status": "success",
+    "similar_artists": [
+      {
+        "name": "Dini Mam",
+        "rank": 1,
+        "relationship_strength": 2.7972
+      },
+      {
+        "name": "siglo XX",
+        "rank": 2,
+        "relationship_strength": 1.63265
+      },
+      {
+        "name": "Country",
+        "rank": 3,
+        "relationship_strength": 0.34904
+      },
+      {
+        "name": "Funk",
+        "rank": 4,
+        "relationship_strength": 0.17414
+      },
+      {
+        "name": "POP",
+        "rank": 5,
+        "relationship_strength": 0.158322
+      },
+      {
+        "name": "Disco",
+        "rank": 6,
+        "relationship_strength": 0.120446
+      }
+    ],
+    "total_count": 6
   }
 }
