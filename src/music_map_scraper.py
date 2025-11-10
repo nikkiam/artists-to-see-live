@@ -8,6 +8,7 @@ import json
 import logging
 import re
 import subprocess
+import sys
 import time
 from dataclasses import dataclass
 from http import HTTPStatus
@@ -190,12 +191,10 @@ def scrape_artist(artist_name: str) -> ScraperResult:
     return ScraperResult(status="success", similar_artists=artists_with_strength)
 
 
-def load_artists() -> list[str]:
-    """Load unique artists from events.json."""
-    events_file = Path("output/events.json")
-
+def load_artists(events_file: Path) -> list[str]:
+    """Load unique artists from events file."""
     if not events_file.exists():
-        raise FileNotFoundError("events.json not found in output/ directory!")
+        raise FileNotFoundError(f"Events file not found: {events_file}")
 
     with open(events_file, encoding="utf-8") as f:
         data = json.load(f)
@@ -259,7 +258,7 @@ def git_commit_results(output_file: Path, count: int):
 
 
 def main():
-    """Main function to process all artists from my_artists.json."""
+    """Main function to process all artists from events file."""
     # Configure logging
     logging.basicConfig(
         level=logging.DEBUG,
@@ -271,17 +270,24 @@ def main():
         ],
     )
 
-    # Setup output directory
+    # Get events file from command line argument
+    if len(sys.argv) < 2:
+        logger.error("Usage: python -m src.music_map_scraper <events_file>")
+        sys.exit(1)
+
+    events_file = Path(sys.argv[1])
+
+    # Setup output directory - use global cache file
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
     output_file = output_dir / "similar_artists_map.json"
 
-    # Load existing results
+    # Load existing results from global cache
     existing_data = load_existing_results(output_file)
 
-    # Load artists
-    artists = load_artists()
-    logger.info("Loaded %d unique artists from events.json", len(artists))
+    # Load artists from the specific events file
+    artists = load_artists(events_file)
+    logger.info("Loaded %d unique artists from %s", len(artists), events_file)
 
     # Check which artists already have successful results
     already_processed = {

@@ -16,7 +16,6 @@ logger = logging.getLogger(__name__)
 # Constants
 NON_EVENT_STREAK_THRESHOLD = 3
 MIN_ARGV_LENGTH = 2
-ARGV_LENGTH_WITH_OUTPUT = 4
 
 
 def parse_html_file(filepath: str) -> list[Event]:
@@ -305,18 +304,20 @@ def main():
     )
 
     if len(sys.argv) < MIN_ARGV_LENGTH:
-        logger.error(
-            "Usage: python -m src.techno_queers_email_scraper <html_file> "
-            "[--output <output_file>]"
-        )
+        logger.error("Usage: python -m src.techno_queers_email_scraper <html_file>")
         sys.exit(1)
 
     html_file = sys.argv[1]
-    output_file = None
 
-    # Check for --output flag
-    if len(sys.argv) >= ARGV_LENGTH_WITH_OUTPUT and sys.argv[2] == "--output":
-        output_file = sys.argv[3]
+    # Extract date from filename for output naming
+    html_path = Path(html_file)
+    date_match = re.search(r"(\d{4}-\d{1,2}-\d{1,2})", html_path.stem)
+    if not date_match:
+        logger.error("Could not extract date from filename. Expected format: YYYY-MM-DD.html")
+        sys.exit(1)
+
+    date_str = date_match.group(1)
+    output_file = f"output/events_{date_str}.json"
 
     # Parse the HTML file
     events = parse_html_file(html_file)
@@ -325,14 +326,11 @@ def main():
     events_data = [asdict(event) for event in events]
     result = {"events": events_data, "count": len(events)}
 
-    # Output results
-    if output_file:
-        Path(output_file).parent.mkdir(parents=True, exist_ok=True)
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(result, f, indent=2)
-        logger.info("Wrote %d events to %s", len(events), output_file)
-    else:
-        logger.info(json.dumps(result, indent=2))
+    # Write output file
+    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+    logger.info("Wrote %d events to %s", len(events), output_file)
 
 
 if __name__ == "__main__":

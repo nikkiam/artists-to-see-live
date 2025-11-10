@@ -9,6 +9,7 @@ then finds optimal paths connecting them using weighted Dijkstra search.
 import json
 import logging
 import subprocess
+import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -210,11 +211,19 @@ def git_commit_and_push(message: str, files: list[Path]):
 
 def main():
     """Main function to find and report artist connections."""
+    # Get parameters from command line
+    if len(sys.argv) < 3:
+        logger.error("Usage: python -m src.find_event_connections <events_file> <date>")
+        sys.exit(1)
+
+    events_file = Path(sys.argv[1])
+    date_str = sys.argv[2]
+
     # Configure logging
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
 
-    log_file = output_dir / "connection_search.log"
+    log_file = output_dir / f"connection_search_{date_str}.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
@@ -225,14 +234,13 @@ def main():
     )
 
     logger.info("=" * 60)
-    logger.info("Starting artist connection search")
+    logger.info("Starting artist connection search for %s", date_str)
     logger.info("=" * 60)
 
     # Step 1: Load data files
     logger.info("Step 1: Loading data files...")
 
     similar_artists_file = output_dir / "similar_artists_map.json"
-    events_file = output_dir / "events.json"
     favorites_file = output_dir / "my_artists.json"
 
     similar_artists_map = load_similar_artists_map(similar_artists_file)
@@ -288,18 +296,17 @@ def main():
     # Step 6: Generate reports
     logger.info("Step 6: Generating output reports...")
 
-    # Generate timestamped filenames
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    md_output = output_dir / f"event_connections_{timestamp}.md"
+    # Generate filenames with date
+    md_output = output_dir / f"event_connections_{date_str}.md"
     generate_markdown_report(tiers, stats, md_output)
 
-    json_output = output_dir / f"event_connections_{timestamp}.json"
+    json_output = output_dir / f"event_connections_{date_str}.json"
     save_json_report(connections, stats, json_output)
 
     logger.info("  ✓ Reports generated")
 
     git_commit_and_push(
-        "Step 6: Generated connection reports",
+        f"Generated connection reports for {date_str}",
         [log_file, md_output, json_output],
     )
 

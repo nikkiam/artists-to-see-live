@@ -1,0 +1,1387 @@
+{
+  "events": [
+    {
+      "name": "+ CAL.RED/ +",
+      "ticket_url": "https://cal.red/",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "+ Protest_NYC [calendar] +",
+      "ticket_url": "https://protest.one/calendar/",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Dripping X Unsound",
+      "ticket_url": "https://funqtion.co/events/JAkzjOdk7R?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": "8p-4a",
+      "artists": [
+        {
+          "name": "Eiko Ishibashi",
+          "set_time": null
+        },
+        {
+          "name": "Keioui Keijaun Thomas",
+          "set_time": null
+        },
+        {
+          "name": "Mica Levi",
+          "set_time": null
+        },
+        {
+          "name": "Kilbourne",
+          "set_time": null
+        },
+        {
+          "name": "Relaxer",
+          "set_time": null
+        },
+        {
+          "name": "Leonce",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Synthicide",
+      "ticket_url": "https://funqtion.co/events/9XWMB5rkve?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Gabby Cocco",
+          "set_time": null
+        },
+        {
+          "name": "Dante Scaglione",
+          "set_time": null
+        },
+        {
+          "name": "Andi",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "darkside"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Bears Are Animals",
+      "ticket_url": "https://funqtion.co/events/DAqVrV2qov?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Animal",
+      "event_time": "8p-4a",
+      "artists": [
+        {
+          "name": "Lemon Verbena",
+          "set_time": null
+        },
+        {
+          "name": "Alissa Brianna",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Present Sounds",
+      "ticket_url": "https://www.eventcreate.com/e/mari-will-present-sound",
+      "venue": "L&SD",
+      "event_time": "7-11p",
+      "artists": [
+        {
+          "name": "Marihito",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Creative Outlet",
+      "ticket_url": "https://www.triskelionarts.org/fall-2025-performances/sha-creative-outlet",
+      "venue": "TA",
+      "event_time": "10:30p-?",
+      "artists": [
+        {
+          "name": "Sha",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Romance",
+      "ticket_url": "https://funqtion.co/events/b7qPZZLk8L?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Gabriela",
+      "event_time": "9p-3:30a",
+      "artists": [
+        {
+          "name": "Eli Escobar",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Durations: Night 1",
+      "ticket_url": "https://funqtion.co/events/zrk0KG3W5M?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "PR",
+      "event_time": "7p-3a",
+      "artists": [
+        {
+          "name": "Actress",
+          "set_time": null
+        },
+        {
+          "name": "Carrier",
+          "set_time": null
+        },
+        {
+          "name": "Nene H",
+          "set_time": null
+        },
+        {
+          "name": "Umfang",
+          "set_time": null
+        },
+        {
+          "name": "320",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "festival"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Serve",
+      "ticket_url": "https://dice.fm/event/nv72l9-serve-6th-nov-cmon-everybody-new-york-tickets",
+      "venue": "CE",
+      "event_time": "10:30p-?",
+      "artists": [
+        {
+          "name": "DJ Shannon",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Evening Tea",
+      "ticket_url": "https://dice.fm/event/wwlrxr-evening-tea-w-3g-6th-nov-silence-please-new-york-city-tickets",
+      "venue": "SP",
+      "event_time": "7-9p",
+      "artists": [
+        {
+          "name": "3G",
+          "set_time": null
+        },
+        {
+          "name": "Serpent in a Straight Line",
+          "set_time": null
+        },
+        {
+          "name": "Threehz",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free",
+        "deeplistening",
+        "darkside"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Vault Sessions",
+      "ticket_url": "https://funqtion.co/events/RJkXMXelxA?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Basement",
+      "event_time": "10:30p-7a",
+      "artists": [
+        {
+          "name": "Blasha & Allatt",
+          "set_time": null
+        },
+        {
+          "name": "Lobster",
+          "set_time": null
+        },
+        {
+          "name": "Lydo",
+          "set_time": null
+        },
+        {
+          "name": "Mike Servito",
+          "set_time": null
+        },
+        {
+          "name": "Shaun J. Wright",
+          "set_time": null
+        },
+        {
+          "name": "Physical Therapy",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Avalon Emerson",
+      "ticket_url": "https://funqtion.co/events/erk5pXPW7K?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": "10p-6a",
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "$luts Party: Sinners Sanctuary -\n                                            Coven",
+      "ticket_url": "https://funqtion.co/events/0GlRmaykD2?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "TH",
+      "event_time": "10p-5a",
+      "artists": [
+        {
+          "name": "Von",
+          "set_time": null
+        },
+        {
+          "name": "Vyper",
+          "set_time": null
+        },
+        {
+          "name": "Cyb3r Bull",
+          "set_time": null
+        },
+        {
+          "name": "R\u00b0sha",
+          "set_time": null
+        },
+        {
+          "name": "Jon Mccray",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "And I'm Swept Out",
+      "ticket_url": "https://theticketing.co/e/imsweptout?open=true",
+      "venue": "\"A fully realized vision for the\n                                            surreal and brutal scenes of\n                                            nightlife;\" #performance\n                                            #experimental #albumrelease",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Cestari",
+          "set_time": null
+        },
+        {
+          "name": "Clay St",
+          "set_time": null
+        },
+        {
+          "name": "Victoria Princi",
+          "set_time": null
+        },
+        {
+          "name": "Austin Lariccia Grant",
+          "set_time": null
+        },
+        {
+          "name": "SCT",
+          "set_time": null
+        },
+        {
+          "name": "-9p",
+          "set_time": "6:30-10"
+        },
+        {
+          "name": "\"A fully realized vision for the surreal and brutal scenes of nightlife;\" #performance #experimental #albumrelease",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Phantasma",
+      "ticket_url": "https://funqtion.co/events/xLq3a3Pkvy?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Paragon",
+      "event_time": "9:30p-3a",
+      "artists": [
+        {
+          "name": "Joey Beltram",
+          "set_time": null
+        },
+        {
+          "name": "1morning",
+          "set_time": null
+        },
+        {
+          "name": "Juno",
+          "set_time": null
+        },
+        {
+          "name": "Linda",
+          "set_time": null
+        },
+        {
+          "name": "Cosmo",
+          "set_time": null
+        },
+        {
+          "name": "S4m23",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Starry Records",
+      "ticket_url": "https://funqtion.co/events/7gkNe4pW85?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "MR",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Ciringe",
+          "set_time": null
+        },
+        {
+          "name": "Jewelssea",
+          "set_time": null
+        },
+        {
+          "name": "Nextdimensional",
+          "set_time": null
+        },
+        {
+          "name": "Wtchcrft",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Quest?onmarq, River Moon,\n                                            Giovannii",
+      "ticket_url": "https://funqtion.co/events/O5lp55gqx9?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Art -> Activism",
+      "ticket_url": "https://visualaids.org/events/detail/hiv-isnt-over-art-activism-with-guillaume-dustan-and-rafael-s%C3%A1nchez",
+      "venue": "CF\n                                        Garage",
+      "event_time": "7-9p",
+      "artists": [
+        {
+          "name": "Guillaume Dustan",
+          "set_time": null
+        },
+        {
+          "name": "Rafael S\u00e1nchez",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free",
+        "film",
+        "history",
+        "art"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Live Sets",
+      "ticket_url": "https://www.eventcreate.com/e/gunnar-w-friends",
+      "venue": "L&SD",
+      "event_time": "7-11p",
+      "artists": [
+        {
+          "name": "Biologix",
+          "set_time": null
+        },
+        {
+          "name": "R.a. Jones",
+          "set_time": null
+        },
+        {
+          "name": "Weird Shit Usa",
+          "set_time": null
+        },
+        {
+          "name": "Gunnar",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening",
+        "hardware"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Battle Hymn: Brooklyn",
+      "ticket_url": "https://funqtion.co/events/0GlRmKMkD2?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Refuge",
+      "event_time": "10:30p-5a",
+      "artists": [
+        {
+          "name": "Kim Anh",
+          "set_time": null
+        },
+        {
+          "name": "Suze Ij\u00f3",
+          "set_time": null
+        },
+        {
+          "name": "Tedd Patterson",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Durations: Night 2",
+      "ticket_url": "https://funqtion.co/events/b3qO8bdWpE?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "PR",
+      "event_time": "10p-5a",
+      "artists": [
+        {
+          "name": "Marr\u00f8n",
+          "set_time": null
+        },
+        {
+          "name": "Dorisburg",
+          "set_time": null
+        },
+        {
+          "name": "Clarisa Kimskii",
+          "set_time": null
+        },
+        {
+          "name": "Alex Kassian",
+          "set_time": null
+        },
+        {
+          "name": "Yibing",
+          "set_time": null
+        },
+        {
+          "name": "Smilegoth",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Green Room: New Club Soft Opening",
+      "ticket_url": "https://www.instagram.com/p/DQpHkurkTPm/",
+      "venue": "195 Morgan Ave",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Mike Servito",
+          "set_time": null
+        },
+        {
+          "name": "Omer Mil",
+          "set_time": null
+        },
+        {
+          "name": "Morgan",
+          "set_time": null
+        },
+        {
+          "name": "Gui Machado",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "The Carry Nation",
+      "ticket_url": "https://funqtion.co/events/JAkzjMmk7R?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GR",
+      "event_time": "10p-6a",
+      "artists": [
+        {
+          "name": "Dee Diggs",
+          "set_time": null
+        },
+        {
+          "name": "Sevyn Love",
+          "set_time": null
+        },
+        {
+          "name": "Alissa Brianna",
+          "set_time": null
+        },
+        {
+          "name": "The Carry Nation",
+          "set_time": null
+        },
+        {
+          "name": "Nita Aviance",
+          "set_time": null
+        },
+        {
+          "name": "Will Automagic",
+          "set_time": null
+        },
+        {
+          "name": "DJ Tbd",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Dax J, Holden Federico, Faff, Jason\n                                            Kendig, James Axon",
+      "ticket_url": "https://funqtion.co/events/erk5pOGW7K?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Basement",
+      "event_time": "10:30p-7a",
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Animalia Nonstop",
+      "ticket_url": "https://funqtion.co/events/4vkGeG3qPV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "K Wata",
+          "set_time": "10-2"
+        },
+        {
+          "name": "Command D",
+          "set_time": "2-5"
+        },
+        {
+          "name": "Konduku",
+          "set_time": "5-8"
+        },
+        {
+          "name": "Nowadays",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Rush",
+      "ticket_url": "https://funqtion.co/events/Y1lyZ1nqnV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "KDC",
+      "event_time": "10p-5a",
+      "artists": [
+        {
+          "name": "999999999",
+          "set_time": null
+        },
+        {
+          "name": "Anetha",
+          "set_time": null
+        },
+        {
+          "name": "Mos",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Pervert Mx in NYC",
+      "ticket_url": "https://funqtion.co/events/erk5poKW7K?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "9BN",
+      "event_time": "10p-6a",
+      "artists": [
+        {
+          "name": "Mystery Affair",
+          "set_time": null
+        },
+        {
+          "name": "Concrete Husband",
+          "set_time": null
+        },
+        {
+          "name": "Peter Napoli",
+          "set_time": null
+        },
+        {
+          "name": "Amapola Rose",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Facetime",
+      "ticket_url": "https://funqtion.co/events/8bk6LV8qyD?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Lydo",
+          "set_time": null
+        },
+        {
+          "name": "Blackmoonchild",
+          "set_time": null
+        },
+        {
+          "name": "Eric Umble",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Destrucci\u00f3n",
+      "ticket_url": "https://funqtion.co/events/RJkXMBYlxA?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Paragon",
+      "event_time": "9:30p-3a",
+      "artists": [
+        {
+          "name": "Eartheater",
+          "set_time": null
+        },
+        {
+          "name": "Safety Trance",
+          "set_time": null
+        },
+        {
+          "name": "Umru",
+          "set_time": null
+        },
+        {
+          "name": "Joselo",
+          "set_time": null
+        },
+        {
+          "name": "Lolahol",
+          "set_time": null
+        },
+        {
+          "name": "Sam-e",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Quench X Bambeeno & Friends",
+      "ticket_url": "https://funqtion.co/events/JAkzjoQk7R?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Love's",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Bambii",
+          "set_time": null
+        },
+        {
+          "name": "Young Teesh",
+          "set_time": null
+        },
+        {
+          "name": "Nino Brown",
+          "set_time": null
+        },
+        {
+          "name": "Black Rave Culture",
+          "set_time": null
+        },
+        {
+          "name": "Run P",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "The Night We Met",
+      "ticket_url": "https://dice.fm/event/bbnwxo-the-night-we-met-second-saturdays-8th-nov-boyfriend-co-op-new-york-city-tickets",
+      "venue": "Boyfriend",
+      "event_time": "10:30p-?",
+      "artists": [
+        {
+          "name": "DJ Mangumami",
+          "set_time": null
+        },
+        {
+          "name": "Your DJ Besties",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Endless Spill",
+      "ticket_url": "https://www.eventcreate.com/e/endless-spill",
+      "venue": "L&SD",
+      "event_time": "7p-12a",
+      "artists": [
+        {
+          "name": "7038634357",
+          "set_time": null
+        },
+        {
+          "name": "Axine M",
+          "set_time": null
+        },
+        {
+          "name": "Tega",
+          "set_time": null
+        },
+        {
+          "name": "Aka-Sol",
+          "set_time": null
+        },
+        {
+          "name": "Fuge",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Durations: Night 3",
+      "ticket_url": "https://funqtion.co/events/Xzlg6m2kd8?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "PR",
+      "event_time": "10p-7a",
+      "artists": [
+        {
+          "name": "Vlada",
+          "set_time": null
+        },
+        {
+          "name": "Tornado Wallace",
+          "set_time": null
+        },
+        {
+          "name": "Sybil",
+          "set_time": null
+        },
+        {
+          "name": "Margaret Dygas",
+          "set_time": null
+        },
+        {
+          "name": "Kamma",
+          "set_time": null
+        },
+        {
+          "name": "Masalo",
+          "set_time": null
+        },
+        {
+          "name": "Scott Zacharias",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Sweat: Sauna & Sound",
+      "ticket_url": "https://funqtion.co/events/X4qYbm8Wz0?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "La Plaza Cultural",
+      "event_time": "12-5p",
+      "artists": [
+        {
+          "name": "James Benjamin",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "freewRSVP",
+        "bathhouse",
+        "outdoors"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Sounds in the Distance: Panel +\n                                          Performances",
+      "ticket_url": "https://www.eventbrite.com/e/discussion-and-performances-sounds-in-the-distance-tickets-1762405826269",
+      "venue": "LL",
+      "event_time": "2-6p",
+      "artists": [],
+      "tags": [
+        "freewRSVP",
+        "performance",
+        "art",
+        "history"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Freedom Of Movement",
+      "ticket_url": "https://funqtion.co/events/RJkXM64lxA?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "T-P",
+      "event_time": "1-5p",
+      "artists": [
+        {
+          "name": "Aqua Ruis",
+          "set_time": null
+        },
+        {
+          "name": "Full Moon Drag",
+          "set_time": null
+        },
+        {
+          "name": "Bikepocing",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Klavier x Signal: Baddies 2\n                                            Baddies",
+      "ticket_url": "https://funqtion.co/events/X4qYbJ2Wz0?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Signal",
+      "event_time": "4-11:59p",
+      "artists": [
+        {
+          "name": "Paurro",
+          "set_time": null
+        },
+        {
+          "name": "Alexis De La Rosa",
+          "set_time": null
+        },
+        {
+          "name": "Kilopatrah Jones",
+          "set_time": null
+        },
+        {
+          "name": "Cosmo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Cem, Telfar, Carrie Stacks, Saia,\n                                            Markus",
+      "ticket_url": "https://funqtion.co/events/4vkGeEBqPV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "718 Sessions: 23rd Year\n                                            Anniversary",
+      "ticket_url": "https://funqtion.co/events/zmWbgBpk8a?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GR",
+      "event_time": "6p-2a",
+      "artists": [
+        {
+          "name": "Danny Krivit",
+          "set_time": null
+        },
+        {
+          "name": "Rimarkable",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Conteanental",
+      "ticket_url": "https://funqtion.co/events/Y1lyZjGqnV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "BBB",
+      "event_time": "6-11p",
+      "artists": [
+        {
+          "name": "Patrick Kyle",
+          "set_time": null
+        },
+        {
+          "name": "Riccardo Tavarez",
+          "set_time": null
+        },
+        {
+          "name": "Gordo",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "bathhouse"
+      ],
+      "day_marker": null
+    },
+    {
+      "name": "Hot For You",
+      "ticket_url": "https://funqtion.co/events/ezk22jJkaZ?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Parkside",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Michael Magnan",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Rocky Horror Extra Transsexual :\n                                            Closer",
+      "ticket_url": "https://dice.fm/partner/tickets/event/2wegma-rocky-horror-extra-transsexual-10th-nov-the-sultan-room-new-york-tickets?dice_id=7424129&dice_channel=web&dice_tags=organic&dice_campaign=RA&dice_feature=mio_marketing&_branch_match_id=1467624310098692985&utm_source=web&utm_campaign=RA&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c8wTEtJNDUyNk2zNLOvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQD00W%2FoOwAAAA%3D%3D",
+      "venue": "SR",
+      "event_time": "9p-?",
+      "artists": [],
+      "tags": [
+        "performance",
+        "film"
+      ],
+      "day_marker": "Mon"
+    },
+    {
+      "name": "The Floor Is Ours: 2",
+      "ticket_url": "https://funqtion.co/events/Y1lyZ1MqnV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Wtchcrft",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "fundraiser"
+      ],
+      "day_marker": "Mon"
+    },
+    {
+      "name": "Choke Hole",
+      "ticket_url": "https://pioneerworks.org/programs/chokehole",
+      "venue": "PW",
+      "event_time": "10:30p-?",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Tue"
+    },
+    {
+      "name": "Transmasc Tuesday",
+      "ticket_url": "https://www.instagram.com/p/DQmahs3EdxO/?",
+      "venue": "ANS",
+      "event_time": "8p-?",
+      "artists": [
+        {
+          "name": "Noelani",
+          "set_time": null
+        },
+        {
+          "name": "Medusa",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Tue"
+    },
+    {
+      "name": "Angel\u2019s Inferno",
+      "ticket_url": "https://funqtion.co/events/X4qYbE2Wz0?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Camgirll8",
+          "set_time": null
+        },
+        {
+          "name": "Memphy",
+          "set_time": null
+        },
+        {
+          "name": "Fashion",
+          "set_time": null
+        },
+        {
+          "name": "Mikaela",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Tue"
+    },
+    {
+      "name": "Dream/Self",
+      "ticket_url": "https://funqtion.co/events/JAkzj87k7R?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Pure Immanence",
+          "set_time": null
+        },
+        {
+          "name": "Lychee",
+          "set_time": null
+        },
+        {
+          "name": "Threehz",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Wed"
+    },
+    {
+      "name": "Dance Practice",
+      "ticket_url": "https://funqtion.co/events/zmWbgpjk8a?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "L&SD",
+      "event_time": "7:30-10:30p",
+      "artists": [
+        {
+          "name": "Kiss Kiss",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening",
+        "movement"
+      ],
+      "day_marker": "Wed"
+    },
+    {
+      "name": "New book, Club Commons, examines\n                                          queer nightlife\u2019s radical past,\n                                          present and future",
+      "ticket_url": "https://djmag.com/news/new-book-club-commons-examines-queer-nightlifes-radical-past-present-and-future",
+      "venue": "DJ Mag",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "The new book looks at the history of queer clubbing and how it has shaped both the mainstream and a new generation of dancefloor renegades",
+          "set_time": null
+        },
+        {
+          "name": "DJ Mag",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "MIX NYC: A Radical History of Queer\n                                          Experimental Film",
+      "ticket_url": "https://www.out.com/mix-nyc-a-radical-history-of-queer-experimental-film",
+      "venue": "MIX 2025: 11/20-22",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Out",
+          "set_time": null
+        },
+        {
+          "name": "2",
+          "set_time": "20-2"
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "These photos explore the emotional\n                                          intensity of BDSM",
+      "ticket_url": "https://www.dazeddigital.com/art-photography/article/68987/1/ottilie-landmark-anxious-to-please-bdsm-fetish-kink-photo-book",
+      "venue": "Dazed",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Ottilie Landmark\u2019s Anxious to Please is the culmination of a five-year photo project immersed in the private world of kink and fetish",
+          "set_time": null
+        },
+        {
+          "name": "Dazed",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Inside the camp, chaotic world of T\n                                          Boy Wrestling",
+      "ticket_url": "https://www.dazeddigital.com/life-culture/article/68978/1/inside-the-camp-chaotic-world-of-t-boy-wrestling-transgender-rights-los-angeles",
+      "venue": "Dazed",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "As the US continues to roll back trans rights",
+          "set_time": null
+        },
+        {
+          "name": "T Boy Wrestling is fostering a community-driven space for transmasc people all across the states",
+          "set_time": null
+        },
+        {
+          "name": "Dazed",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Phones on the dancefloor: where do we\n                                          go from here?",
+      "ticket_url": "https://djmag.com/features/phones-dancefloor-where-do-we-go-here",
+      "venue": "\u2026",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DJ Mag",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Daniel Arnold\u2019s new photo book\n                                          captures NYC \u2018uninterrupted\u2019",
+      "ticket_url": "https://www.dazeddigital.com/art-photography/article/69005/1/daniel-arnold-you-are-what-you-do-loose-joints-photo-book-nyc",
+      "venue": "Dazed",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Dazed",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "SMUT is my religion: How a DIY\n                                          publisher became one of London\u2019s best\n                                          queer parties",
+      "ticket_url": "https://djmag.com/features/smut-my-religion-how-diy-publisher-became-one-of-londons-best-queer-parties",
+      "venue": "DJ Mag",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DJ Mag",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "New documentary explores history of\n                                          \u201cone of the UK\u2019s most important queer\n                                          venues\u201d, DBA: Watch",
+      "ticket_url": "https://djmag.com/news/new-documentary-explores-history-of-one-of-uks-most-important-queer-venues-dba-watch",
+      "venue": "DJ Mag",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DJ Mag",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "@queer_happened_here",
+      "ticket_url": "https://www.instagram.com/queer_happened_here/",
+      "venue": "part of Hell\u2019s Kitchen\u2019s late-night\n                                        food scene for nearly 2 decades",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "89",
+          "set_time": "88-19"
+        },
+        {
+          "name": "one of Staten Island\u2019s few openly LGBTQ+ venues at the turn of the millennium",
+          "set_time": null
+        },
+        {
+          "name": "a short-lived but influential LGBTQ+ bar that brought together the West Village\u2019s drag",
+          "set_time": null
+        },
+        {
+          "name": "trans",
+          "set_time": null
+        },
+        {
+          "name": "& go-go scenes of the mid-1980s",
+          "set_time": null
+        },
+        {
+          "name": "dining spot for gay brunchers",
+          "set_time": null
+        },
+        {
+          "name": "Broadway theater lovers",
+          "set_time": null
+        },
+        {
+          "name": "& queer Hell\u2019s Kitchen residents for 25 years",
+          "set_time": null
+        },
+        {
+          "name": "part of Hell\u2019s Kitchen\u2019s late-night food scene for nearly 2 decades",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "The sale of Cheer Up Charlies to a\n                                          Florida investment firm was canceled\n                                          Tuesday",
+      "ticket_url": "https://www.kut.org/austin/2025-11-04/austin-texas-queer-bar-cheer-ups-sale-deal-stopped",
+      "venue": "KUT",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "KUT",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Bandcamp Was Supposed to Be Dead by\n                                          Now",
+      "ticket_url": "https://firstfloor.substack.com/p/bandcamp-was-supposed-to-be-dead",
+      "venue": "First Floor",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "After the company's sale to Songtradr triggered a tidal wave of bad press and bad vibes",
+          "set_time": null
+        },
+        {
+          "name": "the platform has quietly continued to do its own thing",
+          "set_time": null
+        },
+        {
+          "name": "and seems to be doing just fine",
+          "set_time": null
+        },
+        {
+          "name": "First Floor",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Why Is It So Easy to Flood Streaming\n                                          With AI Slop?",
+      "ticket_url": "https://www.hearingthings.co/why-is-it-so-easy-to-flood-streaming-with-ai-slop/",
+      "venue": "Hearing Things",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Hearing Things",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Who\u2019s Afraid of the Neo-Wook?",
+      "ticket_url": "https://ravenewworld.substack.com/p/whos-afraid-of-the-neo-wook",
+      "venue": "Rave New World",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Rave New World",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "@dances",
+      "ticket_url": "https://xcancel.com/dances",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Zohran Mamdani Spent Halloween\n                                          Campaigning in Gay Clubs",
+      "ticket_url": "https://www.them.us/story/zohran-mamdani-lgbtq-gay-bar-papi-juice-mood-ring",
+      "venue": "them",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "them",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "Mood Ring",
+      "ticket_url": "https://www.instagram.com/reel/DQkDPMHjl16/",
+      "venue": "@spiralnegro69",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "@spiralnegro69",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": null
+    },
+    {
+      "name": "M, 25-34, beverage marketing,\n                                          Bushwick",
+      "ticket_url": "https://www.readfeedme.com/p/where-does-a-greenpoint-finance-guy",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": null
+    }
+  ],
+  "count": 66
+}
