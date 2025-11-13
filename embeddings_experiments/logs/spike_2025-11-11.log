@@ -1,0 +1,172 @@
+[2025-11-11 06:06:44] ================================================================================
+[2025-11-11 06:06:44] EMBEDDINGS SPIKE - START
+[2025-11-11 06:06:44] ================================================================================
+[2025-11-11 06:06:44] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-11 06:06:44]   Loaded 854 artists from music-map.com
+[2025-11-11 06:06:44]   Selected 30 candidate artists to test for preview availability
+[2025-11-11 06:06:44] 
+[2/4] Loading VGGish model...
+[2025-11-11 06:06:44]   Loading VGGish model from TensorFlow Hub...
+[2025-11-11 06:06:48]   ✓ VGGish model loaded
+[2025-11-11 06:06:48] 
+[3/4] Extracting embeddings from YouTube audio...
+[2025-11-11 06:06:48] Processing artist: Syd
+[2025-11-11 06:06:49]   Found 5 tracks on YouTube
+[2025-11-11 06:07:01]     ✓ Extracted embedding for: Bad Dream/No Looking Back
+[2025-11-11 06:07:10]     ✓ Extracted embedding for: Know
+[2025-11-11 06:07:19]     ✓ Extracted embedding for: Nothin to Somethin
+[2025-11-11 06:07:28]     ✓ Extracted embedding for: Over
+[2025-11-11 06:07:37]     ✓ Extracted embedding for: Syd - GMFU (Official Lyric Video)
+[2025-11-11 06:07:37]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:07:37] Processing artist: Carnage
+[2025-11-11 06:07:38]   Found 5 tracks on YouTube
+[2025-11-11 06:07:47]     ✓ Extracted embedding for: Carnage
+[2025-11-11 06:07:56]     ✓ Extracted embedding for: Toca
+[2025-11-11 06:08:06]     ✓ Extracted embedding for: Venom Let There Be Carnage: Prison Break (HD MOVIE CLIP) | With Captions
+[2025-11-11 06:08:15]     ✓ Extracted embedding for: Death Battle: Chorus of Carnage
+[2025-11-11 06:08:24]     ✓ Extracted embedding for: Spider-Man: Shattered Dimensions [Carnage - Trail of Blood (Ultimate)]
+[2025-11-11 06:08:24]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:08:24] Processing artist: Alison Wonderland
+[2025-11-11 06:08:25]   Found 5 tracks on YouTube
+[2025-11-11 06:09:19]     ✓ Extracted embedding for: Alison Wonderland - EDC Las Vegas 2024 - Full Set (Official Video)
+[2025-11-11 06:10:15]     ✓ Extracted embedding for: ALISON WONDERLAND trap, hip hop and bass DJ set in The Lab LA
+[2025-11-11 06:10:24]     ✓ Extracted embedding for: Cry
+[2025-11-11 06:10:33]     ✓ Extracted embedding for: Church
+[2025-11-11 06:10:43]     ✓ Extracted embedding for: Alison Wonderland - U Don't Know ft. Wayne Coyne
+[2025-11-11 06:10:43]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:10:43] Processing artist: k?d
+[2025-11-11 06:10:44]   Found 5 tracks on YouTube
+[2025-11-11 06:10:51]     ✓ Extracted embedding for: Hors de ma tête
+[2025-11-11 06:11:00]     ✓ Extracted embedding for: Irréparable
+[2025-11-11 06:11:09]     ✓ Extracted embedding for: JQSL (feat. Mastho)
+[2025-11-11 06:11:17]     ✓ Extracted embedding for: Mentalité (feat. TayTay & Mastho)
+[2025-11-11 06:11:26]     ✓ Extracted embedding for: KD-0079 (Heroes Team Theme)
+[2025-11-11 06:11:26]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:11:26] Processing artist: Fuse ODG
+[2025-11-11 06:11:27]   Found 5 tracks on YouTube
+[2025-11-11 06:11:38]     ✓ Extracted embedding for: Fuse ODG - Sundiata ft. Suli Breaks
+[2025-11-11 06:11:47]     ✓ Extracted embedding for: 54 Countries
+[2025-11-11 06:11:56]     ✓ Extracted embedding for: Fuse ODG - Antenna (UK Radio Edit) *Pre-Order Now*
+[2025-11-11 06:12:06]     ✓ Extracted embedding for: Antenna (Remix)
+[2025-11-11 06:12:16]     ✓ Extracted embedding for: Fuse ODG - Antenna Ft. Wyclef Jean (Official Video)
+[2025-11-11 06:12:16]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:12:16] Processing artist: Feint
+[2025-11-11 06:12:17]   Found 5 tracks on YouTube
+[2025-11-11 06:12:26]     ✓ Extracted embedding for: Snake Eyes (feat. CoMa)
+[2025-11-11 06:12:35]     ✓ Extracted embedding for: Words (feat. Laura Brehm)
+[2025-11-11 06:12:45]     ✓ Extracted embedding for: EPICA – Feint (Official music video - HD remastered)
+[2025-11-11 06:12:55]     ✓ Extracted embedding for: The Journey Feat. Veela (Original Mix)
+[2025-11-11 06:13:04]     ✓ Extracted embedding for: Vagrant
+[2025-11-11 06:13:04]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:13:04] Processing artist: Eli Keszler
+[2025-11-11 06:13:05]   Found 5 tracks on YouTube
+[2025-11-11 06:13:16]     ✓ Extracted embedding for: Ever Shrinking World
+[2025-11-11 06:13:25]     ✓ Extracted embedding for: III (feat. Sam Gendel)
+[2025-11-11 06:13:32]     ✓ Extracted embedding for: Realtor Creep
+[2025-11-11 06:13:49]     ✓ Extracted embedding for: Cold Pin 1
+[2025-11-11 06:13:56]     ✓ Extracted embedding for: Research
+[2025-11-11 06:13:56]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:13:56] Processing artist: D'african
+[2025-11-11 06:13:57]   Found 5 tracks on YouTube
+[2025-11-11 06:14:07]     ✓ Extracted embedding for: Toxic (feat. Christina Love)
+[2025-11-11 06:14:16]     ✓ Extracted embedding for: Rain Inside
+[2025-11-11 06:14:29]     ✓ Extracted embedding for: Ocean
+[2025-11-11 06:14:37]     ✓ Extracted embedding for: Ride for Me
+[2025-11-11 06:14:46]     ✓ Extracted embedding for: Speak
+[2025-11-11 06:14:46]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:14:46] Processing artist: ero808
+[2025-11-11 06:14:47]   Found 5 tracks on YouTube
+[2025-11-11 06:14:57]     ✓ Extracted embedding for: ero808 x NXSTY - CODEINE (Official Music Video)
+[2025-11-11 06:15:04]     ✓ Extracted embedding for: ero808 - BAD OMENS (Visualizer)
+[2025-11-11 06:15:12]     ✓ Extracted embedding for: ero808 x NXSTY - CALYPSO (Official Audio)
+[2025-11-11 06:15:21]     ✓ Extracted embedding for: ero808 x NXSTY x RYA - SHAKE A LIL' SOMETHIN' (Official Music Video)
+[2025-11-11 06:15:29]     ✓ Extracted embedding for: BRAND NEW
+[2025-11-11 06:15:29]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:15:29] Processing artist: Cabu
+[2025-11-11 06:15:30]   Found 5 tracks on YouTube
+[2025-11-11 06:15:39]     ✓ Extracted embedding for: Process
+[2025-11-11 06:15:48]     ✓ Extracted embedding for: Cape Town
+[2025-11-11 06:15:57]     ✓ Extracted embedding for: Cabu
+[2025-11-11 06:16:07]     ✓ Extracted embedding for: Cabu
+[2025-11-11 06:16:22]     ✓ Extracted embedding for: Cabu
+[2025-11-11 06:16:22]   ✓ Computed artist embedding from 5 tracks
+[2025-11-11 06:16:22]   ✓ Reached target of 10 artists with embeddings, stopping
+[2025-11-11 06:16:22] 
+  ✓ Successfully extracted embeddings for 10/30 artists
+[2025-11-11 06:16:22]   📊 Extraction success rate: 33.3%
+[2025-11-11 06:16:22] 
+[4/4] Computing similarities and validating...
+[2025-11-11 06:16:22] 
+=== Computing Pairwise Similarities ===
+[2025-11-11 06:16:22]   Syd <-> Carnage: 0.703
+[2025-11-11 06:16:22]   Syd <-> Alison Wonderland: 0.925
+[2025-11-11 06:16:22]   Syd <-> k?d: 0.933
+[2025-11-11 06:16:22]   Syd <-> Fuse ODG: 0.916
+[2025-11-11 06:16:22]   Syd <-> Feint: 0.875
+[2025-11-11 06:16:22]   Syd <-> Eli Keszler: 0.633
+[2025-11-11 06:16:22]   Syd <-> D'african: 0.974
+[2025-11-11 06:16:22]   Syd <-> ero808: 0.911
+[2025-11-11 06:16:22]   Syd <-> Cabu: 0.883
+[2025-11-11 06:16:22]   Carnage <-> Alison Wonderland: 0.847
+[2025-11-11 06:16:22]   Carnage <-> k?d: 0.812
+[2025-11-11 06:16:22]   Carnage <-> Fuse ODG: 0.718
+[2025-11-11 06:16:22]   Carnage <-> Feint: 0.871
+[2025-11-11 06:16:22]   Carnage <-> Eli Keszler: 0.869
+[2025-11-11 06:16:22]   Carnage <-> D'african: 0.770
+[2025-11-11 06:16:22]   Carnage <-> ero808: 0.835
+[2025-11-11 06:16:22]   Carnage <-> Cabu: 0.754
+[2025-11-11 06:16:22]   Alison Wonderland <-> k?d: 0.948
+[2025-11-11 06:16:22]   Alison Wonderland <-> Fuse ODG: 0.898
+[2025-11-11 06:16:22]   Alison Wonderland <-> Feint: 0.924
+[2025-11-11 06:16:22]   Alison Wonderland <-> Eli Keszler: 0.775
+[2025-11-11 06:16:22]   Alison Wonderland <-> D'african: 0.959
+[2025-11-11 06:16:22]   Alison Wonderland <-> ero808: 0.953
+[2025-11-11 06:16:22]   Alison Wonderland <-> Cabu: 0.875
+[2025-11-11 06:16:22]   k?d <-> Fuse ODG: 0.939
+[2025-11-11 06:16:22]   k?d <-> Feint: 0.905
+[2025-11-11 06:16:22]   k?d <-> Eli Keszler: 0.726
+[2025-11-11 06:16:22]   k?d <-> D'african: 0.967
+[2025-11-11 06:16:22]   k?d <-> ero808: 0.927
+[2025-11-11 06:16:22]   k?d <-> Cabu: 0.890
+[2025-11-11 06:16:22]   Fuse ODG <-> Feint: 0.838
+[2025-11-11 06:16:22]   Fuse ODG <-> Eli Keszler: 0.635
+[2025-11-11 06:16:22]   Fuse ODG <-> D'african: 0.922
+[2025-11-11 06:16:22]   Fuse ODG <-> ero808: 0.912
+[2025-11-11 06:16:22]   Fuse ODG <-> Cabu: 0.843
+[2025-11-11 06:16:22]   Feint <-> Eli Keszler: 0.793
+[2025-11-11 06:16:22]   Feint <-> D'african: 0.892
+[2025-11-11 06:16:22]   Feint <-> ero808: 0.892
+[2025-11-11 06:16:22]   Feint <-> Cabu: 0.872
+[2025-11-11 06:16:22]   Eli Keszler <-> D'african: 0.684
+[2025-11-11 06:16:22]   Eli Keszler <-> ero808: 0.735
+[2025-11-11 06:16:22]   Eli Keszler <-> Cabu: 0.805
+[2025-11-11 06:16:22]   D'african <-> ero808: 0.933
+[2025-11-11 06:16:22]   D'african <-> Cabu: 0.885
+[2025-11-11 06:16:22]   ero808 <-> Cabu: 0.863
+[2025-11-11 06:16:22] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-11 06:16:22]   Syd: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Carnage: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Alison Wonderland: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   k?d: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Fuse ODG: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Feint: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Eli Keszler: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   D'african: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   ero808: 0/5 overlap (0%)
+[2025-11-11 06:16:22]   Cabu: 0/5 overlap (0%)
+[2025-11-11 06:16:22] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-11 06:16:22] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-11 06:16:22] 
+================================================================================
+[2025-11-11 06:16:22] SPIKE SUMMARY
+[2025-11-11 06:16:22] ================================================================================
+[2025-11-11 06:16:22] Extraction Rate: 33.3%
+[2025-11-11 06:16:22] Top-5 Overlap: 0.0%
+[2025-11-11 06:16:22] 
+================================================================================
+[2025-11-11 06:16:22] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-11 06:16:22] ================================================================================

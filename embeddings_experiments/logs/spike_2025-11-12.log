@@ -1,0 +1,516 @@
+[2025-11-12 19:07:21] ================================================================================
+[2025-11-12 19:07:21] EMBEDDINGS SPIKE - START
+[2025-11-12 19:07:21] ================================================================================
+[2025-11-12 19:07:21] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-12 19:07:21]   Loaded 854 artists from music-map.com
+[2025-11-12 19:07:21]   Using custom artist list: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-12 19:07:21] 
+[2/4] Loading VGGish model...
+[2025-11-12 19:07:21]   Loading VGGish model from TensorFlow Hub...
+[2025-11-12 19:07:26]   ✓ VGGish model loaded
+[2025-11-12 19:07:26] 
+[3/4] Extracting embeddings from YouTube audio...
+[2025-11-12 19:07:26] Processing artist: deadmau5
+[2025-11-12 19:07:28]   Found 5 tracks on YouTube
+[2025-11-12 19:07:49]     ✓ Extracted embedding for: Nextra
+[2025-11-12 19:07:59]     ✓ Extracted embedding for: Quezacotl
+[2025-11-12 19:08:11]     ✓ Extracted embedding for: Faxing Berlin (Original Mix)
+[2025-11-12 19:08:20]     ✓ Extracted embedding for: The Veldt Cinema (BYNX Edit)
+[2025-11-12 19:08:31]     ✓ Extracted embedding for: When The Summer Dies
+[2025-11-12 19:08:31]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:08:31] Processing artist: Rezz
+[2025-11-12 19:08:32]   Found 5 tracks on YouTube
+[2025-11-12 19:08:41]     ✓ Extracted embedding for: Contorted
+[2025-11-12 19:08:50]     ✓ Extracted embedding for: Blurry Eyes
+[2025-11-12 19:09:00]     ✓ Extracted embedding for: Embers
+[2025-11-12 19:09:07]     ✓ Extracted embedding for: HOW I DO IT
+[2025-11-12 19:09:16]     ✓ Extracted embedding for: Signal
+[2025-11-12 19:09:16]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:09:16] Processing artist: TroyBoi
+[2025-11-12 19:09:17]   Found 5 tracks on YouTube
+[2025-11-12 19:09:26]     ✓ Extracted embedding for: KinjaBang
+[2025-11-12 19:09:37]     ✓ Extracted embedding for: Do You?
+[2025-11-12 19:09:45]     ✓ Extracted embedding for: Okay
+[2025-11-12 19:09:55]     ✓ Extracted embedding for: ili
+[2025-11-12 19:10:04]     ✓ Extracted embedding for: BUSS IT
+[2025-11-12 19:10:04]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:10:04] Processing artist: IMANU
+[2025-11-12 19:10:05]   Found 5 tracks on YouTube
+[2025-11-12 19:10:14]     ✓ Extracted embedding for: Syrah
+[2025-11-12 19:10:24]     ✓ Extracted embedding for: Buried
+[2025-11-12 19:10:34]     ✓ Extracted embedding for: Huil
+[2025-11-12 19:10:44]     ✓ Extracted embedding for: Temper
+[2025-11-12 19:10:54]     ✓ Extracted embedding for: A Taste of Hope (Hallowvale)
+[2025-11-12 19:10:54]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:10:54] Processing artist: PEEKABOO
+[2025-11-12 19:10:55]   Found 5 tracks on YouTube
+[2025-11-12 19:11:04]     ✓ Extracted embedding for: Kendrick Lamar - peekaboo (Official Audio)
+[2025-11-12 19:11:12]     ✓ Extracted embedding for: peekaboo
+[2025-11-12 19:11:21]     ✓ Extracted embedding for: 피카부 Peek-A-Boo
+[2025-11-12 19:11:29]     ✓ Extracted embedding for: Kendrick Lamar - peekaboo (Lyrics)
+[2025-11-12 19:11:38]     ✓ Extracted embedding for: One More Time
+[2025-11-12 19:11:38]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:11:38] Processing artist: Sabrina Carpenter
+[2025-11-12 19:11:39]   Found 5 tracks on YouTube
+[2025-11-12 19:11:48]     ✓ Extracted embedding for: Manchild
+[2025-11-12 19:11:57]     ✓ Extracted embedding for: Please Please Please
+[2025-11-12 19:12:06]     ✓ Extracted embedding for: Good Graces
+[2025-11-12 19:12:16]     ✓ Extracted embedding for: Espresso
+[2025-11-12 19:12:26]     ✓ Extracted embedding for: Sabrina Carpenter - Please Please Please
+[2025-11-12 19:12:26]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:12:26] Processing artist: Vril
+[2025-11-12 19:12:27]   Found 5 tracks on YouTube
+[2025-11-12 19:12:37]     ✓ Extracted embedding for: Kruqz
+[2025-11-12 19:12:46]     ✓ Extracted embedding for: 17
+[2025-11-12 19:12:55]     ✓ Extracted embedding for: Avril Lavigne - Tomorrow (Official Audio)
+[2025-11-12 19:13:03]     ✓ Extracted embedding for: Love It When You Hate Me (feat. blackbear)
+[2025-11-12 19:13:12]     ✓ Extracted embedding for: Avril 14th
+[2025-11-12 19:13:12]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:13:12] Processing artist: Calibre
+[2025-11-12 19:13:13]   Found 5 tracks on YouTube
+[2025-11-12 19:13:24]     ✓ Extracted embedding for: Years
+[2025-11-12 19:13:35]     ✓ Extracted embedding for: Broken (Original Mix)
+[2025-11-12 19:13:45]     ✓ Extracted embedding for: Mr. Maverick
+[2025-11-12 19:13:53]     ✓ Extracted embedding for: Calibre 50 - A La Antigüita (Audio)
+[2025-11-12 19:14:02]     ✓ Extracted embedding for: Calibre
+[2025-11-12 19:14:02]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:14:02] 
+  ✓ Successfully extracted embeddings for 8/8 artists
+[2025-11-12 19:14:02]   📊 Extraction success rate: 100.0%
+[2025-11-12 19:14:02] 
+[4/4] Computing similarities and validating...
+[2025-11-12 19:14:02] 
+=== Computing Pairwise Similarities ===
+[2025-11-12 19:14:02]   deadmau5 <-> Rezz: 0.913
+[2025-11-12 19:14:02]   deadmau5 <-> TroyBoi: 0.891
+[2025-11-12 19:14:02]   deadmau5 <-> IMANU: 0.958
+[2025-11-12 19:14:02]   deadmau5 <-> PEEKABOO: 0.830
+[2025-11-12 19:14:02]   deadmau5 <-> Sabrina Carpenter: 0.844
+[2025-11-12 19:14:02]   deadmau5 <-> Vril: 0.889
+[2025-11-12 19:14:02]   deadmau5 <-> Calibre: 0.906
+[2025-11-12 19:14:02]   Rezz <-> TroyBoi: 0.931
+[2025-11-12 19:14:02]   Rezz <-> IMANU: 0.966
+[2025-11-12 19:14:02]   Rezz <-> PEEKABOO: 0.877
+[2025-11-12 19:14:02]   Rezz <-> Sabrina Carpenter: 0.881
+[2025-11-12 19:14:02]   Rezz <-> Vril: 0.936
+[2025-11-12 19:14:02]   Rezz <-> Calibre: 0.935
+[2025-11-12 19:14:02]   TroyBoi <-> IMANU: 0.952
+[2025-11-12 19:14:02]   TroyBoi <-> PEEKABOO: 0.945
+[2025-11-12 19:14:02]   TroyBoi <-> Sabrina Carpenter: 0.885
+[2025-11-12 19:14:02]   TroyBoi <-> Vril: 0.892
+[2025-11-12 19:14:02]   TroyBoi <-> Calibre: 0.907
+[2025-11-12 19:14:02]   IMANU <-> PEEKABOO: 0.889
+[2025-11-12 19:14:02]   IMANU <-> Sabrina Carpenter: 0.897
+[2025-11-12 19:14:02]   IMANU <-> Vril: 0.928
+[2025-11-12 19:14:02]   IMANU <-> Calibre: 0.932
+[2025-11-12 19:14:02]   PEEKABOO <-> Sabrina Carpenter: 0.875
+[2025-11-12 19:14:02]   PEEKABOO <-> Vril: 0.857
+[2025-11-12 19:14:02]   PEEKABOO <-> Calibre: 0.826
+[2025-11-12 19:14:02]   Sabrina Carpenter <-> Vril: 0.956
+[2025-11-12 19:14:02]   Sabrina Carpenter <-> Calibre: 0.863
+[2025-11-12 19:14:02]   Vril <-> Calibre: 0.917
+[2025-11-12 19:14:02] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-12 19:14:02]   deadmau5: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   Rezz: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   TroyBoi: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   IMANU: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   PEEKABOO: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   ⚠️  Sabrina Carpenter not in music-map data, skipping validation
+[2025-11-12 19:14:02]   Vril: 0/5 overlap (0%)
+[2025-11-12 19:14:02]   Calibre: 0/5 overlap (0%)
+[2025-11-12 19:14:02] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-12 19:14:02] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-12 19:14:02] 
+================================================================================
+[2025-11-12 19:14:02] SPIKE SUMMARY
+[2025-11-12 19:14:02] ================================================================================
+[2025-11-12 19:14:02] Extraction Rate: 100.0%
+[2025-11-12 19:14:02] Top-5 Overlap: 0.0%
+[2025-11-12 19:14:02] 
+================================================================================
+[2025-11-12 19:14:02] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-12 19:14:02] ================================================================================
+[2025-11-12 19:44:27] ================================================================================
+[2025-11-12 19:44:27] EMBEDDINGS SPIKE - START
+[2025-11-12 19:44:27] ================================================================================
+[2025-11-12 19:44:27] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-12 19:44:27]   Loaded 854 artists from music-map.com
+[2025-11-12 19:44:27]   Using custom artist list: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-12 19:44:27] 
+[2/5] Initializing Spotify client...
+[2025-11-12 19:44:27] 
+❌ FATAL ERROR: [Errno 2] No such file or directory: '/Users/nikki/dev/artists-to-see-live/src/spotify-config.json'
+[2025-11-12 19:44:27] Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike.py", line 604, in run_spike
+    spotify_client = load_spotify_client()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike.py", line 97, in load_spotify_client
+    with open(config_path, encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/nikki/dev/artists-to-see-live/src/spotify-config.json'
+
+[2025-11-12 19:44:47] ================================================================================
+[2025-11-12 19:44:47] EMBEDDINGS SPIKE - START
+[2025-11-12 19:44:47] ================================================================================
+[2025-11-12 19:44:47] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-12 19:44:47]   Loaded 854 artists from music-map.com
+[2025-11-12 19:44:47]   Using custom artist list: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-12 19:44:47] 
+[2/5] Initializing Spotify client...
+[2025-11-12 19:44:47]   spotify-config.json not found, using environment variables
+[2025-11-12 19:44:47] 
+❌ FATAL ERROR: No client_id. Pass it or set a SPOTIPY_CLIENT_ID environment variable.
+[2025-11-12 19:44:47] Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike.py", line 616, in run_spike
+    spotify_client = load_spotify_client()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike.py", line 114, in load_spotify_client
+    auth_manager = SpotifyClientCredentials()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/spotipy/oauth2.py", line 170, in __init__
+    self.client_id = client_id
+    ^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/spotipy/oauth2.py", line 65, in client_id
+    self._client_id = _ensure_value(val, "client_id")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/spotipy/oauth2.py", line 41, in _ensure_value
+    raise SpotifyOauthError(msg)
+spotipy.exceptions.SpotifyOauthError: No client_id. Pass it or set a SPOTIPY_CLIENT_ID environment variable.
+
+[2025-11-12 19:57:32] ================================================================================
+[2025-11-12 19:57:32] EMBEDDINGS SPIKE - START
+[2025-11-12 19:57:32] ================================================================================
+[2025-11-12 19:57:32] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-12 19:57:32]   Loaded 854 artists from music-map.com
+[2025-11-12 19:57:32]   Using custom artist list: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-12 19:57:32] 
+[2/5] Initializing Spotify client...
+[2025-11-12 19:57:32]   ✓ Spotify client initialized
+[2025-11-12 19:57:32] 
+[3/5] Loading VGGish model...
+[2025-11-12 19:57:32]   Loading VGGish model from TensorFlow Hub...
+[2025-11-12 19:57:32]   ✓ VGGish model loaded
+[2025-11-12 19:57:32] 
+[4/5] Extracting embeddings (Spotify-guided YouTube search)...
+[2025-11-12 19:57:32] Processing artist: deadmau5
+[2025-11-12 19:57:32]   Searching Spotify for artist: deadmau5
+[2025-11-12 19:57:33]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-12 19:57:33]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 19:57:33]   Found 5 tracks on Spotify
+[2025-11-12 19:57:44]     ✓ Extracted embedding for: Escape (feat. Hayla)
+[2025-11-12 19:57:57]     ✓ Extracted embedding for: Ghosts 'n' Stuff - Extended Mix
+[2025-11-12 19:58:08]     ✓ Extracted embedding for: I Remember - John Summit Remix
+[2025-11-12 19:58:18]     ✓ Extracted embedding for: The Veldt - Radio Edit
+[2025-11-12 19:58:31]     ✓ Extracted embedding for: Ameonna
+[2025-11-12 19:58:31]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:58:31] Processing artist: Rezz
+[2025-11-12 19:58:31]   Searching Spotify for artist: Rezz
+[2025-11-12 19:58:31]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-12 19:58:31]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 19:58:31]   Found 5 tracks on Spotify
+[2025-11-12 19:58:42]     ✓ Extracted embedding for: Black Ice
+[2025-11-12 19:58:53]     ✓ Extracted embedding for: Someone Else
+[2025-11-12 19:59:04]     ✓ Extracted embedding for: Puzzle Box
+[2025-11-12 19:59:14]     ✓ Extracted embedding for: HOW I DO IT
+[2025-11-12 19:59:24]     ✓ Extracted embedding for: Hypnocurrency
+[2025-11-12 19:59:24]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 19:59:24] Processing artist: TroyBoi
+[2025-11-12 19:59:24]   Searching Spotify for artist: TroyBoi
+[2025-11-12 19:59:24]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-12 19:59:24]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 19:59:24]   Found 5 tracks on Spotify
+[2025-11-12 19:59:34]     ✓ Extracted embedding for: Red Eye (feat. TroyBoi)
+[2025-11-12 19:59:45]     ✓ Extracted embedding for: Do You?
+[2025-11-12 19:59:54]     ✓ Extracted embedding for: Afterhours feat. Diplo & Nina Sky
+[2025-11-12 20:00:04]     ✓ Extracted embedding for: Bellz
+[2025-11-12 20:00:13]     ✓ Extracted embedding for: MyBoi - TroyBoi Remix
+[2025-11-12 20:00:13]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:00:13] Processing artist: IMANU
+[2025-11-12 20:00:13]   Searching Spotify for artist: IMANU
+[2025-11-12 20:00:13]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-12 20:00:14]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:00:14]   Found 5 tracks on Spotify
+[2025-11-12 20:00:35]     ✓ Extracted embedding for: I'm Fine - IMANU Remix
+[2025-11-12 20:00:46]     ✓ Extracted embedding for: Bleak
+[2025-11-12 20:00:56]     ✓ Extracted embedding for: Sutekh
+[2025-11-12 20:01:06]     ✓ Extracted embedding for: A Taste of Hope - Hallowvale
+[2025-11-12 20:01:16]     ✓ Extracted embedding for: Lost In Mumbai - IMANU Remix
+[2025-11-12 20:01:16]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:01:16] Processing artist: PEEKABOO
+[2025-11-12 20:01:16]   Searching Spotify for artist: PEEKABOO
+[2025-11-12 20:01:16]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-12 20:01:17]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:01:17]   Found 5 tracks on Spotify
+[2025-11-12 20:01:26]     ✓ Extracted embedding for: BADDERS
+[2025-11-12 20:01:37]     ✓ Extracted embedding for: Here With Me
+[2025-11-12 20:01:47]     ✓ Extracted embedding for: Hydrate
+[2025-11-12 20:01:59]     ✓ Extracted embedding for: Want It
+[2025-11-12 20:03:01]     ✓ Extracted embedding for: Like That - Tape B Remix
+[2025-11-12 20:03:01]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:03:01] Processing artist: Sabrina Carpenter
+[2025-11-12 20:03:01]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-12 20:03:01]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-12 20:03:01]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:03:01]   Found 5 tracks on Spotify
+[2025-11-12 20:03:11]     ✓ Extracted embedding for: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-12 20:03:21]     ✓ Extracted embedding for: Manchild
+[2025-11-12 20:03:32]     ✓ Extracted embedding for: Tears
+[2025-11-12 20:03:43]     ✓ Extracted embedding for: When Did You Get Hot?
+[2025-11-12 20:03:53]     ✓ Extracted embedding for: Espresso
+[2025-11-12 20:03:53]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:03:53] Processing artist: Vril
+[2025-11-12 20:03:53]   Searching Spotify for artist: Vril
+[2025-11-12 20:03:53]     ✓ Found artist on Spotify: Vrillah (ID: 6t9MKDOvc0wyRAPtRumn4e)
+[2025-11-12 20:03:53]     ✓ Retrieved 1 top tracks from Spotify
+[2025-11-12 20:03:53]   Found 1 tracks on Spotify
+[2025-11-12 20:04:04]     ✓ Extracted embedding for: Light on My Head
+[2025-11-12 20:04:04]   ✓ Computed artist embedding from 1 tracks
+[2025-11-12 20:04:04] Processing artist: Calibre
+[2025-11-12 20:04:04]   Searching Spotify for artist: Calibre
+[2025-11-12 20:04:05]     ✓ Found artist on Spotify: Calibre 50 (ID: 4jogXSSvlyMkODGSZ2wc2P)
+[2025-11-12 20:04:05]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:04:05]   Found 5 tracks on Spotify
+[2025-11-12 20:04:16]     ✓ Extracted embedding for: Si Te Pudiera Mentir
+[2025-11-12 20:04:27]     ✓ Extracted embedding for: Simplemente Gracias
+[2025-11-12 20:04:37]     ✓ Extracted embedding for: A La Antigüita
+[2025-11-12 20:04:50]     ✓ Extracted embedding for: Siempre Te Voy A Querer
+[2025-11-12 20:05:01]     ✓ Extracted embedding for: Aunque Ahora Estés Con Él
+[2025-11-12 20:05:01]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:05:01] 
+  ✓ Successfully extracted embeddings for 8/8 artists
+[2025-11-12 20:05:01]   📊 Extraction success rate: 100.0%
+[2025-11-12 20:05:01] 
+[5/5] Computing similarities and validating...
+[2025-11-12 20:05:01] 
+=== Computing Pairwise Similarities ===
+[2025-11-12 20:05:01]   deadmau5 <-> Rezz: 0.959
+[2025-11-12 20:05:01]   deadmau5 <-> TroyBoi: 0.911
+[2025-11-12 20:05:01]   deadmau5 <-> IMANU: 0.937
+[2025-11-12 20:05:01]   deadmau5 <-> PEEKABOO: 0.908
+[2025-11-12 20:05:01]   deadmau5 <-> Sabrina Carpenter: 0.886
+[2025-11-12 20:05:01]   deadmau5 <-> Vril: 0.869
+[2025-11-12 20:05:01]   deadmau5 <-> Calibre: 0.646
+[2025-11-12 20:05:01]   Rezz <-> TroyBoi: 0.917
+[2025-11-12 20:05:01]   Rezz <-> IMANU: 0.961
+[2025-11-12 20:05:01]   Rezz <-> PEEKABOO: 0.936
+[2025-11-12 20:05:01]   Rezz <-> Sabrina Carpenter: 0.867
+[2025-11-12 20:05:01]   Rezz <-> Vril: 0.836
+[2025-11-12 20:05:01]   Rezz <-> Calibre: 0.642
+[2025-11-12 20:05:01]   TroyBoi <-> IMANU: 0.925
+[2025-11-12 20:05:01]   TroyBoi <-> PEEKABOO: 0.974
+[2025-11-12 20:05:01]   TroyBoi <-> Sabrina Carpenter: 0.907
+[2025-11-12 20:05:01]   TroyBoi <-> Vril: 0.934
+[2025-11-12 20:05:01]   TroyBoi <-> Calibre: 0.704
+[2025-11-12 20:05:01]   IMANU <-> PEEKABOO: 0.941
+[2025-11-12 20:05:01]   IMANU <-> Sabrina Carpenter: 0.896
+[2025-11-12 20:05:01]   IMANU <-> Vril: 0.839
+[2025-11-12 20:05:01]   IMANU <-> Calibre: 0.707
+[2025-11-12 20:05:01]   PEEKABOO <-> Sabrina Carpenter: 0.886
+[2025-11-12 20:05:01]   PEEKABOO <-> Vril: 0.922
+[2025-11-12 20:05:01]   PEEKABOO <-> Calibre: 0.689
+[2025-11-12 20:05:01]   Sabrina Carpenter <-> Vril: 0.907
+[2025-11-12 20:05:01]   Sabrina Carpenter <-> Calibre: 0.768
+[2025-11-12 20:05:01]   Vril <-> Calibre: 0.712
+[2025-11-12 20:05:01] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-12 20:05:01]   deadmau5: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   Rezz: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   TroyBoi: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   IMANU: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   PEEKABOO: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   ⚠️  Sabrina Carpenter not in music-map data, skipping validation
+[2025-11-12 20:05:01]   Vril: 0/5 overlap (0%)
+[2025-11-12 20:05:01]   Calibre: 0/5 overlap (0%)
+[2025-11-12 20:05:01] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-12 20:05:01] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-12 20:05:01] 
+================================================================================
+[2025-11-12 20:05:01] SPIKE SUMMARY
+[2025-11-12 20:05:01] ================================================================================
+[2025-11-12 20:05:01] Extraction Rate: 100.0%
+[2025-11-12 20:05:01] Top-5 Overlap: 0.0%
+[2025-11-12 20:05:01] 
+================================================================================
+[2025-11-12 20:05:01] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-12 20:05:01] ================================================================================
+[2025-11-12 20:52:45] ================================================================================
+[2025-11-12 20:52:45] EMBEDDINGS SPIKE - START
+[2025-11-12 20:52:45] ================================================================================
+[2025-11-12 20:52:45] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-12 20:52:45]   Loaded 854 artists from music-map.com
+[2025-11-12 20:52:45]   Using custom artist list: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-12 20:52:45] 
+[2/5] Initializing Spotify client...
+[2025-11-12 20:52:45]   ✓ Spotify client initialized
+[2025-11-12 20:52:45]   ✓ Loaded artist ID mapping for 8 artists
+[2025-11-12 20:52:45] 
+[3/5] Loading VGGish model...
+[2025-11-12 20:52:45]   Loading VGGish model from TensorFlow Hub...
+[2025-11-12 20:52:46]   ✓ VGGish model loaded
+[2025-11-12 20:52:46] 
+[4/5] Extracting embeddings (Spotify-guided YouTube search with ID mapping)...
+[2025-11-12 20:52:46] Processing artist: deadmau5
+[2025-11-12 20:52:46]   Searching Spotify for artist: deadmau5
+[2025-11-12 20:52:46]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-12 20:52:46]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-12 20:52:46]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:52:46]   Found 5 tracks on Spotify
+[2025-11-12 20:52:49]     ✓ Extracted embedding for: Escape (feat. Hayla)
+[2025-11-12 20:52:53]     ✓ Extracted embedding for: Ghosts 'n' Stuff - Extended Mix
+[2025-11-12 20:52:56]     ✓ Extracted embedding for: I Remember - John Summit Remix
+[2025-11-12 20:52:57]     ✓ Extracted embedding for: The Veldt - Radio Edit
+[2025-11-12 20:53:02]     ✓ Extracted embedding for: Ameonna
+[2025-11-12 20:53:02]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:53:02] Processing artist: Rezz
+[2025-11-12 20:53:02]   Searching Spotify for artist: Rezz
+[2025-11-12 20:53:02]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-12 20:53:02]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-12 20:53:02]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:53:02]   Found 5 tracks on Spotify
+[2025-11-12 20:53:04]     ✓ Extracted embedding for: Black Ice
+[2025-11-12 20:53:07]     ✓ Extracted embedding for: Someone Else
+[2025-11-12 20:53:09]     ✓ Extracted embedding for: Puzzle Box
+[2025-11-12 20:53:11]     ✓ Extracted embedding for: HOW I DO IT
+[2025-11-12 20:53:14]     ✓ Extracted embedding for: Hypnocurrency
+[2025-11-12 20:53:14]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:53:14] Processing artist: TroyBoi
+[2025-11-12 20:53:14]   Searching Spotify for artist: TroyBoi
+[2025-11-12 20:53:14]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-12 20:53:14]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-12 20:53:14]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:53:14]   Found 5 tracks on Spotify
+[2025-11-12 20:53:16]     ✓ Extracted embedding for: Red Eye (feat. TroyBoi)
+[2025-11-12 20:53:18]     ✓ Extracted embedding for: Do You?
+[2025-11-12 20:53:21]     ✓ Extracted embedding for: Afterhours feat. Diplo & Nina Sky
+[2025-11-12 20:53:22]     ✓ Extracted embedding for: Bellz
+[2025-11-12 20:53:23]     ✓ Extracted embedding for: MyBoi - TroyBoi Remix
+[2025-11-12 20:53:23]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:53:23] Processing artist: IMANU
+[2025-11-12 20:53:23]   Searching Spotify for artist: IMANU
+[2025-11-12 20:53:23]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-12 20:53:23]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-12 20:53:23]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:53:23]   Found 5 tracks on Spotify
+[2025-11-12 20:53:32]     ✓ Extracted embedding for: I'm Fine - IMANU Remix
+[2025-11-12 20:53:35]     ✓ Extracted embedding for: Bleak
+[2025-11-12 20:53:36]     ✓ Extracted embedding for: Sutekh
+[2025-11-12 20:53:39]     ✓ Extracted embedding for: A Taste of Hope - Hallowvale
+[2025-11-12 20:53:41]     ✓ Extracted embedding for: Lost In Mumbai - IMANU Remix
+[2025-11-12 20:53:41]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:53:41] Processing artist: PEEKABOO
+[2025-11-12 20:53:41]   Searching Spotify for artist: PEEKABOO
+[2025-11-12 20:53:41]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-12 20:53:41]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-12 20:53:41]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:53:41]   Found 5 tracks on Spotify
+[2025-11-12 20:53:44]     ✓ Extracted embedding for: BADDERS
+[2025-11-12 20:53:46]     ✓ Extracted embedding for: Here With Me
+[2025-11-12 20:53:49]     ✓ Extracted embedding for: Hydrate
+[2025-11-12 20:53:52]     ✓ Extracted embedding for: Want It
+[2025-11-12 20:54:27]     ✓ Extracted embedding for: Like That - Tape B Remix
+[2025-11-12 20:54:27]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:54:27] Processing artist: Sabrina Carpenter
+[2025-11-12 20:54:27]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-12 20:54:27]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-12 20:54:27]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-12 20:54:27]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:54:27]   Found 5 tracks on Spotify
+[2025-11-12 20:54:29]     ✓ Extracted embedding for: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-12 20:54:31]     ✓ Extracted embedding for: Manchild
+[2025-11-12 20:54:34]     ✓ Extracted embedding for: Tears
+[2025-11-12 20:54:36]     ✓ Extracted embedding for: When Did You Get Hot?
+[2025-11-12 20:54:39]     ✓ Extracted embedding for: Espresso
+[2025-11-12 20:54:39]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:54:39] Processing artist: Vril
+[2025-11-12 20:54:39]   Searching Spotify for artist: Vril
+[2025-11-12 20:54:39]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-12 20:54:39]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-12 20:54:39]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:54:39]   Found 5 tracks on Spotify
+[2025-11-12 20:54:52]     ✓ Extracted embedding for: In Via
+[2025-11-12 20:55:04]     ✓ Extracted embedding for: Haus - Rework
+[2025-11-12 20:55:15]     ✓ Extracted embedding for: Manium
+[2025-11-12 20:55:29]     ✓ Extracted embedding for: Statera Rerum
+[2025-11-12 20:55:41]     ✓ Extracted embedding for: ORELA
+[2025-11-12 20:55:41]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:55:41] Processing artist: Calibre
+[2025-11-12 20:55:41]   Searching Spotify for artist: Calibre
+[2025-11-12 20:55:41]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-12 20:55:41]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-12 20:55:41]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-12 20:55:41]   Found 5 tracks on Spotify
+[2025-11-12 20:55:53]     ✓ Extracted embedding for: Mr Majestic
+[2025-11-12 20:56:44]     ✓ Extracted embedding for: Away With Me - Calibre Remix
+[2025-11-12 20:56:55]     ✓ Extracted embedding for: Garden - Calibre Remix
+[2025-11-12 20:57:03]     ✓ Extracted embedding for: Lungs - Calibre Remix
+[2025-11-12 20:57:16]     ✓ Extracted embedding for: Even If - Original Mix
+[2025-11-12 20:57:16]   ✓ Computed artist embedding from 5 tracks
+[2025-11-12 20:57:16] 
+  ✓ Successfully extracted embeddings for 8/8 artists
+[2025-11-12 20:57:16]   📊 Extraction success rate: 100.0%
+[2025-11-12 20:57:16] 
+[5/5] Computing similarities and validating...
+[2025-11-12 20:57:16] 
+=== Computing Pairwise Similarities ===
+[2025-11-12 20:57:16]   deadmau5 <-> Rezz: 0.959
+[2025-11-12 20:57:16]   deadmau5 <-> TroyBoi: 0.911
+[2025-11-12 20:57:16]   deadmau5 <-> IMANU: 0.937
+[2025-11-12 20:57:16]   deadmau5 <-> PEEKABOO: 0.908
+[2025-11-12 20:57:16]   deadmau5 <-> Sabrina Carpenter: 0.886
+[2025-11-12 20:57:16]   deadmau5 <-> Vril: 0.858
+[2025-11-12 20:57:16]   deadmau5 <-> Calibre: 0.919
+[2025-11-12 20:57:16]   Rezz <-> TroyBoi: 0.917
+[2025-11-12 20:57:16]   Rezz <-> IMANU: 0.961
+[2025-11-12 20:57:16]   Rezz <-> PEEKABOO: 0.936
+[2025-11-12 20:57:16]   Rezz <-> Sabrina Carpenter: 0.867
+[2025-11-12 20:57:16]   Rezz <-> Vril: 0.915
+[2025-11-12 20:57:16]   Rezz <-> Calibre: 0.962
+[2025-11-12 20:57:16]   TroyBoi <-> IMANU: 0.925
+[2025-11-12 20:57:16]   TroyBoi <-> PEEKABOO: 0.974
+[2025-11-12 20:57:16]   TroyBoi <-> Sabrina Carpenter: 0.907
+[2025-11-12 20:57:16]   TroyBoi <-> Vril: 0.763
+[2025-11-12 20:57:16]   TroyBoi <-> Calibre: 0.891
+[2025-11-12 20:57:16]   IMANU <-> PEEKABOO: 0.941
+[2025-11-12 20:57:16]   IMANU <-> Sabrina Carpenter: 0.896
+[2025-11-12 20:57:16]   IMANU <-> Vril: 0.869
+[2025-11-12 20:57:16]   IMANU <-> Calibre: 0.923
+[2025-11-12 20:57:16]   PEEKABOO <-> Sabrina Carpenter: 0.886
+[2025-11-12 20:57:16]   PEEKABOO <-> Vril: 0.786
+[2025-11-12 20:57:16]   PEEKABOO <-> Calibre: 0.887
+[2025-11-12 20:57:16]   Sabrina Carpenter <-> Vril: 0.711
+[2025-11-12 20:57:16]   Sabrina Carpenter <-> Calibre: 0.828
+[2025-11-12 20:57:16]   Vril <-> Calibre: 0.928
+[2025-11-12 20:57:16] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-12 20:57:16]   deadmau5: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   Rezz: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   TroyBoi: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   IMANU: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   PEEKABOO: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   ⚠️  Sabrina Carpenter not in music-map data, skipping validation
+[2025-11-12 20:57:16]   Vril: 0/5 overlap (0%)
+[2025-11-12 20:57:16]   Calibre: 0/5 overlap (0%)
+[2025-11-12 20:57:16] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-12 20:57:16] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-12 20:57:16] 
+================================================================================
+[2025-11-12 20:57:16] SPIKE SUMMARY
+[2025-11-12 20:57:16] ================================================================================
+[2025-11-12 20:57:16] Extraction Rate: 100.0%
+[2025-11-12 20:57:16] Top-5 Overlap: 0.0%
+[2025-11-12 20:57:16] 
+================================================================================
+[2025-11-12 20:57:16] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-12 20:57:16] ================================================================================

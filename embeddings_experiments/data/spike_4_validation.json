@@ -1,0 +1,133 @@
+{
+  "metrics": {
+    "top5_overlap_avg": 0.0
+  },
+  "per_artist_results": {
+    "deadmau5": {
+      "music_map_top5": [
+        "Skrillex",
+        "Knife Party",
+        "Daft Punk",
+        "Feed Me",
+        "Doctor P"
+      ],
+      "embedding_top5": [
+        "Rezz",
+        "IMANU",
+        "Calibre",
+        "TroyBoi",
+        "PEEKABOO"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "Rezz": {
+      "music_map_top5": [
+        "1788-L",
+        "Gesaffelstein",
+        "No Mana",
+        "LSDREAM",
+        "Deathpact"
+      ],
+      "embedding_top5": [
+        "Calibre",
+        "IMANU",
+        "deadmau5",
+        "PEEKABOO",
+        "TroyBoi"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "TroyBoi": {
+      "music_map_top5": [
+        "Ozzie",
+        "Gutter brothers",
+        "Huglife",
+        "Memba",
+        "K theory"
+      ],
+      "embedding_top5": [
+        "PEEKABOO",
+        "IMANU",
+        "Rezz",
+        "deadmau5",
+        "Sabrina Carpenter"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "IMANU": {
+      "music_map_top5": [
+        "Buunshin",
+        "The Caracal Project",
+        "Grey Code",
+        "Skylark",
+        "Circumference"
+      ],
+      "embedding_top5": [
+        "Rezz",
+        "PEEKABOO",
+        "deadmau5",
+        "TroyBoi",
+        "Calibre"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "PEEKABOO": {
+      "music_map_top5": [
+        "Ganja White Night",
+        "Subtronics",
+        "Boogie T",
+        "Dirt Monkey",
+        "TVBOO"
+      ],
+      "embedding_top5": [
+        "TroyBoi",
+        "IMANU",
+        "Rezz",
+        "deadmau5",
+        "Calibre"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "Vril": {
+      "music_map_top5": [
+        "Prince of Denmark",
+        "Traumprinz",
+        "Kobosil",
+        "DJ Metatron",
+        "Havantepe"
+      ],
+      "embedding_top5": [
+        "Calibre",
+        "Rezz",
+        "IMANU",
+        "deadmau5",
+        "PEEKABOO"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    },
+    "Calibre": {
+      "music_map_top5": [
+        "Logistics",
+        "Marcus Intalex",
+        "Commix",
+        "London Elektricity",
+        "Nu:tone"
+      ],
+      "embedding_top5": [
+        "Rezz",
+        "Vril",
+        "IMANU",
+        "deadmau5",
+        "TroyBoi"
+      ],
+      "overlap": 0,
+      "overlap_pct": 0.0
+    }
+  }
+}

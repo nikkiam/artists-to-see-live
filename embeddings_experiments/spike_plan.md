@@ -40,8 +40,10 @@ embeddings_experiments/
 ### Dependencies to Install
 
 ```bash
-uv add librosa soundfile numpy scikit-learn spotipy openl3
+uv add librosa soundfile numpy scikit-learn spotipy tensorflow tensorflow-hub
 ```
+
+**Note:** Using VGGish instead of OpenL3 due to Python 3.12 + M1 Mac compatibility issues with OpenL3. VGGish (128-dim embeddings) is from the same paper and works well with TensorFlow 2.x on M1.
 
 ### Code Structure (Functional Style)
 
@@ -54,7 +56,8 @@ from pathlib import Path
 from typing import Optional
 
 import numpy as np
-import openl3
+import tensorflow as tf
+import tensorflow_hub as hub
 import soundfile as sf
 from spotipy import Spotify
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -85,7 +88,7 @@ class ArtistEmbedding:
     tracks_used: list[str]
     spotify_ids: list[str]
     computed_at: str
-    model: str = "openl3"
+    model: str = "vggish"
 
 @dataclass(frozen=True)
 class SimilarityResult:

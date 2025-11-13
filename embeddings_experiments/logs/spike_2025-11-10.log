@@ -1,0 +1,387 @@
+[2025-11-10 20:38:47] ================================================================================
+[2025-11-10 20:38:47] EMBEDDINGS SPIKE - START
+[2025-11-10 20:38:47] ================================================================================
+[2025-11-10 20:38:47] 
+[1/5] Setting up Spotify client...
+[2025-11-10 20:38:47]   ✓ Spotify client initialized
+[2025-11-10 20:38:47] 
+[2/5] Loading music-map data and selecting test artists...
+[2025-11-10 20:38:47]   Loaded 854 artists from music-map.com
+[2025-11-10 20:38:47]   Selected 10 test artists:
+[2025-11-10 20:38:47]     - Syd
+[2025-11-10 20:38:47]     - Carnage
+[2025-11-10 20:38:47]     - Alison Wonderland
+[2025-11-10 20:38:47]     - k?d
+[2025-11-10 20:38:47]     - Fuse ODG
+[2025-11-10 20:38:47]     - Feint
+[2025-11-10 20:38:47]     - Eli Keszler
+[2025-11-10 20:38:47]     - D'african
+[2025-11-10 20:38:47]     - ero808
+[2025-11-10 20:38:47]     - Cabu
+[2025-11-10 20:38:47] 
+[3/5] Loading VGGish model...
+[2025-11-10 20:38:47]   Loading VGGish model from TensorFlow Hub...
+[2025-11-10 20:38:53]   ✓ VGGish model loaded
+[2025-11-10 20:38:53] 
+[4/5] Extracting embeddings...
+[2025-11-10 20:38:53] Processing artist: Syd
+[2025-11-10 20:38:53]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Syd&type=artist&limit=1
+[2025-11-10 20:38:53]   ❌ Artist not found on Spotify: Syd
+[2025-11-10 20:38:53] Processing artist: Carnage
+[2025-11-10 20:38:53]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Carnage&type=artist&limit=1
+[2025-11-10 20:38:53]   ❌ Artist not found on Spotify: Carnage
+[2025-11-10 20:38:53] Processing artist: Alison Wonderland
+[2025-11-10 20:38:53]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Alison+Wonderland&type=artist&limit=1
+[2025-11-10 20:38:53]   ❌ Artist not found on Spotify: Alison Wonderland
+[2025-11-10 20:38:53] Processing artist: k?d
+[2025-11-10 20:38:53]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=k%3Fd&type=artist&limit=1
+[2025-11-10 20:38:53]   ❌ Artist not found on Spotify: k?d
+[2025-11-10 20:38:53] Processing artist: Fuse ODG
+[2025-11-10 20:38:53]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Fuse+ODG&type=artist&limit=1
+[2025-11-10 20:38:53]   ❌ Artist not found on Spotify: Fuse ODG
+[2025-11-10 20:38:53] Processing artist: Feint
+[2025-11-10 20:38:54]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Feint&type=artist&limit=1
+[2025-11-10 20:38:54]   ❌ Artist not found on Spotify: Feint
+[2025-11-10 20:38:54] Processing artist: Eli Keszler
+[2025-11-10 20:38:54]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Eli+Keszler&type=artist&limit=1
+[2025-11-10 20:38:54]   ❌ Artist not found on Spotify: Eli Keszler
+[2025-11-10 20:38:54] Processing artist: D'african
+[2025-11-10 20:38:54]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=D%27african&type=artist&limit=1
+[2025-11-10 20:38:54]   ❌ Artist not found on Spotify: D'african
+[2025-11-10 20:38:54] Processing artist: ero808
+[2025-11-10 20:38:54]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=ero808&type=artist&limit=1
+[2025-11-10 20:38:54]   ❌ Artist not found on Spotify: ero808
+[2025-11-10 20:38:54] Processing artist: Cabu
+[2025-11-10 20:38:54]     ⚠️  Search failed: 401 Client Error: Unauthorized for url: https://api.spotify.com/v1/search?q=Cabu&type=artist&limit=1
+[2025-11-10 20:38:54]   ❌ Artist not found on Spotify: Cabu
+[2025-11-10 20:38:54] 
+  ✓ Successfully extracted embeddings for 0/10 artists
+[2025-11-10 20:38:54]   📊 Extraction success rate: 0.0%
+[2025-11-10 20:38:54] 
+[5/5] Computing similarities and validating...
+[2025-11-10 20:38:54] 
+=== Computing Pairwise Similarities ===
+[2025-11-10 20:38:54] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-10 20:38:54] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-10 20:38:54] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-10 20:38:54] 
+================================================================================
+[2025-11-10 20:38:54] SPIKE SUMMARY
+[2025-11-10 20:38:54] ================================================================================
+[2025-11-10 20:38:54] Extraction Rate: 0.0%
+[2025-11-10 20:38:54] Top-5 Overlap: 0.0%
+[2025-11-10 20:38:54] 
+================================================================================
+[2025-11-10 20:38:54] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-10 20:38:54] ================================================================================
+[2025-11-10 20:39:29] ================================================================================
+[2025-11-10 20:39:29] EMBEDDINGS SPIKE - START
+[2025-11-10 20:39:29] ================================================================================
+[2025-11-10 20:39:29] 
+[1/5] Setting up Spotify client...
+[2025-11-10 20:39:29]   Refreshing Spotify access token...
+[2025-11-10 20:39:29]   ✓ Spotify client initialized
+[2025-11-10 20:39:29] 
+[2/5] Loading music-map data and selecting test artists...
+[2025-11-10 20:39:29]   Loaded 854 artists from music-map.com
+[2025-11-10 20:39:29]   Selected 10 test artists:
+[2025-11-10 20:39:29]     - Syd
+[2025-11-10 20:39:29]     - Carnage
+[2025-11-10 20:39:29]     - Alison Wonderland
+[2025-11-10 20:39:29]     - k?d
+[2025-11-10 20:39:29]     - Fuse ODG
+[2025-11-10 20:39:29]     - Feint
+[2025-11-10 20:39:29]     - Eli Keszler
+[2025-11-10 20:39:29]     - D'african
+[2025-11-10 20:39:29]     - ero808
+[2025-11-10 20:39:29]     - Cabu
+[2025-11-10 20:39:29] 
+[3/5] Loading VGGish model...
+[2025-11-10 20:39:29]   Loading VGGish model from TensorFlow Hub...
+[2025-11-10 20:39:29]   ✓ VGGish model loaded
+[2025-11-10 20:39:29] 
+[4/5] Extracting embeddings...
+[2025-11-10 20:39:29] Processing artist: Syd
+[2025-11-10 20:39:30]   ❌ No preview URLs available for Syd
+[2025-11-10 20:39:30] Processing artist: Carnage
+[2025-11-10 20:39:30]   ❌ No preview URLs available for Carnage
+[2025-11-10 20:39:30] Processing artist: Alison Wonderland
+[2025-11-10 20:39:31]   ❌ No preview URLs available for Alison Wonderland
+[2025-11-10 20:39:31] Processing artist: k?d
+[2025-11-10 20:39:32]   ❌ No preview URLs available for k?d
+[2025-11-10 20:39:32] Processing artist: Fuse ODG
+[2025-11-10 20:39:32]   ❌ No preview URLs available for Fuse ODG
+[2025-11-10 20:39:32] Processing artist: Feint
+[2025-11-10 20:39:33]   ❌ No preview URLs available for Feint
+[2025-11-10 20:39:33] Processing artist: Eli Keszler
+[2025-11-10 20:39:33]   ❌ No preview URLs available for Eli Keszler
+[2025-11-10 20:39:33] Processing artist: D'african
+[2025-11-10 20:39:34]   ❌ No preview URLs available for D'african
+[2025-11-10 20:39:34] Processing artist: ero808
+[2025-11-10 20:39:35]   ❌ No preview URLs available for ero808
+[2025-11-10 20:39:35] Processing artist: Cabu
+[2025-11-10 20:39:35]   ❌ No preview URLs available for Cabu
+[2025-11-10 20:39:35] 
+  ✓ Successfully extracted embeddings for 0/10 artists
+[2025-11-10 20:39:35]   📊 Extraction success rate: 0.0%
+[2025-11-10 20:39:35] 
+[5/5] Computing similarities and validating...
+[2025-11-10 20:39:35] 
+=== Computing Pairwise Similarities ===
+[2025-11-10 20:39:35] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-10 20:39:35] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-10 20:39:35] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-10 20:39:35] 
+================================================================================
+[2025-11-10 20:39:35] SPIKE SUMMARY
+[2025-11-10 20:39:35] ================================================================================
+[2025-11-10 20:39:35] Extraction Rate: 0.0%
+[2025-11-10 20:39:35] Top-5 Overlap: 0.0%
+[2025-11-10 20:39:35] 
+================================================================================
+[2025-11-10 20:39:35] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-10 20:39:35] ================================================================================
+[2025-11-10 20:40:14] ================================================================================
+[2025-11-10 20:40:14] EMBEDDINGS SPIKE - START
+[2025-11-10 20:40:14] ================================================================================
+[2025-11-10 20:40:14] 
+[1/5] Setting up Spotify client...
+[2025-11-10 20:40:14]   Refreshing Spotify access token...
+[2025-11-10 20:40:14]   ✓ Spotify client initialized
+[2025-11-10 20:40:14] 
+[2/5] Loading music-map data and selecting test artists...
+[2025-11-10 20:40:14]   Loaded 854 artists from music-map.com
+[2025-11-10 20:40:14]   Selected 30 candidate artists to test for preview availability
+[2025-11-10 20:40:14] 
+[3/5] Loading VGGish model...
+[2025-11-10 20:40:14]   Loading VGGish model from TensorFlow Hub...
+[2025-11-10 20:40:14]   ✓ VGGish model loaded
+[2025-11-10 20:40:14] 
+[4/5] Extracting embeddings...
+[2025-11-10 20:40:14] Processing artist: Syd
+[2025-11-10 20:40:15]   ❌ No preview URLs available for Syd
+[2025-11-10 20:40:15] Processing artist: Carnage
+[2025-11-10 20:40:16]   ❌ No preview URLs available for Carnage
+[2025-11-10 20:40:16] Processing artist: Alison Wonderland
+[2025-11-10 20:40:16]   ❌ No preview URLs available for Alison Wonderland
+[2025-11-10 20:40:16] Processing artist: k?d
+[2025-11-10 20:40:17]   ❌ No preview URLs available for k?d
+[2025-11-10 20:40:17] Processing artist: Fuse ODG
+[2025-11-10 20:40:17]   ❌ No preview URLs available for Fuse ODG
+[2025-11-10 20:40:17] Processing artist: Feint
+[2025-11-10 20:40:18]   ❌ No preview URLs available for Feint
+[2025-11-10 20:40:18] Processing artist: Eli Keszler
+[2025-11-10 20:40:18]   ❌ No preview URLs available for Eli Keszler
+[2025-11-10 20:40:18] Processing artist: D'african
+[2025-11-10 20:40:19]   ❌ No preview URLs available for D'african
+[2025-11-10 20:40:19] Processing artist: ero808
+[2025-11-10 20:40:20]   ❌ No preview URLs available for ero808
+[2025-11-10 20:40:20] Processing artist: Cabu
+[2025-11-10 20:40:20]   ❌ No preview URLs available for Cabu
+[2025-11-10 20:40:20] Processing artist: Tommy Trash
+[2025-11-10 20:40:21]   ❌ No preview URLs available for Tommy Trash
+[2025-11-10 20:40:21] Processing artist: josh pan
+[2025-11-10 20:40:22]   ❌ No preview URLs available for josh pan
+[2025-11-10 20:40:22] Processing artist: Portugal. The Man
+[2025-11-10 20:40:22]   ❌ No preview URLs available for Portugal. The Man
+[2025-11-10 20:40:22] Processing artist: Blue Foundation
+[2025-11-10 20:40:23]   ❌ No preview URLs available for Blue Foundation
+[2025-11-10 20:40:23] Processing artist: Sabrina Claudio
+[2025-11-10 20:40:23]   ❌ No preview URLs available for Sabrina Claudio
+[2025-11-10 20:40:23] Processing artist: Loz Contreras
+[2025-11-10 20:40:24]   ❌ No preview URLs available for Loz Contreras
+[2025-11-10 20:40:24] Processing artist: Ambassadeurs
+[2025-11-10 20:40:25]   ❌ No preview URLs available for Ambassadeurs
+[2025-11-10 20:40:25] Processing artist: Aly & Fila
+[2025-11-10 20:40:26]   ❌ No preview URLs available for Aly & Fila
+[2025-11-10 20:40:26] Processing artist: Boston Bun
+[2025-11-10 20:40:26]   ❌ No preview URLs available for Boston Bun
+[2025-11-10 20:40:26] Processing artist: Einmusik
+[2025-11-10 20:40:27]   ❌ No preview URLs available for Einmusik
+[2025-11-10 20:40:27] Processing artist: Eprom
+[2025-11-10 20:40:28]   ❌ No preview URLs available for Eprom
+[2025-11-10 20:40:28] Processing artist: Noizu
+[2025-11-10 20:40:28]   ❌ No preview URLs available for Noizu
+[2025-11-10 20:40:28] Processing artist: Sergio Pardo
+[2025-11-10 20:40:29]   ❌ No preview URLs available for Sergio Pardo
+[2025-11-10 20:40:29] Processing artist: Allisa Rose
+[2025-11-10 20:40:29]   ❌ No preview URLs available for Allisa Rose
+[2025-11-10 20:40:29] Processing artist: Reiki Ruawai
+[2025-11-10 20:40:30]   ❌ No preview URLs available for Reiki Ruawai
+[2025-11-10 20:40:30] Processing artist: Drezo
+[2025-11-10 20:40:31]   ❌ No preview URLs available for Drezo
+[2025-11-10 20:40:31] Processing artist: WhoMadeWho
+[2025-11-10 20:40:32]   ❌ No preview URLs available for WhoMadeWho
+[2025-11-10 20:40:32] Processing artist: Technimatic
+[2025-11-10 20:40:32]   ❌ No preview URLs available for Technimatic
+[2025-11-10 20:40:32] Processing artist: Vinylshakerz
+[2025-11-10 20:40:33]   ❌ No preview URLs available for Vinylshakerz
+[2025-11-10 20:40:33] Processing artist: Louis The Child
+[2025-11-10 20:40:33]   ❌ No preview URLs available for Louis The Child
+[2025-11-10 20:40:33] 
+  ✓ Successfully extracted embeddings for 0/30 artists
+[2025-11-10 20:40:33]   📊 Extraction success rate: 0.0%
+[2025-11-10 20:40:33] 
+[5/5] Computing similarities and validating...
+[2025-11-10 20:40:33] 
+=== Computing Pairwise Similarities ===
+[2025-11-10 20:40:33] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-10 20:40:33] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-10 20:40:33] 
+  ✓ Results saved to embeddings_experiments/data/
+[2025-11-10 20:40:33] 
+================================================================================
+[2025-11-10 20:40:33] SPIKE SUMMARY
+[2025-11-10 20:40:33] ================================================================================
+[2025-11-10 20:40:33] Extraction Rate: 0.0%
+[2025-11-10 20:40:33] Top-5 Overlap: 0.0%
+[2025-11-10 20:40:33] 
+================================================================================
+[2025-11-10 20:40:33] EMBEDDINGS SPIKE - COMPLETE
+[2025-11-10 20:40:33] ================================================================================
+[2025-11-10 20:49:32] ================================================================================
+[2025-11-10 20:49:32] EMBEDDINGS SPIKE - START
+[2025-11-10 20:49:32] ================================================================================
+[2025-11-10 20:49:32] 
+[1/4] Loading music-map data and selecting test artists...
+[2025-11-10 20:49:32]   Loaded 854 artists from music-map.com
+[2025-11-10 20:49:32]   Selected 30 candidate artists to test for preview availability
+[2025-11-10 20:49:32] 
+[2/4] Loading VGGish model...
+[2025-11-10 20:49:32]   Loading VGGish model from TensorFlow Hub...
+[2025-11-10 20:49:33]   ✓ VGGish model loaded
+[2025-11-10 20:49:33] 
+[3/4] Extracting embeddings from YouTube audio...
+[2025-11-10 20:49:33] Processing artist: Syd
+[2025-11-10 20:49:34]   Found 5 tracks on YouTube
+[2025-11-10 20:49:56]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3435307), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3435307), dtype=float32, numpy=
+array([[-2.08242927e-05, -2.25470831e-05, -2.86614122e-05, ...,
+        -1.20954587e-06,  4.61260242e-06, -1.12373655e-05]],
+      shape=(1, 3435307), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3435307), dtype=float32)
+  • training=None
+[2025-11-10 20:50:03]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 4717654), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 4717654), dtype=float32, numpy=
+array([[-6.3646439e-09,  7.3423507e-09, -8.2795850e-09, ...,
+        -8.2791553e-07,  3.7636892e-07,  0.0000000e+00]],
+      shape=(1, 4717654), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 4717654), dtype=float32)
+  • training=None
+[2025-11-10 20:50:11]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3055360), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3055360), dtype=float32, numpy=
+array([[-3.1975349e-05, -1.9289677e-05, -2.3667159e-05, ...,
+        -1.0729700e-05,  1.6865506e-06,  5.6875865e-06]],
+      shape=(1, 3055360), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3055360), dtype=float32)
+  • training=None
+[2025-11-10 20:50:20]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3347840), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3347840), dtype=float32, numpy=
+array([[-1.2861584e-05, -3.9782073e-05, -3.5723428e-05, ...,
+        -4.1341264e-06, -1.0669482e-06,  8.2230008e-07]],
+      shape=(1, 3347840), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3347840), dtype=float32)
+  • training=None
+[2025-11-10 20:50:26]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 1124054), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 1124054), dtype=float32, numpy=
+array([[-1.7280943e-05, -3.8846279e-05, -3.0234416e-05, ...,
+         1.0061168e-06,  7.5650519e-06,  0.0000000e+00]],
+      shape=(1, 1124054), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 1124054), dtype=float32)
+  • training=None
+[2025-11-10 20:50:26]   ❌ No successful embeddings for Syd
+[2025-11-10 20:50:26] Processing artist: Carnage
+[2025-11-10 20:50:27]   Found 5 tracks on YouTube
+[2025-11-10 20:50:35]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3464107), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3464107), dtype=float32, numpy=
+array([[-1.8978977e-05, -4.2185729e-05, -3.9510338e-05, ...,
+         4.3771001e-06, -3.0881242e-06, -3.7495743e-06]],
+      shape=(1, 3464107), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3464107), dtype=float32)
+  • training=None
+[2025-11-10 20:50:43]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3568000), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3568000), dtype=float32, numpy=
+array([[-2.7015060e-03,  2.6377290e-03, -3.0757636e-03, ...,
+        -1.5591422e-05,  1.1338321e-05,  4.6686746e-06]],
+      shape=(1, 3568000), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3568000), dtype=float32)
+  • training=None
+[2025-11-10 20:50:51]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 4517861), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 4517861), dtype=float32, numpy=
+array([[ 0.0000000e+00,  1.8626451e-09,  4.1909516e-09, ...,
+        -1.1213209e-03, -1.3619307e-03,  0.0000000e+00]],
+      shape=(1, 4517861), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 4517861), dtype=float32)
+  • training=None
+[2025-11-10 20:50:59]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 2922667), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 2922667), dtype=float32, numpy=
+array([[-1.5120291e-05, -6.9065836e-06, -5.2937112e-06, ...,
+        -3.2262324e-04, -1.8788278e-04, -1.8855154e-04]],
+      shape=(1, 2922667), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 2922667), dtype=float32)
+  • training=None
+[2025-11-10 20:51:06]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 2416176), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 2416176), dtype=float32, numpy=array([[0., 0., 0., ..., 0., 0., 0.]], shape=(1, 2416176), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 2416176), dtype=float32)
+  • training=None
+[2025-11-10 20:51:06]   ❌ No successful embeddings for Carnage
+[2025-11-10 20:51:06] Processing artist: Alison Wonderland
+[2025-11-10 20:51:07]   Found 5 tracks on YouTube
+[2025-11-10 20:51:37]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 67085979), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 67085979), dtype=float32, numpy=
+array([[ 4.2632564e-14,  2.8421709e-14, -8.5265128e-14, ...,
+         0.0000000e+00,  0.0000000e+00,  0.0000000e+00]],
+      shape=(1, 67085979), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 67085979), dtype=float32)
+  • training=None
+[2025-11-10 20:51:45]       ⚠️  Embedding extraction failed: Exception encountered when calling layer 'keras_layer' (type KerasLayer).
+
+Binding inputs to tf.function failed due to `Can not cast TensorSpec(shape=(1, 3199080), dtype=tf.float32, name=None) to TensorSpec(shape=(None,), dtype=tf.float32, name=None)`. Received args: (<tf.Tensor: shape=(1, 3199080), dtype=float32, numpy=
+array([[2.8742515e-06, 2.5474483e-05, 5.5738499e-05, ..., 0.0000000e+00,
+        0.0000000e+00, 0.0000000e+00]], shape=(1, 3199080), dtype=float32)>,) and kwargs: {} for signature: (waveform: TensorSpec(shape=(None,), dtype=tf.float32, name=None)).
+
+Call arguments received by layer 'keras_layer' (type KerasLayer):
+  • inputs=tf.Tensor(shape=(1, 3199080), dtype=float32)
+  • training=None
+[2025-11-10 20:51:56]       ⚠️  Download failed: ERROR: Postprocessing: audio conversion failed: Conversion failed!

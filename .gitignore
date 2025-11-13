@@ -13,4 +13,4 @@ wheels/
 spotify-config.json
 
 # Apple ds_store files
-.DS_Store
+.DS_Storeembeddings_experiments/data/audio_cache/
