@@ -23,8 +23,8 @@ ENV PYTHONUNBUFFERED=1
 # Install Python dependencies
 RUN pip install --no-cache-dir \
     transformers==4.57.1 \
-    torch==2.5.1 \
-    torchaudio==2.5.1 \
+    torch==2.6.0 \
+    torchaudio==2.6.0 \
     librosa==0.10.1 \
     numpy==1.26.4 \
     fastapi==0.115.0 \
