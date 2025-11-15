@@ -1,0 +1,64 @@
+name: Build MERT Docker Image (AMD64)
+
+on:
+  workflow_dispatch:  # Manual trigger
+  push:
+    paths:
+      - 'embeddings_experiments/Dockerfile'
+      - 'embeddings_experiments/mert_server.py'
+      - '.github/workflows/build-mert-docker.yml'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest  # AMD64 architecture
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./embeddings_experiments
+          file: ./embeddings_experiments/Dockerfile
+          push: true
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/mert-spike6-inference:latest
+            ${{ secrets.DOCKER_USERNAME }}/mert-spike6-inference:${{ github.sha }}
+          platforms: linux/amd64
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  summary:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+    steps:
+      - name: Print deployment info
+        run: |
+          echo "========================================="
+          echo "✓ Docker image built on AMD64"
+          echo "✓ Image pushed to Docker Hub"
+          echo "========================================="
+          echo ""
+          echo "Docker image: ${{ secrets.DOCKER_USERNAME }}/mert-spike6-inference:latest"
+          echo ""
+          echo "Next steps - Choose one deployment option:"
+          echo ""
+          echo "Option 1: Run locally (if you have GPU)"
+          echo "  docker run -p 8080:7860 ${{ secrets.DOCKER_USERNAME }}/mert-spike6-inference:latest"
+          echo "  export HF_ENDPOINT_URL=http://localhost:8080"
+          echo ""
+          echo "Option 2: Deploy to HuggingFace Spaces"
+          echo "  python embeddings_experiments/deploy_to_hf_spaces.py"
+          echo ""
+          echo "Option 3: Deploy to any cloud provider"
+          echo "  (Fly.io, Railway, Render, etc.)"
