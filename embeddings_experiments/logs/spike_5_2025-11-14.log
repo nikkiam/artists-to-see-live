@@ -1,0 +1,269 @@
+[2025-11-14 00:50:08] ================================================================================
+[2025-11-14 00:50:08] SPIKE 5: DISCOGS-EFFNET EMBEDDINGS
+[2025-11-14 00:50:08] ================================================================================
+[2025-11-14 00:50:08] 
+[2025-11-14 00:50:08] Testing Discogs-Effnet (trained on 1.8M Discogs tracks)
+[2025-11-14 00:50:08] vs VGGish from Spike 4 (trained on AudioSet - general audio)
+[2025-11-14 00:50:08] 
+[2025-11-14 00:50:08] [1/5] Loading music-map data...
+[2025-11-14 00:50:08]   Loaded 854 artists from music-map.com
+[2025-11-14 00:50:08]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-14 00:50:08] 
+[2/5] Initializing Spotify client...
+[2025-11-14 00:50:08]   ✓ Loaded artist ID mapping for 8 artists
+[2025-11-14 00:50:08]   ✓ Spotify client initialized
+[2025-11-14 00:50:08] 
+[3/5] Loading Discogs-Effnet model...
+[2025-11-14 00:50:08]   (Model will download automatically on first use - ~50MB)
+[2025-11-14 00:50:08]   Loading Discogs-Effnet artist embeddings model...
+[2025-11-14 00:50:08] 
+❌ FATAL ERROR: Error while configuring TensorflowPredictEffnetDiscogs: TensorflowPredict: could not open the Tensorflow graph file.
+[2025-11-14 00:50:08] Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike_5_discogs.py", line 525, in run_spike_5
+    discogs_model = load_discogs_model()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike_5_discogs.py", line 270, in load_discogs_model
+    model = TensorflowPredictEffnetDiscogs(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/essentia/standard.py", line 44, in __init__
+    self.configure(**kwargs)
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/essentia/standard.py", line 64, in configure
+    self.__configure__(**kwargs)
+RuntimeError: Error while configuring TensorflowPredictEffnetDiscogs: TensorflowPredict: could not open the Tensorflow graph file.
+
+[2025-11-14 01:32:16] ================================================================================
+[2025-11-14 01:32:16] SPIKE 5: MERT-v1-95M EMBEDDINGS
+[2025-11-14 01:32:16] ================================================================================
+[2025-11-14 01:32:16] 
+[2025-11-14 01:32:16] Testing MERT-v1-95M (music transformer, 768-dim)
+[2025-11-14 01:32:16] vs VGGish from Spike 4 (general audio CNN, 128-dim)
+[2025-11-14 01:32:16] 
+[2025-11-14 01:32:16] [1/5] Loading music-map data...
+[2025-11-14 01:32:16]   Loaded 854 artists
+[2025-11-14 01:32:16] 
+[2/5] Initializing Spotify...
+[2025-11-14 01:32:16]   ✓ Ready
+[2025-11-14 01:32:16] 
+[3/5] Loading MERT model...
+[2025-11-14 01:32:16]   Loading MERT-v1-95M model from HuggingFace...
+[2025-11-14 01:32:16]   Using device: mps
+[2025-11-14 01:32:23]   ✓ MERT model loaded on mps
+[2025-11-14 01:32:23] 
+[4/5] Extracting MERT embeddings...
+[2025-11-14 01:32:23] Processing artist: deadmau5
+[2025-11-14 01:32:23]   Searching Spotify for artist: deadmau5
+[2025-11-14 01:32:23]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 01:32:23]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 01:32:23]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:32:23]   Found 5 tracks on Spotify
+[2025-11-14 01:32:41]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 8.90 GiB
+[2025-11-14 01:33:41]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 51.84 GiB
+[2025-11-14 01:34:07]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 14.48 GiB
+[2025-11-14 01:34:53]       ⚠️  MERT embedding extraction failed: MPS backend out of memory (MPS allocated: 13.51 GiB, other allocations: 20.89 MiB, max allowed: 20.13 GiB). Tried to allocate 8.06 GiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+[2025-11-14 01:35:32]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 49.25 GiB
+[2025-11-14 01:35:32]   ❌ No successful embeddings for deadmau5
+[2025-11-14 01:35:32] Processing artist: Rezz
+[2025-11-14 01:35:32]   Searching Spotify for artist: Rezz
+[2025-11-14 01:35:32]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 01:35:32]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 01:35:32]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:35:32]   Found 5 tracks on Spotify
+[2025-11-14 01:35:55]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 17.00 GiB
+[2025-11-14 01:36:54]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 10.81 GiB
+[2025-11-14 01:37:13]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 11.33 GiB
+[2025-11-14 01:42:06] ================================================================================
+[2025-11-14 01:42:06] SPIKE 5: MERT-v1-95M EMBEDDINGS
+[2025-11-14 01:42:06] ================================================================================
+[2025-11-14 01:42:06] 
+[2025-11-14 01:42:06] Testing MERT-v1-95M (music transformer, 768-dim)
+[2025-11-14 01:42:06] vs VGGish from Spike 4 (general audio CNN, 128-dim)
+[2025-11-14 01:42:06] 
+[2025-11-14 01:42:06] [1/5] Loading music-map data...
+[2025-11-14 01:42:06]   Loaded 854 artists
+[2025-11-14 01:42:06] 
+[2/5] Initializing Spotify...
+[2025-11-14 01:42:06]   ✓ Ready
+[2025-11-14 01:42:06] 
+[3/5] Loading MERT model...
+[2025-11-14 01:42:06]   Loading MERT-v1-95M model from HuggingFace...
+[2025-11-14 01:42:06]   Using device: mps
+[2025-11-14 01:42:08]   ✓ MERT model loaded on mps
+[2025-11-14 01:42:08] 
+[4/5] Extracting MERT embeddings...
+[2025-11-14 01:42:08] Processing artist: deadmau5
+[2025-11-14 01:42:08]   Searching Spotify for artist: deadmau5
+[2025-11-14 01:42:08]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 01:42:08]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 01:42:08]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:42:08]   Found 5 tracks on Spotify
+[2025-11-14 01:42:15]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 8.90 GiB
+[2025-11-14 01:42:46]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 51.84 GiB
+[2025-11-14 01:42:58]       ⚠️  MERT embedding extraction failed: Invalid buffer size: 14.48 GiB
+[2025-11-14 01:45:24] ================================================================================
+[2025-11-14 01:45:24] SPIKE 5: MERT-v1-95M EMBEDDINGS
+[2025-11-14 01:45:24] ================================================================================
+[2025-11-14 01:45:24] 
+[2025-11-14 01:45:24] Testing MERT-v1-95M (music transformer, 768-dim)
+[2025-11-14 01:45:24] vs VGGish from Spike 4 (general audio CNN, 128-dim)
+[2025-11-14 01:45:24] 
+[2025-11-14 01:45:24] [1/5] Loading music-map data...
+[2025-11-14 01:45:24]   Loaded 854 artists
+[2025-11-14 01:45:24] 
+[2/5] Initializing Spotify...
+[2025-11-14 01:45:24]   ✓ Ready
+[2025-11-14 01:45:24] 
+[3/5] Loading MERT model...
+[2025-11-14 01:45:24]   Loading MERT-v1-95M model from HuggingFace...
+[2025-11-14 01:45:24]   Using device: mps
+[2025-11-14 01:45:25]   ✓ MERT model loaded on mps
+[2025-11-14 01:45:25] 
+[4/5] Extracting MERT embeddings...
+[2025-11-14 01:45:25] Processing artist: deadmau5
+[2025-11-14 01:45:25]   Searching Spotify for artist: deadmau5
+[2025-11-14 01:45:25]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 01:45:25]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 01:45:25]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:45:25]   Found 5 tracks on Spotify
+[2025-11-14 01:45:29]     ✓ Extracted MERT embedding for: Escape (feat. Hayla)
+[2025-11-14 01:45:31]     ✓ Extracted MERT embedding for: Ghosts 'n' Stuff - Extended Mix
+[2025-11-14 01:45:33]     ✓ Extracted MERT embedding for: I Remember - John Summit Remix
+[2025-11-14 01:45:35]     ✓ Extracted MERT embedding for: The Veldt - Radio Edit
+[2025-11-14 01:45:37]     ✓ Extracted MERT embedding for: Ameonna
+[2025-11-14 01:45:37]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:45:37] Processing artist: Rezz
+[2025-11-14 01:45:37]   Searching Spotify for artist: Rezz
+[2025-11-14 01:45:37]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 01:45:37]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 01:45:37]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:45:37]   Found 5 tracks on Spotify
+[2025-11-14 01:45:39]     ✓ Extracted MERT embedding for: Black Ice
+[2025-11-14 01:45:40]     ✓ Extracted MERT embedding for: Someone Else
+[2025-11-14 01:45:43]     ✓ Extracted MERT embedding for: Puzzle Box
+[2025-11-14 01:45:45]     ✓ Extracted MERT embedding for: HOW I DO IT
+[2025-11-14 01:45:56]     ✓ Extracted MERT embedding for: Hypnocurrency
+[2025-11-14 01:45:56]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:45:56] Processing artist: TroyBoi
+[2025-11-14 01:45:56]   Searching Spotify for artist: TroyBoi
+[2025-11-14 01:45:56]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 01:45:56]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 01:45:56]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:45:56]   Found 5 tracks on Spotify
+[2025-11-14 01:46:06]     ✓ Extracted MERT embedding for: Red Eye (feat. TroyBoi)
+[2025-11-14 01:46:16]     ✓ Extracted MERT embedding for: Do You?
+[2025-11-14 01:46:26]     ✓ Extracted MERT embedding for: Afterhours feat. Diplo & Nina Sky
+[2025-11-14 01:46:36]     ✓ Extracted MERT embedding for: Bellz
+[2025-11-14 01:46:45]     ✓ Extracted MERT embedding for: MyBoi - TroyBoi Remix
+[2025-11-14 01:46:45]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:46:45] Processing artist: IMANU
+[2025-11-14 01:46:45]   Searching Spotify for artist: IMANU
+[2025-11-14 01:46:45]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-14 01:46:45]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-14 01:46:45]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:46:45]   Found 5 tracks on Spotify
+[2025-11-14 01:46:58]     ✓ Extracted MERT embedding for: I'm Fine - IMANU Remix
+[2025-11-14 01:47:08]     ✓ Extracted MERT embedding for: Bleak
+[2025-11-14 01:47:18]     ✓ Extracted MERT embedding for: Sutekh
+[2025-11-14 01:47:26]     ✓ Extracted MERT embedding for: A Taste of Hope - Hallowvale
+[2025-11-14 01:47:36]     ✓ Extracted MERT embedding for: Lost In Mumbai - IMANU Remix
+[2025-11-14 01:47:36]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:47:36] Processing artist: PEEKABOO
+[2025-11-14 01:47:36]   Searching Spotify for artist: PEEKABOO
+[2025-11-14 01:47:36]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-14 01:47:36]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-14 01:47:36]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:47:36]   Found 5 tracks on Spotify
+[2025-11-14 01:47:46]     ✓ Extracted MERT embedding for: BADDERS
+[2025-11-14 01:47:56]     ✓ Extracted MERT embedding for: Here With Me
+[2025-11-14 01:48:06]     ✓ Extracted MERT embedding for: Hydrate
+[2025-11-14 01:48:16]     ✓ Extracted MERT embedding for: Want It
+[2025-11-14 01:48:42]     ✓ Extracted MERT embedding for: Like That - Tape B Remix
+[2025-11-14 01:48:42]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:48:42] Processing artist: Sabrina Carpenter
+[2025-11-14 01:48:42]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-14 01:48:42]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-14 01:48:42]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-14 01:48:42]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:48:42]   Found 5 tracks on Spotify
+[2025-11-14 01:48:52]     ✓ Extracted MERT embedding for: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-14 01:49:01]     ✓ Extracted MERT embedding for: Manchild
+[2025-11-14 01:49:10]     ✓ Extracted MERT embedding for: Tears
+[2025-11-14 01:49:18]     ✓ Extracted MERT embedding for: When Did You Get Hot?
+[2025-11-14 01:49:29]     ✓ Extracted MERT embedding for: Espresso
+[2025-11-14 01:49:29]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:49:29] Processing artist: Vril
+[2025-11-14 01:49:29]   Searching Spotify for artist: Vril
+[2025-11-14 01:49:29]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-14 01:49:29]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-14 01:49:29]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:49:29]   Found 5 tracks on Spotify
+[2025-11-14 01:49:39]     ✓ Extracted MERT embedding for: In Via
+[2025-11-14 01:49:50]     ✓ Extracted MERT embedding for: Haus - Rework
+[2025-11-14 01:49:59]     ✓ Extracted MERT embedding for: Manium
+[2025-11-14 01:50:09]     ✓ Extracted MERT embedding for: Statera Rerum
+[2025-11-14 01:50:20]     ✓ Extracted MERT embedding for: Antigravity Machine - Vril Remix
+[2025-11-14 01:50:20]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:50:20] Processing artist: Calibre
+[2025-11-14 01:50:20]   Searching Spotify for artist: Calibre
+[2025-11-14 01:50:20]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 01:50:20]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 01:50:20]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 01:50:20]   Found 5 tracks on Spotify
+[2025-11-14 01:50:30]     ✓ Extracted MERT embedding for: Mr Majestic
+[2025-11-14 01:50:51]     ✓ Extracted MERT embedding for: Away With Me - Calibre Remix
+[2025-11-14 01:51:00]     ✓ Extracted MERT embedding for: Garden - Calibre Remix
+[2025-11-14 01:51:10]     ✓ Extracted MERT embedding for: Lungs - Calibre Remix
+[2025-11-14 01:51:20]     ✓ Extracted MERT embedding for: Even If - Original Mix
+[2025-11-14 01:51:20]   ✓ Computed artist embedding from 5 tracks
+[2025-11-14 01:51:20] 
+  ✓ Extracted 8/8 artists
+[2025-11-14 01:51:20] 
+[5/5] Computing similarities...
+[2025-11-14 01:51:20] 
+=== Computing Pairwise Similarities ===
+[2025-11-14 01:51:20]   deadmau5 <-> Rezz: 0.966
+[2025-11-14 01:51:20]   deadmau5 <-> TroyBoi: 0.957
+[2025-11-14 01:51:20]   deadmau5 <-> IMANU: 0.957
+[2025-11-14 01:51:20]   deadmau5 <-> PEEKABOO: 0.944
+[2025-11-14 01:51:20]   deadmau5 <-> Sabrina Carpenter: 0.971
+[2025-11-14 01:51:20]   deadmau5 <-> Vril: 0.890
+[2025-11-14 01:51:20]   deadmau5 <-> Calibre: 0.954
+[2025-11-14 01:51:20]   Rezz <-> TroyBoi: 0.971
+[2025-11-14 01:51:20]   Rezz <-> IMANU: 0.970
+[2025-11-14 01:51:20]   Rezz <-> PEEKABOO: 0.957
+[2025-11-14 01:51:20]   Rezz <-> Sabrina Carpenter: 0.968
+[2025-11-14 01:51:20]   Rezz <-> Vril: 0.863
+[2025-11-14 01:51:20]   Rezz <-> Calibre: 0.947
+[2025-11-14 01:51:20]   TroyBoi <-> IMANU: 0.964
+[2025-11-14 01:51:20]   TroyBoi <-> PEEKABOO: 0.962
+[2025-11-14 01:51:20]   TroyBoi <-> Sabrina Carpenter: 0.967
+[2025-11-14 01:51:20]   TroyBoi <-> Vril: 0.835
+[2025-11-14 01:51:20]   TroyBoi <-> Calibre: 0.955
+[2025-11-14 01:51:20]   IMANU <-> PEEKABOO: 0.956
+[2025-11-14 01:51:20]   IMANU <-> Sabrina Carpenter: 0.956
+[2025-11-14 01:51:20]   IMANU <-> Vril: 0.822
+[2025-11-14 01:51:20]   IMANU <-> Calibre: 0.935
+[2025-11-14 01:51:20]   PEEKABOO <-> Sabrina Carpenter: 0.940
+[2025-11-14 01:51:20]   PEEKABOO <-> Vril: 0.808
+[2025-11-14 01:51:20]   PEEKABOO <-> Calibre: 0.935
+[2025-11-14 01:51:20]   Sabrina Carpenter <-> Vril: 0.892
+[2025-11-14 01:51:20]   Sabrina Carpenter <-> Calibre: 0.957
+[2025-11-14 01:51:20]   Vril <-> Calibre: 0.839
+[2025-11-14 01:51:20] 
+=== Validation: Embeddings vs Music-Map ===
+[2025-11-14 01:51:20]   deadmau5: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   Rezz: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   TroyBoi: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   IMANU: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   PEEKABOO: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   ⚠️  Sabrina Carpenter not in music-map data, skipping validation
+[2025-11-14 01:51:20]   Vril: 0/5 overlap (0%)
+[2025-11-14 01:51:20]   Calibre: 0/5 overlap (0%)
+[2025-11-14 01:51:20] 
+  📊 Average Top-5 Overlap: 0.0%
+[2025-11-14 01:51:20] 
+  ✓ Results saved
+[2025-11-14 01:51:20] 
+================================================================================
+[2025-11-14 01:51:20] SPIKE 5 COMPLETE
+[2025-11-14 01:51:20] Top-5 Overlap: 0.0%
+[2025-11-14 01:51:20] ================================================================================

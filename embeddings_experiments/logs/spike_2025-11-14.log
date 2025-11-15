@@ -1,0 +1,759 @@
+[2025-11-14 02:16:59] ================================================================================
+[2025-11-14 02:16:59] SPIKE 6: SPOTIFY AUDIO FEATURES
+[2025-11-14 02:16:59] ================================================================================
+[2025-11-14 02:16:59] 
+[2025-11-14 02:16:59] Testing Spotify's native audio features (tempo, energy, etc.)
+[2025-11-14 02:16:59] vs audio embeddings from Spike 4 (VGGish) and Spike 5 (MERT)
+[2025-11-14 02:16:59] 
+[2025-11-14 02:16:59] [1/4] Loading music-map data...
+[2025-11-14 02:16:59]   Loaded 854 artists from music-map.com
+[2025-11-14 02:16:59]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-14 02:16:59] 
+[2025-11-14 02:16:59] [2/4] Initializing Spotify client...
+[2025-11-14 02:16:59]   ✓ Spotify client initialized
+[2025-11-14 02:16:59] 
+[2025-11-14 02:16:59] [3/4] Extracting audio features from Spotify...
+[2025-11-14 02:16:59]   (Using top 10 tracks per artist)
+[2025-11-14 02:16:59] 
+[2025-11-14 02:16:59] Processing artist: deadmau5
+[2025-11-14 02:16:59]   Searching Spotify for artist: deadmau5
+[2025-11-14 02:16:59]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 02:16:59]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 02:16:59]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:16:59]   Found 10 tracks on Spotify
+[2025-11-14 02:16:59]     ⚠️  Failed to get audio features for 3VpxEo6vMpi4rQ6t2WVVkK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3VpxEo6vMpi4rQ6t2WVVkK:
+ None, reason: None
+[2025-11-14 02:16:59]     ⚠️  Failed to get audio features for 0FZ8ULT8WR1xwCIzjVRxnw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0FZ8ULT8WR1xwCIzjVRxnw:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 1d4EFJUZpnKhmfClsR2WWc: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1d4EFJUZpnKhmfClsR2WWc:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 4ezalcKN0KnYuZiEw2jFgc: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4ezalcKN0KnYuZiEw2jFgc:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 2QWVzSa39qQ66oJdIXclo1: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2QWVzSa39qQ66oJdIXclo1:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 5m4taQjTIjgEBU6mWpv5OC: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5m4taQjTIjgEBU6mWpv5OC:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 5vTPFJOzgr6IzF11Kvjzls: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5vTPFJOzgr6IzF11Kvjzls:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 1GD5ooLHgV9nolrem1DBiB: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1GD5ooLHgV9nolrem1DBiB:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 77w8cBOdasP7aNcPD9Dec8: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=77w8cBOdasP7aNcPD9Dec8:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 6wk7M2vXf1VSVlIFtxrG4L: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6wk7M2vXf1VSVlIFtxrG4L:
+ None, reason: None
+[2025-11-14 02:17:00]   ❌ No audio features retrieved for deadmau5
+[2025-11-14 02:17:00] 
+[2025-11-14 02:17:00] Processing artist: Rezz
+[2025-11-14 02:17:00]   Searching Spotify for artist: Rezz
+[2025-11-14 02:17:00]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 02:17:00]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 02:17:00]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:00]   Found 10 tracks on Spotify
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 6JsidMhbuAQV5QPBEibouw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6JsidMhbuAQV5QPBEibouw:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 4hR3hQKELrARHNZJ51D14s: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4hR3hQKELrARHNZJ51D14s:
+ None, reason: None
+[2025-11-14 02:17:00]     ⚠️  Failed to get audio features for 5EhnuLMer8qAXEDwmLtyrW: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5EhnuLMer8qAXEDwmLtyrW:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 0Y1ZeaRs0gAEwb1rYxdbjq: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0Y1ZeaRs0gAEwb1rYxdbjq:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 4wEXiJLEZ0wETtBJ3QgKWW: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4wEXiJLEZ0wETtBJ3QgKWW:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 5pusGtgNOBo2PnRMWuz8L2: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5pusGtgNOBo2PnRMWuz8L2:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 08EWlv88mnvVcu4DNPqxds: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=08EWlv88mnvVcu4DNPqxds:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 0JJy85tdn2EOhIaEdHVivf: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0JJy85tdn2EOhIaEdHVivf:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 2GCZDNEHjBeTSr99hurnaf: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2GCZDNEHjBeTSr99hurnaf:
+ None, reason: None
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 04oBrVYURdwGA2aAwcxtrV: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=04oBrVYURdwGA2aAwcxtrV:
+ None, reason: None
+[2025-11-14 02:17:01]   ❌ No audio features retrieved for Rezz
+[2025-11-14 02:17:01] 
+[2025-11-14 02:17:01] Processing artist: TroyBoi
+[2025-11-14 02:17:01]   Searching Spotify for artist: TroyBoi
+[2025-11-14 02:17:01]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 02:17:01]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 02:17:01]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:01]   Found 10 tracks on Spotify
+[2025-11-14 02:17:01]     ⚠️  Failed to get audio features for 24OeEKPQ8qqNZnPevRHxUT: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=24OeEKPQ8qqNZnPevRHxUT:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 0tAFy8LVdMQgW6A6Nq7olS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0tAFy8LVdMQgW6A6Nq7olS:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 1gV0hgMNdpSWeW7ZjSUKnX: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1gV0hgMNdpSWeW7ZjSUKnX:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 753DZsGGXlasRCp48FmOhH: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=753DZsGGXlasRCp48FmOhH:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 1T3E8z6VMXSsACrBSQHTkN: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1T3E8z6VMXSsACrBSQHTkN:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 3CSyBUDZHG5ESu0wCcFPaQ: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3CSyBUDZHG5ESu0wCcFPaQ:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 7rIfWHDoTPLNtTtkorbs3h: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7rIfWHDoTPLNtTtkorbs3h:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 7vBqDxT6CcJhnOCRfM9Wvi: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7vBqDxT6CcJhnOCRfM9Wvi:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 59QmjU5K8XQTfj9JjFNb4Z: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=59QmjU5K8XQTfj9JjFNb4Z:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 7CGB43FkEomSXAtnTNLC9n: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7CGB43FkEomSXAtnTNLC9n:
+ None, reason: None
+[2025-11-14 02:17:02]   ❌ No audio features retrieved for TroyBoi
+[2025-11-14 02:17:02] 
+[2025-11-14 02:17:02] Processing artist: IMANU
+[2025-11-14 02:17:02]   Searching Spotify for artist: IMANU
+[2025-11-14 02:17:02]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-14 02:17:02]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-14 02:17:02]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:02]   Found 10 tracks on Spotify
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 4DHATlv5A1Gs9pMaWSHDMb: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4DHATlv5A1Gs9pMaWSHDMb:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 1ft92cdKiLMSGkfobE1oXX: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1ft92cdKiLMSGkfobE1oXX:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 4sPAOLcK7XM61T0purl6Fw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4sPAOLcK7XM61T0purl6Fw:
+ None, reason: None
+[2025-11-14 02:17:02]     ⚠️  Failed to get audio features for 2m0126ySbLagICWkF6QfaK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2m0126ySbLagICWkF6QfaK:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 0VWayAeovmiY52OeltaRo9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0VWayAeovmiY52OeltaRo9:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 7IKTp0RWkrNgrdyIZ5Egk4: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7IKTp0RWkrNgrdyIZ5Egk4:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 2WtJS2zwWmGVJr07XLhQDC: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2WtJS2zwWmGVJr07XLhQDC:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 7wHN52u4a9hReQAZPTSSgF: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7wHN52u4a9hReQAZPTSSgF:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 19VAMZMfIBfor0ubw0Hznw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=19VAMZMfIBfor0ubw0Hznw:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 4m1KSPhZ74hYFDd6pq5Cz6: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4m1KSPhZ74hYFDd6pq5Cz6:
+ None, reason: None
+[2025-11-14 02:17:03]   ❌ No audio features retrieved for IMANU
+[2025-11-14 02:17:03] 
+[2025-11-14 02:17:03] Processing artist: PEEKABOO
+[2025-11-14 02:17:03]   Searching Spotify for artist: PEEKABOO
+[2025-11-14 02:17:03]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-14 02:17:03]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-14 02:17:03]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:03]   Found 10 tracks on Spotify
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 6HGAVQsokYcZpV1pUhx7w7: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6HGAVQsokYcZpV1pUhx7w7:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 6qLM7FY8SPWYIyKKhzzVO0: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6qLM7FY8SPWYIyKKhzzVO0:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 5yOx2ezoz2hBfoE9mItGVo: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5yOx2ezoz2hBfoE9mItGVo:
+ None, reason: None
+[2025-11-14 02:17:03]     ⚠️  Failed to get audio features for 2LM4iwg5H429UfCe7Gu6HA: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2LM4iwg5H429UfCe7Gu6HA:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 0DGC66VWaB2tamRaOEvRLe: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0DGC66VWaB2tamRaOEvRLe:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 3sSD12MZkrsQItdYAfWt9c: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3sSD12MZkrsQItdYAfWt9c:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 2LIygs54xLMIOlpaLg8hFE: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2LIygs54xLMIOlpaLg8hFE:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 4QaJ8qopyxWowl5C4nuGed: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4QaJ8qopyxWowl5C4nuGed:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 6mwrQ7UyriEE3P2DVUZzke: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6mwrQ7UyriEE3P2DVUZzke:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 6upXAlN0tlTavXMenVWna9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6upXAlN0tlTavXMenVWna9:
+ None, reason: None
+[2025-11-14 02:17:04]   ❌ No audio features retrieved for PEEKABOO
+[2025-11-14 02:17:04] 
+[2025-11-14 02:17:04] Processing artist: Sabrina Carpenter
+[2025-11-14 02:17:04]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-14 02:17:04]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-14 02:17:04]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-14 02:17:04]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:04]   Found 10 tracks on Spotify
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 5eXgqtg3T8Av0m1FUaGHex: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5eXgqtg3T8Av0m1FUaGHex:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 2BwO5K8Q7EPAJSGze3AAh9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2BwO5K8Q7EPAJSGze3AAh9:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 42VUCXerQ5qTr4Qp6PhKo4: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=42VUCXerQ5qTr4Qp6PhKo4:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 0je57Uq5eTk1wrPzn9sWbl: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0je57Uq5eTk1wrPzn9sWbl:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 2HRqTpkrJO5ggZyyK6NPWz: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2HRqTpkrJO5ggZyyK6NPWz:
+ None, reason: None
+[2025-11-14 02:17:04]     ⚠️  Failed to get audio features for 4SRShYMtFIGgnOU7iBicMH: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4SRShYMtFIGgnOU7iBicMH:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 5G2f63n7IPVPPjfNIGih7Q: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5G2f63n7IPVPPjfNIGih7Q:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 2tHwzyyOLoWSFqYNjeVMzj: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2tHwzyyOLoWSFqYNjeVMzj:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 25jgQBxuUkGDdCG1WGKKN9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=25jgQBxuUkGDdCG1WGKKN9:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 3EMfeKtNK4q4k3sVjwg5Yy: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3EMfeKtNK4q4k3sVjwg5Yy:
+ None, reason: None
+[2025-11-14 02:17:05]   ❌ No audio features retrieved for Sabrina Carpenter
+[2025-11-14 02:17:05] 
+[2025-11-14 02:17:05] Processing artist: Vril
+[2025-11-14 02:17:05]   Searching Spotify for artist: Vril
+[2025-11-14 02:17:05]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-14 02:17:05]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-14 02:17:05]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:05]   Found 10 tracks on Spotify
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 76VApg8O41NFKgSFu2wQF9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=76VApg8O41NFKgSFu2wQF9:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 4ZeT54Dc34PNya05wj2BKB: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4ZeT54Dc34PNya05wj2BKB:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 6GeSp1xUWQPgFBagPMGaAr: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6GeSp1xUWQPgFBagPMGaAr:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 7mWERi6gyXvxfYxrb0exlm: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7mWERi6gyXvxfYxrb0exlm:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 3dUQ6lXZgrQVR3P0kkquR0: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3dUQ6lXZgrQVR3P0kkquR0:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 1fstAhJczhmmPpEYfnWG0s: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1fstAhJczhmmPpEYfnWG0s:
+ None, reason: None
+[2025-11-14 02:17:05]     ⚠️  Failed to get audio features for 7KZL77yZSzXhqUxKMa7Bz8: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7KZL77yZSzXhqUxKMa7Bz8:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 1dHAHL0zro6Yq92jZPR4WY: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1dHAHL0zro6Yq92jZPR4WY:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 2PG9jnXW78RMNBOUHahvNS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2PG9jnXW78RMNBOUHahvNS:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 15BZZNnXPQQH9yxVE8IJig: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=15BZZNnXPQQH9yxVE8IJig:
+ None, reason: None
+[2025-11-14 02:17:06]   ❌ No audio features retrieved for Vril
+[2025-11-14 02:17:06] 
+[2025-11-14 02:17:06] Processing artist: Calibre
+[2025-11-14 02:17:06]   Searching Spotify for artist: Calibre
+[2025-11-14 02:17:06]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 02:17:06]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 02:17:06]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:17:06]   Found 10 tracks on Spotify
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 0wrg4FXpFKz1y1tYsZPJOw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0wrg4FXpFKz1y1tYsZPJOw:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 1yYgKlP0pPmGU6Aa5GwAVZ: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1yYgKlP0pPmGU6Aa5GwAVZ:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 6HRa9FtX8ifjQmA3XFBXan: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6HRa9FtX8ifjQmA3XFBXan:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 0DzMAkZf0mSZQp4UFhhjFz: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0DzMAkZf0mSZQp4UFhhjFz:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 5nVkaIXaqQtoMX4V1jncdO: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5nVkaIXaqQtoMX4V1jncdO:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 3hwkJxMCZSDF8VoXporuDE: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3hwkJxMCZSDF8VoXporuDE:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 69IFw3w8XFvzRV1HPCAxzK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=69IFw3w8XFvzRV1HPCAxzK:
+ None, reason: None
+[2025-11-14 02:17:06]     ⚠️  Failed to get audio features for 3ceUpynDm4e91hOtRBsvFL: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3ceUpynDm4e91hOtRBsvFL:
+ None, reason: None
+[2025-11-14 02:17:07]     ⚠️  Failed to get audio features for 7pFWr3hJC7rs4BYN9Iswn3: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7pFWr3hJC7rs4BYN9Iswn3:
+ None, reason: None
+[2025-11-14 02:17:07]     ⚠️  Failed to get audio features for 7tEha0Ac6hT6GWbJKMVohS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7tEha0Ac6hT6GWbJKMVohS:
+ None, reason: None
+[2025-11-14 02:17:07]   ❌ No audio features retrieved for Calibre
+[2025-11-14 02:17:07] 
+[2025-11-14 02:17:07]   ✓ Extracted features for 0/8 artists
+[2025-11-14 02:17:07] 
+[2025-11-14 02:17:07] ❌ FATAL ERROR: Not enough artists with features to compute similarities
+[2025-11-14 02:26:27] ================================================================================
+[2025-11-14 02:26:27] SPIKE 6: SPOTIFY AUDIO FEATURES
+[2025-11-14 02:26:27] ================================================================================
+[2025-11-14 02:26:27] 
+[2025-11-14 02:26:27] Testing Spotify's native audio features (tempo, energy, etc.)
+[2025-11-14 02:26:27] vs audio embeddings from Spike 4 (VGGish) and Spike 5 (MERT)
+[2025-11-14 02:26:27] 
+[2025-11-14 02:26:27] [1/4] Loading music-map data...
+[2025-11-14 02:26:27]   Loaded 854 artists from music-map.com
+[2025-11-14 02:26:27]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-14 02:26:27] 
+[2025-11-14 02:26:27] [2/4] Initializing Spotify client...
+[2025-11-14 02:26:27]   ✓ Spotify client initialized
+[2025-11-14 02:26:27] 
+[2025-11-14 02:26:27] [3/4] Extracting audio features from Spotify...
+[2025-11-14 02:26:27]   (Using top 10 tracks per artist)
+[2025-11-14 02:26:27] 
+[2025-11-14 02:26:27] Processing artist: deadmau5
+[2025-11-14 02:26:27]   Searching Spotify for artist: deadmau5
+[2025-11-14 02:26:27]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 02:26:27]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 02:26:27]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:27]   Found 10 tracks on Spotify
+[2025-11-14 02:26:27]     ⚠️  Failed to get audio features for 3VpxEo6vMpi4rQ6t2WVVkK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3VpxEo6vMpi4rQ6t2WVVkK:
+ None, reason: None
+[2025-11-14 02:26:27]     ⚠️  Failed to get audio features for 0FZ8ULT8WR1xwCIzjVRxnw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0FZ8ULT8WR1xwCIzjVRxnw:
+ None, reason: None
+[2025-11-14 02:26:27]     ⚠️  Failed to get audio features for 1d4EFJUZpnKhmfClsR2WWc: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1d4EFJUZpnKhmfClsR2WWc:
+ None, reason: None
+[2025-11-14 02:26:27]     ⚠️  Failed to get audio features for 4ezalcKN0KnYuZiEw2jFgc: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4ezalcKN0KnYuZiEw2jFgc:
+ None, reason: None
+[2025-11-14 02:26:27]     ⚠️  Failed to get audio features for 2QWVzSa39qQ66oJdIXclo1: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2QWVzSa39qQ66oJdIXclo1:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 5m4taQjTIjgEBU6mWpv5OC: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5m4taQjTIjgEBU6mWpv5OC:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 5vTPFJOzgr6IzF11Kvjzls: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5vTPFJOzgr6IzF11Kvjzls:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 1GD5ooLHgV9nolrem1DBiB: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1GD5ooLHgV9nolrem1DBiB:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 77w8cBOdasP7aNcPD9Dec8: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=77w8cBOdasP7aNcPD9Dec8:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 6wk7M2vXf1VSVlIFtxrG4L: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6wk7M2vXf1VSVlIFtxrG4L:
+ None, reason: None
+[2025-11-14 02:26:28]   ❌ No audio features retrieved for deadmau5
+[2025-11-14 02:26:28] 
+[2025-11-14 02:26:28] Processing artist: Rezz
+[2025-11-14 02:26:28]   Searching Spotify for artist: Rezz
+[2025-11-14 02:26:28]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 02:26:28]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 02:26:28]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:28]   Found 10 tracks on Spotify
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 6JsidMhbuAQV5QPBEibouw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6JsidMhbuAQV5QPBEibouw:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 4hR3hQKELrARHNZJ51D14s: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4hR3hQKELrARHNZJ51D14s:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 5EhnuLMer8qAXEDwmLtyrW: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5EhnuLMer8qAXEDwmLtyrW:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 0Y1ZeaRs0gAEwb1rYxdbjq: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0Y1ZeaRs0gAEwb1rYxdbjq:
+ None, reason: None
+[2025-11-14 02:26:28]     ⚠️  Failed to get audio features for 4wEXiJLEZ0wETtBJ3QgKWW: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4wEXiJLEZ0wETtBJ3QgKWW:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 5pusGtgNOBo2PnRMWuz8L2: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5pusGtgNOBo2PnRMWuz8L2:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 08EWlv88mnvVcu4DNPqxds: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=08EWlv88mnvVcu4DNPqxds:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 0JJy85tdn2EOhIaEdHVivf: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0JJy85tdn2EOhIaEdHVivf:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 2GCZDNEHjBeTSr99hurnaf: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2GCZDNEHjBeTSr99hurnaf:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 04oBrVYURdwGA2aAwcxtrV: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=04oBrVYURdwGA2aAwcxtrV:
+ None, reason: None
+[2025-11-14 02:26:29]   ❌ No audio features retrieved for Rezz
+[2025-11-14 02:26:29] 
+[2025-11-14 02:26:29] Processing artist: TroyBoi
+[2025-11-14 02:26:29]   Searching Spotify for artist: TroyBoi
+[2025-11-14 02:26:29]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 02:26:29]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 02:26:29]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:29]   Found 10 tracks on Spotify
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 24OeEKPQ8qqNZnPevRHxUT: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=24OeEKPQ8qqNZnPevRHxUT:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 0tAFy8LVdMQgW6A6Nq7olS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0tAFy8LVdMQgW6A6Nq7olS:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 1gV0hgMNdpSWeW7ZjSUKnX: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1gV0hgMNdpSWeW7ZjSUKnX:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 753DZsGGXlasRCp48FmOhH: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=753DZsGGXlasRCp48FmOhH:
+ None, reason: None
+[2025-11-14 02:26:29]     ⚠️  Failed to get audio features for 1T3E8z6VMXSsACrBSQHTkN: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1T3E8z6VMXSsACrBSQHTkN:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 3CSyBUDZHG5ESu0wCcFPaQ: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3CSyBUDZHG5ESu0wCcFPaQ:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 7rIfWHDoTPLNtTtkorbs3h: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7rIfWHDoTPLNtTtkorbs3h:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 7vBqDxT6CcJhnOCRfM9Wvi: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7vBqDxT6CcJhnOCRfM9Wvi:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 59QmjU5K8XQTfj9JjFNb4Z: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=59QmjU5K8XQTfj9JjFNb4Z:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 7CGB43FkEomSXAtnTNLC9n: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7CGB43FkEomSXAtnTNLC9n:
+ None, reason: None
+[2025-11-14 02:26:30]   ❌ No audio features retrieved for TroyBoi
+[2025-11-14 02:26:30] 
+[2025-11-14 02:26:30] Processing artist: IMANU
+[2025-11-14 02:26:30]   Searching Spotify for artist: IMANU
+[2025-11-14 02:26:30]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-14 02:26:30]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-14 02:26:30]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:30]   Found 10 tracks on Spotify
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 4DHATlv5A1Gs9pMaWSHDMb: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4DHATlv5A1Gs9pMaWSHDMb:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 1ft92cdKiLMSGkfobE1oXX: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1ft92cdKiLMSGkfobE1oXX:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 4sPAOLcK7XM61T0purl6Fw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4sPAOLcK7XM61T0purl6Fw:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 2m0126ySbLagICWkF6QfaK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2m0126ySbLagICWkF6QfaK:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 0VWayAeovmiY52OeltaRo9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0VWayAeovmiY52OeltaRo9:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 7IKTp0RWkrNgrdyIZ5Egk4: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7IKTp0RWkrNgrdyIZ5Egk4:
+ None, reason: None
+[2025-11-14 02:26:30]     ⚠️  Failed to get audio features for 2WtJS2zwWmGVJr07XLhQDC: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2WtJS2zwWmGVJr07XLhQDC:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 7wHN52u4a9hReQAZPTSSgF: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7wHN52u4a9hReQAZPTSSgF:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 19VAMZMfIBfor0ubw0Hznw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=19VAMZMfIBfor0ubw0Hznw:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 4m1KSPhZ74hYFDd6pq5Cz6: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4m1KSPhZ74hYFDd6pq5Cz6:
+ None, reason: None
+[2025-11-14 02:26:31]   ❌ No audio features retrieved for IMANU
+[2025-11-14 02:26:31] 
+[2025-11-14 02:26:31] Processing artist: PEEKABOO
+[2025-11-14 02:26:31]   Searching Spotify for artist: PEEKABOO
+[2025-11-14 02:26:31]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-14 02:26:31]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-14 02:26:31]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:31]   Found 10 tracks on Spotify
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 6HGAVQsokYcZpV1pUhx7w7: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6HGAVQsokYcZpV1pUhx7w7:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 6qLM7FY8SPWYIyKKhzzVO0: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6qLM7FY8SPWYIyKKhzzVO0:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 5yOx2ezoz2hBfoE9mItGVo: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5yOx2ezoz2hBfoE9mItGVo:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 2LM4iwg5H429UfCe7Gu6HA: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2LM4iwg5H429UfCe7Gu6HA:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 0DGC66VWaB2tamRaOEvRLe: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0DGC66VWaB2tamRaOEvRLe:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 3sSD12MZkrsQItdYAfWt9c: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3sSD12MZkrsQItdYAfWt9c:
+ None, reason: None
+[2025-11-14 02:26:31]     ⚠️  Failed to get audio features for 2LIygs54xLMIOlpaLg8hFE: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2LIygs54xLMIOlpaLg8hFE:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 4QaJ8qopyxWowl5C4nuGed: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4QaJ8qopyxWowl5C4nuGed:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 6mwrQ7UyriEE3P2DVUZzke: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6mwrQ7UyriEE3P2DVUZzke:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 6upXAlN0tlTavXMenVWna9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6upXAlN0tlTavXMenVWna9:
+ None, reason: None
+[2025-11-14 02:26:32]   ❌ No audio features retrieved for PEEKABOO
+[2025-11-14 02:26:32] 
+[2025-11-14 02:26:32] Processing artist: Sabrina Carpenter
+[2025-11-14 02:26:32]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-14 02:26:32]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-14 02:26:32]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-14 02:26:32]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:32]   Found 10 tracks on Spotify
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 5eXgqtg3T8Av0m1FUaGHex: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5eXgqtg3T8Av0m1FUaGHex:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 2BwO5K8Q7EPAJSGze3AAh9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2BwO5K8Q7EPAJSGze3AAh9:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 42VUCXerQ5qTr4Qp6PhKo4: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=42VUCXerQ5qTr4Qp6PhKo4:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 0je57Uq5eTk1wrPzn9sWbl: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0je57Uq5eTk1wrPzn9sWbl:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 2HRqTpkrJO5ggZyyK6NPWz: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2HRqTpkrJO5ggZyyK6NPWz:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 4SRShYMtFIGgnOU7iBicMH: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4SRShYMtFIGgnOU7iBicMH:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 5G2f63n7IPVPPjfNIGih7Q: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5G2f63n7IPVPPjfNIGih7Q:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 2tHwzyyOLoWSFqYNjeVMzj: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2tHwzyyOLoWSFqYNjeVMzj:
+ None, reason: None
+[2025-11-14 02:26:32]     ⚠️  Failed to get audio features for 25jgQBxuUkGDdCG1WGKKN9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=25jgQBxuUkGDdCG1WGKKN9:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 3EMfeKtNK4q4k3sVjwg5Yy: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3EMfeKtNK4q4k3sVjwg5Yy:
+ None, reason: None
+[2025-11-14 02:26:33]   ❌ No audio features retrieved for Sabrina Carpenter
+[2025-11-14 02:26:33] 
+[2025-11-14 02:26:33] Processing artist: Vril
+[2025-11-14 02:26:33]   Searching Spotify for artist: Vril
+[2025-11-14 02:26:33]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-14 02:26:33]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-14 02:26:33]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:33]   Found 10 tracks on Spotify
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 76VApg8O41NFKgSFu2wQF9: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=76VApg8O41NFKgSFu2wQF9:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 4ZeT54Dc34PNya05wj2BKB: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=4ZeT54Dc34PNya05wj2BKB:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 6GeSp1xUWQPgFBagPMGaAr: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6GeSp1xUWQPgFBagPMGaAr:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 7mWERi6gyXvxfYxrb0exlm: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7mWERi6gyXvxfYxrb0exlm:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 3dUQ6lXZgrQVR3P0kkquR0: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3dUQ6lXZgrQVR3P0kkquR0:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 1fstAhJczhmmPpEYfnWG0s: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1fstAhJczhmmPpEYfnWG0s:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 7KZL77yZSzXhqUxKMa7Bz8: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7KZL77yZSzXhqUxKMa7Bz8:
+ None, reason: None
+[2025-11-14 02:26:33]     ⚠️  Failed to get audio features for 1dHAHL0zro6Yq92jZPR4WY: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1dHAHL0zro6Yq92jZPR4WY:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 2PG9jnXW78RMNBOUHahvNS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=2PG9jnXW78RMNBOUHahvNS:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 15BZZNnXPQQH9yxVE8IJig: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=15BZZNnXPQQH9yxVE8IJig:
+ None, reason: None
+[2025-11-14 02:26:34]   ❌ No audio features retrieved for Vril
+[2025-11-14 02:26:34] 
+[2025-11-14 02:26:34] Processing artist: Calibre
+[2025-11-14 02:26:34]   Searching Spotify for artist: Calibre
+[2025-11-14 02:26:34]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 02:26:34]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 02:26:34]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:26:34]   Found 10 tracks on Spotify
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 0wrg4FXpFKz1y1tYsZPJOw: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0wrg4FXpFKz1y1tYsZPJOw:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 1yYgKlP0pPmGU6Aa5GwAVZ: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=1yYgKlP0pPmGU6Aa5GwAVZ:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 6HRa9FtX8ifjQmA3XFBXan: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=6HRa9FtX8ifjQmA3XFBXan:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 0DzMAkZf0mSZQp4UFhhjFz: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=0DzMAkZf0mSZQp4UFhhjFz:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 5nVkaIXaqQtoMX4V1jncdO: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=5nVkaIXaqQtoMX4V1jncdO:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 3hwkJxMCZSDF8VoXporuDE: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3hwkJxMCZSDF8VoXporuDE:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 69IFw3w8XFvzRV1HPCAxzK: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=69IFw3w8XFvzRV1HPCAxzK:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 3ceUpynDm4e91hOtRBsvFL: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=3ceUpynDm4e91hOtRBsvFL:
+ None, reason: None
+[2025-11-14 02:26:34]     ⚠️  Failed to get audio features for 7pFWr3hJC7rs4BYN9Iswn3: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7pFWr3hJC7rs4BYN9Iswn3:
+ None, reason: None
+[2025-11-14 02:26:35]     ⚠️  Failed to get audio features for 7tEha0Ac6hT6GWbJKMVohS: http status: 403, code: -1 - https://api.spotify.com/v1/audio-features/?ids=7tEha0Ac6hT6GWbJKMVohS:
+ None, reason: None
+[2025-11-14 02:26:35]   ❌ No audio features retrieved for Calibre
+[2025-11-14 02:26:35] 
+[2025-11-14 02:26:35]   ✓ Extracted features for 0/8 artists
+[2025-11-14 02:26:35] 
+[2025-11-14 02:26:35] ❌ FATAL ERROR: Not enough artists with features to compute similarities
+[2025-11-14 02:43:04]   Searching Spotify for artist: deadmau5
+[2025-11-14 02:43:04]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 02:43:04]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 02:43:04]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:04]   Searching Spotify for artist: Rezz
+[2025-11-14 02:43:04]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 02:43:04]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 02:43:04]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:04]   Searching Spotify for artist: TroyBoi
+[2025-11-14 02:43:04]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 02:43:04]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 02:43:05]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:05]   Searching Spotify for artist: IMANU
+[2025-11-14 02:43:05]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-14 02:43:05]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-14 02:43:05]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:05]   Searching Spotify for artist: PEEKABOO
+[2025-11-14 02:43:05]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-14 02:43:05]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-14 02:43:05]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:05]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-14 02:43:05]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-14 02:43:05]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-14 02:43:05]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:05]   Searching Spotify for artist: Vril
+[2025-11-14 02:43:05]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-14 02:43:05]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-14 02:43:06]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:43:06]   Searching Spotify for artist: Calibre
+[2025-11-14 02:43:06]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 02:43:06]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 02:43:06]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:11]   Searching Spotify for artist: Kaskade
+[2025-11-14 02:51:11]     ✓ Found artist on Spotify: Kaskade (ID: 6TQj5BFPooTa08A7pk8AQ1)
+[2025-11-14 02:51:12]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:12]   Searching Spotify for artist: Rezz
+[2025-11-14 02:51:12]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 02:51:12]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 02:51:12]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:12]   Searching Spotify for artist: TroyBoi
+[2025-11-14 02:51:12]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 02:51:12]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 02:51:12]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:12]   Searching Spotify for artist: What So Not
+[2025-11-14 02:51:12]     ✓ Found artist on Spotify: What So Not (ID: 4AA8eXtzqh5ykxtafLaPOi)
+[2025-11-14 02:51:12]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:12]   Searching Spotify for artist: Excision
+[2025-11-14 02:51:13]     ✓ Found artist on Spotify: Excision (ID: 5FKchcZpQOkqFvXBj1aCvb)
+[2025-11-14 02:51:13]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:13]   Searching Spotify for artist: Taylor Swift
+[2025-11-14 02:51:13]     ✓ Found artist on Spotify: Taylor Swift (ID: 06HL4z0CvFAxyc27GXpf02)
+[2025-11-14 02:51:13]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:13]   Searching Spotify for artist: DVS1
+[2025-11-14 02:51:14]     ✓ Found artist on Spotify: Artist Vs Poet (ID: 3kYFawNQVZ00FQbgs4rVBe)
+[2025-11-14 02:51:14]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 02:51:14]   Searching Spotify for artist: Calibre
+[2025-11-14 02:51:14]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 02:51:14]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 02:51:14]     ✓ Retrieved 10 top tracks from Spotify
+[2025-11-14 03:19:07] ================================================================================
+[2025-11-14 03:19:07] SPIKE 6: MERT WITH HUGGINGFACE INFERENCE API
+[2025-11-14 03:19:07] ================================================================================
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] Testing MERT-v1-95M with FULL 30-second context (no chunking)
+[2025-11-14 03:19:07] vs Spike 5 (chunked to 10 seconds)
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] [1/5] Loading music-map data...
+[2025-11-14 03:19:07]   Loaded 854 artists
+[2025-11-14 03:19:07]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] [2/5] Initializing Spotify...
+[2025-11-14 03:19:07]   ✓ Spotify ready
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] [3/5] Initializing HuggingFace Inference API...
+[2025-11-14 03:19:07]   ✓ HuggingFace client initialized
+[2025-11-14 03:19:07]   Model: m-a-p/MERT-v1-95M
+[2025-11-14 03:19:07]   Context: FULL 30 seconds (no chunking)
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] [4/5] Extracting track-level embeddings with HuggingFace API...
+[2025-11-14 03:19:07]   Audio cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/audio_cache
+[2025-11-14 03:19:07]   Cached files: 40 WAV files
+[2025-11-14 03:19:07]   NO AVERAGING - preserving track-level variance
+[2025-11-14 03:19:07] 
+[2025-11-14 03:19:07] Processing artist: deadmau5
+[2025-11-14 03:19:07]   Searching Spotify for artist: deadmau5
+[2025-11-14 03:19:07]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-14 03:19:07]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-14 03:19:07]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:07]   Found 5 tracks on Spotify
+[2025-11-14 03:19:09]     Using cached: Escape (feat. Hayla)
+[2025-11-14 03:19:10]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:10]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:11]     Using cached: Ghosts 'n' Stuff - Extended Mix
+[2025-11-14 03:19:11]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:11]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:12]     Using cached: I Remember - John Summit Remix
+[2025-11-14 03:19:12]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:12]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:12]     Using cached: The Veldt - Radio Edit
+[2025-11-14 03:19:12]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:13]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:14]     Using cached: Ameonna
+[2025-11-14 03:19:14]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:14]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:14]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:14] 
+[2025-11-14 03:19:14] Processing artist: Rezz
+[2025-11-14 03:19:14]   Searching Spotify for artist: Rezz
+[2025-11-14 03:19:14]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-14 03:19:14]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-14 03:19:14]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:14]   Found 5 tracks on Spotify
+[2025-11-14 03:19:15]     Using cached: Black Ice
+[2025-11-14 03:19:15]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:15]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:16]     Using cached: Someone Else
+[2025-11-14 03:19:16]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:16]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:17]     Using cached: Puzzle Box
+[2025-11-14 03:19:17]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:17]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:18]     Using cached: HOW I DO IT
+[2025-11-14 03:19:18]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:18]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:18]     Using cached: Hypnocurrency
+[2025-11-14 03:19:18]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:18]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:18]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:18] 
+[2025-11-14 03:19:18] Processing artist: TroyBoi
+[2025-11-14 03:19:18]   Searching Spotify for artist: TroyBoi
+[2025-11-14 03:19:18]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-14 03:19:18]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-14 03:19:19]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:19]   Found 5 tracks on Spotify
+[2025-11-14 03:19:20]     Using cached: Red Eye (feat. TroyBoi)
+[2025-11-14 03:19:20]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:20]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:21]     Using cached: Do You?
+[2025-11-14 03:19:21]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:21]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:21]     Using cached: Afterhours feat. Diplo & Nina Sky
+[2025-11-14 03:19:21]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:21]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:22]     Using cached: Bellz
+[2025-11-14 03:19:22]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:22]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:23]     Downloading: MyBoi - TroyBoi Remix
+[2025-11-14 03:19:31]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:31]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:31]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:31] 
+[2025-11-14 03:19:31] Processing artist: IMANU
+[2025-11-14 03:19:31]   Searching Spotify for artist: IMANU
+[2025-11-14 03:19:31]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-14 03:19:32]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-14 03:19:32]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:32]   Found 5 tracks on Spotify
+[2025-11-14 03:19:33]     Using cached: I'm Fine - IMANU Remix
+[2025-11-14 03:19:33]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:33]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:34]     Using cached: Bleak
+[2025-11-14 03:19:34]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:34]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:35]     Using cached: Sutekh
+[2025-11-14 03:19:35]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:35]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:36]     Using cached: A Taste of Hope - Hallowvale
+[2025-11-14 03:19:36]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:36]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:37]     Using cached: Lost In Mumbai - IMANU Remix
+[2025-11-14 03:19:37]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:37]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:37]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:37] 
+[2025-11-14 03:19:37] Processing artist: PEEKABOO
+[2025-11-14 03:19:37]   Searching Spotify for artist: PEEKABOO
+[2025-11-14 03:19:37]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-14 03:19:37]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-14 03:19:37]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:37]   Found 5 tracks on Spotify
+[2025-11-14 03:19:38]     Using cached: BADDERS
+[2025-11-14 03:19:38]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:38]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:39]     Using cached: Here With Me
+[2025-11-14 03:19:39]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:39]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:39]     Using cached: Hydrate
+[2025-11-14 03:19:39]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:39]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:41]     Using cached: Want It
+[2025-11-14 03:19:41]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:41]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:42]     Using cached: Like That - Tape B Remix
+[2025-11-14 03:19:42]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:42]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:42]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:42] 
+[2025-11-14 03:19:42] Processing artist: Sabrina Carpenter
+[2025-11-14 03:19:42]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-14 03:19:42]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-14 03:19:42]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-14 03:19:42]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:42]   Found 5 tracks on Spotify
+[2025-11-14 03:19:43]     Using cached: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-14 03:19:43]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:43]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:44]     Using cached: Manchild
+[2025-11-14 03:19:44]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:44]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:45]     Using cached: Tears
+[2025-11-14 03:19:45]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:45]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:46]     Using cached: When Did You Get Hot?
+[2025-11-14 03:19:46]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:46]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:47]     Using cached: Espresso
+[2025-11-14 03:19:47]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:47]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:47]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:47] 
+[2025-11-14 03:19:47] Processing artist: Vril
+[2025-11-14 03:19:47]   Searching Spotify for artist: Vril
+[2025-11-14 03:19:47]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-14 03:19:47]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-14 03:19:47]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:47]   Found 5 tracks on Spotify
+[2025-11-14 03:19:48]     Using cached: In Via
+[2025-11-14 03:19:48]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:48]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:49]     Using cached: Haus - Rework
+[2025-11-14 03:19:49]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:49]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:49]     Using cached: Manium
+[2025-11-14 03:19:49]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:49]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:50]     Using cached: Statera Rerum
+[2025-11-14 03:19:50]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:50]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:51]     Using cached: Antigravity Machine - Vril Remix
+[2025-11-14 03:19:51]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:51]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:51]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:51] 
+[2025-11-14 03:19:51] Processing artist: Calibre
+[2025-11-14 03:19:51]   Searching Spotify for artist: Calibre
+[2025-11-14 03:19:51]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-14 03:19:51]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-14 03:19:51]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-14 03:19:51]   Found 5 tracks on Spotify
+[2025-11-14 03:19:52]     Using cached: Mr Majestic
+[2025-11-14 03:19:52]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:52]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:53]     Using cached: Away With Me - Calibre Remix
+[2025-11-14 03:19:53]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:53]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:54]     Using cached: Garden - Calibre Remix
+[2025-11-14 03:19:54]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:54]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:55]     Using cached: Lungs - Calibre Remix
+[2025-11-14 03:19:55]       Audio loaded: 22.3s at 24000Hz
+[2025-11-14 03:19:55]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:56]     Using cached: Even If - Original Mix
+[2025-11-14 03:19:56]       Audio loaded: 30.0s at 24000Hz
+[2025-11-14 03:19:56]       ⚠️  HF API embedding extraction failed: 
+[2025-11-14 03:19:56]   ✓ Extracted 0 track embeddings
+[2025-11-14 03:19:56] 
+[2025-11-14 03:19:56]   ✓ Extracted tracks for 0/8 artists
+[2025-11-14 03:19:56]   ✓ Total tracks with embeddings: 0
+[2025-11-14 03:19:56] 
+[2025-11-14 03:19:56] ❌ FATAL ERROR: Not enough artists to compute similarities

@@ -1,0 +1,480 @@
+[2025-11-15 04:20:21] ================================================================================
+[2025-11-15 04:20:21] SPIKE 6: MERT WITH CUSTOM ENDPOINT (ALL 13 LAYERS)
+[2025-11-15 04:20:21] ================================================================================
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] Testing MERT-v1-95M with:
+[2025-11-15 04:20:21]   - FULL 30-second context (no chunking)
+[2025-11-15 04:20:21]   - ALL 13 layers preserved (choose empirically)
+[2025-11-15 04:20:21]   - Custom Docker endpoint with GPU inference
+[2025-11-15 04:20:21] TEST MODE: Processing 1 artist only (deadmau5)
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] [1/6] Loading music-map data...
+[2025-11-15 04:20:21]   Loaded 854 artists
+[2025-11-15 04:20:21]   Testing with 1 artists: ['deadmau5']
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] [2/6] Initializing Spotify...
+[2025-11-15 04:20:21]   ✓ Spotify ready
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] [3/6] Initializing Custom HuggingFace Endpoint...
+[2025-11-15 04:20:21]   ⚠️  Endpoint returned 401
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] [4/6] Extracting track-level embeddings (13 layers)...
+[2025-11-15 04:20:21]   Audio cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/audio_cache
+[2025-11-15 04:20:21]   Cached audio files: 41 WAV files
+[2025-11-15 04:20:21]   Cached embeddings: 0 artists
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21]   Processing 1 artists: ['deadmau5']
+[2025-11-15 04:20:21]   (Skipping 0 cached artists)
+[2025-11-15 04:20:21] 
+[2025-11-15 04:20:21] Processing artist: deadmau5
+[2025-11-15 04:20:21]   Searching Spotify for artist: deadmau5
+[2025-11-15 04:20:21]     ✓ Using mapped artist ID: 2CIMQHirSU0MQqyYHq0eOx
+[2025-11-15 04:20:21]     ✓ Found artist on Spotify: deadmau5 (ID: 2CIMQHirSU0MQqyYHq0eOx)
+[2025-11-15 04:20:22]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:20:22]   Found 5 tracks on Spotify
+[2025-11-15 04:20:23]     Using cached: Escape (feat. Hayla)
+[2025-11-15 04:20:24]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:20:26]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:20:26]     ✓ Extracted 13-layer MERT embedding: Escape (feat. Hayla)
+[2025-11-15 04:20:27]     Using cached: Ghosts 'n' Stuff - Extended Mix
+[2025-11-15 04:20:27]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:20:28]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:20:28]     ✓ Extracted 13-layer MERT embedding: Ghosts 'n' Stuff - Extended Mix
+[2025-11-15 04:20:29]     Using cached: I Remember - John Summit Remix
+[2025-11-15 04:20:29]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:20:31]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:20:31]     ✓ Extracted 13-layer MERT embedding: I Remember - John Summit Remix
+[2025-11-15 04:20:32]     Using cached: The Veldt - Radio Edit
+[2025-11-15 04:20:32]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:20:34]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:20:34]     ✓ Extracted 13-layer MERT embedding: The Veldt - Radio Edit
+[2025-11-15 04:20:35]     Using cached: Ameonna
+[2025-11-15 04:20:35]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:20:37]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:20:37]     ✓ Extracted 13-layer MERT embedding: Ameonna
+[2025-11-15 04:20:37]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:20:37]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:20:37] 
+[2025-11-15 04:20:37]   ✓ Total artists with embeddings: 1/1
+[2025-11-15 04:20:37]   ✓ Total tracks with embeddings: 5
+[2025-11-15 04:20:37] 
+[2025-11-15 04:20:37] ❌ FATAL ERROR: Not enough artists to compute similarities
+[2025-11-15 04:25:14] ================================================================================
+[2025-11-15 04:25:14] SPIKE 6: MERT WITH CUSTOM ENDPOINT (ALL 13 LAYERS)
+[2025-11-15 04:25:14] ================================================================================
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] Testing MERT-v1-95M with:
+[2025-11-15 04:25:14]   - FULL 30-second context (no chunking)
+[2025-11-15 04:25:14]   - ALL 13 layers preserved (choose empirically)
+[2025-11-15 04:25:14]   - Custom Docker endpoint with GPU inference
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] [1/6] Loading music-map data...
+[2025-11-15 04:25:14]   Loaded 854 artists
+[2025-11-15 04:25:14]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] [2/6] Initializing Spotify...
+[2025-11-15 04:25:14]   ✓ Spotify ready
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] [3/6] Initializing Custom HuggingFace Endpoint...
+[2025-11-15 04:25:14]   ⚠️  Endpoint returned 401
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] [4/6] Extracting track-level embeddings (13 layers)...
+[2025-11-15 04:25:14]   ✓ Loaded cached embeddings for 1 artists
+[2025-11-15 04:25:14]   Audio cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/audio_cache
+[2025-11-15 04:25:14]   Cached audio files: 41 WAV files
+[2025-11-15 04:25:14]   Cached embeddings: 1 artists
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14]   Processing 7 artists: ['Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-15 04:25:14]   (Skipping 1 cached artists)
+[2025-11-15 04:25:14] 
+[2025-11-15 04:25:14] Processing artist: Rezz
+[2025-11-15 04:25:14]   Searching Spotify for artist: Rezz
+[2025-11-15 04:25:14]     ✓ Using mapped artist ID: 4aKdmOXdUKX07HVd3sGgzw
+[2025-11-15 04:25:14]     ✓ Found artist on Spotify: Rezz (ID: 4aKdmOXdUKX07HVd3sGgzw)
+[2025-11-15 04:25:14]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:25:14]   Found 5 tracks on Spotify
+[2025-11-15 04:25:16]     Using cached: Black Ice
+[2025-11-15 04:25:16]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:18]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:18]     ✓ Extracted 13-layer MERT embedding: Black Ice
+[2025-11-15 04:25:19]     Using cached: Someone Else
+[2025-11-15 04:25:19]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:20]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:20]     ✓ Extracted 13-layer MERT embedding: Someone Else
+[2025-11-15 04:25:21]     Using cached: Puzzle Box
+[2025-11-15 04:25:21]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:23]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:23]     ✓ Extracted 13-layer MERT embedding: Puzzle Box
+[2025-11-15 04:25:25]     Using cached: HOW I DO IT
+[2025-11-15 04:25:25]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:26]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:26]     ✓ Extracted 13-layer MERT embedding: HOW I DO IT
+[2025-11-15 04:25:27]     Using cached: Hypnocurrency
+[2025-11-15 04:25:27]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:29]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:29]     ✓ Extracted 13-layer MERT embedding: Hypnocurrency
+[2025-11-15 04:25:29]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:25:29]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:25:29] 
+[2025-11-15 04:25:29] Processing artist: TroyBoi
+[2025-11-15 04:25:29]   Searching Spotify for artist: TroyBoi
+[2025-11-15 04:25:29]     ✓ Using mapped artist ID: 0tvpihdAsKiNnP6sWS3jUI
+[2025-11-15 04:25:29]     ✓ Found artist on Spotify: TroyBoi (ID: 0tvpihdAsKiNnP6sWS3jUI)
+[2025-11-15 04:25:30]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:25:30]   Found 5 tracks on Spotify
+[2025-11-15 04:25:31]     Using cached: Red Eye (feat. TroyBoi)
+[2025-11-15 04:25:31]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:32]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:32]     ✓ Extracted 13-layer MERT embedding: Red Eye (feat. TroyBoi)
+[2025-11-15 04:25:33]     Using cached: Do You?
+[2025-11-15 04:25:33]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:35]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:35]     ✓ Extracted 13-layer MERT embedding: Do You?
+[2025-11-15 04:25:36]     Using cached: Afterhours feat. Diplo & Nina Sky
+[2025-11-15 04:25:36]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:38]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:38]     ✓ Extracted 13-layer MERT embedding: Afterhours feat. Diplo & Nina Sky
+[2025-11-15 04:25:39]     Using cached: Bellz
+[2025-11-15 04:25:39]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:41]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:41]     ✓ Extracted 13-layer MERT embedding: Bellz
+[2025-11-15 04:25:41]     Using cached: MyBoi - TroyBoi Remix
+[2025-11-15 04:25:42]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:43]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:43]     ✓ Extracted 13-layer MERT embedding: MyBoi - TroyBoi Remix
+[2025-11-15 04:25:43]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:25:43]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:25:43] 
+[2025-11-15 04:25:43] Processing artist: IMANU
+[2025-11-15 04:25:43]   Searching Spotify for artist: IMANU
+[2025-11-15 04:25:43]     ✓ Using mapped artist ID: 5Y7rFm0tiJTVDzGLMzz0W1
+[2025-11-15 04:25:43]     ✓ Found artist on Spotify: IMANU (ID: 5Y7rFm0tiJTVDzGLMzz0W1)
+[2025-11-15 04:25:44]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:25:44]   Found 5 tracks on Spotify
+[2025-11-15 04:25:44]     Using cached: I'm Fine - IMANU Remix
+[2025-11-15 04:25:45]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:46]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:46]     ✓ Extracted 13-layer MERT embedding: I'm Fine - IMANU Remix
+[2025-11-15 04:25:47]     Using cached: Bleak
+[2025-11-15 04:25:47]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:49]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:49]     ✓ Extracted 13-layer MERT embedding: Bleak
+[2025-11-15 04:25:50]     Using cached: Sutekh
+[2025-11-15 04:25:50]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:52]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:52]     ✓ Extracted 13-layer MERT embedding: Sutekh
+[2025-11-15 04:25:53]     Using cached: A Taste of Hope - Hallowvale
+[2025-11-15 04:25:53]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:54]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:54]     ✓ Extracted 13-layer MERT embedding: A Taste of Hope - Hallowvale
+[2025-11-15 04:25:55]     Using cached: Lost In Mumbai - IMANU Remix
+[2025-11-15 04:25:55]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:25:57]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:25:57]     ✓ Extracted 13-layer MERT embedding: Lost In Mumbai - IMANU Remix
+[2025-11-15 04:25:57]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:25:57]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:25:57] 
+[2025-11-15 04:25:57] Processing artist: PEEKABOO
+[2025-11-15 04:25:57]   Searching Spotify for artist: PEEKABOO
+[2025-11-15 04:25:57]     ✓ Using mapped artist ID: 4Ok1Cm5YX5StCQZgH0r2xF
+[2025-11-15 04:25:57]     ✓ Found artist on Spotify: PEEKABOO (ID: 4Ok1Cm5YX5StCQZgH0r2xF)
+[2025-11-15 04:25:57]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:25:57]   Found 5 tracks on Spotify
+[2025-11-15 04:25:58]     Using cached: BADDERS
+[2025-11-15 04:25:58]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:00]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:00]     ✓ Extracted 13-layer MERT embedding: BADDERS
+[2025-11-15 04:26:01]     Using cached: Here With Me
+[2025-11-15 04:26:01]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:03]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:03]     ✓ Extracted 13-layer MERT embedding: Here With Me
+[2025-11-15 04:26:04]     Using cached: Hydrate
+[2025-11-15 04:26:04]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:05]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:05]     ✓ Extracted 13-layer MERT embedding: Hydrate
+[2025-11-15 04:26:06]     Using cached: Want It
+[2025-11-15 04:26:06]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:08]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:08]     ✓ Extracted 13-layer MERT embedding: Want It
+[2025-11-15 04:26:09]     Using cached: Like That - Tape B Remix
+[2025-11-15 04:26:09]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:10]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:10]     ✓ Extracted 13-layer MERT embedding: Like That - Tape B Remix
+[2025-11-15 04:26:10]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:26:11]   ⚠️  Failed to save embedding cache: [Errno 28] No space left on device: '/Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json'
+[2025-11-15 04:26:11] 
+[2025-11-15 04:26:11] Processing artist: Sabrina Carpenter
+[2025-11-15 04:26:11]   Searching Spotify for artist: Sabrina Carpenter
+[2025-11-15 04:26:11]     ✓ Using mapped artist ID: 74KM79TiuVKeVCqs8QtB0B
+[2025-11-15 04:26:11]     ✓ Found artist on Spotify: Sabrina Carpenter (ID: 74KM79TiuVKeVCqs8QtB0B)
+[2025-11-15 04:26:11]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:26:11]   Found 5 tracks on Spotify
+[2025-11-15 04:26:12]     Using cached: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-15 04:26:12]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:14]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:14]     ✓ Extracted 13-layer MERT embedding: The Life of a Showgirl (feat. Sabrina Carpenter)
+[2025-11-15 04:26:14]     Using cached: Manchild
+[2025-11-15 04:26:15]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:16]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:16]     ✓ Extracted 13-layer MERT embedding: Manchild
+[2025-11-15 04:26:17]     Using cached: Tears
+[2025-11-15 04:26:17]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:19]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:19]     ✓ Extracted 13-layer MERT embedding: Tears
+[2025-11-15 04:26:20]     Using cached: When Did You Get Hot?
+[2025-11-15 04:26:20]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:22]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:22]     ✓ Extracted 13-layer MERT embedding: When Did You Get Hot?
+[2025-11-15 04:26:23]     Using cached: Espresso
+[2025-11-15 04:26:23]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:24]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:24]     ✓ Extracted 13-layer MERT embedding: Espresso
+[2025-11-15 04:26:24]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:26:25]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:26:25] 
+[2025-11-15 04:26:25] Processing artist: Vril
+[2025-11-15 04:26:25]   Searching Spotify for artist: Vril
+[2025-11-15 04:26:25]     ✓ Using mapped artist ID: 1nOi03kPUAMbOCl4lX9Avp
+[2025-11-15 04:26:25]     ✓ Found artist on Spotify: Vril (ID: 1nOi03kPUAMbOCl4lX9Avp)
+[2025-11-15 04:26:25]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:26:25]   Found 5 tracks on Spotify
+[2025-11-15 04:26:26]     Using cached: In Via
+[2025-11-15 04:26:26]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:28]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:28]     ✓ Extracted 13-layer MERT embedding: In Via
+[2025-11-15 04:26:28]     Using cached: Haus - Rework
+[2025-11-15 04:26:28]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:30]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:30]     ✓ Extracted 13-layer MERT embedding: Haus - Rework
+[2025-11-15 04:26:31]     Using cached: Manium
+[2025-11-15 04:26:31]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:33]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:33]     ✓ Extracted 13-layer MERT embedding: Manium
+[2025-11-15 04:26:34]     Using cached: Statera Rerum
+[2025-11-15 04:26:34]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:35]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:35]     ✓ Extracted 13-layer MERT embedding: Statera Rerum
+[2025-11-15 04:26:36]     Using cached: Antigravity Machine - Vril Remix
+[2025-11-15 04:26:36]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:38]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:38]     ✓ Extracted 13-layer MERT embedding: Antigravity Machine - Vril Remix
+[2025-11-15 04:26:38]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:26:39]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:26:39] 
+[2025-11-15 04:26:39] Processing artist: Calibre
+[2025-11-15 04:26:39]   Searching Spotify for artist: Calibre
+[2025-11-15 04:26:39]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-15 04:26:39]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-15 04:26:39]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:26:39]   Found 5 tracks on Spotify
+[2025-11-15 04:26:40]     Using cached: Mr Majestic
+[2025-11-15 04:26:40]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:41]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:41]     ✓ Extracted 13-layer MERT embedding: Mr Majestic
+[2025-11-15 04:26:43]     Using cached: Away With Me - Calibre Remix
+[2025-11-15 04:26:43]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:26:45]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:26:45]     ✓ Extracted 13-layer MERT embedding: Away With Me - Calibre Remix
+[2025-11-15 04:26:46]     Downloading: Garden - Calibre Remix
+[2025-11-15 04:27:05]       ⚠️  Download failed: ERROR: Postprocessing: audio conversion failed: Conversion failed!
+[2025-11-15 04:27:06]     Using cached: Lungs - Calibre Remix
+[2025-11-15 04:27:06]       Audio loaded: 22.3s at 24000Hz
+[2025-11-15 04:27:07]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:27:07]     ✓ Extracted 13-layer MERT embedding: Lungs - Calibre Remix
+[2025-11-15 04:27:08]     Using cached: Even If - Original Mix
+[2025-11-15 04:27:08]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:27:10]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:27:10]     ✓ Extracted 13-layer MERT embedding: Even If - Original Mix
+[2025-11-15 04:27:10]   ✓ Extracted 4 track embeddings
+[2025-11-15 04:27:10]   ⚠️  Failed to save embedding cache: [Errno 28] No space left on device: '/Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json'
+[2025-11-15 04:27:10] 
+[2025-11-15 04:27:10]   ✓ Total artists with embeddings: 8/8
+[2025-11-15 04:27:10]   ✓ Total tracks with embeddings: 39
+[2025-11-15 04:27:10] 
+[2025-11-15 04:27:10] [5/6] Computing layer-wise similarities (13 layers × all combinations)...
+[2025-11-15 04:27:10] 
+  Computing Layer 1/13...
+[2025-11-15 04:27:10]     Mean range: 0.736 - 0.898 (span: 0.162)
+[2025-11-15 04:27:10] 
+  Computing Layer 2/13...
+[2025-11-15 04:27:10]     Mean range: 0.626 - 0.825 (span: 0.199)
+[2025-11-15 04:27:10] 
+  Computing Layer 3/13...
+[2025-11-15 04:27:10]     Mean range: 0.609 - 0.803 (span: 0.194)
+[2025-11-15 04:27:10] 
+  Computing Layer 4/13...
+[2025-11-15 04:27:10]     Mean range: 0.652 - 0.804 (span: 0.152)
+[2025-11-15 04:27:10] 
+  Computing Layer 5/13...
+[2025-11-15 04:27:10]     Mean range: 0.649 - 0.807 (span: 0.159)
+[2025-11-15 04:27:10] 
+  Computing Layer 6/13...
+[2025-11-15 04:27:10]     Mean range: 0.684 - 0.825 (span: 0.141)
+[2025-11-15 04:27:10] 
+  Computing Layer 7/13...
+[2025-11-15 04:27:10]     Mean range: 0.682 - 0.828 (span: 0.145)
+[2025-11-15 04:27:10] 
+  Computing Layer 8/13...
+[2025-11-15 04:27:10]     Mean range: 0.652 - 0.810 (span: 0.159)
+[2025-11-15 04:27:10] 
+  Computing Layer 9/13...
+[2025-11-15 04:27:10]     Mean range: 0.672 - 0.824 (span: 0.152)
+[2025-11-15 04:27:10] 
+  Computing Layer 10/13...
+[2025-11-15 04:27:10]     Mean range: 0.662 - 0.827 (span: 0.165)
+[2025-11-15 04:27:10] 
+  Computing Layer 11/13...
+[2025-11-15 04:27:11]     Mean range: 0.604 - 0.826 (span: 0.223)
+[2025-11-15 04:27:11] 
+  Computing Layer 12/13...
+[2025-11-15 04:27:11]     Mean range: 0.493 - 0.773 (span: 0.280)
+[2025-11-15 04:27:11] 
+  Computing Layer 13/13...
+[2025-11-15 04:27:11]     Mean range: 0.617 - 0.871 (span: 0.254)
+[2025-11-15 04:27:11] 
+[2025-11-15 04:27:11] [6/6] Saving results...
+[2025-11-15 04:27:11] 
+[2025-11-15 04:27:11] ❌ FATAL ERROR: [Errno 28] No space left on device: '/Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_track_embeddings.json'
+[2025-11-15 04:27:11] Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/spike_6_mert_hf.py", line 408, in run_spike_6
+    with open(output_dir / "spike_6_track_embeddings.json", "w", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: '/Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_track_embeddings.json'
+
+[2025-11-15 04:30:36] ================================================================================
+[2025-11-15 04:30:36] SPIKE 6: MERT WITH CUSTOM ENDPOINT (ALL 13 LAYERS)
+[2025-11-15 04:30:36] ================================================================================
+[2025-11-15 04:30:36] 
+[2025-11-15 04:30:36] Testing MERT-v1-95M with:
+[2025-11-15 04:30:36]   - FULL 30-second context (no chunking)
+[2025-11-15 04:30:36]   - ALL 13 layers preserved (choose empirically)
+[2025-11-15 04:30:36]   - Custom Docker endpoint with GPU inference
+[2025-11-15 04:30:36] 
+[2025-11-15 04:30:36] [1/6] Loading music-map data...
+[2025-11-15 04:30:36]   Loaded 854 artists
+[2025-11-15 04:30:36]   Testing with 8 artists: ['deadmau5', 'Rezz', 'TroyBoi', 'IMANU', 'PEEKABOO', 'Sabrina Carpenter', 'Vril', 'Calibre']
+[2025-11-15 04:30:36] 
+[2025-11-15 04:30:36] [2/6] Initializing Spotify...
+[2025-11-15 04:30:36]   ✓ Spotify ready
+[2025-11-15 04:30:36] 
+[2025-11-15 04:30:36] [3/6] Initializing Custom HuggingFace Endpoint...
+[2025-11-15 04:30:37]   ⚠️  Endpoint returned 401
+[2025-11-15 04:30:37] 
+[2025-11-15 04:30:37] [4/6] Extracting track-level embeddings (13 layers)...
+[2025-11-15 04:30:37]   ✓ Loaded cached embeddings for 7 artists
+[2025-11-15 04:30:37]   Audio cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/audio_cache
+[2025-11-15 04:30:37]   Cached audio files: 0 WAV files
+[2025-11-15 04:30:37]   Cached embeddings: 7 artists
+[2025-11-15 04:30:37] 
+[2025-11-15 04:30:37]   Processing 1 artists: ['Calibre']
+[2025-11-15 04:30:37]   (Skipping 7 cached artists)
+[2025-11-15 04:30:37] 
+[2025-11-15 04:30:37] Processing artist: Calibre
+[2025-11-15 04:30:37]   Searching Spotify for artist: Calibre
+[2025-11-15 04:30:37]     ✓ Using mapped artist ID: 0sklgkoO5JeS7YNhHS5EmH
+[2025-11-15 04:30:37]     ✓ Found artist on Spotify: Calibre (ID: 0sklgkoO5JeS7YNhHS5EmH)
+[2025-11-15 04:30:37]     ✓ Retrieved 5 top tracks from Spotify
+[2025-11-15 04:30:37]   Found 5 tracks on Spotify
+[2025-11-15 04:30:38]     Downloading: Mr Majestic
+[2025-11-15 04:30:47]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:30:49]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:30:49]     ✓ Extracted 13-layer MERT embedding: Mr Majestic
+[2025-11-15 04:30:50]     Downloading: Away With Me - Calibre Remix
+[2025-11-15 04:31:05]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:31:07]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:31:07]     ✓ Extracted 13-layer MERT embedding: Away With Me - Calibre Remix
+[2025-11-15 04:31:07]     Downloading: Garden - Calibre Remix
+[2025-11-15 04:31:15]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:31:17]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:31:17]     ✓ Extracted 13-layer MERT embedding: Garden - Calibre Remix
+[2025-11-15 04:31:17]     Downloading: Lungs - Calibre Remix
+[2025-11-15 04:31:25]       Audio loaded: 22.3s at 24000Hz
+[2025-11-15 04:31:26]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:31:26]     ✓ Extracted 13-layer MERT embedding: Lungs - Calibre Remix
+[2025-11-15 04:31:27]     Downloading: Even If - Original Mix
+[2025-11-15 04:31:35]       Audio loaded: 30.0s at 24000Hz
+[2025-11-15 04:31:36]       ✓ Endpoint returned embedding: shape (13, 768)
+[2025-11-15 04:31:36]     ✓ Extracted 13-layer MERT embedding: Even If - Original Mix
+[2025-11-15 04:31:36]   ✓ Extracted 5 track embeddings
+[2025-11-15 04:31:37]   ✓ Saved embeddings cache: /Users/nikki/dev/artists-to-see-live/embeddings_experiments/data/spike_6_embedding_cache.json
+[2025-11-15 04:31:37] 
+[2025-11-15 04:31:37]   ✓ Total artists with embeddings: 8/8
+[2025-11-15 04:31:37]   ✓ Total tracks with embeddings: 40
+[2025-11-15 04:31:37] 
+[2025-11-15 04:31:37] [5/6] Computing layer-wise similarities (13 layers × all combinations)...
+[2025-11-15 04:31:37] 
+  Computing Layer 1/13...
+[2025-11-15 04:31:37]     Mean range: 0.736 - 0.898 (span: 0.162)
+[2025-11-15 04:31:37] 
+  Computing Layer 2/13...
+[2025-11-15 04:31:37]     Mean range: 0.613 - 0.825 (span: 0.212)
+[2025-11-15 04:31:37] 
+  Computing Layer 3/13...
+[2025-11-15 04:31:37]     Mean range: 0.603 - 0.803 (span: 0.200)
+[2025-11-15 04:31:37] 
+  Computing Layer 4/13...
+[2025-11-15 04:31:37]     Mean range: 0.645 - 0.804 (span: 0.159)
+[2025-11-15 04:31:37] 
+  Computing Layer 5/13...
+[2025-11-15 04:31:37]     Mean range: 0.649 - 0.807 (span: 0.159)
+[2025-11-15 04:31:37] 
+  Computing Layer 6/13...
+[2025-11-15 04:31:37]     Mean range: 0.684 - 0.825 (span: 0.141)
+[2025-11-15 04:31:37] 
+  Computing Layer 7/13...
+[2025-11-15 04:31:38]     Mean range: 0.682 - 0.828 (span: 0.145)
+[2025-11-15 04:31:38] 
+  Computing Layer 8/13...
+[2025-11-15 04:31:38]     Mean range: 0.652 - 0.810 (span: 0.159)
+[2025-11-15 04:31:38] 
+  Computing Layer 9/13...
+[2025-11-15 04:31:38]     Mean range: 0.672 - 0.824 (span: 0.152)
+[2025-11-15 04:31:38] 
+  Computing Layer 10/13...
+[2025-11-15 04:31:38]     Mean range: 0.662 - 0.827 (span: 0.165)
+[2025-11-15 04:31:38] 
+  Computing Layer 11/13...
+[2025-11-15 04:31:38]     Mean range: 0.604 - 0.826 (span: 0.223)
+[2025-11-15 04:31:38] 
+  Computing Layer 12/13...
+[2025-11-15 04:31:38]     Mean range: 0.493 - 0.773 (span: 0.280)
+[2025-11-15 04:31:38] 
+  Computing Layer 13/13...
+[2025-11-15 04:31:38]     Mean range: 0.615 - 0.871 (span: 0.256)
+[2025-11-15 04:31:38] 
+[2025-11-15 04:31:38] [6/6] Saving results...
+[2025-11-15 04:31:38]   ✓ Results saved
+[2025-11-15 04:31:38] 
+[2025-11-15 04:31:38] ================================================================================
+[2025-11-15 04:31:38] SPIKE 6 SUMMARY (Per-Layer Analysis)
+[2025-11-15 04:31:38] ================================================================================
+[2025-11-15 04:31:38] 
+Layer Performance (by similarity range span):
+[2025-11-15 04:31:38]   Layer 11: 0.493 - 0.773 (span: 0.280)
+[2025-11-15 04:31:38]   Layer 12: 0.615 - 0.871 (span: 0.256)
+[2025-11-15 04:31:38]   Layer 10: 0.604 - 0.826 (span: 0.223)
+[2025-11-15 04:31:38]   Layer  1: 0.613 - 0.825 (span: 0.212)
+[2025-11-15 04:31:38]   Layer  2: 0.603 - 0.803 (span: 0.200)
+[2025-11-15 04:31:38]   Layer  9: 0.662 - 0.827 (span: 0.165)
+[2025-11-15 04:31:38]   Layer  0: 0.736 - 0.898 (span: 0.162)
+[2025-11-15 04:31:38]   Layer  3: 0.645 - 0.804 (span: 0.159)
+[2025-11-15 04:31:38]   Layer  4: 0.649 - 0.807 (span: 0.159)
+[2025-11-15 04:31:38]   Layer  7: 0.652 - 0.810 (span: 0.159)
+[2025-11-15 04:31:38]   Layer  8: 0.672 - 0.824 (span: 0.152)
+[2025-11-15 04:31:38]   Layer  6: 0.682 - 0.828 (span: 0.145)
+[2025-11-15 04:31:38]   Layer  5: 0.684 - 0.825 (span: 0.141)
+[2025-11-15 04:31:38] 
+[2025-11-15 04:31:38] Best Layer: 11 (span: 0.280)
+[2025-11-15 04:31:38] Worst Layer: 5 (span: 0.141)
+[2025-11-15 04:31:38] 
+[2025-11-15 04:31:38] ================================================================================
+[2025-11-15 04:31:38] COMPARISON TO SPIKE 5
+[2025-11-15 04:31:38] ================================================================================
+[2025-11-15 04:31:38] Spike 5 (Layer 13, 10s chunks): 0.808 - 0.971 (span: 0.163)
+[2025-11-15 04:31:38] Spike 6 (Best layer, 30s full):  0.493 - 0.773 (span: 0.280)
+[2025-11-15 04:31:38] 
+✓ IMPROVEMENT: Wider range - layer selection and/or full context helps!
+[2025-11-15 04:31:38] 
+[2025-11-15 04:31:38] ================================================================================
+[2025-11-15 04:31:38] SPIKE 6 COMPLETE
+[2025-11-15 04:31:38] ================================================================================

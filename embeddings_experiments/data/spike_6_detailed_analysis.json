@@ -1,0 +1,276 @@
+{
+  "layer_rankings": [
+    {
+      "rank": 1,
+      "layer": "layer_11",
+      "span": 0.28043238042462487,
+      "min": 0.4930350166531577,
+      "max": 0.7734673970777826,
+      "min_pair": "PEEKABOO \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 2,
+      "layer": "layer_12",
+      "span": 0.2560331639622816,
+      "min": 0.6151845745345154,
+      "max": 0.871217738496797,
+      "min_pair": "Vril \u2194 Calibre",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 3,
+      "layer": "layer_10",
+      "span": 0.2225763864268422,
+      "min": 0.6038496500168952,
+      "max": 0.8264260364437374,
+      "min_pair": "PEEKABOO \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 4,
+      "layer": "layer_1",
+      "span": 0.21150208969313167,
+      "min": 0.6134549929329459,
+      "max": 0.8249570826260776,
+      "min_pair": "Vril \u2194 Calibre",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 5,
+      "layer": "layer_2",
+      "span": 0.1996294686572535,
+      "min": 0.6030937442636646,
+      "max": 0.8027232129209181,
+      "min_pair": "Vril \u2194 Calibre",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 6,
+      "layer": "layer_9",
+      "span": 0.1647812495671972,
+      "min": 0.6618040309846265,
+      "max": 0.8265852805518237,
+      "min_pair": "PEEKABOO \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 7,
+      "layer": "layer_0",
+      "span": 0.1618475377618448,
+      "min": 0.7356734743672341,
+      "max": 0.8975210121290789,
+      "min_pair": "TroyBoi \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 8,
+      "layer": "layer_3",
+      "span": 0.15902537507672698,
+      "min": 0.6449488262110809,
+      "max": 0.8039742012878078,
+      "min_pair": "Vril \u2194 Calibre",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 9,
+      "layer": "layer_4",
+      "span": 0.1586166075072899,
+      "min": 0.6488432738428835,
+      "max": 0.8074598813501734,
+      "min_pair": "TroyBoi \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 10,
+      "layer": "layer_7",
+      "span": 0.1585442996398715,
+      "min": 0.651653323794942,
+      "max": 0.8101976234348135,
+      "min_pair": "PEEKABOO \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 11,
+      "layer": "layer_8",
+      "span": 0.15195480792905602,
+      "min": 0.6716342146271734,
+      "max": 0.8235890225562295,
+      "min_pair": "PEEKABOO \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 12,
+      "layer": "layer_6",
+      "span": 0.1454699927566384,
+      "min": 0.6821061338214808,
+      "max": 0.8275761265781192,
+      "min_pair": "TroyBoi \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    },
+    {
+      "rank": 13,
+      "layer": "layer_5",
+      "span": 0.1407497180792603,
+      "min": 0.6841890928627966,
+      "max": 0.8249388109420569,
+      "min_pair": "TroyBoi \u2194 Vril",
+      "max_pair": "IMANU \u2194 Sabrina Carpenter"
+    }
+  ],
+  "best_layer": {
+    "name": "layer_11",
+    "stats": {
+      "min": 0.4930350166531577,
+      "max": 0.7734673970777826,
+      "span": 0.28043238042462487,
+      "mean": 0.6707651113562
+    }
+  },
+  "music_map_validation": {
+    "avg_overlap_pct": 0.0,
+    "per_artist": {
+      "deadmau5": {
+        "status": "success",
+        "music_map_top5": [
+          "Skrillex",
+          "Knife Party",
+          "Daft Punk",
+          "Feed Me",
+          "Doctor P"
+        ],
+        "embedding_top5": [
+          "Sabrina Carpenter",
+          "IMANU",
+          "Rezz",
+          "TroyBoi",
+          "PEEKABOO"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "Rezz": {
+        "status": "success",
+        "music_map_top5": [
+          "1788-L",
+          "Gesaffelstein",
+          "No Mana",
+          "LSDREAM",
+          "Deathpact"
+        ],
+        "embedding_top5": [
+          "Sabrina Carpenter",
+          "IMANU",
+          "TroyBoi",
+          "PEEKABOO",
+          "deadmau5"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "TroyBoi": {
+        "status": "success",
+        "music_map_top5": [
+          "Ozzie",
+          "Gutter brothers",
+          "Huglife",
+          "Memba",
+          "K theory"
+        ],
+        "embedding_top5": [
+          "IMANU",
+          "Sabrina Carpenter",
+          "PEEKABOO",
+          "Rezz",
+          "deadmau5"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "IMANU": {
+        "status": "success",
+        "music_map_top5": [
+          "Buunshin",
+          "The Caracal Project",
+          "Grey Code",
+          "Skylark",
+          "Circumference"
+        ],
+        "embedding_top5": [
+          "Sabrina Carpenter",
+          "TroyBoi",
+          "Rezz",
+          "PEEKABOO",
+          "deadmau5"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "PEEKABOO": {
+        "status": "success",
+        "music_map_top5": [
+          "Ganja White Night",
+          "Subtronics",
+          "Boogie T",
+          "Dirt Monkey",
+          "TVBOO"
+        ],
+        "embedding_top5": [
+          "TroyBoi",
+          "IMANU",
+          "Sabrina Carpenter",
+          "Rezz",
+          "deadmau5"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "Sabrina Carpenter": {
+        "status": "not_in_music_map"
+      },
+      "Vril": {
+        "status": "success",
+        "music_map_top5": [
+          "Prince of Denmark",
+          "Traumprinz",
+          "Kobosil",
+          "DJ Metatron",
+          "Havantepe"
+        ],
+        "embedding_top5": [
+          "Sabrina Carpenter",
+          "deadmau5",
+          "Rezz",
+          "IMANU",
+          "Calibre"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      },
+      "Calibre": {
+        "status": "success",
+        "music_map_top5": [
+          "Logistics",
+          "Marcus Intalex",
+          "Commix",
+          "London Elektricity",
+          "Nu:tone"
+        ],
+        "embedding_top5": [
+          "Sabrina Carpenter",
+          "TroyBoi",
+          "IMANU",
+          "Rezz",
+          "PEEKABOO"
+        ],
+        "overlap": 0,
+        "overlap_pct": 0.0
+      }
+    }
+  },
+  "spike_5_comparison": {
+    "spike_5_span": 0.16342231971189713,
+    "spike_6_span": 0.28043238042462487,
+    "improvement_pct": 71.59980406532524
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "pairwise_similarities": [
+    {
+      "artist1": "deadmau5",
+      "artist2": "Rezz",
+      "cosine_similarity": 0.9657603211455239
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "TroyBoi",
+      "cosine_similarity": 0.9568012186325798
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "IMANU",
+      "cosine_similarity": 0.9567616460878885
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "PEEKABOO",
+      "cosine_similarity": 0.944085722015781
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "Sabrina Carpenter",
+      "cosine_similarity": 0.9713311338503652
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "Vril",
+      "cosine_similarity": 0.8904296046261486
+    },
+    {
+      "artist1": "deadmau5",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.9536890877696549
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "TroyBoi",
+      "cosine_similarity": 0.9708992591883947
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "IMANU",
+      "cosine_similarity": 0.9702086798270979
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "PEEKABOO",
+      "cosine_similarity": 0.9571942426350382
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "Sabrina Carpenter",
+      "cosine_similarity": 0.9678577208935675
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "Vril",
+      "cosine_similarity": 0.8632430525943169
+    },
+    {
+      "artist1": "Rezz",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.947472898163979
+    },
+    {
+      "artist1": "TroyBoi",
+      "artist2": "IMANU",
+      "cosine_similarity": 0.9639168523159639
+    },
+    {
+      "artist1": "TroyBoi",
+      "artist2": "PEEKABOO",
+      "cosine_similarity": 0.9620824507800803
+    },
+    {
+      "artist1": "TroyBoi",
+      "artist2": "Sabrina Carpenter",
+      "cosine_similarity": 0.9669714109217773
+    },
+    {
+      "artist1": "TroyBoi",
+      "artist2": "Vril",
+      "cosine_similarity": 0.8354351196271306
+    },
+    {
+      "artist1": "TroyBoi",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.9550523927834287
+    },
+    {
+      "artist1": "IMANU",
+      "artist2": "PEEKABOO",
+      "cosine_similarity": 0.9555743116261031
+    },
+    {
+      "artist1": "IMANU",
+      "artist2": "Sabrina Carpenter",
+      "cosine_similarity": 0.9560071459853379
+    },
+    {
+      "artist1": "IMANU",
+      "artist2": "Vril",
+      "cosine_similarity": 0.8222325506328242
+    },
+    {
+      "artist1": "IMANU",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.9351967933846848
+    },
+    {
+      "artist1": "PEEKABOO",
+      "artist2": "Sabrina Carpenter",
+      "cosine_similarity": 0.9398286271604337
+    },
+    {
+      "artist1": "PEEKABOO",
+      "artist2": "Vril",
+      "cosine_similarity": 0.807908814138468
+    },
+    {
+      "artist1": "PEEKABOO",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.9347432339977813
+    },
+    {
+      "artist1": "Sabrina Carpenter",
+      "artist2": "Vril",
+      "cosine_similarity": 0.8923000741780377
+    },
+    {
+      "artist1": "Sabrina Carpenter",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.9573396913179748
+    },
+    {
+      "artist1": "Vril",
+      "artist2": "Calibre",
+      "cosine_similarity": 0.8394307018201479
+    }
+  ]
+}

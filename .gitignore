@@ -12,5 +12,16 @@ wheels/
 # Spotify API credentials
 spotify-config.json
 
+# Cache files (contain temporary auth tokens)
+.cache
+**/.cache
+
+# Environment files (contain API keys/secrets)
+.env
+**/.env
+
 # Apple ds_store files
-.DS_Storeembeddings_experiments/data/audio_cache/
+.DS_Store
+
+# Audio cache
+embeddings_experiments/data/audio_cache/
