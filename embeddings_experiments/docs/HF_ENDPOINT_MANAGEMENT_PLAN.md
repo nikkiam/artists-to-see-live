@@ -344,24 +344,44 @@ def get_endpoint_status(
     }
 ```
 
-### 2. Create CLI Utility Scripts
+### 2. Create Unified CLI Script
 
-#### 2.1 Spin Up Endpoint
+**File:** `embeddings_experiments/scripts/mert_endpoint.py`
 
-**File:** `embeddings_experiments/scripts/start_mert_endpoint.py`
+A single CLI with subcommands for all endpoint operations. This avoids duplicating argument parsing, validation, and error handling across multiple files.
 
 ```python
 #!/usr/bin/env python3
 """
-Start the MERT inference endpoint and wait for it to be ready.
+Unified CLI for managing MERT inference endpoints.
 
 Usage:
-    python start_mert_endpoint.py
-    python start_mert_endpoint.py --endpoint-name my-custom-endpoint
-    python start_mert_endpoint.py --create-if-missing
+    python mert_endpoint.py start [options]
+    python mert_endpoint.py stop [options]
+    python mert_endpoint.py status [options]
+    python mert_endpoint.py delete [options]
 
 Environment variables:
     HF_TOKEN: HuggingFace API token (required)
+
+Examples:
+    # Start endpoint and wait until ready
+    python mert_endpoint.py start
+
+    # Start with custom name
+    python mert_endpoint.py start --endpoint-name my-endpoint
+
+    # Create endpoint if it doesn't exist
+    python mert_endpoint.py start --create-if-missing
+
+    # Check status
+    python mert_endpoint.py status
+
+    # Pause endpoint (stop billing)
+    python mert_endpoint.py stop
+
+    # Delete endpoint permanently
+    python mert_endpoint.py delete
 """
 import argparse
 import os
@@ -371,48 +391,18 @@ from pathlib import Path
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from hf_endpoint_manager import resume_endpoint_and_wait, get_or_create_endpoint
+from hf_endpoint_manager import (
+    get_or_create_endpoint,
+    resume_endpoint_and_wait,
+    pause_endpoint,
+    delete_endpoint,
+    get_endpoint_status,
+)
 from spike import log
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Start MERT inference endpoint")
-    parser.add_argument(
-        "--endpoint-name",
-        default="mert-spike6-inference",
-        help="Name of the HuggingFace endpoint"
-    )
-    parser.add_argument(
-        "--namespace",
-        default=None,
-        help="HuggingFace namespace (defaults to token owner)"
-    )
-    parser.add_argument(
-        "--create-if-missing",
-        action="store_true",
-        help="Create endpoint if it doesn't exist"
-    )
-    parser.add_argument(
-        "--docker-image",
-        default="nikkiamb/mert-spike6-inference:latest",
-        help="Docker image to use for custom endpoint"
-    )
-    parser.add_argument(
-        "--timeout",
-        type=int,
-        default=600,
-        help="Timeout in seconds (default: 600)"
-    )
-
-    args = parser.parse_args()
-
-    # Get HF token from environment
-    hf_token = os.environ.get("HF_TOKEN")
-    if not hf_token:
-        log("❌ ERROR: HF_TOKEN not set in environment")
-        log("   Please set: export HF_TOKEN='hf_...'")
-        sys.exit(1)
-
+def cmd_start(args) -> int:
+    """Start (resume) endpoint and wait until ready."""
     try:
         log("=" * 80)
         log("STARTING MERT INFERENCE ENDPOINT")
@@ -422,20 +412,20 @@ def main():
         # Get or create endpoint
         endpoint = get_or_create_endpoint(
             endpoint_name=args.endpoint_name,
-            hf_token=hf_token,
+            hf_token=args.hf_token,
             namespace=args.namespace,
             create_if_missing=args.create_if_missing,
             custom_image={
                 "url": args.docker_image,
                 "port": 8080,
                 "health_route": "/health"
-            }
+            } if args.create_if_missing else None
         )
 
         # Resume and wait
         endpoint, url = resume_endpoint_and_wait(
             endpoint_name=args.endpoint_name,
-            hf_token=hf_token,
+            hf_token=args.hf_token,
             namespace=args.namespace,
             timeout_seconds=args.timeout
         )
@@ -454,200 +444,51 @@ def main():
         log(f"  HF_ENDPOINT_URL={url}")
         log("")
         log("=" * 80)
+        return 0
 
     except Exception as e:
         log("")
         log(f"❌ FAILED: {e}")
         import traceback
         log(traceback.format_exc())
-        sys.exit(1)
+        return 1
 
 
-if __name__ == "__main__":
-    main()
-```
-
-#### 2.2 Spin Down Endpoint
-
-**File:** `embeddings_experiments/scripts/stop_mert_endpoint.py`
-
-```python
-#!/usr/bin/env python3
-"""
-Stop the MERT inference endpoint to avoid billing.
-
-Usage:
-    python stop_mert_endpoint.py
-    python stop_mert_endpoint.py --endpoint-name my-custom-endpoint
-    python stop_mert_endpoint.py --delete  # PERMANENT deletion
-
-Environment variables:
-    HF_TOKEN: HuggingFace API token (required)
-"""
-import argparse
-import os
-import sys
-from pathlib import Path
-
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
-
-from hf_endpoint_manager import pause_endpoint, delete_endpoint, get_endpoint_status
-from spike import log
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Stop MERT inference endpoint")
-    parser.add_argument(
-        "--endpoint-name",
-        default="mert-spike6-inference",
-        help="Name of the HuggingFace endpoint"
-    )
-    parser.add_argument(
-        "--namespace",
-        default=None,
-        help="HuggingFace namespace (defaults to token owner)"
-    )
-    parser.add_argument(
-        "--delete",
-        action="store_true",
-        help="⚠️  DELETE endpoint permanently (non-revertible)"
-    )
-
-    args = parser.parse_args()
-
-    # Get HF token from environment
-    hf_token = os.environ.get("HF_TOKEN")
-    if not hf_token:
-        log("❌ ERROR: HF_TOKEN not set in environment")
-        log("   Please set: export HF_TOKEN='hf_...'")
-        sys.exit(1)
-
+def cmd_stop(args) -> int:
+    """Pause endpoint to stop billing."""
     try:
         log("=" * 80)
-        log("STOPPING MERT INFERENCE ENDPOINT")
+        log("PAUSING MERT INFERENCE ENDPOINT")
         log("=" * 80)
         log("")
 
-        if args.delete:
-            # Permanent deletion
-            log("⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!")
-            log("   This will delete:")
-            log("     - Endpoint configuration")
-            log("     - Endpoint logs")
-            log("     - Endpoint usage metrics")
-            log("")
+        endpoint = pause_endpoint(
+            endpoint_name=args.endpoint_name,
+            hf_token=args.hf_token,
+            namespace=args.namespace
+        )
 
-            # Show current status
-            try:
-                status = get_endpoint_status(
-                    endpoint_name=args.endpoint_name,
-                    hf_token=hf_token,
-                    namespace=args.namespace
-                )
-                log(f"Endpoint to delete: {args.endpoint_name}")
-                log(f"  Status: {status['status']}")
-                log(f"  URL: {status['url']}")
-                log("")
-            except Exception:
-                pass
-
-            response = input("Type 'DELETE' to confirm: ")
-            if response != "DELETE":
-                log("Cancelled.")
-                sys.exit(0)
-
-            delete_endpoint(
-                endpoint_name=args.endpoint_name,
-                hf_token=hf_token,
-                namespace=args.namespace,
-                confirm=True
-            )
-
-            log("")
-            log("=" * 80)
-            log("✓ ENDPOINT DELETED")
-            log("=" * 80)
-        else:
-            # Pause endpoint (reversible)
-            endpoint = pause_endpoint(
-                endpoint_name=args.endpoint_name,
-                hf_token=hf_token,
-                namespace=args.namespace
-            )
-
-            log("")
-            log("=" * 80)
-            log("✓ ENDPOINT PAUSED")
-            log("=" * 80)
-            log("")
-            log("The endpoint is now paused and NOT billing.")
-            log("To resume, run: python start_mert_endpoint.py")
-            log("")
-            log("=" * 80)
+        log("")
+        log("=" * 80)
+        log("✓ ENDPOINT PAUSED")
+        log("=" * 80)
+        log("")
+        log("The endpoint is now paused and NOT billing.")
+        log(f"To resume, run: python mert_endpoint.py start")
+        log("")
+        log("=" * 80)
+        return 0
 
     except Exception as e:
         log("")
         log(f"❌ FAILED: {e}")
         import traceback
         log(traceback.format_exc())
-        sys.exit(1)
+        return 1
 
 
-if __name__ == "__main__":
-    main()
-```
-
-#### 2.3 Check Endpoint Status
-
-**File:** `embeddings_experiments/scripts/check_mert_endpoint.py`
-
-```python
-#!/usr/bin/env python3
-"""
-Check the status of the MERT inference endpoint.
-
-Usage:
-    python check_mert_endpoint.py
-    python check_mert_endpoint.py --endpoint-name my-custom-endpoint
-
-Environment variables:
-    HF_TOKEN: HuggingFace API token (required)
-"""
-import argparse
-import os
-import sys
-from pathlib import Path
-
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent))
-
-from hf_endpoint_manager import get_endpoint_status
-from spike import log
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Check MERT endpoint status")
-    parser.add_argument(
-        "--endpoint-name",
-        default="mert-spike6-inference",
-        help="Name of the HuggingFace endpoint"
-    )
-    parser.add_argument(
-        "--namespace",
-        default=None,
-        help="HuggingFace namespace (defaults to token owner)"
-    )
-
-    args = parser.parse_args()
-
-    # Get HF token from environment
-    hf_token = os.environ.get("HF_TOKEN")
-    if not hf_token:
-        log("❌ ERROR: HF_TOKEN not set in environment")
-        log("   Please set: export HF_TOKEN='hf_...'")
-        sys.exit(1)
-
+def cmd_status(args) -> int:
+    """Check endpoint status."""
     try:
         log("=" * 80)
         log("MERT INFERENCE ENDPOINT STATUS")
@@ -656,7 +497,7 @@ def main():
 
         status = get_endpoint_status(
             endpoint_name=args.endpoint_name,
-            hf_token=hf_token,
+            hf_token=args.hf_token,
             namespace=args.namespace
         )
 
@@ -676,10 +517,10 @@ def main():
             log(f"  Set: export HF_ENDPOINT_URL='{status['url']}'")
         elif status['status'] == 'paused':
             log("⏸  Endpoint is PAUSED (not billing)")
-            log("  Run: python start_mert_endpoint.py")
+            log("  Run: python mert_endpoint.py start")
         elif status['status'] == 'scaledToZero':
             log("⏸  Endpoint is SCALED TO ZERO")
-            log("  Run: python start_mert_endpoint.py")
+            log("  Run: python mert_endpoint.py start")
         elif status['status'] == 'pending':
             log("⏳ Endpoint is STARTING...")
             log("  Wait a few minutes, then check again")
@@ -691,17 +532,158 @@ def main():
 
         log("")
         log("=" * 80)
+        return 0
 
     except Exception as e:
         log("")
         log(f"❌ FAILED: {e}")
         import traceback
         log(traceback.format_exc())
-        sys.exit(1)
+        return 1
+
+
+def cmd_delete(args) -> int:
+    """Delete endpoint permanently."""
+    try:
+        log("=" * 80)
+        log("DELETING MERT INFERENCE ENDPOINT")
+        log("=" * 80)
+        log("")
+        log("⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!")
+        log("   This will delete:")
+        log("     - Endpoint configuration")
+        log("     - Endpoint logs")
+        log("     - Endpoint usage metrics")
+        log("")
+
+        # Show current status
+        try:
+            status = get_endpoint_status(
+                endpoint_name=args.endpoint_name,
+                hf_token=args.hf_token,
+                namespace=args.namespace
+            )
+            log(f"Endpoint to delete: {args.endpoint_name}")
+            log(f"  Status: {status['status']}")
+            log(f"  URL: {status['url']}")
+            log("")
+        except Exception:
+            pass
+
+        if not args.confirm:
+            response = input("Type 'DELETE' to confirm: ")
+            if response != "DELETE":
+                log("Cancelled.")
+                return 0
+
+        delete_endpoint(
+            endpoint_name=args.endpoint_name,
+            hf_token=args.hf_token,
+            namespace=args.namespace,
+            confirm=True
+        )
+
+        log("")
+        log("=" * 80)
+        log("✓ ENDPOINT DELETED")
+        log("=" * 80)
+        return 0
+
+    except Exception as e:
+        log("")
+        log(f"❌ FAILED: {e}")
+        import traceback
+        log(traceback.format_exc())
+        return 1
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Manage MERT HuggingFace Inference Endpoints",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python mert_endpoint.py start                    # Start endpoint
+  python mert_endpoint.py start --create-if-missing  # Create if needed
+  python mert_endpoint.py status                   # Check status
+  python mert_endpoint.py stop                     # Pause (stop billing)
+  python mert_endpoint.py delete                   # Delete permanently
+        """
+    )
+
+    # Global arguments (shared by all subcommands)
+    parser.add_argument(
+        "--endpoint-name",
+        default="mert-spike6-inference",
+        help="Name of the HuggingFace endpoint (default: mert-spike6-inference)"
+    )
+    parser.add_argument(
+        "--namespace",
+        default=None,
+        help="HuggingFace namespace (defaults to token owner)"
+    )
+
+    # Subcommands
+    subparsers = parser.add_subparsers(dest="command", help="Command to execute")
+
+    # Start command
+    start_parser = subparsers.add_parser("start", help="Start (resume) endpoint")
+    start_parser.add_argument(
+        "--create-if-missing",
+        action="store_true",
+        help="Create endpoint if it doesn't exist"
+    )
+    start_parser.add_argument(
+        "--docker-image",
+        default="nikkiamb/mert-spike6-inference:latest",
+        help="Docker image (only used when creating new endpoint)"
+    )
+    start_parser.add_argument(
+        "--timeout",
+        type=int,
+        default=600,
+        help="Timeout in seconds (default: 600)"
+    )
+    start_parser.set_defaults(func=cmd_start)
+
+    # Stop command
+    stop_parser = subparsers.add_parser("stop", help="Pause endpoint (stop billing)")
+    stop_parser.set_defaults(func=cmd_stop)
+
+    # Status command
+    status_parser = subparsers.add_parser("status", help="Check endpoint status")
+    status_parser.set_defaults(func=cmd_status)
+
+    # Delete command
+    delete_parser = subparsers.add_parser("delete", help="Delete endpoint permanently")
+    delete_parser.add_argument(
+        "--confirm",
+        action="store_true",
+        help="Skip confirmation prompt"
+    )
+    delete_parser.set_defaults(func=cmd_delete)
+
+    # Parse arguments
+    args = parser.parse_args()
+
+    # Validate subcommand
+    if not args.command:
+        parser.print_help()
+        return 1
+
+    # Get HF token from environment
+    args.hf_token = os.environ.get("HF_TOKEN")
+    if not args.hf_token:
+        log("❌ ERROR: HF_TOKEN not set in environment")
+        log("   Please set: export HF_TOKEN='hf_...'")
+        return 1
+
+    # Execute subcommand
+    return args.func(args)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
 ```
 
 ### 3. Integration with spike_6_mert_hf.py
@@ -777,7 +759,7 @@ def run_spike_6_with_auto_endpoint(
             except Exception as e:
                 log(f"⚠️  Failed to pause endpoint: {e}")
                 log("   Please pause manually via HuggingFace UI or:")
-                log(f"   python stop_mert_endpoint.py")
+                log(f"   python mert_endpoint.py stop")
 ```
 
 ### 4. Update pyproject.toml
@@ -790,11 +772,9 @@ dependencies = [
     "huggingface-hub>=0.19.0",
 ]
 
-# Add convenience scripts
+# Add convenience script (optional)
 [project.scripts]
-start-mert-endpoint = "embeddings_experiments.scripts.start_mert_endpoint:main"
-stop-mert-endpoint = "embeddings_experiments.scripts.stop_mert_endpoint:main"
-check-mert-endpoint = "embeddings_experiments.scripts.check_mert_endpoint:main"
+mert-endpoint = "embeddings_experiments.scripts.mert_endpoint:main"
 ```
 
 ## Usage Examples
@@ -804,13 +784,34 @@ check-mert-endpoint = "embeddings_experiments.scripts.check_mert_endpoint:main"
 ```bash
 # 1. Start the endpoint
 cd embeddings_experiments
-python scripts/start_mert_endpoint.py
+python scripts/mert_endpoint.py start
 
 # 2. Run inference
 python scripts/spike_6_mert_hf.py
 
 # 3. Stop the endpoint (IMPORTANT!)
-python scripts/stop_mert_endpoint.py
+python scripts/mert_endpoint.py stop
+```
+
+### Check Status
+
+```bash
+# Check if endpoint is running
+python scripts/mert_endpoint.py status
+```
+
+### Create New Endpoint
+
+```bash
+# Create endpoint if it doesn't exist yet
+python scripts/mert_endpoint.py start --create-if-missing
+```
+
+### Delete Endpoint (Permanent)
+
+```bash
+# ⚠️  WARNING: This is permanent!
+python scripts/mert_endpoint.py delete
 ```
 
 ### Automated Workflow
@@ -821,20 +822,6 @@ cd embeddings_experiments
 python scripts/spike_6_mert_hf.py --auto-manage-endpoint
 
 # Endpoint will automatically start, run inference, and pause
-```
-
-### Check Status
-
-```bash
-# Check if endpoint is running
-python scripts/check_mert_endpoint.py
-```
-
-### Delete Endpoint (Permanent)
-
-```bash
-# ⚠️  WARNING: This is permanent!
-python scripts/stop_mert_endpoint.py --delete
 ```
 
 ## Cost Management Strategy
@@ -991,16 +978,42 @@ After implementation:
 ```
 embeddings_experiments/
 ├── scripts/
-│   ├── hf_endpoint_manager.py          # Core endpoint management utilities
-│   ├── start_mert_endpoint.py          # CLI: Start endpoint
-│   ├── stop_mert_endpoint.py           # CLI: Stop endpoint
-│   ├── check_mert_endpoint.py          # CLI: Check status
+│   ├── hf_endpoint_manager.py          # Core endpoint management library
+│   ├── mert_endpoint.py                # Unified CLI with subcommands
 │   └── spike_6_mert_hf.py              # Updated with auto-management
 ├── docs/
 │   └── HF_ENDPOINT_MANAGEMENT_PLAN.md  # This document
 └── tests/
     └── test_endpoint_manager.py        # Unit tests
 ```
+
+### File Locations and Purposes
+
+**1. Core Library:**
+- `embeddings_experiments/scripts/hf_endpoint_manager.py`
+  - Library functions for endpoint management
+  - Functions: `get_or_create_endpoint()`, `resume_endpoint_and_wait()`, `pause_endpoint()`, `delete_endpoint()`, `get_endpoint_status()`
+  - No CLI logic, pure Python functions
+
+**2. Unified CLI:**
+- `embeddings_experiments/scripts/mert_endpoint.py`
+  - Single entry point for all endpoint operations
+  - Subcommands: `start`, `stop`, `status`, `delete`
+  - Imports functions from `hf_endpoint_manager.py`
+
+**3. Updated Integration:**
+- `embeddings_experiments/scripts/spike_6_mert_hf.py`
+  - Add `run_spike_6_with_auto_endpoint()` function
+  - Auto-starts endpoint, runs inference, auto-pauses
+
+**4. Tests:**
+- `embeddings_experiments/tests/test_endpoint_manager.py`
+  - Unit tests for library functions
+  - Integration tests for full workflow
+
+**5. Documentation:**
+- `embeddings_experiments/docs/HF_ENDPOINT_MANAGEMENT_PLAN.md`
+  - This plan document (already created)
 
 ## Success Criteria
 
@@ -1010,16 +1023,19 @@ embeddings_experiments/
 ✅ Auto-pause after spike runs
 ✅ No manual UI interaction needed
 ✅ Cost reduced by preventing forgotten endpoints
+✅ Single unified CLI (no multiple scripts)
 
 ## Estimated Implementation Time
 
-- **hf_endpoint_manager.py:** 2-3 hours
-- **CLI scripts:** 1-2 hours
+- **hf_endpoint_manager.py:** 2-3 hours (core library functions)
+- **mert_endpoint.py:** 1-2 hours (unified CLI with subcommands)
 - **Integration with spike_6:** 1 hour
 - **Testing:** 2 hours
 - **Documentation:** 1 hour
 
 **Total:** ~7-9 hours
+
+**Note:** Unified CLI approach is simpler than original 3-script design, reducing maintenance burden and improving UX.
 
 ## Cost Estimate
 
