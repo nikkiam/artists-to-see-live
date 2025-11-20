@@ -13,34 +13,42 @@ Usage:
     # Pause endpoint
     pause_endpoint("my-endpoint", hf_token)
 """
-from dataclasses import dataclass
-from datetime import datetime
+import logging
 from pathlib import Path
 from typing import Optional
 
+# Configure logging
 LOG_FILE = Path(__file__).parent.parent / "endpoint_manager.log"
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(asctime)s] %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
+# Endpoint status constants
+STATUS_RUNNING = "running"
+STATUS_PAUSED = "paused"
+STATUS_SCALED_TO_ZERO = "scaledToZero"
+STATUS_PENDING = "pending"
+STATUS_FAILED = "failed"
 
-def log(message: str) -> None:
-    """
-    Log message to both stdout and log file.
-
-    Following project convention from CLAUDE.md: never use print(),
-    always log to a file.
-    """
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_line = f"[{timestamp}] {message}"
-
-    # Write to stdout
-    print(log_line)
-
-    # Append to log file
-    try:
-        with open(LOG_FILE, "a", encoding="utf-8") as f:
-            f.write(log_line + "\n")
-    except Exception:
-        # Silently fail if log file write fails
-        pass
+# Default endpoint configuration
+DEFAULT_MODEL_REPOSITORY = "m-a-p/MERT-v1-95M"
+DEFAULT_FRAMEWORK = "pytorch"
+DEFAULT_TASK = "feature-extraction"
+DEFAULT_ACCELERATOR = "gpu"
+DEFAULT_VENDOR = "aws"
+DEFAULT_REGION = "us-east-1"
+DEFAULT_INSTANCE_SIZE = "medium"
+DEFAULT_INSTANCE_TYPE = "nvidia-a10g"
+DEFAULT_MIN_REPLICA = 0  # Auto-pause when idle
+DEFAULT_MAX_REPLICA = 1
+DEFAULT_TIMEOUT_SECONDS = 600  # 10 minutes
 
 
 def get_or_create_endpoint(
@@ -49,17 +57,17 @@ def get_or_create_endpoint(
     namespace: Optional[str] = None,
     create_if_missing: bool = False,
     # Creation parameters (only used if creating new endpoint)
-    repository: str = "m-a-p/MERT-v1-95M",
-    framework: str = "pytorch",
-    task: str = "feature-extraction",
+    repository: str = DEFAULT_MODEL_REPOSITORY,
+    framework: str = DEFAULT_FRAMEWORK,
+    task: str = DEFAULT_TASK,
     custom_image: Optional[dict] = None,
-    accelerator: str = "gpu",
-    vendor: str = "aws",
-    region: str = "us-east-1",
-    instance_size: str = "medium",  # A10G
-    instance_type: str = "nvidia-a10g",
-    min_replica: int = 0,  # Auto-pause when idle
-    max_replica: int = 1,
+    accelerator: str = DEFAULT_ACCELERATOR,
+    vendor: str = DEFAULT_VENDOR,
+    region: str = DEFAULT_REGION,
+    instance_size: str = DEFAULT_INSTANCE_SIZE,
+    instance_type: str = DEFAULT_INSTANCE_TYPE,
+    min_replica: int = DEFAULT_MIN_REPLICA,
+    max_replica: int = DEFAULT_MAX_REPLICA,
 ):
     """
     Get existing endpoint or create new one if it doesn't exist.
@@ -104,9 +112,9 @@ def get_or_create_endpoint(
             namespace=namespace,
             token=hf_token
         )
-        log(f"✓ Found existing endpoint: {endpoint_name}")
-        log(f"  Status: {endpoint.status}")
-        log(f"  URL: {endpoint.url}")
+        logger.info(f"✓ Found existing endpoint: {endpoint_name}")
+        logger.info(f"  Status: {endpoint.status}")
+        logger.info(f"  URL: {endpoint.url}")
         return endpoint
 
     except Exception as e:
@@ -116,7 +124,7 @@ def get_or_create_endpoint(
                 f"Error: {e}"
             )
 
-        log(f"Endpoint not found, creating new one: {endpoint_name}")
+        logger.info(f"Endpoint not found, creating new one: {endpoint_name}")
 
         # Create endpoint with custom Docker image
         endpoint = api.create_inference_endpoint(
@@ -136,8 +144,8 @@ def get_or_create_endpoint(
             token=hf_token
         )
 
-        log(f"✓ Created endpoint: {endpoint_name}")
-        log(f"  Status: {endpoint.status}")
+        logger.info(f"✓ Created endpoint: {endpoint_name}")
+        logger.info(f"  Status: {endpoint.status}")
         return endpoint
 
 
@@ -145,7 +153,7 @@ def resume_endpoint_and_wait(
     endpoint_name: str,
     hf_token: str,
     namespace: Optional[str] = None,
-    timeout_seconds: int = 600,  # 10 minutes
+    timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
 ) -> tuple:
     """
     Resume a paused endpoint and wait until it's ready.
@@ -166,7 +174,7 @@ def resume_endpoint_and_wait(
     from huggingface_hub import get_inference_endpoint
     import time
 
-    log(f"Resuming endpoint: {endpoint_name}")
+    logger.info(f"Resuming endpoint: {endpoint_name}")
 
     endpoint = get_inference_endpoint(
         name=endpoint_name,
@@ -176,23 +184,23 @@ def resume_endpoint_and_wait(
 
     # Check current status
     current_status = endpoint.status
-    log(f"  Current status: {current_status}")
+    logger.info(f"  Current status: {current_status}")
 
     # Resume if paused or scaled to zero
-    if current_status in ["paused", "scaledToZero"]:
-        log("  Resuming endpoint...")
+    if current_status in [STATUS_PAUSED, STATUS_SCALED_TO_ZERO]:
+        logger.info("  Resuming endpoint...")
         endpoint = endpoint.resume()
-        log(f"  Status after resume: {endpoint.status}")
-    elif current_status == "running":
-        log("  Endpoint already running!")
+        logger.info(f"  Status after resume: {endpoint.status}")
+    elif current_status == STATUS_RUNNING:
+        logger.info("  Endpoint already running!")
         return endpoint, endpoint.url
-    elif current_status == "pending":
-        log("  Endpoint already starting...")
+    elif current_status == STATUS_PENDING:
+        logger.info("  Endpoint already starting...")
     else:
-        log(f"  ⚠️  Unexpected status: {current_status}")
+        logger.warning(f"  ⚠️  Unexpected status: {current_status}")
 
     # Wait for endpoint to be ready
-    log(f"  Waiting for endpoint to be ready (timeout: {timeout_seconds}s)...")
+    logger.info(f"  Waiting for endpoint to be ready (timeout: {timeout_seconds}s)...")
     start_time = time.time()
 
     try:
@@ -200,14 +208,14 @@ def resume_endpoint_and_wait(
         endpoint = endpoint.wait(timeout=timeout_seconds)
         elapsed = time.time() - start_time
 
-        log(f"  ✓ Endpoint ready in {elapsed:.1f}s")
-        log(f"  URL: {endpoint.url}")
+        logger.info(f"  ✓ Endpoint ready in {elapsed:.1f}s")
+        logger.info(f"  URL: {endpoint.url}")
 
         return endpoint, endpoint.url
 
     except Exception as e:
         elapsed = time.time() - start_time
-        log(f"  ❌ Failed to start endpoint after {elapsed:.1f}s: {e}")
+        logger.error(f"  ❌ Failed to start endpoint after {elapsed:.1f}s: {e}")
         raise
 
 
@@ -232,7 +240,7 @@ def pause_endpoint(
     """
     from huggingface_hub import get_inference_endpoint
 
-    log(f"Pausing endpoint: {endpoint_name}")
+    logger.info(f"Pausing endpoint: {endpoint_name}")
 
     endpoint = get_inference_endpoint(
         name=endpoint_name,
@@ -241,15 +249,15 @@ def pause_endpoint(
     )
 
     current_status = endpoint.status
-    log(f"  Current status: {current_status}")
+    logger.info(f"  Current status: {current_status}")
 
-    if current_status == "paused":
-        log("  Endpoint already paused")
+    if current_status == STATUS_PAUSED:
+        logger.info("  Endpoint already paused")
         return endpoint
 
     endpoint = endpoint.pause()
-    log(f"  ✓ Endpoint paused")
-    log(f"  Status: {endpoint.status}")
+    logger.info(f"  ✓ Endpoint paused")
+    logger.info(f"  Status: {endpoint.status}")
 
     return endpoint
 
@@ -287,7 +295,7 @@ def delete_endpoint(
             "This action is non-revertible and will delete all endpoint data."
         )
 
-    log(f"⚠️  Deleting endpoint: {endpoint_name} (NON-REVERTIBLE)")
+    logger.warning(f"⚠️  Deleting endpoint: {endpoint_name} (NON-REVERTIBLE)")
 
     endpoint = get_inference_endpoint(
         name=endpoint_name,
@@ -296,7 +304,7 @@ def delete_endpoint(
     )
 
     endpoint.delete()
-    log(f"  ✓ Endpoint deleted: {endpoint_name}")
+    logger.info(f"  ✓ Endpoint deleted: {endpoint_name}")
 
 
 def get_endpoint_status(
@@ -338,7 +346,7 @@ def get_endpoint_status(
     return {
         "name": endpoint.name,
         "status": endpoint.status,
-        "url": endpoint.url if endpoint.status == "running" else None,
+        "url": endpoint.url if endpoint.status == STATUS_RUNNING else None,
         "task": endpoint.task,
         "model_repository": endpoint.repository,
         "framework": endpoint.framework,

@@ -44,17 +44,22 @@ from hf_endpoint_manager import (
     pause_endpoint,
     delete_endpoint,
     get_endpoint_status,
-    log,
+    logger,
+    STATUS_RUNNING,
+    STATUS_PAUSED,
+    STATUS_SCALED_TO_ZERO,
+    STATUS_PENDING,
+    STATUS_FAILED,
 )
 
 
 def cmd_start(args) -> int:
     """Start (resume) endpoint and wait until ready."""
     try:
-        log("=" * 80)
-        log("STARTING MERT INFERENCE ENDPOINT")
-        log("=" * 80)
-        log("")
+        logger.info("=" * 80)
+        logger.info("STARTING MERT INFERENCE ENDPOINT")
+        logger.info("=" * 80)
+        logger.info("")
 
         # Get or create endpoint
         endpoint = get_or_create_endpoint(
@@ -77,37 +82,37 @@ def cmd_start(args) -> int:
             timeout_seconds=args.timeout
         )
 
-        log("")
-        log("=" * 80)
-        log("✓ ENDPOINT READY")
-        log("=" * 80)
-        log("")
-        log(f"Endpoint URL: {url}")
-        log("")
-        log("Set this in your environment:")
-        log(f"  export HF_ENDPOINT_URL='{url}'")
-        log("")
-        log("Or add to embeddings_experiments/.env:")
-        log(f"  HF_ENDPOINT_URL={url}")
-        log("")
-        log("=" * 80)
+        logger.info("")
+        logger.info("=" * 80)
+        logger.info("✓ ENDPOINT READY")
+        logger.info("=" * 80)
+        logger.info("")
+        logger.info(f"Endpoint URL: {url}")
+        logger.info("")
+        logger.info("Set this in your environment:")
+        logger.info(f"  export HF_ENDPOINT_URL='{url}'")
+        logger.info("")
+        logger.info("Or add to embeddings_experiments/.env:")
+        logger.info(f"  HF_ENDPOINT_URL={url}")
+        logger.info("")
+        logger.info("=" * 80)
         return 0
 
     except Exception as e:
-        log("")
-        log(f"❌ FAILED: {e}")
+        logger.error("")
+        logger.error(f"❌ FAILED: {e}")
         import traceback
-        log(traceback.format_exc())
+        logger.error(traceback.format_exc())
         return 1
 
 
 def cmd_stop(args) -> int:
     """Pause endpoint to stop billing."""
     try:
-        log("=" * 80)
-        log("PAUSING MERT INFERENCE ENDPOINT")
-        log("=" * 80)
-        log("")
+        logger.info("=" * 80)
+        logger.info("PAUSING MERT INFERENCE ENDPOINT")
+        logger.info("=" * 80)
+        logger.info("")
 
         endpoint = pause_endpoint(
             endpoint_name=args.endpoint_name,
@@ -115,32 +120,32 @@ def cmd_stop(args) -> int:
             namespace=args.namespace
         )
 
-        log("")
-        log("=" * 80)
-        log("✓ ENDPOINT PAUSED")
-        log("=" * 80)
-        log("")
-        log("The endpoint is now paused and NOT billing.")
-        log(f"To resume, run: python mert_endpoint.py start")
-        log("")
-        log("=" * 80)
+        logger.info("")
+        logger.info("=" * 80)
+        logger.info("✓ ENDPOINT PAUSED")
+        logger.info("=" * 80)
+        logger.info("")
+        logger.info("The endpoint is now paused and NOT billing.")
+        logger.info(f"To resume, run: python mert_endpoint.py start")
+        logger.info("")
+        logger.info("=" * 80)
         return 0
 
     except Exception as e:
-        log("")
-        log(f"❌ FAILED: {e}")
+        logger.error("")
+        logger.error(f"❌ FAILED: {e}")
         import traceback
-        log(traceback.format_exc())
+        logger.error(traceback.format_exc())
         return 1
 
 
 def cmd_status(args) -> int:
     """Check endpoint status."""
     try:
-        log("=" * 80)
-        log("MERT INFERENCE ENDPOINT STATUS")
-        log("=" * 80)
-        log("")
+        logger.info("=" * 80)
+        logger.info("MERT INFERENCE ENDPOINT STATUS")
+        logger.info("=" * 80)
+        logger.info("")
 
         status = get_endpoint_status(
             endpoint_name=args.endpoint_name,
@@ -148,60 +153,60 @@ def cmd_status(args) -> int:
             namespace=args.namespace
         )
 
-        log(f"Endpoint: {status['name']}")
-        log(f"Status: {status['status']}")
-        log(f"URL: {status['url'] or '(not running)'}")
-        log(f"Task: {status['task']}")
-        log(f"Model: {status['model_repository']}")
-        log(f"Framework: {status['framework']}")
-        log(f"Instance: {status['instance_type']} ({status['instance_size']})")
-        log(f"Replicas: {status['min_replica']}-{status['max_replica']}")
-        log("")
+        logger.info(f"Endpoint: {status['name']}")
+        logger.info(f"Status: {status['status']}")
+        logger.info(f"URL: {status['url'] or '(not running)'}")
+        logger.info(f"Task: {status['task']}")
+        logger.info(f"Model: {status['model_repository']}")
+        logger.info(f"Framework: {status['framework']}")
+        logger.info(f"Instance: {status['instance_type']} ({status['instance_size']})")
+        logger.info(f"Replicas: {status['min_replica']}-{status['max_replica']}")
+        logger.info("")
 
         # Status-specific messages
-        if status['status'] == 'running':
-            log("✓ Endpoint is RUNNING and ready for requests")
-            log(f"  Set: export HF_ENDPOINT_URL='{status['url']}'")
-        elif status['status'] == 'paused':
-            log("⏸  Endpoint is PAUSED (not billing)")
-            log("  Run: python mert_endpoint.py start")
-        elif status['status'] == 'scaledToZero':
-            log("⏸  Endpoint is SCALED TO ZERO")
-            log("  Run: python mert_endpoint.py start")
-        elif status['status'] == 'pending':
-            log("⏳ Endpoint is STARTING...")
-            log("  Wait a few minutes, then check again")
-        elif status['status'] == 'failed':
-            log("❌ Endpoint FAILED to start")
-            log("  Check logs at HuggingFace UI")
+        if status['status'] == STATUS_RUNNING:
+            logger.info("✓ Endpoint is RUNNING and ready for requests")
+            logger.info(f"  Set: export HF_ENDPOINT_URL='{status['url']}'")
+        elif status['status'] == STATUS_PAUSED:
+            logger.info("⏸  Endpoint is PAUSED (not billing)")
+            logger.info("  Run: python mert_endpoint.py start")
+        elif status['status'] == STATUS_SCALED_TO_ZERO:
+            logger.info("⏸  Endpoint is SCALED TO ZERO")
+            logger.info("  Run: python mert_endpoint.py start")
+        elif status['status'] == STATUS_PENDING:
+            logger.info("⏳ Endpoint is STARTING...")
+            logger.info("  Wait a few minutes, then check again")
+        elif status['status'] == STATUS_FAILED:
+            logger.error("❌ Endpoint FAILED to start")
+            logger.info("  Check logs at HuggingFace UI")
         else:
-            log(f"⚠️  Unknown status: {status['status']}")
+            logger.warning(f"⚠️  Unknown status: {status['status']}")
 
-        log("")
-        log("=" * 80)
+        logger.info("")
+        logger.info("=" * 80)
         return 0
 
     except Exception as e:
-        log("")
-        log(f"❌ FAILED: {e}")
+        logger.error("")
+        logger.error(f"❌ FAILED: {e}")
         import traceback
-        log(traceback.format_exc())
+        logger.error(traceback.format_exc())
         return 1
 
 
 def cmd_delete(args) -> int:
     """Delete endpoint permanently."""
     try:
-        log("=" * 80)
-        log("DELETING MERT INFERENCE ENDPOINT")
-        log("=" * 80)
-        log("")
-        log("⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!")
-        log("   This will delete:")
-        log("     - Endpoint configuration")
-        log("     - Endpoint logs")
-        log("     - Endpoint usage metrics")
-        log("")
+        logger.info("=" * 80)
+        logger.info("DELETING MERT INFERENCE ENDPOINT")
+        logger.info("=" * 80)
+        logger.info("")
+        logger.warning("⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!")
+        logger.warning("   This will delete:")
+        logger.warning("     - Endpoint configuration")
+        logger.warning("     - Endpoint logs")
+        logger.warning("     - Endpoint usage metrics")
+        logger.info("")
 
         # Show current status
         try:
@@ -210,17 +215,17 @@ def cmd_delete(args) -> int:
                 hf_token=args.hf_token,
                 namespace=args.namespace
             )
-            log(f"Endpoint to delete: {args.endpoint_name}")
-            log(f"  Status: {status['status']}")
-            log(f"  URL: {status['url']}")
-            log("")
+            logger.info(f"Endpoint to delete: {args.endpoint_name}")
+            logger.info(f"  Status: {status['status']}")
+            logger.info(f"  URL: {status['url']}")
+            logger.info("")
         except Exception:
             pass
 
         if not args.confirm:
             response = input("Type 'DELETE' to confirm: ")
             if response != "DELETE":
-                log("Cancelled.")
+                logger.info("Cancelled.")
                 return 0
 
         delete_endpoint(
@@ -230,17 +235,17 @@ def cmd_delete(args) -> int:
             confirm=True
         )
 
-        log("")
-        log("=" * 80)
-        log("✓ ENDPOINT DELETED")
-        log("=" * 80)
+        logger.info("")
+        logger.info("=" * 80)
+        logger.info("✓ ENDPOINT DELETED")
+        logger.info("=" * 80)
         return 0
 
     except Exception as e:
-        log("")
-        log(f"❌ FAILED: {e}")
+        logger.error("")
+        logger.error(f"❌ FAILED: {e}")
         import traceback
-        log(traceback.format_exc())
+        logger.error(traceback.format_exc())
         return 1
 
 
@@ -321,8 +326,8 @@ Examples:
     # Get HF token from environment
     args.hf_token = os.environ.get("HF_TOKEN")
     if not args.hf_token:
-        log("❌ ERROR: HF_TOKEN not set in environment")
-        log("   Please set: export HF_TOKEN='hf_...'")
+        logger.error("❌ ERROR: HF_TOKEN not set in environment")
+        logger.error("   Please set: export HF_TOKEN='hf_...'")
         return 1
 
     # Execute subcommand
