@@ -22,6 +22,7 @@ spotify-config.json
 
 # Apple ds_store files
 .DS_Store
+**/.DS_Store
 
 # Audio cache
 embeddings_experiments/data/audio_cache/
