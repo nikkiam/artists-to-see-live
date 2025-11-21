@@ -14,8 +14,12 @@ Usage:
     pause_endpoint("my-endpoint", hf_token)
 """
 import logging
+import time
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+
+from huggingface_hub import HfApi, InferenceEndpoint, get_inference_endpoint
+from huggingface_hub.errors import HfHubHTTPError
 
 # Configure logging
 LOG_FILE = Path(__file__).parent.parent / "endpoint_manager.log"
@@ -51,16 +55,32 @@ DEFAULT_MAX_REPLICA = 1
 DEFAULT_TIMEOUT_SECONDS = 600  # 10 minutes
 
 
+@dataclass(frozen=True)
+class EndpointStatus:
+    """Immutable dataclass representing endpoint status information."""
+
+    name: str
+    status: str
+    url: str | None
+    task: str
+    model_repository: str
+    framework: str
+    instance_size: str
+    instance_type: str
+    min_replica: int
+    max_replica: int
+
+
 def get_or_create_endpoint(
     endpoint_name: str,
     hf_token: str,
-    namespace: Optional[str] = None,
+    namespace: str | None = None,
     create_if_missing: bool = False,
     # Creation parameters (only used if creating new endpoint)
     repository: str = DEFAULT_MODEL_REPOSITORY,
     framework: str = DEFAULT_FRAMEWORK,
     task: str = DEFAULT_TASK,
-    custom_image: Optional[dict] = None,
+    custom_image: dict | None = None,
     accelerator: str = DEFAULT_ACCELERATOR,
     vendor: str = DEFAULT_VENDOR,
     region: str = DEFAULT_REGION,
@@ -68,7 +88,7 @@ def get_or_create_endpoint(
     instance_type: str = DEFAULT_INSTANCE_TYPE,
     min_replica: int = DEFAULT_MIN_REPLICA,
     max_replica: int = DEFAULT_MAX_REPLICA,
-):
+) -> InferenceEndpoint:
     """
     Get existing endpoint or create new one if it doesn't exist.
 
@@ -99,10 +119,8 @@ def get_or_create_endpoint(
 
     Raises:
         ValueError: If endpoint doesn't exist and create_if_missing=False
-        Exception: If HuggingFace API call fails
+        HfHubHTTPError: If HuggingFace API call fails
     """
-    from huggingface_hub import HfApi, get_inference_endpoint
-
     api = HfApi(token=hf_token)
 
     # Try to get existing endpoint
@@ -117,12 +135,12 @@ def get_or_create_endpoint(
         logger.info(f"  URL: {endpoint.url}")
         return endpoint
 
-    except Exception as e:
+    except HfHubHTTPError as e:
         if not create_if_missing:
             raise ValueError(
-                f"Endpoint '{endpoint_name}' not found and create_if_missing=False. "
-                f"Error: {e}"
-            )
+                f"Endpoint '{endpoint_name}' not found and "
+                f"create_if_missing=False. Error: {e}"
+            ) from e
 
         logger.info(f"Endpoint not found, creating new one: {endpoint_name}")
 
@@ -152,9 +170,9 @@ def get_or_create_endpoint(
 def resume_endpoint_and_wait(
     endpoint_name: str,
     hf_token: str,
-    namespace: Optional[str] = None,
+    namespace: str | None = None,
     timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
-) -> tuple:
+) -> tuple[InferenceEndpoint, str]:
     """
     Resume a paused endpoint and wait until it's ready.
 
@@ -171,9 +189,6 @@ def resume_endpoint_and_wait(
         TimeoutError: If endpoint doesn't become ready in time
         RuntimeError: If endpoint fails to start
     """
-    from huggingface_hub import get_inference_endpoint
-    import time
-
     logger.info(f"Resuming endpoint: {endpoint_name}")
 
     endpoint = get_inference_endpoint(
@@ -193,6 +208,8 @@ def resume_endpoint_and_wait(
         logger.info(f"  Status after resume: {endpoint.status}")
     elif current_status == STATUS_RUNNING:
         logger.info("  Endpoint already running!")
+        if endpoint.url is None:
+            raise RuntimeError("Endpoint is running but has no URL")
         return endpoint, endpoint.url
     elif current_status == STATUS_PENDING:
         logger.info("  Endpoint already starting...")
@@ -200,7 +217,9 @@ def resume_endpoint_and_wait(
         logger.warning(f"  ⚠️  Unexpected status: {current_status}")
 
     # Wait for endpoint to be ready
-    logger.info(f"  Waiting for endpoint to be ready (timeout: {timeout_seconds}s)...")
+    logger.info(
+        f"  Waiting for endpoint to be ready (timeout: {timeout_seconds}s)..."
+    )
     start_time = time.time()
 
     try:
@@ -211,19 +230,23 @@ def resume_endpoint_and_wait(
         logger.info(f"  ✓ Endpoint ready in {elapsed:.1f}s")
         logger.info(f"  URL: {endpoint.url}")
 
+        if endpoint.url is None:
+            raise RuntimeError("Endpoint ready but has no URL")
         return endpoint, endpoint.url
 
-    except Exception as e:
+    except TimeoutError as e:
         elapsed = time.time() - start_time
-        logger.error(f"  ❌ Failed to start endpoint after {elapsed:.1f}s: {e}")
+        logger.error(
+            f"  ❌ Failed to start endpoint after {elapsed:.1f}s: {e}"
+        )
         raise
 
 
 def pause_endpoint(
     endpoint_name: str,
     hf_token: str,
-    namespace: Optional[str] = None,
-):
+    namespace: str | None = None,
+) -> InferenceEndpoint:
     """
     Pause an endpoint to stop billing.
 
@@ -238,8 +261,6 @@ def pause_endpoint(
     Returns:
         InferenceEndpoint with status 'paused'
     """
-    from huggingface_hub import get_inference_endpoint
-
     logger.info(f"Pausing endpoint: {endpoint_name}")
 
     endpoint = get_inference_endpoint(
@@ -265,7 +286,7 @@ def pause_endpoint(
 def delete_endpoint(
     endpoint_name: str,
     hf_token: str,
-    namespace: Optional[str] = None,
+    namespace: str | None = None,
     confirm: bool = False,
 ) -> None:
     """
@@ -287,8 +308,6 @@ def delete_endpoint(
     Raises:
         ValueError: If confirm=False
     """
-    from huggingface_hub import get_inference_endpoint
-
     if not confirm:
         raise ValueError(
             "Must set confirm=True to delete endpoint. "
@@ -310,8 +329,8 @@ def delete_endpoint(
 def get_endpoint_status(
     endpoint_name: str,
     hf_token: str,
-    namespace: Optional[str] = None,
-) -> dict:
+    namespace: str | None = None,
+) -> EndpointStatus:
     """
     Get detailed status information about an endpoint.
 
@@ -321,37 +340,26 @@ def get_endpoint_status(
         namespace: HF namespace (username or org)
 
     Returns:
-        Dict with endpoint info:
-        {
-            "name": str,
-            "status": str,  # running, paused, scaledToZero, pending, failed
-            "url": str | None,
-            "task": str,
-            "model_repository": str,
-            "framework": str,
-            "instance_size": str,
-            "instance_type": str,
-            "min_replica": int,
-            "max_replica": int,
-        }
+        EndpointStatus dataclass with endpoint information
     """
-    from huggingface_hub import get_inference_endpoint
-
     endpoint = get_inference_endpoint(
         name=endpoint_name,
         namespace=namespace,
         token=hf_token
     )
 
-    return {
-        "name": endpoint.name,
-        "status": endpoint.status,
-        "url": endpoint.url if endpoint.status == STATUS_RUNNING else None,
-        "task": endpoint.task,
-        "model_repository": endpoint.repository,
-        "framework": endpoint.framework,
-        "instance_size": endpoint.instance_size,
-        "instance_type": endpoint.instance_type,
-        "min_replica": endpoint.min_replica,
-        "max_replica": endpoint.max_replica,
-    }
+    # Access compute attributes via the raw dict if not in type stubs
+    endpoint_dict = endpoint.__dict__ if hasattr(endpoint, '__dict__') else {}
+
+    return EndpointStatus(
+        name=endpoint.name,
+        status=endpoint.status,
+        url=endpoint.url if endpoint.status == STATUS_RUNNING else None,
+        task=endpoint.task,
+        model_repository=endpoint.repository,
+        framework=endpoint.framework,
+        instance_size=endpoint_dict.get('instance_size', 'unknown'),
+        instance_type=endpoint_dict.get('instance_type', 'unknown'),
+        min_replica=endpoint_dict.get('min_replica', 0),
+        max_replica=endpoint_dict.get('max_replica', 1),
+    )
