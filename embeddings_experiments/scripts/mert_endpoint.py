@@ -10,6 +10,7 @@ Usage:
 
 Environment variables:
     HF_TOKEN: HuggingFace API token (required)
+    MERT_ENDPOINT_NAME: Default endpoint name (optional)
 
 Examples:
     # Start endpoint and wait until ready
@@ -33,6 +34,7 @@ Examples:
 import argparse
 import os
 import sys
+import traceback
 from pathlib import Path
 
 # Allow importing from same directory when running as script
@@ -41,9 +43,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import hf_endpoint_manager as hf_mgr
+from huggingface_hub.errors import HfHubHTTPError
 
 
-def cmd_start(args) -> int:
+def cmd_start(args: argparse.Namespace) -> int:
     """Start (resume) endpoint and wait until ready."""
     try:
         hf_mgr.logger.info("=" * 80)
@@ -65,7 +68,7 @@ def cmd_start(args) -> int:
         )
 
         # Resume and wait
-        endpoint, url = hf_mgr.resume_endpoint_and_wait(
+        _endpoint, url = hf_mgr.resume_endpoint_and_wait(
             endpoint_name=args.endpoint_name,
             hf_token=args.hf_token,
             namespace=args.namespace,
@@ -88,15 +91,14 @@ def cmd_start(args) -> int:
         hf_mgr.logger.info("=" * 80)
         return 0
 
-    except Exception as e:
+    except (HfHubHTTPError, ValueError, RuntimeError, TimeoutError) as e:
         hf_mgr.logger.error("")
         hf_mgr.logger.error(f"❌ FAILED: {e}")
-        import traceback
         hf_mgr.logger.error(traceback.format_exc())
         return 1
 
 
-def cmd_stop(args) -> int:
+def cmd_stop(args: argparse.Namespace) -> int:
     """Pause endpoint to stop billing."""
     try:
         hf_mgr.logger.info("=" * 80)
@@ -121,15 +123,14 @@ def cmd_stop(args) -> int:
         hf_mgr.logger.info("=" * 80)
         return 0
 
-    except Exception as e:
+    except (HfHubHTTPError, RuntimeError) as e:
         hf_mgr.logger.error("")
         hf_mgr.logger.error(f"❌ FAILED: {e}")
-        import traceback
         hf_mgr.logger.error(traceback.format_exc())
         return 1
 
 
-def cmd_status(args) -> int:
+def cmd_status(args: argparse.Namespace) -> int:
     """Check endpoint status."""
     try:
         hf_mgr.logger.info("=" * 80)
@@ -143,55 +144,60 @@ def cmd_status(args) -> int:
             namespace=args.namespace
         )
 
-        hf_mgr.logger.info(f"Endpoint: {status['name']}")
-        hf_mgr.logger.info(f"Status: {status['status']}")
-        hf_mgr.logger.info(f"URL: {status['url'] or '(not running)'}")
-        hf_mgr.logger.info(f"Task: {status['task']}")
-        hf_mgr.logger.info(f"Model: {status['model_repository']}")
-        hf_mgr.logger.info(f"Framework: {status['framework']}")
-        hf_mgr.logger.info(f"Instance: {status['instance_type']} ({status['instance_size']})")
-        hf_mgr.logger.info(f"Replicas: {status['min_replica']}-{status['max_replica']}")
+        hf_mgr.logger.info(f"Endpoint: {status.name}")
+        hf_mgr.logger.info(f"Status: {status.status}")
+        hf_mgr.logger.info(f"URL: {status.url or '(not running)'}")
+        hf_mgr.logger.info(f"Task: {status.task}")
+        hf_mgr.logger.info(f"Model: {status.model_repository}")
+        hf_mgr.logger.info(f"Framework: {status.framework}")
+        hf_mgr.logger.info(
+            f"Instance: {status.instance_type} ({status.instance_size})"
+        )
+        hf_mgr.logger.info(
+            f"Replicas: {status.min_replica}-{status.max_replica}"
+        )
         hf_mgr.logger.info("")
 
         # Status-specific messages
-        if status['status'] == hf_mgr.STATUS_RUNNING:
+        if status.status == hf_mgr.STATUS_RUNNING:
             hf_mgr.logger.info("✓ Endpoint is RUNNING and ready for requests")
-            hf_mgr.logger.info(f"  Set: export HF_ENDPOINT_URL='{status['url']}'")
-        elif status['status'] == hf_mgr.STATUS_PAUSED:
+            hf_mgr.logger.info(f"  Set: export HF_ENDPOINT_URL='{status.url}'")
+        elif status.status == hf_mgr.STATUS_PAUSED:
             hf_mgr.logger.info("⏸  Endpoint is PAUSED (not billing)")
             hf_mgr.logger.info("  Run: python mert_endpoint.py start")
-        elif status['status'] == hf_mgr.STATUS_SCALED_TO_ZERO:
+        elif status.status == hf_mgr.STATUS_SCALED_TO_ZERO:
             hf_mgr.logger.info("⏸  Endpoint is SCALED TO ZERO")
             hf_mgr.logger.info("  Run: python mert_endpoint.py start")
-        elif status['status'] == hf_mgr.STATUS_PENDING:
+        elif status.status == hf_mgr.STATUS_PENDING:
             hf_mgr.logger.info("⏳ Endpoint is STARTING...")
             hf_mgr.logger.info("  Wait a few minutes, then check again")
-        elif status['status'] == hf_mgr.STATUS_FAILED:
+        elif status.status == hf_mgr.STATUS_FAILED:
             hf_mgr.logger.error("❌ Endpoint FAILED to start")
             hf_mgr.logger.info("  Check logs at HuggingFace UI")
         else:
-            hf_mgr.logger.warning(f"⚠️  Unknown status: {status['status']}")
+            hf_mgr.logger.warning(f"⚠️  Unknown status: {status.status}")
 
         hf_mgr.logger.info("")
         hf_mgr.logger.info("=" * 80)
         return 0
 
-    except Exception as e:
+    except (HfHubHTTPError, RuntimeError) as e:
         hf_mgr.logger.error("")
         hf_mgr.logger.error(f"❌ FAILED: {e}")
-        import traceback
         hf_mgr.logger.error(traceback.format_exc())
         return 1
 
 
-def cmd_delete(args) -> int:
+def cmd_delete(args: argparse.Namespace) -> int:
     """Delete endpoint permanently."""
     try:
         hf_mgr.logger.info("=" * 80)
         hf_mgr.logger.info("DELETING MERT INFERENCE ENDPOINT")
         hf_mgr.logger.info("=" * 80)
         hf_mgr.logger.info("")
-        hf_mgr.logger.warning("⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!")
+        hf_mgr.logger.warning(
+            "⚠️  WARNING: You are about to PERMANENTLY DELETE this endpoint!"
+        )
         hf_mgr.logger.warning("   This will delete:")
         hf_mgr.logger.warning("     - Endpoint configuration")
         hf_mgr.logger.warning("     - Endpoint logs")
@@ -206,11 +212,11 @@ def cmd_delete(args) -> int:
                 namespace=args.namespace
             )
             hf_mgr.logger.info(f"Endpoint to delete: {args.endpoint_name}")
-            hf_mgr.logger.info(f"  Status: {status['status']}")
-            hf_mgr.logger.info(f"  URL: {status['url']}")
+            hf_mgr.logger.info(f"  Status: {status.status}")
+            hf_mgr.logger.info(f"  URL: {status.url}")
             hf_mgr.logger.info("")
-        except Exception:
-            pass
+        except HfHubHTTPError as e:
+            hf_mgr.logger.warning(f"Could not fetch endpoint status: {e}")
 
         if not args.confirm:
             response = input("Type 'DELETE' to confirm: ")
@@ -231,15 +237,21 @@ def cmd_delete(args) -> int:
         hf_mgr.logger.info("=" * 80)
         return 0
 
-    except Exception as e:
+    except (HfHubHTTPError, ValueError, RuntimeError) as e:
         hf_mgr.logger.error("")
         hf_mgr.logger.error(f"❌ FAILED: {e}")
-        import traceback
         hf_mgr.logger.error(traceback.format_exc())
         return 1
 
 
-def main():
+def main() -> int:
+    """Main entry point for the CLI."""
+    # Get default endpoint name from environment or use hardcoded default
+    default_endpoint = os.environ.get(
+        "MERT_ENDPOINT_NAME",
+        "mert-v1-95m-spike-13layers"
+    )
+
     parser = argparse.ArgumentParser(
         description="Manage MERT HuggingFace Inference Endpoints",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -256,8 +268,8 @@ Examples:
     # Global arguments (shared by all subcommands)
     parser.add_argument(
         "--endpoint-name",
-        default="mert-spike6-inference",
-        help="Name of the HuggingFace endpoint (default: mert-spike6-inference)"
+        default=default_endpoint,
+        help=f"Name of the HuggingFace endpoint (default: {default_endpoint})"
     )
     parser.add_argument(
         "--namespace",
