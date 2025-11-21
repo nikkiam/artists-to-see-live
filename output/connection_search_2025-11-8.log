@@ -33,3 +33,33 @@
 2025-11-08 21:05:58 - INFO -   - output/event_connections_2025-11-8.md
 2025-11-08 21:05:58 - INFO -   - output/event_connections_2025-11-8.json
 2025-11-08 21:05:58 - INFO - ============================================================
+2025-11-21 14:56:33 - INFO - ============================================================
+2025-11-21 14:56:33 - INFO - Starting artist connection search for 2025-11-8
+2025-11-21 14:56:33 - INFO - ============================================================
+2025-11-21 14:56:33 - INFO - Step 1: Loading data files...
+2025-11-21 14:56:33 - INFO - Loaded 854 successful artists (453 failed/skipped)
+2025-11-21 14:56:33 - INFO -   ✓ Loaded similar artists map: 854 artists
+2025-11-21 14:56:33 - INFO - Loaded 66 events
+2025-11-21 14:56:33 - INFO -   ✓ Loaded events: 66 events
+2025-11-21 14:56:33 - INFO - Loaded 961 artists
+2025-11-21 14:56:33 - INFO -   ✓ Loaded favorites: 961 artists
+2025-11-21 14:56:33 - INFO - Step 2: Extracting unique artists from events...
+2025-11-21 14:56:33 - INFO -   ✓ Found 161 unique artists across events
+2025-11-21 14:56:33 - INFO - Step 3: Building sparse graph from similarity data...
+2025-11-21 14:56:33 - INFO -   ✓ Graph built: 18048 nodes, 35512 edges
+2025-11-21 14:56:33 - INFO -   Building strength lookup for fast path reconstruction...
+2025-11-21 14:56:33 - INFO -   ✓ Strength lookup built: 35512 edges
+2025-11-21 14:56:33 - INFO - Step 4: Running Dijkstra search to find optimal paths...
+2025-11-21 14:56:33 - INFO -   ✓ Found 5896 artist pairs with 5896 total paths
+2025-11-21 14:56:33 - INFO - Step 5a: Generating full detailed reports...
+2025-11-21 14:56:33 - INFO -   - Very Similar Artists: 11
+2025-11-21 14:56:33 - INFO -   - Similar Artists: 384
+2025-11-21 14:56:33 - INFO -   - Moderately Related Artists: 3209
+2025-11-21 14:56:33 - INFO -   - Distantly Related Artists: 2292
+2025-11-21 14:56:33 - INFO - Markdown report saved to: output/full_reports/event_connections_2025-11-8.md
+2025-11-21 14:56:34 - INFO - JSON report saved to: output/full_reports/event_connections_2025-11-8.json
+2025-11-21 14:56:34 - INFO -   ✓ Full reports generated in full_reports/
+2025-11-21 14:56:34 - INFO - Step 5b: Generating summary reports...
+2025-11-21 14:56:34 - INFO - Summary markdown report saved to: output/connections_summary_2025-11-8.md
+2025-11-21 14:56:34 - INFO - Summary JSON report saved to: output/connections_summary_2025-11-8.json
+2025-11-21 14:56:34 - INFO -   ✓ Summary reports generated
