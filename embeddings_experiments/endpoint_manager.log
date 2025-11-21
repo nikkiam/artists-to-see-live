@@ -1,0 +1,117 @@
+[2025-11-21 00:47:07] INFO - ================================================================================
+[2025-11-21 00:47:07] INFO - STARTING MERT INFERENCE ENDPOINT
+[2025-11-21 00:47:07] INFO - ================================================================================
+[2025-11-21 00:47:07] INFO - 
+[2025-11-21 00:47:07] ERROR - 
+[2025-11-21 00:47:07] ERROR - ❌ FAILED: No module named 'huggingface_hub'
+[2025-11-21 00:47:07] ERROR - Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/scripts/mert_endpoint.py", line 55, in cmd_start
+    endpoint = hf_mgr.get_or_create_endpoint(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/scripts/hf_endpoint_manager.py", line 104, in get_or_create_endpoint
+    from huggingface_hub import HfApi, get_inference_endpoint
+ModuleNotFoundError: No module named 'huggingface_hub'
+
+[2025-11-21 00:47:31] INFO - ================================================================================
+[2025-11-21 00:47:31] INFO - STARTING MERT INFERENCE ENDPOINT
+[2025-11-21 00:47:31] INFO - ================================================================================
+[2025-11-21 00:47:31] INFO - 
+[2025-11-21 00:47:32] ERROR - 
+[2025-11-21 00:47:32] ERROR - ❌ FAILED: Endpoint 'mert-spike6-inference' not found and create_if_missing=False. Error: 404 Client Error: Not Found for url: https://api.endpoints.huggingface.cloud/v2/endpoint/Nikkiam/mert-spike6-inference (Request ID: IvOVG4)
+
+Not Found: Nikkiam/mert-spike6-inference
+[2025-11-21 00:47:32] ERROR - Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 402, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.endpoints.huggingface.cloud/v2/endpoint/Nikkiam/mert-spike6-inference
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/scripts/hf_endpoint_manager.py", line 110, in get_or_create_endpoint
+    endpoint = get_inference_endpoint(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 7858, in get_inference_endpoint
+    hf_raise_for_status(response)
+  File "/Users/nikki/dev/artists-to-see-live/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 475, in hf_raise_for_status
+    raise _format(HfHubHTTPError, str(e), response) from e
+huggingface_hub.errors.HfHubHTTPError: 404 Client Error: Not Found for url: https://api.endpoints.huggingface.cloud/v2/endpoint/Nikkiam/mert-spike6-inference (Request ID: IvOVG4)
+
+Not Found: Nikkiam/mert-spike6-inference
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/scripts/mert_endpoint.py", line 55, in cmd_start
+    endpoint = hf_mgr.get_or_create_endpoint(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nikki/dev/artists-to-see-live/embeddings_experiments/scripts/hf_endpoint_manager.py", line 122, in get_or_create_endpoint
+    raise ValueError(
+ValueError: Endpoint 'mert-spike6-inference' not found and create_if_missing=False. Error: 404 Client Error: Not Found for url: https://api.endpoints.huggingface.cloud/v2/endpoint/Nikkiam/mert-spike6-inference (Request ID: IvOVG4)
+
+Not Found: Nikkiam/mert-spike6-inference
+
+[2025-11-21 00:49:01] INFO - ================================================================================
+[2025-11-21 00:49:01] INFO - STARTING MERT INFERENCE ENDPOINT
+[2025-11-21 00:49:01] INFO - ================================================================================
+[2025-11-21 00:49:01] INFO - 
+[2025-11-21 00:49:02] INFO - ✓ Found existing endpoint: mert-v1-95m-spike-13layers
+[2025-11-21 00:49:02] INFO -   Status: paused
+[2025-11-21 00:49:02] INFO -   URL: https://nzi3r9av4fg8l9w2.us-east-1.aws.endpoints.huggingface.cloud
+[2025-11-21 00:49:02] INFO - Resuming endpoint: mert-v1-95m-spike-13layers
+[2025-11-21 00:49:02] INFO -   Current status: paused
+[2025-11-21 00:49:02] INFO -   Resuming endpoint...
+[2025-11-21 00:49:02] INFO -   Status after resume: pending
+[2025-11-21 00:49:02] INFO -   Waiting for endpoint to be ready (timeout: 180s)...
+[2025-11-21 00:51:28] INFO -   ✓ Endpoint ready in 146.4s
+[2025-11-21 00:51:28] INFO -   URL: https://nzi3r9av4fg8l9w2.us-east-1.aws.endpoints.huggingface.cloud
+[2025-11-21 00:51:28] INFO - 
+[2025-11-21 00:51:28] INFO - ================================================================================
+[2025-11-21 00:51:28] INFO - ✓ ENDPOINT READY
+[2025-11-21 00:51:28] INFO - ================================================================================
+[2025-11-21 00:51:28] INFO - 
+[2025-11-21 00:51:28] INFO - Endpoint URL: https://nzi3r9av4fg8l9w2.us-east-1.aws.endpoints.huggingface.cloud
+[2025-11-21 00:51:28] INFO - 
+[2025-11-21 00:51:28] INFO - Set this in your environment:
+[2025-11-21 00:51:28] INFO -   export HF_ENDPOINT_URL='https://nzi3r9av4fg8l9w2.us-east-1.aws.endpoints.huggingface.cloud'
+[2025-11-21 00:51:28] INFO - 
+[2025-11-21 00:51:28] INFO - Or add to embeddings_experiments/.env:
+[2025-11-21 00:51:28] INFO -   HF_ENDPOINT_URL=https://nzi3r9av4fg8l9w2.us-east-1.aws.endpoints.huggingface.cloud
+[2025-11-21 00:51:28] INFO - 
+[2025-11-21 00:51:28] INFO - ================================================================================
+[2025-11-21 00:51:41] INFO - ================================================================================
+[2025-11-21 00:51:41] INFO - PAUSING MERT INFERENCE ENDPOINT
+[2025-11-21 00:51:41] INFO - ================================================================================
+[2025-11-21 00:51:41] INFO - 
+[2025-11-21 00:51:41] INFO - Pausing endpoint: mert-v1-95m-spike-13layers
+[2025-11-21 00:51:41] INFO -   Current status: running
+[2025-11-21 00:51:41] INFO -   ✓ Endpoint paused
+[2025-11-21 00:51:41] INFO -   Status: paused
+[2025-11-21 00:51:41] INFO - 
+[2025-11-21 00:51:41] INFO - ================================================================================
+[2025-11-21 00:51:41] INFO - ✓ ENDPOINT PAUSED
+[2025-11-21 00:51:41] INFO - ================================================================================
+[2025-11-21 00:51:41] INFO - 
+[2025-11-21 00:51:41] INFO - The endpoint is now paused and NOT billing.
+[2025-11-21 00:51:41] INFO - To resume, run: python mert_endpoint.py start
+[2025-11-21 00:51:41] INFO - 
+[2025-11-21 00:51:41] INFO - ================================================================================
+[2025-11-21 01:12:30] INFO - ================================================================================
+[2025-11-21 01:12:30] INFO - MERT INFERENCE ENDPOINT STATUS
+[2025-11-21 01:12:30] INFO - ================================================================================
+[2025-11-21 01:12:30] INFO - 
+[2025-11-21 01:12:31] INFO - Endpoint: mert-v1-95m-spike-13layers
+[2025-11-21 01:12:31] INFO - Status: paused
+[2025-11-21 01:12:31] INFO - URL: (not running)
+[2025-11-21 01:12:31] INFO - Task: audio-classification
+[2025-11-21 01:12:31] INFO - Model: m-a-p/MERT-v1-95M
+[2025-11-21 01:12:31] INFO - Framework: pytorch
+[2025-11-21 01:12:31] INFO - Instance: unknown (unknown)
+[2025-11-21 01:12:31] INFO - Replicas: 0-1
+[2025-11-21 01:12:31] INFO - 
+[2025-11-21 01:12:31] INFO - ⏸  Endpoint is PAUSED (not billing)
+[2025-11-21 01:12:31] INFO -   Run: python mert_endpoint.py start
+[2025-11-21 01:12:31] INFO - 
+[2025-11-21 01:12:31] INFO - ================================================================================
