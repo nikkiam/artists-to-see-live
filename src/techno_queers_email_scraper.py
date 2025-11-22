@@ -10,7 +10,6 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
-from src.data_loader import event_to_dict
 from src.date_utils import DAY_TO_WEEKDAY
 from src.models import Artist, Event
 
@@ -530,7 +529,7 @@ def main():
     events = parse_html_file(html_file, date_str)
 
     # Convert events to dictionaries for JSON serialization
-    events_data = [event_to_dict(event) for event in events]
+    events_data = [event.to_dict() for event in events]
     result = {"events": events_data, "count": len(events)}
 
     # Write output file

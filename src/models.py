@@ -1,6 +1,6 @@
 """Data models for events and artists."""
 
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from datetime import time
 
 # Tier classification thresholds for artist connections
@@ -62,6 +62,25 @@ class Event:
     event_id: str | None = None  # Unique identifier
     event_date: str | None = None  # ISO format: YYYY-MM-DD (actual event date)
     festival_ind: bool = False  # Is this a festival?
+
+    def to_dict(self) -> dict:
+        """
+        Convert Event to JSON-serializable dictionary.
+
+        Converts time objects to ISO format strings (HH:MM:SS).
+
+        Returns:
+            Dictionary with JSON-serializable values
+        """
+        event_dict = asdict(self)
+
+        # Convert time objects to ISO format strings
+        if self.start_time is not None:
+            event_dict["start_time"] = self.start_time.isoformat()
+        if self.end_time is not None:
+            event_dict["end_time"] = self.end_time.isoformat()
+
+        return event_dict
 
 
 @dataclass(frozen=True)

@@ -9,7 +9,6 @@ from pathlib import Path
 
 import requests
 
-from src.data_loader import event_to_dict
 from src.date_utils import DAY_NAMES
 from src.models import Artist, Event
 
@@ -291,7 +290,7 @@ def main():
         sys.exit(0)
 
     # Convert to JSON
-    events_data = [event_to_dict(event) for event in events]
+    events_data = [event.to_dict() for event in events]
     result = {"events": events_data, "count": len(events)}
 
     # Save to output

@@ -2,36 +2,12 @@
 
 import json
 import logging
-from dataclasses import asdict
 from datetime import datetime, time
 from pathlib import Path
 
 from src.models import Artist, ArtistSimilarityData, Event, SimilarArtist
 
 logger = logging.getLogger(__name__)
-
-
-def event_to_dict(event: Event) -> dict:
-    """
-    Convert Event object to JSON-serializable dictionary.
-
-    Converts time objects to ISO format strings (HH:MM:SS).
-
-    Args:
-        event: Event object to convert
-
-    Returns:
-        Dictionary with JSON-serializable values
-    """
-    event_dict = asdict(event)
-
-    # Convert time objects to ISO format strings
-    if event.start_time is not None:
-        event_dict["start_time"] = event.start_time.isoformat()
-    if event.end_time is not None:
-        event_dict["end_time"] = event.end_time.isoformat()
-
-    return event_dict
 
 
 def _parse_time_from_json(time_str: str | None) -> time | None:
