@@ -76,3 +76,22 @@ class ConnectionPath:
     event_name: str
     event_venue: str | None
     event_url: str
+
+
+@dataclass(frozen=True)
+class ArtistPairConnections:
+    """
+    Groups multiple connection paths between the same event artist and favorite artist.
+
+    Contains the top paths (max 3) for a single (event_artist, favorite_artist) pair,
+    sorted by path_score descending (best paths first).
+    """
+
+    event_artist: str
+    favorite_artist: str
+    paths: tuple[ConnectionPath, ...]  # Max 3 paths, sorted by path_score descending
+    best_path_score: float  # Convenience field: paths[0].path_score
+    best_avg_strength: float  # Convenience field: paths[0].avg_strength
+    event_name: str
+    event_venue: str | None
+    event_url: str

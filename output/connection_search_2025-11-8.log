@@ -63,3 +63,16 @@
 2025-11-21 14:56:34 - INFO - Summary markdown report saved to: output/connections_summary_2025-11-8.md
 2025-11-21 14:56:34 - INFO - Summary JSON report saved to: output/connections_summary_2025-11-8.json
 2025-11-21 14:56:34 - INFO -   ✓ Summary reports generated
+2025-11-21 14:56:37 - INFO - ✓ Git commit and push successful: Generated connection reports for 2025-11-8
+2025-11-21 14:56:37 - INFO - ============================================================
+2025-11-21 14:56:37 - INFO - Artist connection search completed successfully
+2025-11-21 14:56:37 - INFO - Total artist pairs: 5896
+2025-11-21 14:56:37 - INFO - Total connections found: 5896
+2025-11-21 14:56:37 - INFO - Reports saved to:
+2025-11-21 14:56:37 - INFO -   Summary reports:
+2025-11-21 14:56:37 - INFO -     - output/connections_summary_2025-11-8.md
+2025-11-21 14:56:37 - INFO -     - output/connections_summary_2025-11-8.json
+2025-11-21 14:56:37 - INFO -   Full reports:
+2025-11-21 14:56:37 - INFO -     - output/full_reports/event_connections_2025-11-8.md
+2025-11-21 14:56:37 - INFO -     - output/full_reports/event_connections_2025-11-8.json
+2025-11-21 14:56:37 - INFO - ============================================================

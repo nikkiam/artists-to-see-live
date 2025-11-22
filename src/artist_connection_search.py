@@ -1,5 +1,7 @@
 """Core search logic for finding connections between event artists and favorites."""
 
+import heapq
+
 import numpy as np
 import scipy.sparse as sp
 from scipy.sparse.csgraph import dijkstra
@@ -8,6 +10,7 @@ from src.models import (
     TIER_MODERATELY_RELATED_THRESHOLD,
     TIER_SIMILAR_THRESHOLD,
     TIER_VERY_SIMILAR_THRESHOLD,
+    ArtistPairConnections,
     ArtistSimilarityData,
     ConnectionPath,
     Event,
@@ -198,8 +201,8 @@ def find_optimal_paths(
     target_artists: list[str],
     strength_lookup: dict[tuple[str, str], float],
     events: list[Event],
-    max_paths_per_pair: int = 5,
-) -> list[ConnectionPath]:
+    max_paths_per_pair: int = 3,
+) -> list[ArtistPairConnections]:
     """
     Find optimal paths from source artists to target artists.
 
@@ -214,7 +217,7 @@ def find_optimal_paths(
         max_paths_per_pair: Maximum paths to keep per event artist → favorite pair
 
     Returns:
-        List of ConnectionPath objects, sorted by path_score (best first)
+        List of ArtistPairConnections objects, sorted by best_avg_strength (descending)
     """
     # Filter to artists that exist in graph (using list comprehension)
     valid_sources = [
@@ -260,8 +263,9 @@ def find_optimal_paths(
         for artist in event.artists
     }
 
-    # Collect all connections
-    connections = []
+    # Initialize heap storage for each (event_artist, favorite_artist) pair
+    # Use min heap with negated path_score to simulate max heap
+    pair_paths: dict[tuple[str, str], list[tuple[float, ConnectionPath]]] = {}
 
     for source_array_idx, source_idx in enumerate(source_indices):
         source_artist = source_idx_to_artist[source_idx]
@@ -296,21 +300,65 @@ def find_optimal_paths(
                 event_info["venue"],
                 event_info["url"],
             )
-            connections.append(connection)
 
-    # Sort by path_score (higher = better)
-    connections.sort(key=lambda c: c.path_score, reverse=True)
+            # Get or create heap for this pair
+            pair_key = (connection.event_artist, connection.favorite_artist)
+            if pair_key not in pair_paths:
+                pair_paths[pair_key] = []
 
-    # Keep top max_paths_per_pair for each event artist → favorite pair
-    seen_pairs = {}
-    filtered_connections = []
+            heap = pair_paths[pair_key]
 
-    for conn in connections:
-        pair_key = (conn.event_artist, conn.favorite_artist)
-        count = seen_pairs.get(pair_key, 0)
+            # Add to heap: use negative score for max heap behavior
+            if len(heap) < max_paths_per_pair:
+                heapq.heappush(heap, (-connection.path_score, connection))
+            elif connection.path_score > -heap[0][0]:  # Better than worst
+                heapq.heapreplace(heap, (-connection.path_score, connection))
+            # else: discard the connection (optimization)
 
-        if count < max_paths_per_pair:
-            filtered_connections.append(conn)
-            seen_pairs[pair_key] = count + 1
+    # Build grouped connections from heaps
+    return build_grouped_connections(pair_paths)
 
-    return filtered_connections
+
+def build_grouped_connections(
+    pair_paths: dict[tuple[str, str], list[tuple[float, ConnectionPath]]],
+) -> list[ArtistPairConnections]:
+    """
+    Build ArtistPairConnections objects from heap storage.
+
+    Args:
+        pair_paths: Dict mapping (event_artist, favorite_artist) to heap of paths
+                    Each heap contains tuples of (-path_score, ConnectionPath)
+
+    Returns:
+        List of ArtistPairConnections, sorted by best_avg_strength (descending)
+    """
+    grouped_connections = []
+
+    for _pair_key, heap in pair_paths.items():
+        # Extract ConnectionPath objects from heap tuples
+        paths = [conn for _, conn in heap]
+
+        # Sort by path_score descending (heap doesn't maintain full order)
+        paths.sort(key=lambda p: p.path_score, reverse=True)
+
+        # Early exit if no paths (shouldn't happen, but defensive)
+        if not paths:
+            continue
+
+        # Create ArtistPairConnections with convenience fields
+        grouped_conn = ArtistPairConnections(
+            event_artist=paths[0].event_artist,
+            favorite_artist=paths[0].favorite_artist,
+            paths=tuple(paths),
+            best_path_score=paths[0].path_score,
+            best_avg_strength=paths[0].avg_strength,
+            event_name=paths[0].event_name,
+            event_venue=paths[0].event_venue,
+            event_url=paths[0].event_url,
+        )
+        grouped_connections.append(grouped_conn)
+
+    # Sort by best_avg_strength descending (pairs with stronger connections first)
+    grouped_connections.sort(key=lambda g: g.best_avg_strength, reverse=True)
+
+    return grouped_connections
