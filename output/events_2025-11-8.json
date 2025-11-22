@@ -7,7 +7,10 @@
       "event_time": null,
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": null,
+      "event_id": "dc5d93ab4f5cc85ab87b202358a04b8b",
+      "event_date": null,
+      "festival_ind": false
     },
     {
       "name": "+ Protest_NYC [calendar] +",
@@ -16,7 +19,10 @@
       "event_time": null,
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": null,
+      "event_id": "f442ff1f42e9d3e9f20760ba44c6e76e",
+      "event_date": null,
+      "festival_ind": false
     },
     {
       "name": "Dripping X Unsound",
@@ -50,7 +56,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "e23474a5264883ae75cde76a2accc06a",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Synthicide",
@@ -74,7 +83,10 @@
       "tags": [
         "darkside"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "67e20e26fec54bf0f43801b44b5995ed",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Bears Are Animals",
@@ -94,7 +106,10 @@
       "tags": [
         "free"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "1fcc20d7efc46c39340d799ee999602e",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Present Sounds",
@@ -110,7 +125,10 @@
       "tags": [
         "deeplistening"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "211980aed9221ff8d89d9b2f64a7d829",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Creative Outlet",
@@ -124,7 +142,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "b5a721741c58aebf32703245111a82e3",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Romance",
@@ -140,7 +161,10 @@
       "tags": [
         "free"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "d69e156e21b644b2598532ed7f2de2ce",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Durations: Night 1",
@@ -172,7 +196,10 @@
       "tags": [
         "festival"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "585e426791d03243a7d077012971e2cc",
+      "event_date": "2025-11-13",
+      "festival_ind": true
     },
     {
       "name": "Serve",
@@ -186,7 +213,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "5992691693010eb84b372240a77ee925",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Evening Tea",
@@ -212,7 +242,10 @@
         "deeplistening",
         "darkside"
       ],
-      "day_marker": null
+      "day_marker": "Thu",
+      "event_id": "5d1400f113d20ce938b8c8027aa0490c",
+      "event_date": "2025-11-13",
+      "festival_ind": false
     },
     {
       "name": "Vault Sessions",
@@ -246,7 +279,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "ff61930b30e203fc0b8506f512d08510",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Avalon Emerson",
@@ -255,7 +291,10 @@
       "event_time": "10p-6a",
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "ad8a93be96686f5811d7702405c326dd",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "$luts Party: Sinners Sanctuary -\n                                            Coven",
@@ -285,7 +324,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "7885a3d3ff5a84652dbeca80be063509",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "And I'm Swept Out",
@@ -323,7 +365,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "d3e6785733980fade60070d043a10bc0",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Phantasma",
@@ -357,7 +402,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "74bde3f6a12e7b006456f313c9ee4c36",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Starry Records",
@@ -383,7 +431,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "ac293e791afe1635288a2782e6106754",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Quest?onmarq, River Moon,\n                                            Giovannii",
@@ -392,7 +443,10 @@
       "event_time": "10p-4a",
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "74ef8c7e29c1b1b142962cb5012b4888",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Art -> Activism",
@@ -415,7 +469,10 @@
         "history",
         "art"
       ],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "a35c51e00d2ffb614e17265e5f6d1054",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Live Sets",
@@ -444,7 +501,10 @@
         "deeplistening",
         "hardware"
       ],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "7ceb9d05557cb49cfa476872937fc8e0",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Battle Hymn: Brooklyn",
@@ -466,7 +526,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "9478386f301d12a237daf704389630c5",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Durations: Night 2",
@@ -500,7 +563,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Fri",
+      "event_id": "31c04b460cf810a4335453ed5dd5e070",
+      "event_date": "2025-11-14",
+      "festival_ind": false
     },
     {
       "name": "Green Room: New Club Soft Opening",
@@ -526,7 +592,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "df411f7f888ea7d62a1cda245be8cac0",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "The Carry Nation",
@@ -564,7 +633,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "54d42892c2a9f8bfb1ef9a05d7309430",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Dax J, Holden Federico, Faff, Jason\n                                            Kendig, James Axon",
@@ -573,7 +645,10 @@
       "event_time": "10:30p-7a",
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "4027699f1b275bc5fce726229068d133",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Animalia Nonstop",
@@ -599,7 +674,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "cff241748c670cb5add06e9bd60ecf6d",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Rush",
@@ -621,7 +699,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "fd1b5842da020fc7e5754c1f5b68daec",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Pervert Mx in NYC",
@@ -647,7 +728,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "ab1335a2d09f60c85eb5c96e2bb5ee2c",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Facetime",
@@ -669,7 +753,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "7d0338c2769546b9ff9e2a277af03547",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Destrucci\u00f3n",
@@ -703,7 +790,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "f6de51a7489ecdfff462e2a26aae8bab",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Quench X Bambeeno & Friends",
@@ -733,7 +823,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "33c35fde1664935a7350531f191f0b16",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "The Night We Met",
@@ -751,7 +844,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "f455234163f6ca334ab6c77764585514",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Endless Spill",
@@ -781,7 +877,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "5828ea947acdc9204b4b0f29a4812730",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Durations: Night 3",
@@ -819,7 +918,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "77ddbd38135312c188bf76ad813beddf",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Sweat: Sauna & Sound",
@@ -837,7 +939,10 @@
         "bathhouse",
         "outdoors"
       ],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "0b411ae3b1c276c11959bbe981d96563",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Sounds in the Distance: Panel +\n                                          Performances",
@@ -851,7 +956,10 @@
         "art",
         "history"
       ],
-      "day_marker": null
+      "day_marker": "Sat",
+      "event_id": "f751c83e6bf970f45da3dcdf312a3f21",
+      "event_date": "2025-11-08",
+      "festival_ind": false
     },
     {
       "name": "Freedom Of Movement",
@@ -873,7 +981,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "86f6a23d1bfae63da00ba86f06e77b2d",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Klavier x Signal: Baddies 2\n                                            Baddies",
@@ -899,7 +1010,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "6e163ac5ba91fbf822e95b0d85e9d412",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Cem, Telfar, Carrie Stacks, Saia,\n                                            Markus",
@@ -908,7 +1022,10 @@
       "event_time": "10p-4a",
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "3c41811780e320af1f0d8b08022d3324",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "718 Sessions: 23rd Year\n                                            Anniversary",
@@ -926,7 +1043,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "255fcd024940f9fc2ee253a508c6ba1d",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Conteanental",
@@ -950,7 +1070,10 @@
       "tags": [
         "bathhouse"
       ],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "f8048bc135147096e3e3e570ce277799",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Hot For You",
@@ -964,7 +1087,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "beec5d00f0e13acf824e4f7d122fa9db",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Rocky Horror Extra Transsexual :\n                                            Closer",
@@ -976,7 +1102,10 @@
         "performance",
         "film"
       ],
-      "day_marker": "Mon"
+      "day_marker": "Mon",
+      "event_id": "b589c98eda3c6b2683452f19299da874",
+      "event_date": "2025-11-10",
+      "festival_ind": false
     },
     {
       "name": "The Floor Is Ours: 2",
@@ -992,7 +1121,10 @@
       "tags": [
         "fundraiser"
       ],
-      "day_marker": "Mon"
+      "day_marker": "Mon",
+      "event_id": "4170c28529f4dc7571369d0f09f4bacf",
+      "event_date": "2025-11-10",
+      "festival_ind": false
     },
     {
       "name": "Choke Hole",
@@ -1001,7 +1133,10 @@
       "event_time": "10:30p-?",
       "artists": [],
       "tags": [],
-      "day_marker": "Tue"
+      "day_marker": "Tue",
+      "event_id": "3cd7c553ddf30f2ce3a0a2a3f79bd550",
+      "event_date": "2025-11-11",
+      "festival_ind": false
     },
     {
       "name": "Transmasc Tuesday",
@@ -1019,7 +1154,10 @@
         }
       ],
       "tags": [],
-      "day_marker": "Tue"
+      "day_marker": "Tue",
+      "event_id": "6d153f077d6adae00a5a9634ae8c619e",
+      "event_date": "2025-11-11",
+      "festival_ind": false
     },
     {
       "name": "Angel\u2019s Inferno",
@@ -1047,7 +1185,10 @@
       "tags": [
         "free"
       ],
-      "day_marker": "Tue"
+      "day_marker": "Tue",
+      "event_id": "051473c611300f182ff3f60704604dc2",
+      "event_date": "2025-11-11",
+      "festival_ind": false
     },
     {
       "name": "Dream/Self",
@@ -1071,7 +1212,10 @@
       "tags": [
         "free"
       ],
-      "day_marker": "Wed"
+      "day_marker": "Wed",
+      "event_id": "cd81bcbc61881c5fbff517c031b0bae6",
+      "event_date": "2025-11-12",
+      "festival_ind": false
     },
     {
       "name": "Dance Practice",
@@ -1088,7 +1232,10 @@
         "deeplistening",
         "movement"
       ],
-      "day_marker": "Wed"
+      "day_marker": "Wed",
+      "event_id": "73b5736bf1874d745a7ed9d0ac92cec6",
+      "event_date": "2025-11-12",
+      "festival_ind": false
     },
     {
       "name": "New book, Club Commons, examines\n                                          queer nightlife\u2019s radical past,\n                                          present and future",
@@ -1106,7 +1253,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "e997f1ec877a147cf833ce43ee19c0ba",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "MIX NYC: A Radical History of Queer\n                                          Experimental Film",
@@ -1124,7 +1274,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "d4a1970fb2fe8cd8d08d6093360b3daa",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "These photos explore the emotional\n                                          intensity of BDSM",
@@ -1142,7 +1295,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "af63db4668dc5ce9a0df21c0d189fc42",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Inside the camp, chaotic world of T\n                                          Boy Wrestling",
@@ -1164,7 +1320,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "185f7d375a2ef6304f2b341affc51487",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Phones on the dancefloor: where do we\n                                          go from here?",
@@ -1178,7 +1337,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "b8b58702b999903417d812f03cc73f17",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Daniel Arnold\u2019s new photo book\n                                          captures NYC \u2018uninterrupted\u2019",
@@ -1192,7 +1354,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "a634e42fc13e44ee9e43e51d14dfed4d",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "SMUT is my religion: How a DIY\n                                          publisher became one of London\u2019s best\n                                          queer parties",
@@ -1206,7 +1371,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "364c097afe200055a3aece1207c7783b",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "New documentary explores history of\n                                          \u201cone of the UK\u2019s most important queer\n                                          venues\u201d, DBA: Watch",
@@ -1220,7 +1388,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "a8752b903867589adfffa1af66c6b30d",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "@queer_happened_here",
@@ -1266,7 +1437,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "46c539126805cb933b21637c95764821",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "The sale of Cheer Up Charlies to a\n                                          Florida investment firm was canceled\n                                          Tuesday",
@@ -1280,7 +1454,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "25e5be25626720c667b5dededb0214fc",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Bandcamp Was Supposed to Be Dead by\n                                          Now",
@@ -1306,7 +1483,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "9b6520bb474c1a7126b2484a93a93e20",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Why Is It So Easy to Flood Streaming\n                                          With AI Slop?",
@@ -1320,7 +1500,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "5fdae5d948a890a5775ec0089570aa6c",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Who\u2019s Afraid of the Neo-Wook?",
@@ -1334,7 +1517,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "674c4f08178a232946ace94481de9e02",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "@dances",
@@ -1343,7 +1529,10 @@
       "event_time": null,
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "0d03f4c089467a0f53d4da5ff4854775",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Zohran Mamdani Spent Halloween\n                                          Campaigning in Gay Clubs",
@@ -1357,7 +1546,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "6d5e61b829a9a0b3b5b05dd809e67000",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "Mood Ring",
@@ -1371,7 +1563,10 @@
         }
       ],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "11c50a0404f67275ab6eadca6b43a14f",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     },
     {
       "name": "M, 25-34, beverage marketing,\n                                          Bushwick",
@@ -1380,7 +1575,10 @@
       "event_time": null,
       "artists": [],
       "tags": [],
-      "day_marker": null
+      "day_marker": "Sun",
+      "event_id": "841d012f2fe5d34c3c22aac07c450530",
+      "event_date": "2025-11-09",
+      "festival_ind": false
     }
   ],
   "count": 66

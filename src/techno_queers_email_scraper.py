@@ -1,10 +1,12 @@
 """HTML parser for extracting event information from email content."""
 
+import hashlib
 import json
 import logging
 import re
 import sys
 from dataclasses import asdict
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -17,13 +19,90 @@ logger = logging.getLogger(__name__)
 NON_EVENT_STREAK_THRESHOLD = 3
 MIN_ARGV_LENGTH = 2
 
+# Day-of-week image mapping (Thu/Fri/Sat/Sun use images instead of text markers)
+DAY_IMAGE_MAPPING = {
+    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244826919-7138264c-a74e-bcb4-7687-368e83a7d8c7.png": "Thu",
+    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244961959-2d3560ab-8662-308f-2b83-f302eb7ac219.png": "Fri",
+    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245086670-fe1d7559-3c5a-4084-95ab-d3e1ba1de408.png": "Sat",
+    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245283470-98a350a2-632f-2e42-bf5b-41443cb53ccb.png": "Sun",
+}
 
-def parse_html_file(filepath: str) -> list[Event]:
+# Day abbreviation to weekday number (Mon=0, Sun=6)
+DAY_TO_WEEKDAY = {
+    "Mon": 0,
+    "Tue": 1,
+    "Wed": 2,
+    "Thu": 3,
+    "Fri": 4,
+    "Sat": 5,
+    "Sun": 6,
+}
+
+
+def _generate_event_id(ticket_url: str) -> str:
+    """Generate unique event ID from ticket URL using MD5 hash."""
+    return hashlib.md5(ticket_url.encode()).hexdigest()
+
+
+def _calculate_event_date(reference_date: str, day_marker: str | None) -> str | None:
+    """
+    Calculate actual event date from reference date and day marker.
+
+    Args:
+        reference_date: Reference date in YYYY-MM-DD format
+        day_marker: Day abbreviation (Mon, Tue, Wed, Thu, Fri, Sat, Sun)
+
+    Returns:
+        Event date in YYYY-MM-DD format, or None if day_marker is None
+    """
+    if not day_marker or day_marker not in DAY_TO_WEEKDAY:
+        return None
+
+    ref_date = datetime.strptime(reference_date, "%Y-%m-%d")
+    target_weekday = DAY_TO_WEEKDAY[day_marker]
+    current_weekday = ref_date.weekday()
+
+    # Calculate days ahead (0-6)
+    days_ahead = (target_weekday - current_weekday) % 7
+
+    event_date = ref_date + timedelta(days=days_ahead)
+    return event_date.strftime("%Y-%m-%d")
+
+
+def _is_festival(event_name: str, artists: list[Artist], tags: list[str]) -> bool:
+    """
+    Detect if event is a festival based on name, artist count, and tags.
+
+    Args:
+        event_name: Event name
+        artists: List of artists
+        tags: List of tags
+
+    Returns:
+        True if event appears to be a festival
+    """
+    # Check for "festival" in name or tags
+    name_lower = event_name.lower()
+    if "festival" in name_lower or "fest" in name_lower:
+        return True
+
+    if "festival" in tags:
+        return True
+
+    # Many artists (>10) suggests festival
+    if len(artists) > 10:
+        return True
+
+    return False
+
+
+def parse_html_file(filepath: str, reference_date: str) -> list[Event]:
     """
     Parse an HTML file containing event listings.
 
     Args:
         filepath: Path to the HTML file to parse
+        reference_date: Reference date in YYYY-MM-DD format (from filename)
 
     Returns:
         List of Event objects extracted from the HTML
@@ -33,6 +112,16 @@ def parse_html_file(filepath: str) -> list[Event]:
 
     soup = BeautifulSoup(html_content, "lxml")
     events = []
+
+    # Find all image-based day delimiters (Thu/Fri/Sat/Sun only)
+    day_delimiter_images = []
+    for img in soup.find_all("img"):
+        src = img.get("src", "")
+        if src in DAY_IMAGE_MAPPING:
+            day_delimiter_images.append((img, DAY_IMAGE_MAPPING[src]))
+            logger.debug("Found image day delimiter: %s", DAY_IMAGE_MAPPING[src])
+
+    logger.info("Found %d image day delimiters", len(day_delimiter_images))
 
     # Find all divs that might contain events (divs with '+' character)
     all_divs = soup.find_all("div")
@@ -68,9 +157,19 @@ def parse_html_file(filepath: str) -> list[Event]:
         # Reset streak when we find a potential event
         non_event_streak = 0
 
+        # Determine day marker for this event
+        # Check if this div comes after any image delimiter
+        image_day_marker = None
+        for img, day_name in day_delimiter_images:
+            # Check if image comes before this div in document order
+            # We compare by checking if the image is in the div's previous siblings tree
+            if img in div.find_all_previous():
+                image_day_marker = day_name
+                # Keep checking - we want the LAST (most recent) image before this div
+
         # Try to parse as an event
         try:
-            event = _parse_event_div(div)
+            event = _parse_event_div(div, reference_date, image_day_marker)
             if event and event.ticket_url not in seen_urls:
                 seen_urls.add(event.ticket_url)
                 events.append(event)
@@ -82,12 +181,16 @@ def parse_html_file(filepath: str) -> list[Event]:
     return events
 
 
-def _parse_event_div(div) -> Event | None:
+def _parse_event_div(
+    div, reference_date: str, fallback_day_marker: str | None
+) -> Event | None:
     """
     Parse a single event div element.
 
     Args:
         div: BeautifulSoup div element
+        reference_date: Reference date in YYYY-MM-DD format
+        fallback_day_marker: Day marker from image delimiter (used if no text marker found)
 
     Returns:
         Event object or None if parsing fails
@@ -100,6 +203,9 @@ def _parse_event_div(div) -> Event | None:
     day_match = re.search(r"\+\s*\[([A-Z][a-z]{2})\]\s*\+", full_text)
     if day_match:
         day_marker = day_match.group(1)
+    else:
+        # Use fallback from image delimiter
+        day_marker = fallback_day_marker
 
     # Find the first link (event name and URL)
     link = div.find("a")
@@ -132,6 +238,11 @@ def _parse_event_div(div) -> Event | None:
     # Parse bracket patterns from the text after the link
     venue, event_time, tags, artists = _parse_metadata(text_after_link)
 
+    # Generate new fields
+    event_id = _generate_event_id(ticket_url)
+    event_date = _calculate_event_date(reference_date, day_marker)
+    festival_ind = _is_festival(event_name, artists, tags)
+
     return Event(
         name=event_name,
         ticket_url=ticket_url,
@@ -140,6 +251,9 @@ def _parse_event_div(div) -> Event | None:
         artists=artists,
         tags=tags,
         day_marker=day_marker,
+        event_id=event_id,
+        event_date=event_date,
+        festival_ind=festival_ind,
     )
 
 
@@ -319,8 +433,8 @@ def main():
     date_str = date_match.group(1)
     output_file = f"output/events_{date_str}.json"
 
-    # Parse the HTML file
-    events = parse_html_file(html_file)
+    # Parse the HTML file with reference date
+    events = parse_html_file(html_file, date_str)
 
     # Convert events to dictionaries for JSON serialization
     events_data = [asdict(event) for event in events]

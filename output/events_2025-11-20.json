@@ -1,0 +1,1506 @@
+{
+  "events": [
+    {
+      "name": "+ Protest_NYC [calendar] +",
+      "ticket_url": "https://protest.one/calendar/",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": null,
+      "event_id": "f442ff1f42e9d3e9f20760ba44c6e76e",
+      "event_date": null,
+      "festival_ind": false
+    },
+    {
+      "name": "Redirect",
+      "ticket_url": "https://funqtion.co/events/9XWMB8Bkve?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GoR",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Byrell The Great",
+          "set_time": null
+        },
+        {
+          "name": "Saia",
+          "set_time": null
+        },
+        {
+          "name": "S'aint Panic",
+          "set_time": null
+        },
+        {
+          "name": "Umfang",
+          "set_time": null
+        },
+        {
+          "name": "Hndrnc",
+          "set_time": null
+        },
+        {
+          "name": "Ladd",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "4f5ee1ece3bd224a3f9e4d1c9c931820",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Mix Fest: Queer Ecologies",
+      "ticket_url": "https://www.mixnyc.org/events/queer-ecologies",
+      "venue": "Quad",
+      "event_time": "6-8p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Thu",
+      "event_id": "9805480b1690ae7cd96889a63956b33c",
+      "event_date": "2025-11-20",
+      "festival_ind": true
+    },
+    {
+      "name": "Mix Fest: Full Body Listening",
+      "ticket_url": "https://www.mixnyc.org/events/full-body-listening",
+      "venue": "Quad",
+      "event_time": "8:30-10:30p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Thu",
+      "event_id": "fd75581ac7e1356224af8d4b6493e73f",
+      "event_date": "2025-11-20",
+      "festival_ind": true
+    },
+    {
+      "name": "Mix Fest: Night 1 Afterparty",
+      "ticket_url": "https://www.mixnyc.org/events/thursday-night-afterparty-mix-fest-2025",
+      "venue": "Parkside",
+      "event_time": "9p-?",
+      "artists": [
+        {
+          "name": "DJ Ange DiCarlo",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Thu",
+      "event_id": "afdbf69d3faf97ed1d74bac9feb5c2bd",
+      "event_date": "2025-11-20",
+      "festival_ind": true
+    },
+    {
+      "name": "Sillage: Duet",
+      "ticket_url": "https://funqtion.co/events/AalB6zYldr?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "TBA",
+      "event_time": "7-10p",
+      "artists": [
+        {
+          "name": "Doula",
+          "set_time": null
+        },
+        {
+          "name": "8ulentina",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening",
+        "experimental"
+      ],
+      "day_marker": "Thu",
+      "event_id": "c6703e13194c7e1c68171cfaf57300e1",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Everything In Between III",
+      "ticket_url": "https://funqtion.co/events/3XkL8VYk14?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Wtchcrft",
+          "set_time": null
+        },
+        {
+          "name": "Syd",
+          "set_time": null
+        },
+        {
+          "name": "Clit.hub",
+          "set_time": null
+        },
+        {
+          "name": "Jo_Sway",
+          "set_time": null
+        },
+        {
+          "name": "Nymphostar",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "42e8aef3baaf9227a74f5a02a2e49347",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Dreamstate",
+      "ticket_url": "https://funqtion.co/events/9XWMBppkve?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Reforestors",
+      "event_time": "9:30p-?",
+      "artists": [
+        {
+          "name": "Jason Linder",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "6a130c5436d54e146d03f02ab1dcf930",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Present Sounds",
+      "ticket_url": "https://www.eventcreate.com/e/c-lavender-will-present",
+      "venue": "L&SD",
+      "event_time": "7-11p",
+      "artists": [
+        {
+          "name": "C. Lavender",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening"
+      ],
+      "day_marker": "Thu",
+      "event_id": "76aa76b0505b9e702c469628d4ebd69b",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Romance",
+      "ticket_url": "https://funqtion.co/events/3XkL885k14?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Gabriela",
+      "event_time": "9p-3:30a",
+      "artists": [
+        {
+          "name": "Gina",
+          "set_time": null
+        },
+        {
+          "name": "Eli Escobar",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Thu",
+      "event_id": "096cd56147f39e0aaa9cc1189d6acb97",
+      "event_date": "2025-11-20",
+      "festival_ind": false
+    },
+    {
+      "name": "Sheila",
+      "ticket_url": "https://funqtion.co/events/zrk0r5Dq5M?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "H0L0",
+      "event_time": "10p-4:30a",
+      "artists": [
+        {
+          "name": "Heidi Lawden",
+          "set_time": null
+        },
+        {
+          "name": "Masha Mar",
+          "set_time": null
+        },
+        {
+          "name": "Maenad",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "e895ff1c18229804adbe981febfb4beb",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Daria Kolosova, Lacchesi, Mos,\n                                          JADALAREIGN, Tom Peters, Kilopatrah\n                                          Jones",
+      "ticket_url": "https://funqtion.co/events/Y1lyZ7BqnV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Basement",
+      "event_time": "10:30p-7a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "b6c3dc3c473b416207ba74a67bd3f403",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Ok Williams",
+      "ticket_url": "https://funqtion.co/events/XBldgy7k89?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": "10p-6a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "59a377013e2c6e11f98b6ef4e12472d8",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Mix Fest: Every Archive Ever\n                                          Incomplete",
+      "ticket_url": "https://www.mixnyc.org/events/every-archive-ever-incomplete",
+      "venue": "Quad",
+      "event_time": "7-9p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Fri",
+      "event_id": "b0234559ed1612648962657e1c53efe5",
+      "event_date": "2025-11-21",
+      "festival_ind": true
+    },
+    {
+      "name": "Mix Fest: Stop the Cruelty Machine",
+      "ticket_url": "https://www.mixnyc.org/events/stop-the-cruelty-machine",
+      "venue": "Quad",
+      "event_time": "9:15-11:15p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Fri",
+      "event_id": "af6c3f705c26427fda8fee3ae4ac201d",
+      "event_date": "2025-11-21",
+      "festival_ind": true
+    },
+    {
+      "name": "Planetarium",
+      "ticket_url": "https://funqtion.co/events/ezk22p9kaZ?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "TBA",
+      "event_time": "7-11:59p",
+      "artists": [
+        {
+          "name": "Eamon Harkin",
+          "set_time": null
+        },
+        {
+          "name": "Justin Carter",
+          "set_time": null
+        },
+        {
+          "name": "Purelink",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening"
+      ],
+      "day_marker": "Fri",
+      "event_id": "871339bc4691ee80745a21bd9d6a617d",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Gurls Like Girls",
+      "ticket_url": "https://funqtion.co/events/RJkXMywlxA?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "MR",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Zoobiana",
+          "set_time": null
+        },
+        {
+          "name": "Yes2hvn",
+          "set_time": null
+        },
+        {
+          "name": "Sseclude",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "df0ae9946faf58995808c47d8d479b26",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Lifesavers: 026",
+      "ticket_url": "https://funqtion.co/events/z6lZmPZkBw?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Mark Grusane",
+          "set_time": null
+        },
+        {
+          "name": "S4m23",
+          "set_time": null
+        },
+        {
+          "name": "Greg Z",
+          "set_time": null
+        },
+        {
+          "name": "G. Zifcak",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "b7bfa7770459c6d261fe1e879a50c785",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Paradiso",
+      "ticket_url": "https://funqtion.co/events/m9qxvXjk1b?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Paragon",
+      "event_time": "9:30p-3a",
+      "artists": [
+        {
+          "name": "Baltra",
+          "set_time": null
+        },
+        {
+          "name": "Physical Therapy",
+          "set_time": null
+        },
+        {
+          "name": "Mui Mui",
+          "set_time": null
+        },
+        {
+          "name": "Ashley Venom",
+          "set_time": null
+        },
+        {
+          "name": "Blaize",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "ba5ba3694d84be2c57ff423a2e19ed31",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Versus: Infinite Flirt",
+      "ticket_url": "https://www.eventcreate.com/e/infinite-flirt",
+      "venue": "L&SD",
+      "event_time": "7-11p",
+      "artists": [
+        {
+          "name": "Gaterror",
+          "set_time": null
+        },
+        {
+          "name": "Chainwallet",
+          "set_time": null
+        },
+        {
+          "name": "Rohana",
+          "set_time": null
+        },
+        {
+          "name": "Samantha Riott",
+          "set_time": null
+        },
+        {
+          "name": "Andy Loebs",
+          "set_time": null
+        },
+        {
+          "name": "5uarm",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "cc56a8a7bb1aa421b3849876e18ddf68",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "tINI, Lydo, Kiernan Laveaux",
+      "ticket_url": "https://funqtion.co/events/QGl4DEQlXO?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GrR",
+      "event_time": "9p-4a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "7e2bc533e4d5c0ea453bad3882527254",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Rimarkable, Toribio, Mickey Perez,\n                                          Qualia Trax",
+      "ticket_url": "https://funqtion.co/events/xLq3L07Wvy?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Signal",
+      "event_time": "9p-4a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "547911538a1095b5a340e8fbd1e9a741",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Battle Hymn",
+      "ticket_url": "https://funqtion.co/events/XBldgKjk89?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Refuge",
+      "event_time": "10:30p-5a",
+      "artists": [
+        {
+          "name": "J. Aria",
+          "set_time": null
+        },
+        {
+          "name": "Michael Magnan",
+          "set_time": null
+        },
+        {
+          "name": "Donofrio",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "82d1c7c4ec29c1dee03d6ef2e3302754",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Grinding is Better Than Sex: Vol.\n                                          4",
+      "ticket_url": "https://events.humanitix.com/grinding-is-better-than-sex-vol-4",
+      "venue": "Parkside",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Eevee",
+          "set_time": null
+        },
+        {
+          "name": "Sola System",
+          "set_time": null
+        },
+        {
+          "name": "CmdJazmine",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "fundraiser",
+        "throwback"
+      ],
+      "day_marker": "Fri",
+      "event_id": "996317afc014727fbfe0a140a34d45bc",
+      "event_date": "2025-11-21",
+      "festival_ind": false
+    },
+    {
+      "name": "Pornceptual",
+      "ticket_url": "https://funqtion.co/events/0GlRmPxkD2?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Basement",
+      "event_time": "10:30p-7a",
+      "artists": [
+        {
+          "name": "Lolsnake",
+          "set_time": null
+        },
+        {
+          "name": "Spikey Lee",
+          "set_time": null
+        },
+        {
+          "name": "Lydo",
+          "set_time": null
+        },
+        {
+          "name": "Curses",
+          "set_time": null
+        },
+        {
+          "name": "Makadsi",
+          "set_time": null
+        },
+        {
+          "name": "Manu Miran",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "0a8c5e6ecf960de6421c0883b360055c",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Miss Major Griffin-Gracy: A Life\n                                          Celebration",
+      "ticket_url": "https://www.glitsinc.org/rsvp",
+      "venue": "Nowadays",
+      "event_time": "9-10p",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "32ffa6adbb32f0cc4ad719b02dcce78d",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Nonstop",
+      "ticket_url": "https://funqtion.co/events/b7qPZo5k8L?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Scraaatch",
+          "set_time": "10-1"
+        },
+        {
+          "name": "Yushh",
+          "set_time": "1-4"
+        },
+        {
+          "name": "Jossy Mitsu",
+          "set_time": "4-7"
+        },
+        {
+          "name": "Nowadays",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "6ff9c814cd8f2d46e40d46b0dab52d5d",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Mix Fest: Brainrot, Horror, & Way\n                                          Too Many Images",
+      "ticket_url": "https://www.mixnyc.org/events/brainrot-horror-and-way-too-many-images",
+      "venue": "Quad",
+      "event_time": "7-9p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Sat",
+      "event_id": "c98a783eeebaf830d19b2fec674c3876",
+      "event_date": "2025-11-22",
+      "festival_ind": true
+    },
+    {
+      "name": "Mix Fest: An Essence to Ooze",
+      "ticket_url": "https://www.mixnyc.org/events/an-essence-to-ooze",
+      "venue": "Quad",
+      "event_time": "9:15-11:15p",
+      "artists": [],
+      "tags": [
+        "film",
+        "festival",
+        "art"
+      ],
+      "day_marker": "Sat",
+      "event_id": "5ef95336e3da95fd57ab3da6dcb86e46",
+      "event_date": "2025-11-22",
+      "festival_ind": true
+    },
+    {
+      "name": "Something Fierce: Festival\n                                            Opening",
+      "ticket_url": "https://www.ameliamarzec.com/somethingfierce/",
+      "venue": "Flux",
+      "event_time": "12-9p",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "d8f71e62fa454c60aabc180c0a25b50e",
+      "event_date": "2025-11-22",
+      "festival_ind": true
+    },
+    {
+      "name": "The Bunker: Going In",
+      "ticket_url": "https://funqtion.co/events/x7kA0OmWMo?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Reforestors",
+      "event_time": "2-5p",
+      "artists": [
+        {
+          "name": "A Space For Sound",
+          "set_time": null
+        },
+        {
+          "name": "Juan Maclean",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening"
+      ],
+      "day_marker": "Sat",
+      "event_id": "8df5a7967fa9085ad98ab78550facf0a",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Planetarium",
+      "ticket_url": "https://funqtion.co/events/QPWD0G3Ww5?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "TBA",
+      "event_time": "7-11:59p",
+      "artists": [
+        {
+          "name": "Justin Carter",
+          "set_time": null
+        },
+        {
+          "name": "Purelink",
+          "set_time": null
+        },
+        {
+          "name": "Rena Anakwe",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening"
+      ],
+      "day_marker": "Sat",
+      "event_id": "80b9839392a787bcb3bafd6f705f087c",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Skint: 03",
+      "ticket_url": "https://funqtion.co/events/zrk0rxnq5M?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "T-P",
+      "event_time": "11p-4a",
+      "artists": [
+        {
+          "name": "DJ Thank You",
+          "set_time": null
+        },
+        {
+          "name": "Rory Sweeney",
+          "set_time": null
+        },
+        {
+          "name": "DJ Deadname",
+          "set_time": null
+        },
+        {
+          "name": "Craic Feen",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "1d67a24c1fc267da9500d42b7952a73b",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Chomp Chomp",
+      "ticket_url": "https://funqtion.co/events/Keqjd21kdA?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "53S",
+      "event_time": "9p-4a",
+      "artists": [
+        {
+          "name": "Timo Lee",
+          "set_time": null
+        },
+        {
+          "name": "Soos",
+          "set_time": null
+        },
+        {
+          "name": "Rubinskee",
+          "set_time": null
+        },
+        {
+          "name": "Secret Guest TBA",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "e98dae08669fb6c7f46de79e8aab8574",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Club Stars",
+      "ticket_url": "https://funqtion.co/events/b7qPZmLk8L?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Paragon",
+      "event_time": "9:30p-3a",
+      "artists": [
+        {
+          "name": "Uniiqu3",
+          "set_time": null
+        },
+        {
+          "name": "Acemo",
+          "set_time": null
+        },
+        {
+          "name": "Flotussin",
+          "set_time": null
+        },
+        {
+          "name": "Linapary",
+          "set_time": null
+        },
+        {
+          "name": "Coyado",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "28e26bedb5b96a11882be0d1832cb29f",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Harder",
+      "ticket_url": "https://funqtion.co/events/X4qYbQoWz0?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "9BN",
+      "event_time": "10:30p-4a",
+      "artists": [
+        {
+          "name": "Mark Holcomb",
+          "set_time": null
+        },
+        {
+          "name": "Riccardo Tavarez",
+          "set_time": null
+        },
+        {
+          "name": "Eric Umble",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "6def9a07c0877cfb57d9290d29b71cc7",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "A Night of Audiovisual Beats",
+      "ticket_url": "https://www.eventcreate.com/e/rekha-warren",
+      "venue": "L&SD",
+      "event_time": "7-11p",
+      "artists": [
+        {
+          "name": "DJ Rekha",
+          "set_time": null
+        },
+        {
+          "name": "Kristina Warren",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "a",
+        "hardware",
+        "deeplistening"
+      ],
+      "day_marker": "Sat",
+      "event_id": "056884dafefbd6182295ccd4e78cd27a",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "I Love Acid",
+      "ticket_url": "https://funqtion.co/events/nVleggKWam?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GoR",
+      "event_time": "10p-5a",
+      "artists": [
+        {
+          "name": "DJ Pierre",
+          "set_time": null
+        },
+        {
+          "name": "Posthuman",
+          "set_time": null
+        },
+        {
+          "name": "DJ Warp",
+          "set_time": null
+        },
+        {
+          "name": "Chloe Battelle",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "62d5fae7d47f52c8ea38d64f2984c573",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "20% Off The Carry Nation: They\n                                              Went On Forever Tickets for TQ\n                                              <3",
+      "ticket_url": "https://ra.co/events/2155373?p=TechnoQueers",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "23426181488c7f04deb437ccf0b94926",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Sweat #02: Sauna & Sound Pop\n                                          Up",
+      "ticket_url": "https://funqtion.co/events/nAl9D3rkyV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "La Plaza Cultural",
+      "event_time": "10a-5p",
+      "artists": [
+        {
+          "name": "James Bengamin",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "outdoors",
+        "deeplistening",
+        "bathhouse"
+      ],
+      "day_marker": "Sun",
+      "event_id": "1353e767ca58ae2292e1d41859c048f6",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Nicole Kidman",
+      "ticket_url": "https://funqtion.co/events/X4qYbKdWz0?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Signal",
+      "event_time": "4-11:59p",
+      "artists": [
+        {
+          "name": "Makadsi",
+          "set_time": null
+        },
+        {
+          "name": "Leonce",
+          "set_time": null
+        },
+        {
+          "name": "Rose Kourts",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "9440b9350d3fb69500ce935226f20999",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Club Hospitality",
+      "ticket_url": "https://funqtion.co/events/erk5pB5W7K?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Flores Negras",
+          "set_time": null
+        },
+        {
+          "name": "Loqum",
+          "set_time": null
+        },
+        {
+          "name": "Sola System",
+          "set_time": null
+        },
+        {
+          "name": "DJ Gaybash",
+          "set_time": null
+        },
+        {
+          "name": "Lynzo The Heartthrob",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "ee8f05504e64270c07ded3a3686631a4",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Deja Vu",
+      "ticket_url": "https://funqtion.co/events/4vkGe3bqPV?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Auspex",
+          "set_time": null
+        },
+        {
+          "name": "Josh Steers",
+          "set_time": null
+        },
+        {
+          "name": "Vile",
+          "set_time": null
+        },
+        {
+          "name": "Cotton",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Mon",
+      "event_id": "a3cacbf96935c8d9e801991ab5da0f50",
+      "event_date": "2025-11-24",
+      "festival_ind": false
+    },
+    {
+      "name": "Staff Party: Relaunch Vol. 1",
+      "ticket_url": "https://funqtion.co/events/m9qxv6gk1b?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Rocco",
+          "set_time": null
+        },
+        {
+          "name": "Figa",
+          "set_time": null
+        },
+        {
+          "name": "Alissa Brianna",
+          "set_time": null
+        },
+        {
+          "name": "S\u2019aint Panic",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Tue",
+      "event_id": "e35bcbfd1c42185b80691534360e273d",
+      "event_date": "2025-11-25",
+      "festival_ind": false
+    },
+    {
+      "name": "Juana",
+      "ticket_url": "https://funqtion.co/events/0GlRm0XkD2?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Nowadays",
+      "event_time": "10p-6a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "65b7484d8f48046aa1ca481053128f5d",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Nightnight, Light Asylum, Heavy\n                                            Halo, Ronnie Stone With Vyper",
+      "ticket_url": "https://funqtion.co/events/5aWoz11qJN?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "H0L0",
+      "event_time": "8:30p-1a",
+      "artists": [],
+      "tags": [
+        "darkside"
+      ],
+      "day_marker": "Wed",
+      "event_id": "3e16a072064fef0634d4a09b35d92e2f",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Mike Servito",
+      "ticket_url": "https://funqtion.co/events/b3qOn6ElpE?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "GrR",
+      "event_time": "9p-4a",
+      "artists": [],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "1cb7a35711d8064e053ccb85e893f470",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "It's Giving: Aversion",
+      "ticket_url": "https://funqtion.co/events/xLqmL3NljJ?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Bossa",
+      "event_time": "10p-4a",
+      "artists": [
+        {
+          "name": "Devoye",
+          "set_time": null
+        },
+        {
+          "name": "Yasmeenah",
+          "set_time": null
+        },
+        {
+          "name": "Ssg_",
+          "set_time": null
+        },
+        {
+          "name": "Csilla",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "f30f79d220c79f5659f56271ef41b0a4",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Dance Practice",
+      "ticket_url": "https://funqtion.co/events/7wlJePBkpx?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "L&SD",
+      "event_time": "7:30-10:30p",
+      "artists": [
+        {
+          "name": "Loftus",
+          "set_time": null
+        }
+      ],
+      "tags": [
+        "deeplistening",
+        "movement"
+      ],
+      "day_marker": "Wed",
+      "event_id": "825a6bd2f94bb01294673e5ea82aacc6",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Haruka, Sissies Of Mercy",
+      "ticket_url": "https://funqtion.co/events/xLqmL1AljJ?utm_source=tq&utm_medium=email&utm_campaign=tq",
+      "venue": "Gabriela",
+      "event_time": "9p-3:30a",
+      "artists": [],
+      "tags": [
+        "free"
+      ],
+      "day_marker": "Wed",
+      "event_id": "394fcd6b6fe1cafc8453a33ce25f4787",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "The Queer Nightlife Community Center\n                                          Wants To Keep the Party Alive",
+      "ticket_url": "https://www.them.us/story/qncc-new-york-queer-nightlife-community-center-nonprofit",
+      "venue": "them",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "them",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "10d50145c86703296f9b9ad00d4cdecd",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "We Want Everything",
+      "ticket_url": "https://thebaffler.com/latest/we-want-everything-miller",
+      "venue": "Baffler",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Kay Gabriel\u2019s politically urgent hedonism",
+          "set_time": null
+        },
+        {
+          "name": "Baffler",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "38c6dc24e77c5538e1e019d1c4c477c6",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "This Queer Rave in a Roller Rink Put\n                                          the Hedonism in Halloween",
+      "ticket_url": "https://www.autostraddle.com/this-queer-rave-in-a-roller-rink-put-the-hedonism-in-halloween/",
+      "venue": "Autostraddle",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DEAD2ME at Xanadu",
+          "set_time": null
+        },
+        {
+          "name": "Autostraddle",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "9a27d8ad16e0b3662d7094244d632e1e",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Gen Z\u2019s \u201csex recession\u201d is real\u2026\n                                          except when it comes to men who have\n                                          sex with men",
+      "ticket_url": "https://www.queerty.com/gen-zs-recession-is-real-except-with-it-comes-to-men-who-have-with-men-20251113/",
+      "venue": "Queerty",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Queerty",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "9598403d6827f7519142c0ed005aeefd",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "22 clubs that ban phones on the\n                                          dancefloor",
+      "ticket_url": "https://www.instagram.com/p/DRIGmrzjOzm/?img_index=1",
+      "venue": "New York nightclub Green Room to\n                                          launch with strict no-phones policy",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Mixmag",
+          "set_time": null
+        },
+        {
+          "name": "Basement & Nowadays are the only U.S. clubs featured on this list",
+          "set_time": null
+        },
+        {
+          "name": "Article doesn't differentiate between 'no phone usage' vs. 'no photos'",
+          "set_time": null
+        },
+        {
+          "name": "New York nightclub Green Room to launch with strict no-phones policy",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "9880a53da9ff38d72736b830d6d25122",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Inside Refuge, Brooklyn\u2019s new \"hi-def\n                                          dance club\"",
+      "ticket_url": "https://djmag.com/features/inside-refuge-brooklyns-new-hi-def-dance-club",
+      "venue": "DJ Mag",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DJ Mag",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "0d1a382eefe32fa6df36840201a8a358",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Local historian Owen Keehnen talks\n                                          \u201870s and \u201880s queer nightlife in new\n                                          book \u2018Gay Chicago Memories: 1300 N.\n                                          Wells\u2019",
+      "ticket_url": "https://windycitytimes.com/2025/11/13/books-local-historian-owen-keehnen-talks-70s-and-80s-queer-nightlife-in-gay-chicago-memories-1300-n-wells/",
+      "venue": "Windy City Times",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Windy City Times",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "fb566684bd9ea3640e1cd97578dce29e",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "#OnThisDate [November 19, 1985]",
+      "ticket_url": "https://www.instagram.com/p/DRPtX5YEkUG/",
+      "venue": "New St. Marks Baths, Mt. Morris Baths,\n                                        Everard Baths, Continental Baths at the\n                                        Ansonia Hotel",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "New St. Marks Baths",
+          "set_time": null
+        },
+        {
+          "name": "Mt. Morris Baths",
+          "set_time": null
+        },
+        {
+          "name": "Everard Baths",
+          "set_time": null
+        },
+        {
+          "name": "Continental Baths at the Ansonia Hotel",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "bd90e8454a189ca02985b4873842231b",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "\u2018A space to let your guard down\u2019: The\n                                          story of NYC\u2019s first Asian gay bar",
+      "ticket_url": "https://www.dazeddigital.com/art-photography/article/69103/1/the-web-history-new-yorks-first-asian-gay-bar-nyc-exhibition-photography-zine",
+      "venue": "DAZED",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "DAZED",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "5c807e2cb064965ff8e73c6cd0a4ac1d",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Queer nightlife in crisis: 8 of\n                                          London\u2019s biggest parties unite to save\n                                          LGBTQ+ venues",
+      "ticket_url": "https://www.huckmag.com/article/london-queer-nightlife-is-collapsing-8-of-londons-biggest-queer-parties-unite-to-save-lgbtq-venues",
+      "venue": "Huck",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "INFERNO",
+          "set_time": null
+        },
+        {
+          "name": "Queer House Party",
+          "set_time": null
+        },
+        {
+          "name": "Riposte",
+          "set_time": null
+        },
+        {
+          "name": "RIOT",
+          "set_time": null
+        },
+        {
+          "name": "BUMPAH",
+          "set_time": null
+        },
+        {
+          "name": "Coven",
+          "set_time": null
+        },
+        {
+          "name": "Uhaul Dyke Rescue & PLASTYK",
+          "set_time": null
+        },
+        {
+          "name": "Huck",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "392cdee47ca5ca0187f368b5361199ca",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "DIY or Die",
+      "ticket_url": "https://firstfloor.substack.com/p/first-floor-290-diy-or-die",
+      "venue": "First Floor",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "First Floor",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "6d50291469f7acc2e3ca11cc41f69630",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Shawn Reynaldo & Emma Warren",
+      "ticket_url": "https://soundcloud.com/refugeworldwide/le-guess-who-2025-shawn-reynaldo-emma-warren-17-nov-2025",
+      "venue": "Refuge Worldwide",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Refuge Worldwide",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "1b6aceabae32cde85233ae46ac151514",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Musicians losing out on millions due\n                                          to wrongly allocated UK royalties, new\n                                          research finds",
+      "ticket_url": "https://www.theguardian.com/music/2025/nov/18/musicians-wrongly-allocated-uk-royalties",
+      "venue": "Guardian",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Guardian",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "066cdb03cd2cf2a39275541828ea019f",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Spotify's acquisition of WhoSampled\n                                          sparks fears of \"sample snitching\" on\n                                          tracks with uncleared samples",
+      "ticket_url": "https://mixmag.net/read/spotify-acquires-whosampled-songdna-sample-snitching-news",
+      "venue": "peretsky",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Mixmag",
+          "set_time": null
+        },
+        {
+          "name": "peretsky",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "8d0c2f0d1a07a63ab150431757d721ef",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "peretsky",
+      "ticket_url": "https://www.instagram.com/p/DRAYvLjDkeH/",
+      "venue": null,
+      "event_time": null,
+      "artists": [],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "1e36a5bf3da7f225e9cb8912090e70c5",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Spotify's doppelg\u00e4nger problem",
+      "ticket_url": "https://www.platformer.news/king-gizzard-spotify-impersonators/",
+      "venue": "Platformer",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Platformer",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "04688a10100fb8e7ae7fbf2d68f21af6",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "The $50 Handshake, Rebooted:\n                                          Spotify\u2019s Algorithmic Payola Faces Its\n                                          Day in Court",
+      "ticket_url": "https://musictechpolicy.com/2025/11/07/the-50-handshake-rebooted-spotifys-algorithmic-payola-faces-its-day-in-court/",
+      "venue": "Music Tech Policy blog",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Music Tech Policy blog",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "97520f600238a3133124f6de1642a0c0",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Spotify Netherlands' Viral Chart is\n                                          flooded with AI-generated, far-right\n                                          racist tracks",
+      "ticket_url": "https://networknotes.motiveunknown.com/p/spotify-netherlands-viral-chart-is",
+      "venue": "Network Notes",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Network Notes",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "ea466ddd5ea0034c278f28d37f281d9a",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "\u2018I can see a world where Spotify\n                                          doesn\u2019t exist\u2019: will a new generation\n                                          of music streaming companies\n                                          succeed?",
+      "ticket_url": "https://www.theguardian.com/music/2025/nov/11/spotify-music-streaming-companies",
+      "venue": "Guardian",
+      "event_time": null,
+      "artists": [
+        {
+          "name": "Guardian",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "da57e4546cdd746837b2b2b8860c4b7c",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    }
+  ],
+  "count": 69
+}

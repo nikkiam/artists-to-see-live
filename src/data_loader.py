@@ -97,6 +97,9 @@ def load_events(filepath: Path) -> list[Event]:
             ],
             tags=event.get("tags", []),
             day_marker=event.get("day_marker"),
+            event_id=event.get("event_id"),
+            event_date=event.get("event_date"),
+            festival_ind=event.get("festival_ind", False),
         )
         for event in data["events"]
     ]

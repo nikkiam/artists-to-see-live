@@ -56,6 +56,10 @@ class Event:
     artists: list[Artist] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     day_marker: str | None = None
+    # Interoperable fields across data sources (Techno Queers, EDMTrain)
+    event_id: str | None = None  # Unique identifier
+    event_date: str | None = None  # ISO format: YYYY-MM-DD (actual event date)
+    festival_ind: bool = False  # Is this a festival?
 
 
 @dataclass(frozen=True)
