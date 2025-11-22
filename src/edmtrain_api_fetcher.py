@@ -4,15 +4,28 @@ import json
 import logging
 import os
 import sys
-from dataclasses import asdict
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 from pathlib import Path
 
 import requests
 
+from src.date_utils import DAY_NAMES
 from src.models import Artist, Event
 
 logger = logging.getLogger(__name__)
+
+
+# Custom exceptions for EDMTrain API errors
+class EDMTrainAPIError(Exception):
+    """Base exception for EDMTrain API errors."""
+
+
+class EDMTrainAuthError(EDMTrainAPIError):
+    """Authentication/API key error."""
+
+
+class EDMTrainDataError(EDMTrainAPIError):
+    """Invalid data from API or parsing error."""
 
 # Constants
 EDMTRAIN_API_KEY = os.getenv("EDMTRAIN_API_KEY")
@@ -41,8 +54,7 @@ def fetch_edmtrain_events(
     """
     # Early exit if no API key
     if not api_key:
-        logger.error("EDMTRAIN_API_KEY not found in environment")
-        return []
+        raise EDMTrainAuthError("EDMTRAIN_API_KEY not found in environment")
 
     # Build API request
     params = {
@@ -66,8 +78,7 @@ def fetch_edmtrain_events(
         # Check for API success
         if not data.get("success", False):
             error_msg = data.get("message", "Unknown API error")
-            logger.error("API request failed: %s", error_msg)
-            return []
+            raise EDMTrainAPIError(f"API request failed: {error_msg}")
 
         api_events = data.get("data", [])
         logger.info("Received %d events from API", len(api_events))
@@ -82,15 +93,12 @@ def fetch_edmtrain_events(
         logger.info("Successfully transformed %d events", len(events))
         return events
 
-    except requests.Timeout:
-        logger.error("Request timed out")
-        return []
+    except requests.Timeout as e:
+        raise EDMTrainAPIError("Request timed out") from e
     except requests.RequestException as e:
-        logger.error("Request failed: %s", e)
-        return []
+        raise EDMTrainAPIError(f"Request failed: {e}") from e
     except (KeyError, ValueError) as e:
-        logger.error("Failed to parse API response: %s", e)
-        return []
+        raise EDMTrainDataError(f"Failed to parse API response: {e}") from e
 
 
 def _transform_api_event(api_event: dict) -> Event | None:
@@ -104,25 +112,34 @@ def _transform_api_event(api_event: dict) -> Event | None:
         Event object or None if invalid
     """
     # Early exit for required fields
+    event_id = api_event.get("id", "unknown")
+
     if not api_event.get("name"):
+        logger.warning("Skipping event %s: missing name", event_id)
         return None
+
+    event_name = api_event["name"]
+
     if not api_event.get("link"):
+        logger.warning("Skipping event '%s': missing ticket link", event_name)
         return None
     if not api_event.get("date"):
+        logger.warning("Skipping event '%s': missing date", event_name)
         return None
 
     # Extract venue name (early exit if missing)
     venue_data = api_event.get("venue", {})
     venue_name = venue_data.get("name")
     if not venue_name:
+        logger.warning("Skipping event '%s': missing venue name", event_name)
         return None
 
     # Parse event date to derive day_marker
     event_date = api_event["date"]
     day_marker = _derive_day_marker(event_date)
 
-    # Build event_time from startTime/endTime if available
-    event_time = _build_event_time(
+    # Parse start/end times from startTime/endTime if available
+    start_time, end_time = _parse_event_times(
         api_event.get("startTime"), api_event.get("endTime")
     )
 
@@ -133,7 +150,8 @@ def _transform_api_event(api_event: dict) -> Event | None:
         name=api_event["name"],
         ticket_url=api_event["link"],
         venue=venue_name,
-        event_time=event_time,
+        start_time=start_time,
+        end_time=end_time,
         artists=artists,
         tags=[],  # EDMTrain doesn't provide tags
         day_marker=day_marker,
@@ -169,35 +187,55 @@ def _derive_day_marker(event_date: str) -> str:
 
     Returns:
         Three-letter day marker (e.g., "Fri", "Sat")
+
+    Raises:
+        EDMTrainDataError: If event_date is not in valid ISO format
     """
     try:
         date_obj = datetime.strptime(event_date, "%Y-%m-%d")
-        day_names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        return day_names[date_obj.weekday()]
-    except ValueError:
-        return "Unknown"
+        return DAY_NAMES[date_obj.weekday()]
+    except ValueError as e:
+        raise EDMTrainDataError(f"Invalid date format: {event_date}") from e
 
 
-def _build_event_time(start_time: str | None, end_time: str | None) -> str | None:
+def _parse_event_times(
+    start_time_str: str | None, end_time_str: str | None
+) -> tuple[time | None, time | None]:
     """
-    Build event_time string from start/end times.
+    Parse ISO time strings to time objects.
 
     Args:
-        start_time: Start time from API
-        end_time: End time from API
+        start_time_str: Start time from API (ISO format: "HH:MM:SS" or "HH:MM")
+        end_time_str: End time from API (ISO format: "HH:MM:SS" or "HH:MM")
 
     Returns:
-        Formatted time string (e.g., "8p-4a") or None
+        Tuple of (start_time, end_time) as time objects, or (None, None)
     """
-    if not start_time and not end_time:
-        return None
+    start_time = _parse_iso_time(start_time_str) if start_time_str else None
+    end_time = _parse_iso_time(end_time_str) if end_time_str else None
+    return (start_time, end_time)
 
-    # For now, just concatenate with dash if both exist
-    # Could add logic to parse and format like "8p-4a" in the future
-    if start_time and end_time:
-        return f"{start_time}-{end_time}"
 
-    return start_time or end_time
+def _parse_iso_time(time_str: str) -> time | None:
+    """
+    Parse ISO time string to time object.
+
+    Args:
+        time_str: ISO format time string ("HH:MM:SS" or "HH:MM")
+
+    Returns:
+        time object or None if parsing fails
+    """
+    # Try parsing with seconds first
+    for fmt in ["%H:%M:%S", "%H:%M"]:
+        try:
+            dt = datetime.strptime(time_str, fmt)
+            return dt.time()
+        except ValueError:
+            continue
+
+    logger.warning("Failed to parse time string: %s", time_str)
+    return None
 
 
 def _calculate_date_range() -> tuple[str, str]:
@@ -226,29 +264,33 @@ def main():
         ],
     )
 
-    # Load API key
-    api_key = EDMTRAIN_API_KEY
-    if not api_key:
-        logger.error("EDMTRAIN_API_KEY environment variable not set")
-        sys.exit(1)
-
     # Calculate date range
     start_date, end_date = _calculate_date_range()
 
     # Fetch events
-    events = fetch_edmtrain_events(
-        api_key=api_key,
-        location_ids=[NYC_LOCATION_ID],
-        start_date=start_date,
-        end_date=end_date,
-    )
+    try:
+        events = fetch_edmtrain_events(
+            api_key=EDMTRAIN_API_KEY,
+            location_ids=[NYC_LOCATION_ID],
+            start_date=start_date,
+            end_date=end_date,
+        )
+    except EDMTrainAuthError as e:
+        logger.error("Authentication error: %s", e)
+        sys.exit(1)
+    except EDMTrainDataError as e:
+        logger.error("Data error: %s", e)
+        sys.exit(1)
+    except EDMTrainAPIError as e:
+        logger.error("API error: %s", e)
+        sys.exit(1)
 
     if not events:
         logger.warning("No events fetched")
         sys.exit(0)
 
     # Convert to JSON
-    events_data = [asdict(event) for event in events]
+    events_data = [event.to_dict() for event in events]
     result = {"events": events_data, "count": len(events)}
 
     # Save to output

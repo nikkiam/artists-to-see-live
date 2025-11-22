@@ -106,5 +106,7 @@ The example email in `example_emails/2025-10-31.html` is ~3800 lines of HTML tab
 ### Code Quality
 - Follow all Ruff linting rules (see `ruff.toml`)
 - Maintain zero linting errors and warnings
+- **NEVER add `# noqa` comments** - If you encounter a linting error, stop and ask how to proceed rather than silencing the warning
+- **All tests must pass** - run `uv run pytest` to validate
 - Use type hints for function signatures
 - Keep functions small and focused on a single responsibility

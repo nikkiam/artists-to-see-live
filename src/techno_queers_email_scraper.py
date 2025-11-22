@@ -5,12 +5,12 @@ import json
 import logging
 import re
 import sys
-from dataclasses import asdict
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 from pathlib import Path
 
 from bs4 import BeautifulSoup
 
+from src.date_utils import DAY_TO_WEEKDAY
 from src.models import Artist, Event
 
 logger = logging.getLogger(__name__)
@@ -19,29 +19,122 @@ logger = logging.getLogger(__name__)
 NON_EVENT_STREAK_THRESHOLD = 3
 MIN_ARGV_LENGTH = 2
 
-# Day-of-week image mapping (Thu/Fri/Sat/Sun use images instead of text markers)
-DAY_IMAGE_MAPPING = {
-    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244826919-7138264c-a74e-bcb4-7687-368e83a7d8c7.png": "Thu",
-    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244961959-2d3560ab-8662-308f-2b83-f302eb7ac219.png": "Fri",
-    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245086670-fe1d7559-3c5a-4084-95ab-d3e1ba1de408.png": "Sat",
-    "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245283470-98a350a2-632f-2e42-bf5b-41443cb53ccb.png": "Sun",
-}
+# Festival detection heuristic: Events with more than this many artists
+# are likely festivals. This threshold is based on observation that typical
+# club nights have 5-8 artists, while festivals tend to have 15+ artists
+# across multiple stages
+FESTIVAL_ARTIST_THRESHOLD = 10
 
-# Day abbreviation to weekday number (Mon=0, Sun=6)
-DAY_TO_WEEKDAY = {
-    "Mon": 0,
-    "Tue": 1,
-    "Wed": 2,
-    "Thu": 3,
-    "Fri": 4,
-    "Sat": 5,
-    "Sun": 6,
+# Time parsing constants
+NOON_HOUR_12 = 12  # 12pm in 12-hour format
+MIDNIGHT_HOUR_24 = 0  # Midnight in 24-hour format
+PM_HOUR_OFFSET = 12  # Hours to add for PM times (except noon)
+MAX_HOUR_24 = 23  # Maximum valid hour in 24-hour format
+MAX_MINUTE = 59  # Maximum valid minute
+TIME_RANGE_PART_COUNT = 2  # Expected parts when splitting time range (start-end)
+
+# Day-of-week image mapping (Thu/Fri/Sat/Sun use images instead of text)
+# These image URLs are specific to the Techno Queers email template
+# and map day-of-week images to their corresponding day abbreviations
+_IMG_BASE = "https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d"
+DAY_IMAGE_MAPPING = {
+    (
+        f"{_IMG_BASE}%2F1700244826919-7138264c-a74e-bcb4-7687-368e83a7d8c7.png"
+    ): "Thu",
+    (
+        f"{_IMG_BASE}%2F1700244961959-2d3560ab-8662-308f-2b83-f302eb7ac219.png"
+    ): "Fri",
+    (
+        f"{_IMG_BASE}%2F1700245086670-fe1d7559-3c5a-4084-95ab-d3e1ba1de408.png"
+    ): "Sat",
+    (
+        f"{_IMG_BASE}%2F1700245283470-98a350a2-632f-2e42-bf5b-41443cb53ccb.png"
+    ): "Sun",
 }
 
 
 def _generate_event_id(ticket_url: str) -> str:
     """Generate unique event ID from ticket URL using MD5 hash."""
-    return hashlib.md5(ticket_url.encode()).hexdigest()
+    return hashlib.md5(ticket_url.encode(), usedforsecurity=False).hexdigest()
+
+
+def _parse_techno_queers_time(
+    time_str: str | None,
+) -> tuple[time | None, time | None]:
+    """
+    Parse Techno Queers time format to time objects.
+
+    Examples: "8p-4a", "10p", "midnight-6a"
+
+    Args:
+        time_str: Time string in format like "8p-4a" (8pm to 4am)
+
+    Returns:
+        Tuple of (start_time, end_time) as time objects, or (None, None)
+    """
+    if not time_str:
+        return (None, None)
+
+    # Split on dash to get start and end
+    parts = time_str.split("-")
+
+    if len(parts) == 1:
+        # Only start time provided
+        start_time = _parse_single_time(parts[0].strip())
+        return (start_time, None)
+
+    if len(parts) == TIME_RANGE_PART_COUNT:
+        # Both start and end times
+        start_time = _parse_single_time(parts[0].strip())
+        end_time = _parse_single_time(parts[1].strip())
+        return (start_time, end_time)
+
+    # Invalid format
+    return (None, None)
+
+
+def _parse_single_time(time_part: str) -> time | None:
+    """
+    Parse a single time component like "8p", "4a", "10:30p", "midnight".
+
+    Args:
+        time_part: Single time string (e.g., "8p", "4a", "10:30p")
+
+    Returns:
+        time object or None if parsing fails
+    """
+    time_part = time_part.lower().strip()
+
+    # Handle special cases
+    if time_part == "midnight":
+        return time(MIDNIGHT_HOUR_24, 0)
+    if time_part == "noon":
+        return time(NOON_HOUR_12, 0)
+
+    # Extract hour/minute and am/pm
+    # Pattern: optional digits, optional colon and digits, then 'a' or 'p'
+    match = re.match(r"^(\d{1,2})(?::(\d{2}))?([ap])$", time_part)
+    if not match:
+        logger.warning("Failed to parse time component: %s", time_part)
+        return None
+
+    hour_str, minute_str, period = match.groups()
+    hour = int(hour_str)
+    minute = int(minute_str) if minute_str else 0
+
+    # Convert to 24-hour format
+    if period == "a":  # AM
+        if hour == NOON_HOUR_12:
+            hour = MIDNIGHT_HOUR_24  # 12am = midnight
+    elif hour != NOON_HOUR_12:  # PM (except 12pm)
+        hour += PM_HOUR_OFFSET  # 1pm = 13:00, but 12pm stays 12:00
+
+    # Validate hour and minute
+    if not (0 <= hour <= MAX_HOUR_24) or not (0 <= minute <= MAX_MINUTE):
+        logger.warning("Invalid time values: hour=%d, minute=%d", hour, minute)
+        return None
+
+    return time(hour, minute)
 
 
 def _calculate_event_date(reference_date: str, day_marker: str | None) -> str | None:
@@ -89,11 +182,8 @@ def _is_festival(event_name: str, artists: list[Artist], tags: list[str]) -> boo
     if "festival" in tags:
         return True
 
-    # Many artists (>10) suggests festival
-    if len(artists) > 10:
-        return True
-
-    return False
+    # Many artists suggests festival (see FESTIVAL_ARTIST_THRESHOLD constant)
+    return len(artists) > FESTIVAL_ARTIST_THRESHOLD
 
 
 def parse_html_file(filepath: str, reference_date: str) -> list[Event]:
@@ -190,7 +280,8 @@ def _parse_event_div(
     Args:
         div: BeautifulSoup div element
         reference_date: Reference date in YYYY-MM-DD format
-        fallback_day_marker: Day marker from image delimiter (used if no text marker found)
+        fallback_day_marker: Day marker from image delimiter
+                             (used if no text marker found)
 
     Returns:
         Event object or None if parsing fails
@@ -199,13 +290,8 @@ def _parse_event_div(
     full_text = div.get_text(separator=" ", strip=False)
 
     # Check for day marker: + [Day] +
-    day_marker = None
     day_match = re.search(r"\+\s*\[([A-Z][a-z]{2})\]\s*\+", full_text)
-    if day_match:
-        day_marker = day_match.group(1)
-    else:
-        # Use fallback from image delimiter
-        day_marker = fallback_day_marker
+    day_marker = day_match.group(1) if day_match else fallback_day_marker
 
     # Find the first link (event name and URL)
     link = div.find("a")
@@ -236,7 +322,10 @@ def _parse_event_div(
             text_after_link = parent_text[idx:] + " " + text_after_link
 
     # Parse bracket patterns from the text after the link
-    venue, event_time, tags, artists = _parse_metadata(text_after_link)
+    venue, event_time_str, tags, artists = _parse_metadata(text_after_link)
+
+    # Parse event time string to time objects
+    start_time, end_time = _parse_techno_queers_time(event_time_str)
 
     # Generate new fields
     event_id = _generate_event_id(ticket_url)
@@ -247,7 +336,8 @@ def _parse_event_div(
         name=event_name,
         ticket_url=ticket_url,
         venue=venue,
-        event_time=event_time,
+        start_time=start_time,
+        end_time=end_time,
         artists=artists,
         tags=tags,
         day_marker=day_marker,
@@ -427,7 +517,9 @@ def main():
     html_path = Path(html_file)
     date_match = re.search(r"(\d{4}-\d{1,2}-\d{1,2})", html_path.stem)
     if not date_match:
-        logger.error("Could not extract date from filename. Expected format: YYYY-MM-DD.html")
+        logger.error(
+            "Could not extract date from filename. Expected format: YYYY-MM-DD.html"
+        )
         sys.exit(1)
 
     date_str = date_match.group(1)
@@ -437,7 +529,7 @@ def main():
     events = parse_html_file(html_file, date_str)
 
     # Convert events to dictionaries for JSON serialization
-    events_data = [asdict(event) for event in events]
+    events_data = [event.to_dict() for event in events]
     result = {"events": events_data, "count": len(events)}
 
     # Write output file
