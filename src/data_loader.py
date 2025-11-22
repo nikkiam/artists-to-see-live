@@ -2,11 +2,37 @@
 
 import json
 import logging
+from datetime import datetime, time
 from pathlib import Path
 
 from src.models import Artist, ArtistSimilarityData, Event, SimilarArtist
 
 logger = logging.getLogger(__name__)
+
+
+def _parse_time_from_json(time_str: str | None) -> time | None:
+    """
+    Parse ISO time string from JSON to time object.
+
+    Args:
+        time_str: ISO format time string ("HH:MM:SS" or "HH:MM") or None
+
+    Returns:
+        time object or None
+    """
+    if not time_str:
+        return None
+
+    # Try parsing with seconds first, then without
+    for fmt in ["%H:%M:%S", "%H:%M"]:
+        try:
+            dt = datetime.strptime(time_str, fmt)
+            return dt.time()
+        except ValueError:
+            continue
+
+    logger.warning("Failed to parse time from JSON: %s", time_str)
+    return None
 
 
 def load_similar_artists_map(
@@ -90,13 +116,17 @@ def load_events(filepath: Path) -> list[Event]:
             name=event["name"],
             ticket_url=event["ticket_url"],
             venue=event.get("venue"),
-            event_time=event.get("event_time"),
+            start_time=_parse_time_from_json(event.get("start_time")),
+            end_time=_parse_time_from_json(event.get("end_time")),
             artists=[
                 Artist(name=artist["name"], set_time=artist.get("set_time"))
                 for artist in event.get("artists", [])
             ],
             tags=event.get("tags", []),
             day_marker=event.get("day_marker"),
+            event_id=event.get("event_id"),
+            event_date=event.get("event_date"),
+            festival_ind=event.get("festival_ind", False),
         )
         for event in data["events"]
     ]

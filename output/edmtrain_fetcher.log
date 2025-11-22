@@ -1,0 +1,4 @@
+2025-11-22 13:11:21 - __main__ - INFO - Fetching events from 2025-11-22 to 2025-12-06
+2025-11-22 13:11:21 - __main__ - INFO - Received 254 events from API
+2025-11-22 13:11:21 - __main__ - INFO - Successfully transformed 114 events
+2025-11-22 13:11:21 - __main__ - INFO - Wrote 114 events to output/edmtrain_events_2025-11-22.json

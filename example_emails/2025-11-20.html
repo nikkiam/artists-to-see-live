@@ -1,0 +1,3506 @@
+<html prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Sets size and scale of the viewport. -->
+    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <!-- IE=Edge makes good things happen on Windows Phones. -->
+    <!--[if !mso]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <!-- Disables auto-scaling in iOS Mail 10. -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Will display in auto-preview area in some clients. -->
+    <title></title>
+    <!-- Desktop Outlook defaults to Times New Roman. Forces a less obscene fallback font. -->
+    <!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+    <!-- Webfont reference. -->
+    <!--[if !mso]><!-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <!--<![endif]-->
+    <style>
+      /* Box sizing. Gets decent support. */
+      *,
+      *:after,
+      *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      /* Prevents small text resizing. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      /* Basic reset. Removes default spacing around emails in various clients. */
+      html,
+      body,
+      .document {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+      }
+      /* Improves text rendering when supported. */
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      /* Centers email to device width in Android 4.4. */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      /* Removes added spacing within tables in Outlook. */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        padding: 0;
+      }
+      /* Removes added spacing within tables in WebKit. */
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        table-layout: fixed;
+        margin: 0 auto;
+      }
+      /* Responsive images. Improves rendering of scaled images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+        border: 0;
+      }
+      /* Overrules triggered links in iOS. */
+      *[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+      /* Overrules triggered links in Gmail. */
+      .x-gmail-data-detectors,
+      .x-gmail-data-detectors *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+      }
+      /* Define font */
+      body,
+      html,
+      td {
+        font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+          "Lucida Typewriter", monospace; /* Font family */
+        color: rgb(0, 0, 0); /* Font color */
+      }
+      a,
+      .container a {
+        color: #000000; /* Link color */
+        text-decoration: underline; /* Link decoration */
+      }
+      /* Media queries o' doom. */
+      @media screen and (max-width: 450px) {
+        /* Transitions container to a fluid layout. */
+        .container {
+          width: 100%;
+          margin: auto;
+        }
+        /* Collapses table cells into full-width rows. */
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        /* Centers and expands CTA. */
+        .eo-button {
+          width: 100% !important;
+          text-align: center;
+          margin: auto !important;
+        }
+        .eo-button td,
+        .eo-button tr {
+          display: block !important;
+        }
+      }
+    </style>
+    <style id="v3-editor-styles">
+      .emoji {
+        font-family: EmojiMart, "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI",
+          "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji",
+          "Android Emoji";
+      }
+      .text-block li {
+        /* The web Gmail client will add 0.6em of bottom padding to each list item. */
+        /* This overrides that, so the list is rendered as in the editor. */
+        padding-bottom: 0 !important;
+      }
+      .text-block ul[data-position="inside"] li > div,
+      .text-block ol[data-position="inside"] li > div {
+        display: inline;
+      }
+      .text-block ul[data-position="inside"] li > div ~ div,
+      .text-block ol[data-position="inside"] li > div ~ div {
+        display: block;
+      }
+      .text-block {
+        word-wrap: break-word;
+      }
+    </style>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:image"
+      content="https://eomail4.com/preview.png?p=82fcce9e-c3c6-11f0-aae2-cb5ead8f220f&amp;pt=campaign&amp;t=1763691410&amp;size=opengraph-preview&amp;s=ee992b5c9b1db624326507ec943d394c6e09cc48ed8d99473ccc146e59617830"
+    />
+    <meta
+      property="og:url"
+      content="https://arborescens.eomail4.com/web-version?ep=2&amp;lc=2591eee6-ae98-11ee-8164-53dc70e5b970&amp;p=82fcce9e-c3c6-11f0-aae2-cb5ead8f220f&amp;pt=campaign&amp;t=1763691333&amp;s=eb88abc376b6971a8917d2b300d8d391b127df70427b287253be7692203bae05"
+    />
+    <meta property="og:title" content="the guide v.437" />
+    <meta property="og:description" content />
+  </head>
+  <body
+    style="
+      color: rgb(0, 0, 0);
+      font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
+        'Lucida Typewriter', monospace;
+      font-size: 18px;
+      background-color: #999999;
+    "
+    class
+    bgcolor="#999999"
+  >
+    <div style="display: none; max-height: 0px; overflow: hidden"></div>
+
+    <div style="display: none; max-height: 0px; overflow: hidden"></div>
+    <table role="presentation" class="document" align="center">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <table
+              role="presentation"
+              class="container"
+              style="margin: 0px auto"
+              width="650"
+              cellspacing="0"
+              cellpadding="0"
+              align="center"
+            >
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      align="center"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="container"
+                            style="
+                              background-position: initial;
+                              background-size: initial;
+                              background-repeat: initial;
+                              background-attachment: initial;
+                              background-origin: initial;
+                              background-clip: initial;
+                            "
+                            bgcolor
+                          >
+                            <table role="presentation" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td class="container"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr style>
+                          <td class="container">
+                            <table
+                              role="presentation"
+                              class="container"
+                              style="
+                                margin-bottom: 0px;
+                                position: static;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                              "
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="padding: 0px 0px 15px"
+                                    width="100%"
+                                  >
+                                    <table
+                                      style="table-layout: fixed; width: 100%"
+                                      role="presentation"
+                                      width="100%"
+                                      bgcolor
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            style="
+                                              min-width: 100%;
+                                              padding-top: 50px;
+                                              padding-bottom: 0px;
+                                            "
+                                          >
+                                            <table
+                                              style="
+                                                border-top: 1px
+                                                  rgb(220, 214, 209);
+                                                border-collapse: collapse;
+                                                width: 100%;
+                                              "
+                                              cellspacing="0"
+                                              cellpadding="0"
+                                              align="center"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <span></span>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table
+                                      role="presentation"
+                                      class="container"
+                                      style="
+                                        margin-bottom: 10px;
+                                        margin-top: 10px;
+                                        position: static;
+                                      "
+                                      width="100%"
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      bgcolor
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            class="hero"
+                                            style="
+                                              border-collapse: collapse;
+                                              border-spacing: 0px;
+                                              margin: 0px;
+                                              padding: 0px 10px;
+                                            "
+                                            valign="top"
+                                            align="center"
+                                          >
+                                            <a href="https://technoqueers.com/">
+                                              <img
+                                                alt
+                                                style="
+                                                  width: 100%;
+                                                  max-width: 100%;
+                                                  object-fit: cover;
+                                                  padding: 0px;
+                                                  outline: none;
+                                                  border: medium;
+                                                  display: block;
+                                                "
+                                                src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244235279-183c2c69-d64d-0ea8-4366-84afa6db964c.png"
+                                                width="650"
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <table
+                                      style="table-layout: fixed; width: 100%"
+                                      role="presentation"
+                                      width="100%"
+                                      bgcolor
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            style="
+                                              min-width: 100%;
+                                              padding-top: 15px;
+                                              padding-bottom: 15px;
+                                            "
+                                          >
+                                            <table
+                                              style="
+                                                border-top: 1px
+                                                  rgb(220, 214, 209);
+                                                border-collapse: collapse;
+                                                width: 100%;
+                                              "
+                                              cellspacing="0"
+                                              cellpadding="0"
+                                              align="center"
+                                            >
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <span></span>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table
+              role="presentation"
+              class="container"
+              style="margin: 0px auto"
+              width="650"
+              cellspacing="0"
+              cellpadding="0"
+              bgcolor
+              align="center"
+            >
+              <tbody>
+                <tr>
+                  <td class="container">
+                    <table
+                      role="presentation"
+                      style="position: static"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      bgcolor
+                      align="center"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <a href="https://technoqueers.com/"
+                                      ><img
+                                        src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244462420-4edc3581-732d-b11a-cdd0-dee375840bca.png"
+                                        style="
+                                          width: 100%;
+                                          max-width: 100%;
+                                          object-fit: cover;
+                                          padding: 0;
+                                          outline: none;
+                                          border: none;
+                                          display: block;
+                                        "
+                                        width="650"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table
+                      class="container"
+                      style="
+                        margin-bottom: 0;
+                        position: static;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                      "
+                      role="presentation"
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      bgcolor
+                      align="center"
+                    >
+                      <tbody>
+                        <tr>
+                          <td
+                            class="container"
+                            style="padding: 0px 15px 15px"
+                            width="100%"
+                          >
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        Trans people deserve <em>so</em> much
+                                        more than to simply be remembered after
+                                        death.<br />Let us fight like hell for
+                                        the living.
+                                      </div>
+                                      <div style="text-align: center">
+                                        <br />
+                                      </div>
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://cal.red/"
+                                          >+ CAL.RED/ +</a
+                                        >
+                                      </div>
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://protest.one/calendar/"
+                                          >+ Protest_NYC [calendar] +</a
+                                        >
+                                      </div>
+                                      <div><br /></div>
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://soundcloud.com/technoqueers/likes"
+                                          >+ </a
+                                        ><a
+                                          target="_blank"
+                                          href="https://soundcloud.com/technoqueers/likes"
+                                          style="color: rgb(0, 0, 0)"
+                                          >mixes of the week +</a
+                                        >
+                                      </div>
+                                      <div style="text-align: center">
+                                        <br />
+                                      </div>
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://arborescens.eomail4.com/web-version?ep=2&amp;lc=2591eee6-ae98-11ee-8164-53dc70e5b970&amp;p=82fcce9e-c3c6-11f0-aae2-cb5ead8f220f&amp;pt=campaign&amp;t=1763691333&amp;s=eb88abc376b6971a8917d2b300d8d391b127df70427b287253be7692203bae05"
+                                          >View this email in your browser</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244826919-7138264c-a74e-bcb4-7687-368e83a7d8c7.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0px;
+                                        outline: none;
+                                        border: medium;
+                                        display: block;
+                                      "
+                                      width="620"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 0px;
+                                      padding-bottom: 10px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <a
+                                      href="https://funqtion.co/events/KeqjdxLkdA?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                      target="_blank"
+                                      ><img
+                                        src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2Fmedia-manager%2F1763682188253-screenshot%202025-11-20%20at%206.43.03%E2%80%AFpm.png"
+                                        style="
+                                          width: 100%;
+                                          max-width: 100%;
+                                          object-fit: cover;
+                                          padding: 0;
+                                          outline: none;
+                                          border: none;
+                                          display: block;
+                                        "
+                                        width="620"
+                                        alt="Body Hack Presents: The Queer Art Annual Party"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/9XWMB8Bkve?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Redirect</u></a
+                                        >
+                                        [Byrell The Great, Saia, S'aint Panic,
+                                        Umfang, Hndrnc, Ladd] [GoR] [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/queer-ecologies"
+                                          >Mix Fest: Queer Ecologies</a
+                                        >
+                                        [Quad] [6-8p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/full-body-listening"
+                                          >Mix Fest: Full Body Listening</a
+                                        >
+                                        [Quad] [8:30-10:30p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/thursday-night-afterparty-mix-fest-2025"
+                                          >Mix Fest: Night 1 Afterparty</a
+                                        >
+                                        [DJ Ange DiCarlo] [Parkside] [9p-?]
+                                        [<span style="font-size: 14px"
+                                          ><em>#free</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/AalB6zYldr?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Sillage: Duet</a
+                                        >
+                                        [Doula, 8ulentina] [TBA] [7-10p] [<span
+                                          style="font-size: 14px"
+                                          ><em
+                                            >#deeplistening #experimental</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/3XkL8VYk14?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Everything In Between III</u></a
+                                        >
+                                        [Wtchcrft, Syd, Clit.hub, Jo_Sway,
+                                        Nymphostar] [Bossa] [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/9XWMBppkve?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Dreamstate</a
+                                        >
+                                        [Jason Linder] [Reforestors] [9:30p-?]
+                                        [<span style="font-size: 14px"
+                                          ><em
+                                            >“A group massage experience
+                                            designed to lift you out of the
+                                            everyday and into a floating,
+                                            sensory experience of touch and
+                                            sound; #deeplistening #bodywork</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.eventcreate.com/e/c-lavender-will-present"
+                                          style="color: inherit"
+                                          ><u>Present Sounds</u></a
+                                        >
+                                        [C. Lavender] [L&amp;SD] [7-11p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#deeplistening</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/3XkL885k14?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Romance</u></a
+                                        >
+                                        [Gina, Eli Escobar] [Gabriela]
+                                        [9p-3:30a] [<span
+                                          style="font-size: 14px"
+                                          ><em>#free</em></span
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700244961959-2d3560ab-8662-308f-2b83-f302eb7ac219.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="670"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/zrk0r5Dq5M?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Sheila</u></a
+                                        >
+                                        [Heidi Lawden, Masha Mar, Maenad] [H0L0]
+                                        [10p-4:30a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/Y1lyZ7BqnV?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Daria Kolosova, Lacchesi, Mos,
+                                          JADALAREIGN, Tom Peters, Kilopatrah
+                                          Jones</a
+                                        >
+                                        [Basement] [10:30p-7a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/XBldgy7k89?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Ok Williams</u></a
+                                        >
+                                        [Nowadays] [10p-6a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/every-archive-ever-incomplete"
+                                          >Mix Fest: Every Archive Ever
+                                          Incomplete</a
+                                        >
+                                        [Quad] [7-9p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/stop-the-cruelty-machine"
+                                          >Mix Fest: Stop the Cruelty Machine</a
+                                        >
+                                        [Quad] [9:15-11:15p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/ezk22p9kaZ?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Planetarium</a
+                                        >
+                                        [Eamon Harkin, Justin Carter, Purelink]
+                                        [TBA] [7-11:59p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#deeplistening</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/RJkXMywlxA?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Gurls Like Girls</a
+                                        >
+                                        [Zoobiana, Yes2hvn, Sseclude] [MR]
+                                        [10p-4a] [<span style="font-size: 14px"
+                                          ><em
+                                            >“Lesbian Party celebrating Black
+                                            american culture, femmehood and sex
+                                            appeal in Black femme and queer POC
+                                            communities”</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/z6lZmPZkBw?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Lifesavers: 026</u></a
+                                        >
+                                        [Mark Grusane, S4m23, Greg Z, G. Zifcak]
+                                        [Bossa] [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/m9qxvXjk1b?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Paradiso</u></a
+                                        >
+                                        [Baltra, Physical Therapy, Mui Mui,
+                                        Ashley Venom, Blaize] [Paragon]
+                                        [9:30p-3a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.eventcreate.com/e/infinite-flirt"
+                                          >Versus: Infinite Flirt</a
+                                        >
+                                        [Gaterror, Chainwallet, Rohana, Samantha
+                                        Riott, Andy Loebs, 5uarm] [L&amp;SD]
+                                        [7-11p] [<span style="font-size: 14px"
+                                          ><em
+                                            >“Gathers a myriad of queer &amp;
+                                            trans artists;” #deeplistening</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/QGl4DEQlXO?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >tINI, Lydo, Kiernan Laveaux</a
+                                        >
+                                        [GrR] [9p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/xLq3L07Wvy?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Rimarkable, Toribio, Mickey Perez,
+                                          Qualia Trax</a
+                                        >
+                                        [Signal] [9p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/XBldgKjk89?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Battle Hymn</u></a
+                                        >
+                                        [J. Aria, Michael Magnan, Donofrio]
+                                        [Refuge] [10:30p-5a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://events.humanitix.com/grinding-is-better-than-sex-vol-4"
+                                          >Grinding is Better Than Sex: Vol.
+                                          4</a
+                                        >
+                                        [Eevee, Sola System, CmdJazmine]
+                                        [Parkside] [10p-4a] [<span
+                                          style="font-size: 14px"
+                                          ><em>#fundraiser #throwback</em></span
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245086670-fe1d7559-3c5a-4084-95ab-d3e1ba1de408.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="620"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 0px;
+                                      padding-bottom: 10px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <a
+                                      href="https://funqtion.co/events/EJqvjgmqvB?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                      target="_blank"
+                                      ><img
+                                        src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2Fmedia-manager%2F1763683347868-screenshot%202025-11-20%20at%207.02.22%E2%80%AFpm.png"
+                                        style="
+                                          width: 100%;
+                                          max-width: 100%;
+                                          object-fit: cover;
+                                          padding: 0;
+                                          outline: none;
+                                          border: none;
+                                          display: block;
+                                        "
+                                        width="620"
+                                        alt="Play Me Techno"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/0GlRmPxkD2?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Pornceptual</u></a
+                                        >
+                                        [Lolsnake, Spikey Lee, Lydo, Curses,
+                                        Makadsi, Manu Miran] [Basement]
+                                        [10:30p-7a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.glitsinc.org/rsvp"
+                                          >Miss Major Griffin-Gracy: A Life
+                                          Celebration</a
+                                        >
+                                        [Nowadays] [9-10p] [<span
+                                          style="font-size: 14px"
+                                          >“Celebrating the life of our legend
+                                          and mother; </span
+                                        ><a
+                                          target="_blank"
+                                          href="https://www.glitsinc.org/rsvp"
+                                          ><span style="font-size: 14px"
+                                            ><em>#freewRSVP</em></span
+                                          ></a
+                                        ><span style="font-size: 14px"
+                                          ><em> #memorial</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/b7qPZo5k8L?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Nonstop</u></a
+                                        >
+                                        [10-1: Scraaatch, 1-4: Yushh, 4-7: Jossy
+                                        Mitsu...] [Nowadays]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/brainrot-horror-and-way-too-many-images"
+                                          >Mix Fest: Brainrot, Horror, &amp; Way
+                                          Too Many Images</a
+                                        >
+                                        [Quad] [7-9p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.mixnyc.org/events/an-essence-to-ooze"
+                                          >Mix Fest: An Essence to Ooze</a
+                                        >
+                                        [Quad] [9:15-11:15p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#film #festival #art</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://ra.co/events/2289506?p=TECHNOQ25"
+                                          >Mix:Slit</a
+                                        >
+                                        has been cancelled: Read the
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRHxDWTEXKE/?"
+                                          >Accountability Statement</a
+                                        >,
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRHxjIrkTJP/?"
+                                          >Updated Policy</a
+                                        >
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRP6JjaiP68/?"
+                                          >Community Update</a
+                                        >
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.ameliamarzec.com/somethingfierce/"
+                                          style="color: inherit"
+                                          ><u
+                                            >Something Fierce: Festival
+                                            Opening</u
+                                          ></a
+                                        >
+                                        [Flux] [12-9p] [<span
+                                          style="font-size: 14px"
+                                          ><em
+                                            >"A festival on queer ecology…
+                                            through the lens of queer desire,
+                                            community, and persistence;" #</em
+                                          ></span
+                                        ><a
+                                          target="_blank"
+                                          href="https://www.eventbrite.com/e/something-fierce-tickets-1966149696670"
+                                          ><span style="font-size: 14px"
+                                            ><em><u>freewRSVP</u></em></span
+                                          ></a
+                                        ><span style="font-size: 14px"
+                                          ><em> #festival #art #film</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/x7kA0OmWMo?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>The Bunker: Going In</u></a
+                                        >
+                                        [A Space For Sound, Juan Maclean]
+                                        [Reforestors] [2-5p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#deeplistening</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/QPWD0G3Ww5?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Planetarium</u></a
+                                        >
+                                        [Justin Carter, Purelink, Rena Anakwe]
+                                        [TBA] [7-11:59p] [<span
+                                          style="font-size: 14px"
+                                          ><em>#deeplistening</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/zrk0rxnq5M?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Skint: 03</u></a
+                                        >
+                                        [DJ Thank You, Rory Sweeney, DJ
+                                        Deadname, Craic Feen] [T-P] [11p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/Keqjd21kdA?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Chomp Chomp</u></a
+                                        >
+                                        [Timo Lee, Soos, Rubinskee, Secret Guest
+                                        TBA] [53S] [9p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/b7qPZmLk8L?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Club Stars</u></a
+                                        >
+                                        [Uniiqu3, Acemo, Flotussin, Linapary,
+                                        Coyado] [Paragon] [9:30p-3a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/X4qYbQoWz0?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Harder</u></a
+                                        >
+                                        [Mark Holcomb, Riccardo Tavarez, Eric
+                                        Umble] [9BN] [10:30p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.eventcreate.com/e/rekha-warren"
+                                          >A Night of Audiovisual Beats</a
+                                        >
+                                        [DJ Rekha, Kristina Warren] [L&amp;SD]
+                                        [7-11p] [<span style="font-size: 14px"
+                                          ><em
+                                            >#a/v #hardware #deeplistening</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/nVleggKWam?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>I Love Acid</u></a
+                                        >
+                                        [DJ Pierre, Posthuman, DJ Warp, Chloe
+                                        Battelle] [GoR] [10p-5a]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245283470-98a350a2-632f-2e42-bf5b-41443cb53ccb.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="620"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 10px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <a
+                                      href="https://ra.co/events/2155373?p=TechnoQueers"
+                                      target="_blank"
+                                      ><img
+                                        src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2Fmedia-manager%2F1763681438419-screenshot%202025-11-20%20at%206.30.33%E2%80%AFpm.png"
+                                        style="
+                                          width: 100%;
+                                          max-width: 100%;
+                                          object-fit: cover;
+                                          padding: 0;
+                                          outline: none;
+                                          border: none;
+                                          display: block;
+                                        "
+                                        width="620"
+                                        alt="The Carry Nation: They Went on Forever"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        <span style="font-size: 20px"
+                                          ><strong>+ </strong></span
+                                        ><a
+                                          target="_blank"
+                                          href="https://ra.co/events/2155373?p=TechnoQueers"
+                                          ><span style="font-size: 20px"
+                                            ><strong
+                                              >20% Off The Carry Nation: They
+                                              Went On Forever Tickets for TQ
+                                              &lt;3</strong
+                                            ></span
+                                          ></a
+                                        ><span style="font-size: 20px"
+                                          ><strong> +</strong></span
+                                        >
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/b7qPZo5k8L?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Nonstop</u></a
+                                        >
+                                        [...7-10: X3butterfly, 10-4: Zenker
+                                        Brothers, 4-7: Eva Loveless, 7-close:
+                                        Fish56octagon] [Nowadays]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/nAl9D3rkyV?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Sweat #02: Sauna &amp; Sound Pop
+                                          Up</a
+                                        >
+                                        [James Bengamin] [La Plaza Cultural]
+                                        [10a-5p] [<span style="font-size: 14px"
+                                          ><em
+                                            >#outdoors #deeplistening
+                                            #bathhouse</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/X4qYbKdWz0?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Nicole Kidman</u></a
+                                        >
+                                        [Makadsi, Leonce, Rose Kourts] [Signal]
+                                        [4-11:59p]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/erk5pB5W7K?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Club Hospitality</u></a
+                                        >
+                                        [Flores Negras, Loqum, Sola System, DJ
+                                        Gaybash, Lynzo The Heartthrob] [Bossa]
+                                        [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.ameliamarzec.com/somethingfierce/"
+                                          style="color: inherit"
+                                          ><u
+                                            >Something Fierce: Festival
+                                            Closing</u
+                                          ></a
+                                        >
+                                        [Flux] [12-9p] [<span
+                                          style="font-size: 14px"
+                                          ><em
+                                            >"A festival on queer ecology…
+                                            through the lens of queer desire,
+                                            community, and persistence;" #</em
+                                          ></span
+                                        ><a
+                                          target="_blank"
+                                          href="https://www.eventbrite.com/e/something-fierce-tickets-1966149696670"
+                                          ><span style="font-size: 14px"
+                                            ><em><u>freewRSVP</u></em></span
+                                          ></a
+                                        ><span style="font-size: 14px"
+                                          ><em> #festival #art #film</em></span
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2Fmedia-manager%2F1729178585996-future%20of%20the%20future.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="620"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                      padding-left: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        + [Mon] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/4vkGe3bqPV?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Deja Vu</u></a
+                                        >
+                                        [Auspex, Josh Steers, Vile, Cotton]
+                                        [Bossa] [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Tue] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/m9qxv6gk1b?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Staff Party: Relaunch Vol. 1</a
+                                        >
+                                        [Rocco, Figa, Alissa Brianna, S’aint
+                                        Panic] [Bossa] [10p-4a] [<span
+                                          style="font-size: 14px"
+                                          ><em>#free</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/0GlRm0XkD2?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Juana</u></a
+                                        >
+                                        [Nowadays] [10p-6a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/5aWoz11qJN?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u
+                                            >Nightnight, Light Asylum, Heavy
+                                            Halo, Ronnie Stone With Vyper</u
+                                          ></a
+                                        >
+                                        [H0L0] [8:30p-1a] [<span
+                                          style="font-size: 14px"
+                                          ><em>#darkside</em></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/b3qOn6ElpE?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>Mike Servito</u></a
+                                        >
+                                        [GrR] [9p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/xLqmL3NljJ?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          style="color: inherit"
+                                          ><u>It's Giving: Aversion</u></a
+                                        >
+                                        [Devoye, Yasmeenah, Ssg_, Csilla]
+                                        [Bossa] [10p-4a]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/7wlJePBkpx?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Dance Practice</a
+                                        >
+                                        [Loftus] [L&amp;SD] [7:30-10:30p] [<span
+                                          style="font-size: 14px"
+                                          ><em
+                                            >#deeplistening #movement</em
+                                          ></span
+                                        >]
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        + [Wed] +
+                                        <a
+                                          target="_blank"
+                                          href="https://funqtion.co/events/xLqmL1AljJ?utm_source=tq&amp;utm_medium=email&amp;utm_campaign=tq"
+                                          >Haruka, Sissies Of Mercy</a
+                                        >
+                                        [Gabriela] [9p-3:30a] [<span
+                                          style="font-size: 14px"
+                                          ><em>#free</em></span
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245272261-ca5fca6d-d199-04ca-f0d3-bbf091fc230c.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="670"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.them.us/story/qncc-new-york-queer-nightlife-community-center-nonprofit"
+                                          >The Queer Nightlife Community Center
+                                          Wants To Keep the Party Alive</a
+                                        >
+                                        [them] "While the QNCC is dedicated to
+                                        serving the broader queer and trans
+                                        community in New York City, it’s also
+                                        acutely aware of its location.
+                                        Brownsville is a historically
+                                        underserved, majority-POC neighborhood —
+                                        one that is, as Falco puts it,
+                                        “economically and artistically
+                                        disinvested” — butting up against other
+                                        more gentrified communities like
+                                        Bed-Stuy and Crown Heights. The QNCC has
+                                        been connecting directly with neighbors
+                                        and offering the use of its space for
+                                        free.”
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        “Queer migration to once-rundown areas
+                                        like Harlem, Chelsea, and Greenwich
+                                        Village in the second half of the 20th
+                                        century — specifically due to their
+                                        affordability and fostering of budding
+                                        nightlife scenes — led directly to
+                                        overwhelming gentrification, pricing out
+                                        locals and forever changing
+                                        neighborhoods. More recently, this same
+                                        effect can be seen in Brooklyn’s
+                                        Williamsburg and Bushwick neighborhoods.
+                                        A new queer cultural nightlife haven
+                                        certainly brings with it the potential
+                                        for harm. Falco and the team’s attention
+                                        to the QNCC’s physical location will be
+                                        paramount to the nonprofit’s success,
+                                        given how the LGBTQ community has
+                                        historically been on the frontlines of
+                                        gentrification in major cities like
+                                        NYC.”
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://thebaffler.com/latest/we-want-everything-miller"
+                                          >We Want Everything</a
+                                        >
+                                        [Kay Gabriel’s politically urgent
+                                        hedonism] [Baffler] "For Gabriel’s
+                                        comrades, fucking and organizing are
+                                        equally important. They organize “a
+                                        defund-to- / abolish trajectory,”
+                                        maintaining through dreams a political
+                                        horizon that only becomes more necessary
+                                        the more difficult it is to imagine.
+                                        This is not the hedonism of “peak gay
+                                        sluttiness,” of marketing managers and
+                                        their G-timers on Fire Island. Hedonism
+                                        is politically neutral; Gabriel imagines
+                                        how it might help enact something beyond
+                                        itself."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.autostraddle.com/this-queer-rave-in-a-roller-rink-put-the-hedonism-in-halloween/"
+                                          >This Queer Rave in a Roller Rink Put
+                                          the Hedonism in Halloween</a
+                                        >
+                                        [DEAD2ME at Xanadu] [Autostraddle] "One
+                                        performance that stood out was artist
+                                        Sexorcist chained atop a wooden cross,
+                                        styled in custom chainmail, freeing
+                                        herself from her shackles using an
+                                        electric circle saw and sending sparks
+                                        into the crowd."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.queerty.com/gen-zs-recession-is-real-except-with-it-comes-to-men-who-have-with-men-20251113/"
+                                          >Gen Z’s “sex recession” is real…
+                                          except when it comes to men who have
+                                          sex with men</a
+                                        >
+                                        [Queerty]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRIGmrzjOzm/?img_index=1"
+                                          >22 clubs that ban phones on the
+                                          dancefloor</a
+                                        >
+                                        [Mixmag] [Basement &amp; Nowadays are
+                                        the only U.S. clubs featured on this
+                                        list] [Article doesn't differentiate
+                                        between 'no phone usage' vs. 'no
+                                        photos'] [<a
+                                          target="_blank"
+                                          href="https://mixmag.net/read/new-york-nightclub-green-room-to-launch-with-strict-no-phones-policy-news"
+                                          >New York nightclub Green Room to
+                                          launch with strict no-phones policy</a
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://djmag.com/features/inside-refuge-brooklyns-new-hi-def-dance-club"
+                                          >Inside Refuge, Brooklyn’s new "hi-def
+                                          dance club"</a
+                                        >
+                                        [DJ Mag]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRBZRc7jPAS/"
+                                          >Choke Hole apologizes for depicting
+                                          ICE officer narrative on stage,
+                                          donates profit from show to NYC ICE
+                                          Watch</a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://windycitytimes.com/2025/11/13/books-local-historian-owen-keehnen-talks-70s-and-80s-queer-nightlife-in-gay-chicago-memories-1300-n-wells/"
+                                          >Local historian Owen Keehnen talks
+                                          ‘70s and ‘80s queer nightlife in new
+                                          book ‘Gay Chicago Memories: 1300 N.
+                                          Wells’</a
+                                        >
+                                        [Windy City Times] "There was a very big
+                                        raid at Carol’s in 1985; I don’t know if
+                                        a raid that size has taken place since
+                                        then. During that raid, people had to
+                                        lie in the middle of the dance floor,
+                                        items from their wallets were
+                                        photocopied, and they were harassed and
+                                        couldn’t go to the bathroom. It was 40
+                                        years ago but, at the same time, people
+                                        thought that was a thing of the past.
+                                        That year was really late for that to
+                                        happen."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRPtX5YEkUG/"
+                                          >#OnThisDate [November 19, 1985]</a
+                                        >
+                                        The NYC Council voted to close the
+                                        City's bathhouses. A number of former
+                                        bathhouses are featured on
+                                        <a
+                                          target="_blank"
+                                          href="https://nyclgbtsites.org"
+                                          >nyclgbtsites.org</a
+                                        >
+                                        [New St. Marks Baths, Mt. Morris Baths,
+                                        Everard Baths, Continental Baths at the
+                                        Ansonia Hotel]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.dazeddigital.com/art-photography/article/69103/1/the-web-history-new-yorks-first-asian-gay-bar-nyc-exhibition-photography-zine"
+                                          >‘A space to let your guard down’: The
+                                          story of NYC’s first Asian gay bar</a
+                                        >
+                                        [DAZED] "From its launch in 1990 to its
+                                        closure in 2013, The Web – a bar at the
+                                        corner of Madison Avenue and East 58th
+                                        Street – was at the heart of New York’s
+                                        Asian gay community, providing a refuge
+                                        for people who often faced prejudice and
+                                        exclusion within the mainstream gay
+                                        scene. The venue organised the first
+                                        Asian contingent at New York’s Pride
+                                        Parade, winning ‘best float’ for four
+                                        consecutive years in the early 2000s,
+                                        and offered a range of life-changing
+                                        services, from free English lessons to
+                                        gay wedding ceremonies (long before this
+                                        was actually legal)."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.huckmag.com/article/london-queer-nightlife-is-collapsing-8-of-londons-biggest-queer-parties-unite-to-save-lgbtq-venues"
+                                          >Queer nightlife in crisis: 8 of
+                                          London’s biggest parties unite to save
+                                          LGBTQ+ venues</a
+                                        >
+                                        [INFERNO, Queer House Party, Riposte,
+                                        RIOT, BUMPAH, Coven, Uhaul Dyke Rescue
+                                        &amp; PLASTYK] [Huck] "Corporate
+                                        nightlife brands continue to repackage
+                                        what marginalised communities built –
+                                        from Black ballroom culture to diasporic
+                                        rave lineages – into “£60 mega-parties”,
+                                        while grassroots organisers fight for
+                                        survival."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://firstfloor.substack.com/p/first-floor-290-diy-or-die"
+                                          >DIY or Die</a
+                                        >
+                                        [First Floor] “The live music landscape
+                                        is insanely competitive, and if Sónar
+                                        and other Superstruct events can’t find
+                                        a way to either rapidly repair their
+                                        reputation or simply book more
+                                        compelling line-ups, then audiences are
+                                        almost certainly going to take their
+                                        dollars elsewhere. These festivals know
+                                        that, and that’s why they’re desperate
+                                        to change the narrative, even when it
+                                        involves whitewashing the reputation of
+                                        a nefarious private equity giant or
+                                        nonsensically casting themselves as the
+                                        victims of both online bullying and
+                                        corporate consolidation."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://soundcloud.com/refugeworldwide/le-guess-who-2025-shawn-reynaldo-emma-warren-17-nov-2025"
+                                          >Shawn Reynaldo &amp; Emma Warren</a
+                                        >
+                                        [Refuge Worldwide] "It makes me sad when
+                                        I think about someone who is growing up
+                                        now who isn’t going to have access to
+                                        DIY spaces as they disappear or become
+                                        endangered or become corporatized. There
+                                        are other modes of engaging with
+                                        culture, and we should remember that,
+                                        and we should find ways to structurally
+                                        support them any way we can."
+                                      </div>
+                                      <div><br /></div>
+                                      <div>
+                                        "The one downside of Barcelona... there
+                                        are clubs there and the programming is
+                                        good, but because of the nature of
+                                        Barcelona's economy, the crowds tend to
+                                        be a lot of tourists and the vibes are
+                                        weird, you know? It'll be like Ben UFO
+                                        or Helena Hauff playing and there's like
+                                        a bachelorette party on the dancefloor."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.theguardian.com/music/2025/nov/18/musicians-wrongly-allocated-uk-royalties"
+                                          >Musicians losing out on millions due
+                                          to wrongly allocated UK royalties, new
+                                          research finds</a
+                                        >
+                                        [Guardian] "A cheaper and simpler
+                                        solution – getting DJs to file accurate
+                                        tracklists with performing rights
+                                        societies – results in 95% payment
+                                        accuracy. And yet Fair Play found that
+                                        only 5% of DJs in the UK do this
+                                        regularly (despite 42% claiming to when
+                                        asked as part of a global survey earlier
+                                        in 2025)."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://mixmag.net/read/spotify-acquires-whosampled-songdna-sample-snitching-news"
+                                          >Spotify's acquisition of WhoSampled
+                                          sparks fears of "sample snitching" on
+                                          tracks with uncleared samples</a
+                                        >
+                                        [Mixmag] "<a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRQK84yDoDl/"
+                                          >There is no fun data anymore,
+                                          everything is surveillance capital.</a
+                                        >
+                                        Such cynicism to purchase a genuine
+                                        community of music nerds who get off on
+                                        niche data entry for the love of the
+                                        game and just turn it into another way
+                                        triangulate musical metadata in relation
+                                        to a listeners spending habits via
+                                        surveillance tech." [peretsky]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        + "If the main channels of music
+                                        distribution infrastructure on the
+                                        internet are going to continue to
+                                        enshittify themselves to death, the only
+                                        logical response is to enact a digital
+                                        dubplate mentality in your community
+                                        both IRL and URL." [<a
+                                          target="_blank"
+                                          href="https://www.instagram.com/p/DRAYvLjDkeH/"
+                                          >peretsky</a
+                                        >]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.platformer.news/king-gizzard-spotify-impersonators/"
+                                          >Spotify's doppelgänger problem</a
+                                        >
+                                        [Platformer] "After an artist leaves,
+                                        they must still remain vigilant about
+                                        their presence there. Otherwise, some
+                                        unscrupulous artist might capitalize on
+                                        their popularity by masquerading as
+                                        them. Spotify is facing a deluge of
+                                        impersonators and knock-off tracks, many
+                                        of them created using artificial
+                                        intelligence."
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://musictechpolicy.com/2025/11/07/the-50-handshake-rebooted-spotifys-algorithmic-payola-faces-its-day-in-court/"
+                                          >The $50 Handshake, Rebooted:
+                                          Spotify’s Algorithmic Payola Faces Its
+                                          Day in Court</a
+                                        >
+                                        [Music Tech Policy blog]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://networknotes.motiveunknown.com/p/spotify-netherlands-viral-chart-is"
+                                          >Spotify Netherlands' Viral Chart is
+                                          flooded with AI-generated, far-right
+                                          racist tracks</a
+                                        >
+                                        [Network Notes]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 8px;
+                                      padding-bottom: 8px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div>
+                                        +
+                                        <a
+                                          target="_blank"
+                                          href="https://www.theguardian.com/music/2025/nov/11/spotify-music-streaming-companies"
+                                          >‘I can see a world where Spotify
+                                          doesn’t exist’: will a new generation
+                                          of music streaming companies
+                                          succeed?</a
+                                        >
+                                        [Guardian]
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 15px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245304982-8c1d3e76-b2e4-1b49-0b3e-9af9ff42bceb.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="670"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 10px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0px;
+                                      margin: 0px;
+                                      padding: 0px;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <a
+                                      href="https://xcancel.com/idktommi/status/1989511608792748336"
+                                      target="_blank"
+                                      ><img
+                                        src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2Fmedia-manager%2F1763688946642-1.jpeg"
+                                        style="
+                                          width: 100%;
+                                          max-width: 100%;
+                                          object-fit: cover;
+                                          padding: 0;
+                                          outline: none;
+                                          border: none;
+                                          display: block;
+                                        "
+                                        width="620"
+                                    /></a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 75px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              class="container"
+                              style="margin-bottom: 5px; margin-top: 5px"
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="hero"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    valign="top"
+                                    align="center"
+                                  >
+                                    <img
+                                      src="https://gallery.eomail4.com/62a6a8da-856c-11ee-aacc-278c4c25eb7d%2F1700245652984-suuu.png"
+                                      style="
+                                        width: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        padding: 0;
+                                        outline: none;
+                                        border: none;
+                                        display: block;
+                                      "
+                                      width="670"
+                                    />
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              style="table-layout: fixed; width: 100%"
+                              role="presentation"
+                              width="100%"
+                              bgcolor
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    style="
+                                      min-width: 100%;
+                                      padding-top: 75px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <table
+                                      style="
+                                        border-top: 1px rgb(220, 214, 209);
+                                        border-collapse: collapse;
+                                        width: 100%;
+                                      "
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      align="center"
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <span></span>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 0px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://technoqueers.com/"
+                                          ><span
+                                            class="eo-link-wrapper"
+                                            style="font-size: 12px"
+                                            >Subscribe</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 0px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://arborescens.eomail4.com/unsubscribe?ep=2&amp;l=f278fcfc-ae97-11ee-bb9c-4de328118db3&amp;lc=2591eee6-ae98-11ee-8164-53dc70e5b970&amp;p=82fcce9e-c3c6-11f0-aae2-cb5ead8f220f&amp;pt=campaign&amp;pv=4&amp;spa=1763691279&amp;t=1763691333&amp;s=7d90a66ff3028e985c2448921a1988117dede87bf559c57491c2df0045bd258f"
+                                          ><span style="font-size: 12px"
+                                            >Unsubscribe</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 0px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://opencollective.com/technoqueers"
+                                          ><span style="font-size: 12px"
+                                            >Donate</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 0px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        <a
+                                          target="_blank"
+                                          href="https://www.wearecomposite.co/"
+                                          ><span
+                                            class="eo-link-wrapper"
+                                            style="font-size: 12px"
+                                            >Designed by Composite</span
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table
+                              role="presentation"
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              bgcolor
+                              align="center"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td
+                                    class="container"
+                                    style="
+                                      padding-top: 0px;
+                                      padding-bottom: 0px;
+                                    "
+                                  >
+                                    <div
+                                      class="text-block fr-inner"
+                                      style="line-height: 1"
+                                    >
+                                      <div style="text-align: center">
+                                        <span style="font-size: 12px"
+                                          >999 Bushwick Ave<br />Brooklyn, NY
+                                          11221<br />USA</span
+                                        >
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+      integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"07e17080a49d4822aae76ebba046a1bb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
