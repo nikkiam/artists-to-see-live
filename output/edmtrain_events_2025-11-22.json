@@ -1,10 +1,203 @@
 {
   "events": [
     {
+      "name": "LYNY & Stooki Sound & Dabow",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/lyny-stooki-sound-415753?utm_source=2436&utm_medium=api",
+      "venue": "Brooklyn Monarch",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "LYNY",
+          "set_time": null
+        },
+        {
+          "name": "Stooki Sound",
+          "set_time": null
+        },
+        {
+          "name": "Dabow",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "415753",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "CYCLOPS & BA1i & LUCIU$ +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/cyclops-ba1i-417320?utm_source=2436&utm_medium=api",
+      "venue": "17 Meadow St",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "CYCLOPS",
+          "set_time": null
+        },
+        {
+          "name": "BA1i",
+          "set_time": null
+        },
+        {
+          "name": "LUCIU$",
+          "set_time": null
+        },
+        {
+          "name": "On The Hunt",
+          "set_time": null
+        },
+        {
+          "name": "GuyGuy",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "417320",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Dillon Francis",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dillon-francis-419992?utm_source=2436&utm_medium=api",
+      "venue": "Le Poisson Rouge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Dillon Francis",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "419992",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "The Disco Biscuits",
+      "ticket_url": "https://edmtrain.com/buffalo-ny/the-disco-biscuits-420195?utm_source=2436&utm_medium=api",
+      "venue": "Town Ballroom",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "The Disco Biscuits",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "420195",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Zulan",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/zulan-424080?utm_source=2436&utm_medium=api",
+      "venue": "Webster Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Zulan",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "424080",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Giuseppe Ottaviani & Nifra & Castor & Pollux +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/giuseppe-ottaviani-nifra-424238?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Giuseppe Ottaviani",
+          "set_time": null
+        },
+        {
+          "name": "Nifra",
+          "set_time": null
+        },
+        {
+          "name": "Castor & Pollux",
+          "set_time": null
+        },
+        {
+          "name": "SunrYse",
+          "set_time": null
+        },
+        {
+          "name": "4Y\u00db",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "424238",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Jai Wolf & Firungi & BANGLABOY",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jai-wolf-firungi-428048?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jai Wolf",
+          "set_time": null
+        },
+        {
+          "name": "Firungi",
+          "set_time": null
+        },
+        {
+          "name": "BANGLABOY",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "428048",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Yotto",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/yotto-429311?utm_source=2436&utm_medium=api",
+      "venue": "Car Park",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Yotto",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "429311",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Sonic Jungle",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sonic-jungle-goldcap-430089?utm_source=2436&utm_medium=api",
       "venue": "New York, NY",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Goldcap",
@@ -22,10 +215,51 @@
       "festival_ind": false
     },
     {
+      "name": "Benny Benassi",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/benny-benassi-430959?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Benny Benassi",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "430959",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Boombox Cartel & Zion",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/boombox-cartel-zion-431933?utm_source=2436&utm_medium=api",
+      "venue": "Mission Nightclub",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Boombox Cartel",
+          "set_time": null
+        },
+        {
+          "name": "Zion",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "431933",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-432697?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -37,7 +271,8 @@
       "name": "Pornceptual",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/pornceptual-curses-433885?utm_source=2436&utm_medium=api",
       "venue": "BASEMENT NY",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Curses",
@@ -71,10 +306,37 @@
       "festival_ind": false
     },
     {
+      "name": "UNIIQU3 & AceMo & flotussin",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/uniiqu3-acemo-434010?utm_source=2436&utm_medium=api",
+      "venue": "Paragon",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "UNIIQU3",
+          "set_time": null
+        },
+        {
+          "name": "AceMo",
+          "set_time": null
+        },
+        {
+          "name": "flotussin",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "434010",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Time Warp",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/time-warp-434092?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Storehouse",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Ben Sterling",
@@ -128,10 +390,185 @@
       "festival_ind": true
     },
     {
+      "name": "Jesse Calosso",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jesse-calosso-434274?utm_source=2436&utm_medium=api",
+      "venue": "Listen Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jesse Calosso",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "434274",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Pirates VS Ninjas Rave",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/pirates-vs-ninjas-rave-graz-434546?utm_source=2436&utm_medium=api",
+      "venue": "The House NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Graz",
+          "set_time": null
+        },
+        {
+          "name": "Faith in the Glitch",
+          "set_time": null
+        },
+        {
+          "name": "Schnife The Yak",
+          "set_time": null
+        },
+        {
+          "name": "DJ Candy Kid",
+          "set_time": null
+        },
+        {
+          "name": "bubucore69",
+          "set_time": null
+        },
+        {
+          "name": "Bass of Spades",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "434546",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Jaden Bojsen",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jaden-bojsen-435104?utm_source=2436&utm_medium=api",
+      "venue": "Nebula",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jaden Bojsen",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "435104",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Turbz",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/turbz-435994?utm_source=2436&utm_medium=api",
+      "venue": "The Highlight Room New York",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Turbz",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "435994",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Doctor Jeep & Bobi & Koyaanisqtatsi +5 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/doctor-jeep-bobi-436177?utm_source=2436&utm_medium=api",
+      "venue": "00:00",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Doctor Jeep",
+          "set_time": null
+        },
+        {
+          "name": "Bobi",
+          "set_time": null
+        },
+        {
+          "name": "Koyaanisqtatsi",
+          "set_time": null
+        },
+        {
+          "name": "Xi",
+          "set_time": null
+        },
+        {
+          "name": "Audrey Chou",
+          "set_time": null
+        },
+        {
+          "name": "Entroplay",
+          "set_time": null
+        },
+        {
+          "name": "Mark Shephard",
+          "set_time": null
+        },
+        {
+          "name": "Jessie Han",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436177",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "NVM",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/nvm-436236?utm_source=2436&utm_medium=api",
+      "venue": "Little Sister Lounge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "NVM",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436236",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Ranger Trucco",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/ranger-trucco-436398?utm_source=2436&utm_medium=api",
+      "venue": "Refuge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Ranger Trucco",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436398",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "THE GIRLS ROOM",
       "ticket_url": "https://edmtrain.com/buffalo-ny/the-girls-room-wenzday-436842?utm_source=2436&utm_medium=api",
       "venue": "Riff City",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Wenzday",
@@ -148,7 +585,8 @@
       "name": "I LOVE ACID",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/i-love-acid-dj-pierre-436947?utm_source=2436&utm_medium=api",
       "venue": "Good Room",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "DJ Pierre",
@@ -178,10 +616,191 @@
       "festival_ind": false
     },
     {
+      "name": "Planet B",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/planet-b-436983?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Planet B",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436983",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "nextdimensional & Chelita",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/nextdimensional-chelita-437040?utm_source=2436&utm_medium=api",
+      "venue": "Mood Ring",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "nextdimensional",
+          "set_time": null
+        },
+        {
+          "name": "Chelita",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437040",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Jossy Mitsu & x3butterfly & Yushh +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jossy-mitsu-x3butterfly-437065?utm_source=2436&utm_medium=api",
+      "venue": "Nowadays",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jossy Mitsu",
+          "set_time": null
+        },
+        {
+          "name": "x3butterfly",
+          "set_time": null
+        },
+        {
+          "name": "Yushh",
+          "set_time": null
+        },
+        {
+          "name": "Zenker Brothers",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437065",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Frank & Tony & Rick Wade & For Future's Sake +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/frank-and-tony-rick-wade-437098?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Frank & Tony",
+          "set_time": null
+        },
+        {
+          "name": "Rick Wade",
+          "set_time": null
+        },
+        {
+          "name": "For Future's Sake",
+          "set_time": null
+        },
+        {
+          "name": "AIDA",
+          "set_time": null
+        },
+        {
+          "name": "Galen",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437098",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Rosa Perreo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/rosa-perreo-437172?utm_source=2436&utm_medium=api",
+      "venue": "The Onyx Room at House of Yes",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Rosa Perreo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437172",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Pearson Sound",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/pearson-sound-437222?utm_source=2436&utm_medium=api",
+      "venue": "Green Room NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Pearson Sound",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437222",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Sam Allan & Afriqua",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/sam-allan-afriqua-437228?utm_source=2436&utm_medium=api",
+      "venue": "Eden NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Sam Allan",
+          "set_time": null
+        },
+        {
+          "name": "Afriqua",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437228",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "The Juan Maclean",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/the-juan-maclean-437229?utm_source=2436&utm_medium=api",
+      "venue": "Reforesters Laboratory",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "The Juan Maclean",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437229",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Palosanto",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/palosanto-oktave-437443?utm_source=2436&utm_medium=api",
       "venue": "House of Yes",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Oktave",
@@ -207,10 +826,29 @@
       "festival_ind": false
     },
     {
+      "name": "Dyed Soundorom",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dyed-soundorom-444912?utm_source=2436&utm_medium=api",
+      "venue": "H0L0",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Dyed Soundorom",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "444912",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Chomp! Chomp! Five Year Anniversary",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/chomp-chomp-five-year-anniversary-timo-lee-449154?utm_source=2436&utm_medium=api",
       "venue": "53 Scott Ave",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Timo Lee",
@@ -235,7 +873,8 @@
       "name": "Play Me Techno",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/play-me-techno-juliana-huxtable-449178?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Juliana Huxtable",
@@ -265,10 +904,33 @@
       "festival_ind": false
     },
     {
+      "name": "Krystal Klear & Kate Stein",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/krystal-klear-kate-stein-449348?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Krystal Klear",
+          "set_time": null
+        },
+        {
+          "name": "Kate Stein",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449348",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "feedback",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/feedback-bijou-449367?utm_source=2436&utm_medium=api",
       "venue": "UNVEILED",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "BIJOU",
@@ -297,7 +959,8 @@
       "name": "Planetarium",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/planetarium-449485?utm_source=2436&utm_medium=api",
       "venue": "New York",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -309,7 +972,8 @@
       "name": "Lyra Rooftop Party",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/lyra-rooftop-party-450053?utm_source=2436&utm_medium=api",
       "venue": "Magic Hour Rooftop Bar & Lounge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -321,7 +985,8 @@
       "name": "Mix:slit - The Mix Fest 2025 Afterparty",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/mix-slit-the-mix-fest-2025-afterparty-xana-101-450056?utm_source=2436&utm_medium=api",
       "venue": "Manhattan",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "XANA 101",
@@ -351,10 +1016,33 @@
       "festival_ind": false
     },
     {
+      "name": "Ian Friday & DONIS",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/ian-friday-donis-450063?utm_source=2436&utm_medium=api",
+      "venue": "Now & Then NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Ian Friday",
+          "set_time": null
+        },
+        {
+          "name": "DONIS",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "450063",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "On The Road To... ART WITH ME",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/on-the-road-to-art-with-me-tim-green-450067?utm_source=2436&utm_medium=api",
       "venue": "Refuge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Tim Green",
@@ -383,7 +1071,8 @@
       "name": "Outer Heaven Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/outer-heaven-presents-451146?utm_source=2436&utm_medium=api",
       "venue": "Outer Heaven NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -392,10 +1081,37 @@
       "festival_ind": false
     },
     {
+      "name": "Jus-Ed & Grosera & Richard O'Bryan",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jus-ed-grosera-451404?utm_source=2436&utm_medium=api",
+      "venue": "Apollo Studio",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jus-Ed",
+          "set_time": null
+        },
+        {
+          "name": "Grosera",
+          "set_time": null
+        },
+        {
+          "name": "Richard O'Bryan",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451404",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Class 9 Cargo Series",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/class-9-cargo-series-mike-servito-451426?utm_source=2436&utm_medium=api",
       "venue": "Cargo at Dead Letter No. 9",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mike Servito",
@@ -417,10 +1133,59 @@
       "festival_ind": false
     },
     {
+      "name": "Warung & Trenches (NY)",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/warung-trenches-ny-452029?utm_source=2436&utm_medium=api",
+      "venue": "Virgo New York",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Warung",
+          "set_time": null
+        },
+        {
+          "name": "Trenches (NY)",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "452029",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
+      "name": "Rockin Moroccin & Nico De Andrea & Monkey Safari",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/rockin-moroccin-nico-de-andrea-452188?utm_source=2436&utm_medium=api",
+      "venue": "Sony Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Rockin Moroccin",
+          "set_time": null
+        },
+        {
+          "name": "Nico De Andrea",
+          "set_time": null
+        },
+        {
+          "name": "Monkey Safari",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "452188",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Late Night Soir\u00e9e",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/late-night-soiree-453094?utm_source=2436&utm_medium=api",
       "venue": "221 2nd Avenue",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -432,7 +1197,8 @@
       "name": "The Groove Lab Sunday Morning",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/the-groove-lab-sunday-morning-453098?utm_source=2436&utm_medium=api",
       "venue": "290 Meserole St",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -441,10 +1207,41 @@
       "festival_ind": false
     },
     {
+      "name": "DJ Spinna & Omer Mil & Mart\u00edn +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dj-spinna-omer-mil-453155?utm_source=2436&utm_medium=api",
+      "venue": "310 Meserole St",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "DJ Spinna",
+          "set_time": null
+        },
+        {
+          "name": "Omer Mil",
+          "set_time": null
+        },
+        {
+          "name": "Mart\u00edn",
+          "set_time": null
+        },
+        {
+          "name": "Miss Gypsy",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "453155",
+      "event_date": "2025-11-22",
+      "festival_ind": false
+    },
+    {
       "name": "Aftermath Saturday Morning",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/aftermath-saturday-morning-camilo-porras-453412?utm_source=2436&utm_medium=api",
       "venue": "317 Stagg St",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Camilo Porras",
@@ -461,7 +1258,8 @@
       "name": "Time Warp Friday Afterparty",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/time-warp-friday-afterparty-dj-heartstring-453526?utm_source=2436&utm_medium=api",
       "venue": "99 Scott",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "DJ Heartstring",
@@ -490,7 +1288,8 @@
       "name": "Gathering Of The Creatures",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/gathering-of-the-creatures-jay-maniakal-453530?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Jay Maniakal",
@@ -516,10 +1315,29 @@
       "festival_ind": false
     },
     {
+      "name": "The Carry Nation",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/the-carry-nation-414112?utm_source=2436&utm_medium=api",
+      "venue": "New York, NY",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "The Carry Nation",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "414112",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-cristian-arango-432698?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Cristian Arango",
@@ -533,10 +1351,101 @@
       "festival_ind": false
     },
     {
+      "name": "Apache & Olaf & Monobase +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/apache-olaf-432706?utm_source=2436&utm_medium=api",
+      "venue": "Superior Ingredients (Rooftop)",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Apache",
+          "set_time": null
+        },
+        {
+          "name": "Olaf",
+          "set_time": null
+        },
+        {
+          "name": "Monobase",
+          "set_time": null
+        },
+        {
+          "name": "Cameron Jack",
+          "set_time": null
+        },
+        {
+          "name": "Kamcoco",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "432706",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Caire & Mesa & James Internet",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/caire-mesa-436984?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Caire",
+          "set_time": null
+        },
+        {
+          "name": "Mesa",
+          "set_time": null
+        },
+        {
+          "name": "James Internet",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "436984",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Nicole Kidman & Makadsi & Leonce +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/nicole-kidman-makadsi-437123?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Nicole Kidman",
+          "set_time": null
+        },
+        {
+          "name": "Makadsi",
+          "set_time": null
+        },
+        {
+          "name": "Leonce",
+          "set_time": null
+        },
+        {
+          "name": "Rose Kourts",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "437123",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
       "name": "Sounday's Listen",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/soundays-listen-diego-garcia-449255?utm_source=2436&utm_medium=api",
       "venue": "Listen Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Diego Garcia",
@@ -565,7 +1474,8 @@
       "name": "Under Construction",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/under-construction-449755?utm_source=2436&utm_medium=api",
       "venue": "Sultan Room",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sun",
@@ -577,7 +1487,8 @@
       "name": "Sunday Skate Club",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sunday-skate-club-jeffrey-sfire-449791?utm_source=2436&utm_medium=api",
       "venue": "Xanadu Roller Arts",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Jeffrey Sfire",
@@ -595,10 +1506,37 @@
       "festival_ind": false
     },
     {
+      "name": "Kayo & Sal Paradise & Matt Atkinson",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/kayo-sal-paradise-450014?utm_source=2436&utm_medium=api",
+      "venue": "Cargo at Dead Letter No. 9",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Kayo",
+          "set_time": null
+        },
+        {
+          "name": "Sal Paradise",
+          "set_time": null
+        },
+        {
+          "name": "Matt Atkinson",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "450014",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
       "name": "Your Shot 2025",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/your-shot-2025-cherrera-450323?utm_source=2436&utm_medium=api",
       "venue": "Elsewhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "CHerrera",
@@ -615,7 +1553,8 @@
       "name": "Shelter - Rememberance",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/shelter-rememberance-451527?utm_source=2436&utm_medium=api",
       "venue": "Public Records",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sun",
@@ -627,7 +1566,8 @@
       "name": "UNDR-NYC",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/undr-nyc-451690?utm_source=2436&utm_medium=api",
       "venue": "Long Island City",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sun",
@@ -639,7 +1579,8 @@
       "name": "Sunday Selectors",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sunday-selectors-tony-humphries-452135?utm_source=2436&utm_medium=api",
       "venue": "Refuge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Tony Humphries",
@@ -656,7 +1597,8 @@
       "name": "Raw Area",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/raw-area-452800?utm_source=2436&utm_medium=api",
       "venue": "20 Meadow Street",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sun",
@@ -665,10 +1607,47 @@
       "festival_ind": false
     },
     {
+      "name": "Serge Devant",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/serge-devant-452954?utm_source=2436&utm_medium=api",
+      "venue": "Refuge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Serge Devant",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "452954",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
+      "name": "Fran\u00e7ois K",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/francois-k-453166?utm_source=2436&utm_medium=api",
+      "venue": "Le Bain",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Fran\u00e7ois K",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "453166",
+      "event_date": "2025-11-23",
+      "festival_ind": false
+    },
+    {
       "name": "Club Advisory After Party",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/club-advisory-after-party-453573?utm_source=2436&utm_medium=api",
       "venue": "UNVEILED",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sun",
@@ -677,10 +1656,55 @@
       "festival_ind": false
     },
     {
+      "name": "Steen & FLWRSHRK & Bojaq",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/steen-flwrshrk-435260?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Steen",
+          "set_time": null
+        },
+        {
+          "name": "FLWRSHRK",
+          "set_time": null
+        },
+        {
+          "name": "Bojaq",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Tue",
+      "event_id": "435260",
+      "event_date": "2025-11-25",
+      "festival_ind": false
+    },
+    {
+      "name": "Neil Jackson",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/neil-jackson-435600?utm_source=2436&utm_medium=api",
+      "venue": "Little Sister Lounge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Neil Jackson",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Tue",
+      "event_id": "435600",
+      "event_date": "2025-11-25",
+      "festival_ind": false
+    },
+    {
       "name": "Tuesday Baby Tuesday",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/tuesday-baby-tuesday-444918?utm_source=2436&utm_medium=api",
       "venue": "Nebula",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Tue",
@@ -689,10 +1713,33 @@
       "festival_ind": false
     },
     {
+      "name": "Sam Alfred & Silva Bumpa",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/sam-alfred-silva-bumpa-416731?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Sam Alfred",
+          "set_time": null
+        },
+        {
+          "name": "Silva Bumpa",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "416731",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "Local Support Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/local-support-presents-laidback-luke-429930?utm_source=2436&utm_medium=api",
       "venue": "Captain Lawrence Brewery",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Laidback Luke",
@@ -706,10 +1753,41 @@
       "festival_ind": false
     },
     {
+      "name": "Julia Kova & PARADEX & Pisapia +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/julia-kova-paradex-431432?utm_source=2436&utm_medium=api",
+      "venue": "Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Julia Kova",
+          "set_time": null
+        },
+        {
+          "name": "PARADEX",
+          "set_time": null
+        },
+        {
+          "name": "Pisapia",
+          "set_time": null
+        },
+        {
+          "name": "RYTM",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "431432",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "Holiday House Party 2",
       "ticket_url": "https://edmtrain.com/buffalo-ny/holiday-house-party-2-431461?utm_source=2436&utm_medium=api",
       "venue": "Electric City",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Wed",
@@ -718,10 +1796,37 @@
       "festival_ind": false
     },
     {
+      "name": "Perry Wayne & BRAINRACK & Nikademis",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/perry-wayne-brainrack-431555?utm_source=2436&utm_medium=api",
+      "venue": "Superior Ingredients (Main Room)",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Perry Wayne",
+          "set_time": null
+        },
+        {
+          "name": "BRAINRACK",
+          "set_time": null
+        },
+        {
+          "name": "Nikademis",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "431555",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "F*ck It, We Dance",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/f-ck-it-we-dance-dana-montana-433040?utm_source=2436&utm_medium=api",
       "venue": "House of Yes",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Dana Montana",
@@ -739,10 +1844,195 @@
       "festival_ind": false
     },
     {
+      "name": "Patrice B\u00e4umel",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/patrice-baumel-433102?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Patrice B\u00e4umel",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "433102",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Rafa Barrios & Kofla & Cicibi",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/rafa-barrios-kofla-433134?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Rafa Barrios",
+          "set_time": null
+        },
+        {
+          "name": "Kofla",
+          "set_time": null
+        },
+        {
+          "name": "Cicibi",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "433134",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Oscar G",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/oscar-g-433984?utm_source=2436&utm_medium=api",
+      "venue": "Listen Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Oscar G",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "433984",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Louie Vega",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/louie-vega-436340?utm_source=2436&utm_medium=api",
+      "venue": "Musica NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Louie Vega",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "436340",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Shaun Reeves & Stretch & Camilla +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/shaun-reeves-stretch-436368?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Shaun Reeves",
+          "set_time": null
+        },
+        {
+          "name": "Stretch",
+          "set_time": null
+        },
+        {
+          "name": "Camilla",
+          "set_time": null
+        },
+        {
+          "name": "Greg Paulus",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "436368",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Sam Alfred & Silva Bumpa & IN PARALLEL",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/sam-alfred-silva-bumpa-436921?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Sam Alfred",
+          "set_time": null
+        },
+        {
+          "name": "Silva Bumpa",
+          "set_time": null
+        },
+        {
+          "name": "IN PARALLEL",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "436921",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Light Asylum & Heavy Halo & NightNight +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/light-asylum-heavy-halo-436956?utm_source=2436&utm_medium=api",
+      "venue": "H0L0",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Light Asylum",
+          "set_time": null
+        },
+        {
+          "name": "Heavy Halo",
+          "set_time": null
+        },
+        {
+          "name": "NightNight",
+          "set_time": null
+        },
+        {
+          "name": "Vyper",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "436956",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
+      "name": "Juana",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/juana-437066?utm_source=2436&utm_medium=api",
+      "venue": "Nowadays",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Juana",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "437066",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "Green Room Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/green-room-presents-mike-servito-437223?utm_source=2436&utm_medium=api",
       "venue": "195 Morgan Avenue",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mike Servito",
@@ -759,7 +2049,8 @@
       "name": "THANKSGIVING EVE AT THE ROSE NYC",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/thanksgiving-eve-at-the-rose-nyc-437337?utm_source=2436&utm_medium=api",
       "venue": "The Rose New York",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Wed",
@@ -768,10 +2059,49 @@
       "festival_ind": false
     },
     {
+      "name": "Darker Than Wax & Eto Ano & DJ Cowriiie +3 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/darker-than-wax-eto-ano-449234?utm_source=2436&utm_medium=api",
+      "venue": "Good Room",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Darker Than Wax",
+          "set_time": null
+        },
+        {
+          "name": "Eto Ano",
+          "set_time": null
+        },
+        {
+          "name": "DJ Cowriiie",
+          "set_time": null
+        },
+        {
+          "name": "Spurge",
+          "set_time": null
+        },
+        {
+          "name": "Marco Weibel",
+          "set_time": null
+        },
+        {
+          "name": "eto.ano",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "449234",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "The DL ROOFTOP",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/the-dl-rooftop-449382?utm_source=2436&utm_medium=api",
       "venue": "The DL",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Wed",
@@ -780,10 +2110,29 @@
       "festival_ind": false
     },
     {
+      "name": "Joel Corry",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/joel-corry-449702?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Joel Corry",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "449702",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "Disco Shaharazad",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/disco-shaharazad-ze-beoble-449710?utm_source=2436&utm_medium=api",
       "venue": "Mood Ring",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "ZE BEOBLE",
@@ -797,10 +2146,33 @@
       "festival_ind": false
     },
     {
+      "name": "Mariana Bo & LNY TNZ",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mariana-bo-lny-tnz-450285?utm_source=2436&utm_medium=api",
+      "venue": "VShow",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mariana Bo",
+          "set_time": null
+        },
+        {
+          "name": "LNY TNZ",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "450285",
+      "event_date": "2025-11-26",
+      "festival_ind": false
+    },
+    {
       "name": "The Ginseng Museum Exhibition",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/the-ginseng-museum-exhibition-kimj-452626?utm_source=2436&utm_medium=api",
       "venue": "Rash",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "kimj",
@@ -822,10 +2194,37 @@
       "festival_ind": false
     },
     {
+      "name": "Gustavo Dominguez & Cristian Arango & VNUZ",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/gustavo-dominguez-cristian-arango-433743?utm_source=2436&utm_medium=api",
+      "venue": "Superior Ingredients (Main Room)",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Gustavo Dominguez",
+          "set_time": null
+        },
+        {
+          "name": "Cristian Arango",
+          "set_time": null
+        },
+        {
+          "name": "VNUZ",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "433743",
+      "event_date": "2025-11-27",
+      "festival_ind": false
+    },
+    {
       "name": "Techno Thursdays",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/techno-thursdays-domina-451109?utm_source=2436&utm_medium=api",
       "venue": "Listen Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "D\u00d8MINA",
@@ -846,7 +2245,8 @@
       "name": "Lasership",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/lasership-levity-411527?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Paramount",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Levity",
@@ -871,7 +2271,8 @@
       "name": "Teksupport",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/teksupport-kettama-414494?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Steel",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "KETTAMA",
@@ -885,10 +2286,29 @@
       "festival_ind": false
     },
     {
+      "name": "Township Rebellion",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/township-rebellion-428412?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Township Rebellion",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "428412",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Slumber Party",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/slumber-party-makez-430040?utm_source=2436&utm_medium=api",
       "venue": "House of Yes",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mak\u00e8z",
@@ -909,7 +2329,8 @@
       "name": "Paradiso",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/paradiso-kevin-saunderson-431189?utm_source=2436&utm_medium=api",
       "venue": "Paragon",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Kevin Saunderson",
@@ -935,10 +2356,29 @@
       "festival_ind": false
     },
     {
+      "name": "Timmy Trumpet",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/timmy-trumpet-431317?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Timmy Trumpet",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "431317",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Soulection",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/soulection-joe-kay-432635?utm_source=2436&utm_medium=api",
       "venue": "Knockdown Center",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Joe Kay",
@@ -959,7 +2399,8 @@
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-gianni-blu-432699?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Gianni Blu",
@@ -984,7 +2425,8 @@
       "name": "Broadway Rave",
       "ticket_url": "https://edmtrain.com/new-york/broadway-rave-433590?utm_source=2436&utm_medium=api",
       "venue": "Empire Underground",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -996,7 +2438,8 @@
       "name": "Decoded",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/decoded-crossbow-433938?utm_source=2436&utm_medium=api",
       "venue": "Elsewhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Crossbow",
@@ -1029,7 +2472,8 @@
       "name": "Sunny Side Up Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sunny-side-up-presents-luco-434634?utm_source=2436&utm_medium=api",
       "venue": "Superior Ingredients (Rooftop)",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "LUC\u00d8",
@@ -1043,10 +2487,29 @@
       "festival_ind": false
     },
     {
+      "name": "Mike Williams",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mike-williams-435105?utm_source=2436&utm_medium=api",
+      "venue": "Nebula",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mike Williams",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "435105",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Battle Hymn THANKSGIVING",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/battle-hymn-thanksgiving-eli-escobar-435659?utm_source=2436&utm_medium=api",
       "venue": "Refuge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Eli Escobar",
@@ -1064,10 +2527,105 @@
       "festival_ind": false
     },
     {
+      "name": "Crossbow & CATA & Mafia B +4 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/crossbow-cata-436923?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Crossbow",
+          "set_time": null
+        },
+        {
+          "name": "CATA",
+          "set_time": null
+        },
+        {
+          "name": "Mafia B",
+          "set_time": null
+        },
+        {
+          "name": "BRIMAC",
+          "set_time": null
+        },
+        {
+          "name": "Jonah Almost",
+          "set_time": null
+        },
+        {
+          "name": "TALK Shivi",
+          "set_time": null
+        },
+        {
+          "name": "Andg Luna",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "436923",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
+      "name": "Razor-N-Tape & Recloose & Jkriv +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/razor-n-tape-recloose-436948?utm_source=2436&utm_medium=api",
+      "venue": "Good Room",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Razor-N-Tape",
+          "set_time": null
+        },
+        {
+          "name": "Recloose",
+          "set_time": null
+        },
+        {
+          "name": "Jkriv",
+          "set_time": null
+        },
+        {
+          "name": "Adi Oasis",
+          "set_time": null
+        },
+        {
+          "name": "Disgonuts",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "436948",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
+      "name": "Theo Parrish",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/theo-parrish-437067?utm_source=2436&utm_medium=api",
+      "venue": "Nowadays",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Theo Parrish",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "437067",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Afters",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/afters-levity-444881?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Bowl",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Levity",
@@ -1084,7 +2642,8 @@
       "name": "PULSE",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/pulse-444957?utm_source=2436&utm_medium=api",
       "venue": "00:00",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -1096,7 +2655,8 @@
       "name": "Village Hidden in Sound",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/village-hidden-in-sound-ceviche-449249?utm_source=2436&utm_medium=api",
       "venue": "Jupiter Disco",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "cevich\u00e9",
@@ -1126,10 +2686,41 @@
       "festival_ind": false
     },
     {
+      "name": "Cosmjn & Kurilo & J. Richards +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/cosmjn-kurilo-449349?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Cosmjn",
+          "set_time": null
+        },
+        {
+          "name": "Kurilo",
+          "set_time": null
+        },
+        {
+          "name": "J. Richards",
+          "set_time": null
+        },
+        {
+          "name": "Adree",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "449349",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Melted",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/melted-449715?utm_source=2436&utm_medium=api",
       "venue": "New York",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -1141,7 +2732,8 @@
       "name": "Outer Heaven Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/outer-heaven-presents-451147?utm_source=2436&utm_medium=api",
       "venue": "Outer Heaven NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -1150,10 +2742,45 @@
       "festival_ind": false
     },
     {
+      "name": "Claudio PRC & Isabel Soto & Convextion +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/claudio-prc-isabel-soto-451164?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Claudio PRC",
+          "set_time": null
+        },
+        {
+          "name": "Isabel Soto",
+          "set_time": null
+        },
+        {
+          "name": "Convextion",
+          "set_time": null
+        },
+        {
+          "name": "Henry Chow",
+          "set_time": null
+        },
+        {
+          "name": "Malik Abdul-Rahmaan",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451164",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Bklyn Recess On The Roof",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/bklyn-recess-on-the-roof-luco-451195?utm_source=2436&utm_medium=api",
       "venue": "Superior Ingredients",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Luco",
@@ -1170,7 +2797,8 @@
       "name": "Easy Tiger - Follow The Music",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/easy-tiger-follow-the-music-francisco-samuel-451397?utm_source=2436&utm_medium=api",
       "venue": "Superior Ingredients",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Francisco Samuel",
@@ -1195,7 +2823,8 @@
       "name": "Soulfecta Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/soulfecta-presents-jadalareign-451439?utm_source=2436&utm_medium=api",
       "venue": "Dead Letter No. 9",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "JADALAREIGN",
@@ -1228,7 +2857,8 @@
       "name": "ReSolute x Small Moves",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/resolute-x-small-moves-burchan-acar-452307?utm_source=2436&utm_medium=api",
       "venue": "H0L0",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Burchan Acar",
@@ -1274,10 +2904,29 @@
       "festival_ind": false
     },
     {
+      "name": "WTCHCRFT",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/wtchcrft-452706?utm_source=2436&utm_medium=api",
+      "venue": "Rash",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "WTCHCRFT",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "452706",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Soul In The Horn",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/soul-in-the-horn-natasha-diggs-453156?utm_source=2436&utm_medium=api",
       "venue": "99 Scott",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Natasha Diggs",
@@ -1291,10 +2940,37 @@
       "festival_ind": false
     },
     {
+      "name": "Rick Wade & AG (NYC) & Ay Papi",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/rick-wade-ag-nyc-453608?utm_source=2436&utm_medium=api",
+      "venue": "MAD Radio NYC",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Rick Wade",
+          "set_time": null
+        },
+        {
+          "name": "AG (NYC)",
+          "set_time": null
+        },
+        {
+          "name": "Ay Papi",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "453608",
+      "event_date": "2025-11-28",
+      "festival_ind": false
+    },
+    {
       "name": "Open To Close",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/open-to-close-paul-van-dyk-405692?utm_source=2436&utm_medium=api",
       "venue": "99 Scott",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Paul van Dyk",
@@ -1311,7 +2987,8 @@
       "name": "Lasership",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/lasership-levity-412301?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Paramount",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Levity",
@@ -1333,10 +3010,33 @@
       "festival_ind": false
     },
     {
+      "name": "I Hate Models & Juliana Huxtable",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/i-hate-models-juliana-huxtable-421834?utm_source=2436&utm_medium=api",
+      "venue": "Knockdown Center",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "I Hate Models",
+          "set_time": null
+        },
+        {
+          "name": "Juliana Huxtable",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "421834",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Agape Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/agape-presents-vladimir-dubyshkin-421922?utm_source=2436&utm_medium=api",
       "venue": "154 Scott Ave",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Vladimir Dubyshkin",
@@ -1370,10 +3070,77 @@
       "festival_ind": false
     },
     {
+      "name": "Benji B & Lovie & Jenifa Mayanja +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/benji-b-lovie-431202?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Benji B",
+          "set_time": null
+        },
+        {
+          "name": "Lovie",
+          "set_time": null
+        },
+        {
+          "name": "Jenifa Mayanja",
+          "set_time": null
+        },
+        {
+          "name": "D'Sean",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "431202",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Giorgia Angiuli",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/giorgia-angiuli-431220?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Giorgia Angiuli",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "431220",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Luciano",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/luciano-432073?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Luciano",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "432073",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-432700?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -1385,7 +3152,8 @@
       "name": "NYCRavers Presents Vinyl Fantasy 7",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/nycravers-presents-vinyl-fantasy-7-dj-venom-432773?utm_source=2436&utm_medium=api",
       "venue": "The House NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "DJ Venom",
@@ -1450,7 +3218,8 @@
       "name": "Broadway Rave",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/broadway-rave-432962?utm_source=2436&utm_medium=api",
       "venue": "Gramercy Theatre",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -1459,10 +3228,33 @@
       "festival_ind": false
     },
     {
+      "name": "Griffin Maxwell Brooks & Tom Peters",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/griffin-maxwell-brooks-tom-peters-432982?utm_source=2436&utm_medium=api",
+      "venue": "House of Yes",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Griffin Maxwell Brooks",
+          "set_time": null
+        },
+        {
+          "name": "Tom Peters",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "432982",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "This Never Happened",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/this-never-happened-otherwish-433154?utm_source=2436&utm_medium=api",
       "venue": "Superior Ingredients (Rooftop)",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Otherwish",
@@ -1492,10 +3284,47 @@
       "festival_ind": false
     },
     {
+      "name": "Neverdogs",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/neverdogs-434275?utm_source=2436&utm_medium=api",
+      "venue": "Listen Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Neverdogs",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "434275",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Mesto",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mesto-435106?utm_source=2436&utm_medium=api",
+      "venue": "Nebula",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mesto",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "435106",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Stuntsz",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/stuntsz-436949?utm_source=2436&utm_medium=api",
       "venue": "Good Room",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -1504,10 +3333,93 @@
       "festival_ind": false
     },
     {
+      "name": "Pleasure Jams & Horse Opera",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/pleasure-jams-horse-opera-436985?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Pleasure Jams",
+          "set_time": null
+        },
+        {
+          "name": "Horse Opera",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436985",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Lauren Flax",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/lauren-flax-437068?utm_source=2436&utm_medium=api",
+      "venue": "Nowadays",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Lauren Flax",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437068",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Schwefelgelb & Madness Of (KYRUH & WTCHCRFT) & Ana B +4 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/schwefelgelb-madness-of-kyruh-and-wtchcrft-437086?utm_source=2436&utm_medium=api",
+      "venue": "Paragon",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Schwefelgelb",
+          "set_time": null
+        },
+        {
+          "name": "Madness Of (KYRUH & WTCHCRFT)",
+          "set_time": null
+        },
+        {
+          "name": "Ana B",
+          "set_time": null
+        },
+        {
+          "name": "Miss Parker",
+          "set_time": null
+        },
+        {
+          "name": "Matas",
+          "set_time": null
+        },
+        {
+          "name": "WTCHCRFT",
+          "set_time": null
+        },
+        {
+          "name": "KYRUH",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "437086",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Dense Musium",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/dense-musium-dansyn-437352?utm_source=2436&utm_medium=api",
       "venue": "00:00",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "DANSYN",
@@ -1536,7 +3448,8 @@
       "name": "Afters",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/afters-levity-448466?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Bowl",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Levity",
@@ -1553,7 +3466,8 @@
       "name": "MIRRORBALL - Groovy Disco Dance Party",
       "ticket_url": "https://edmtrain.com/buffalo-ny/mirrorball-groovy-disco-dance-party-pitlord-449134?utm_source=2436&utm_medium=api",
       "venue": "Milkie's Elmwood Lounge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "PITLORD",
@@ -1579,10 +3493,71 @@
       "festival_ind": false
     },
     {
+      "name": "EUWHORIA & Tygapaw & Shyboi +4 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/euwhoria-tygapaw-449350?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "EUWHORIA",
+          "set_time": null
+        },
+        {
+          "name": "Tygapaw",
+          "set_time": null
+        },
+        {
+          "name": "Shyboi",
+          "set_time": null
+        },
+        {
+          "name": "CYB3R BULL",
+          "set_time": null
+        },
+        {
+          "name": "Xana",
+          "set_time": null
+        },
+        {
+          "name": "Lun\u00e1tica",
+          "set_time": null
+        },
+        {
+          "name": "XANA 101",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449350",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Jus-Ske",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jus-ske-449370?utm_source=2436&utm_medium=api",
+      "venue": "TAO Downtown",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jus-Ske",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449370",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "House of LUMMA X Yalla Azizam",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/house-of-lumma-x-yalla-azizam-ardeshir-azari-449679?utm_source=2436&utm_medium=api",
       "venue": "General Motors Building",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Ardeshir Azari",
@@ -1604,10 +3579,29 @@
       "festival_ind": false
     },
     {
+      "name": "BOLO",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/bolo-449797?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "BOLO",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449797",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "STTW & Friends",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sttw-and-friends-449994?utm_source=2436&utm_medium=api",
       "venue": "About Last Night",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -1616,10 +3610,33 @@
       "festival_ind": false
     },
     {
+      "name": "Anan\u00e9 & Christian Mantini",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/anane-christian-mantini-451107?utm_source=2436&utm_medium=api",
+      "venue": "Le Bain",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Anan\u00e9",
+          "set_time": null
+        },
+        {
+          "name": "Christian Mantini",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451107",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Outer Heaven Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/outer-heaven-presents-david-berrie-451148?utm_source=2436&utm_medium=api",
       "venue": "Outer Heaven NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "David Berrie",
@@ -1637,10 +3654,77 @@
       "festival_ind": false
     },
     {
+      "name": "Omar Ahmad & DJ Haram",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/omar-ahmad-dj-haram-451463?utm_source=2436&utm_medium=api",
+      "venue": "H0L0",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Omar Ahmad",
+          "set_time": null
+        },
+        {
+          "name": "DJ Haram",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451463",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Sleepy & Boo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/sleepy-and-boo-451539?utm_source=2436&utm_medium=api",
+      "venue": "Sistem",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Sleepy & Boo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451539",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
+      "name": "Armii1n & Tim Lucent & SMURFOUDIRTY",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/armii1n-tim-lucent-451794?utm_source=2436&utm_medium=api",
+      "venue": "Cargo at Dead Letter No. 9",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Armii1n",
+          "set_time": null
+        },
+        {
+          "name": "Tim Lucent",
+          "set_time": null
+        },
+        {
+          "name": "SMURFOUDIRTY",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451794",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Protein",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/protein-boydell-451828?utm_source=2436&utm_medium=api",
       "venue": "Mood Ring",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "BOYDELL",
@@ -1662,10 +3746,41 @@
       "festival_ind": false
     },
     {
+      "name": "Kollektiv Turmstrasse & &ily & Bamba +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/kollektiv-turmstrasse-and-ily-451854?utm_source=2436&utm_medium=api",
+      "venue": "UNVEILED",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Kollektiv Turmstrasse",
+          "set_time": null
+        },
+        {
+          "name": "&ily",
+          "set_time": null
+        },
+        {
+          "name": "Bamba",
+          "set_time": null
+        },
+        {
+          "name": "Petra Petrovich",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451854",
+      "event_date": "2025-11-29",
+      "festival_ind": false
+    },
+    {
       "name": "Archivio Records Showcase",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/archivio-records-showcase-bushwacka-452585?utm_source=2436&utm_medium=api",
       "venue": "32-32 Steinway St",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Bushwacka",
@@ -1690,7 +3805,8 @@
       "name": "Vitality Vibrations",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/vitality-vibrations-raldi-453235?utm_source=2436&utm_medium=api",
       "venue": "Vitality Lounge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Raldi",
@@ -1715,7 +3831,8 @@
       "name": "Lyra Rooftop Party",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/lyra-rooftop-party-453308?utm_source=2436&utm_medium=api",
       "venue": "Magic Hour Rooftop Bar & Lounge",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -1724,10 +3841,29 @@
       "festival_ind": false
     },
     {
+      "name": "I Hate Models",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/i-hate-models-423373?utm_source=2436&utm_medium=api",
+      "venue": "Knockdown Center",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "I Hate Models",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "423373",
+      "event_date": "2025-11-30",
+      "festival_ind": false
+    },
+    {
       "name": "Teksupport",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/teksupport-sosa-430777?utm_source=2436&utm_medium=api",
       "venue": "99 Scott",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "SOSA",
@@ -1741,10 +3877,29 @@
       "festival_ind": false
     },
     {
+      "name": "tylerfromwhere",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/tylerfromwhere-436986?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "tylerfromwhere",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "436986",
+      "event_date": "2025-11-30",
+      "festival_ind": false
+    },
+    {
       "name": "rosewater",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/rosewater-ladji-mouflet-437099?utm_source=2436&utm_medium=api",
       "venue": "Public Records",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Ladji Mouflet",
@@ -1785,7 +3940,8 @@
       "name": "Mercury in Reggaeton - BROOKLYN",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/mercury-in-reggaeton-brooklyn-sterling-juan-diaz-437124?utm_source=2436&utm_medium=api",
       "venue": "Signal Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Sterling Juan Diaz",
@@ -1803,10 +3959,41 @@
       "festival_ind": false
     },
     {
+      "name": "Paul van Dyk & Luzi Tudor & Grum +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/paul-van-dyk-luzi-tudor-437514?utm_source=2436&utm_medium=api",
+      "venue": "Superior Ingredients (Rooftop)",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Paul van Dyk",
+          "set_time": null
+        },
+        {
+          "name": "Luzi Tudor",
+          "set_time": null
+        },
+        {
+          "name": "Grum",
+          "set_time": null
+        },
+        {
+          "name": "SunrYse",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "437514",
+      "event_date": "2025-11-30",
+      "festival_ind": false
+    },
+    {
       "name": "Crudo Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/crudo-presents-aadja-449447?utm_source=2436&utm_medium=api",
       "venue": "20 Meadow Street",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "AADJA",
@@ -1820,10 +4007,55 @@
       "festival_ind": false
     },
     {
+      "name": "Eli (of Soul Clap) & Baby Prince & Rissa Garcia",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/eli-of-soul-clap-baby-prince-449775?utm_source=2436&utm_medium=api",
+      "venue": "The Ornate Studio",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Eli (of Soul Clap)",
+          "set_time": null
+        },
+        {
+          "name": "Baby Prince",
+          "set_time": null
+        },
+        {
+          "name": "Rissa Garcia",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "449775",
+      "event_date": "2025-11-30",
+      "festival_ind": false
+    },
+    {
+      "name": "Fran\u00e7ois K",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/francois-k-453167?utm_source=2436&utm_medium=api",
+      "venue": "Le Bain",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Fran\u00e7ois K",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sun",
+      "event_id": "453167",
+      "event_date": "2025-11-30",
+      "festival_ind": false
+    },
+    {
       "name": "MMF Society Open Decks",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/mmf-society-open-decks-shirlz-453192?utm_source=2436&utm_medium=api",
       "venue": "The Rose New York",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "shirlz",
@@ -1844,7 +4076,8 @@
       "name": "Tuesday Baby Tuesday",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/tuesday-baby-tuesday-451302?utm_source=2436&utm_medium=api",
       "venue": "Nebula",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Tue",
@@ -1853,10 +4086,69 @@
       "festival_ind": false
     },
     {
+      "name": "Steen",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/steen-435261?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Steen",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "435261",
+      "event_date": "2025-12-03",
+      "festival_ind": false
+    },
+    {
+      "name": "Matthew Law & TEE EM DEE",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/matthew-law-tee-em-dee-436987?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Matthew Law",
+          "set_time": null
+        },
+        {
+          "name": "TEE EM DEE",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "436987",
+      "event_date": "2025-12-03",
+      "festival_ind": false
+    },
+    {
+      "name": "Kasper",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/kasper-453553?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Kasper",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Wed",
+      "event_id": "453553",
+      "event_date": "2025-12-03",
+      "festival_ind": false
+    },
+    {
       "name": "The Drop",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/the-drop-elliott-larue-435262?utm_source=2436&utm_medium=api",
       "venue": "SILO Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Elliott LaRue",
@@ -1878,10 +4170,47 @@
       "festival_ind": false
     },
     {
+      "name": "TBA",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/tba-435682?utm_source=2436&utm_medium=api",
+      "venue": "Somewhere Nowhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "TBA",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "435682",
+      "event_date": "2025-12-04",
+      "festival_ind": false
+    },
+    {
+      "name": "Totally Enormous Extinct Dinosaurs (TEED)",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/totally-enormous-extinct-dinosaurs-teed-450031?utm_source=2436&utm_medium=api",
+      "venue": "Good Room",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Totally Enormous Extinct Dinosaurs (TEED)",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "450031",
+      "event_date": "2025-12-04",
+      "festival_ind": false
+    },
+    {
       "name": "Lounge Sessions",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/lounge-sessions-anthony-romano-451178?utm_source=2436&utm_medium=api",
       "venue": "SILO Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Anthony Romano",
@@ -1906,7 +4235,8 @@
       "name": "Green Room x Vigilante Present",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/green-room-x-vigilante-present-dan-ghenacia-452560?utm_source=2436&utm_medium=api",
       "venue": "Green Room NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Dan Ghenacia",
@@ -1928,10 +4258,99 @@
       "festival_ind": false
     },
     {
+      "name": "Myd",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/myd-452624?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Myd",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Thu",
+      "event_id": "452624",
+      "event_date": "2025-12-04",
+      "festival_ind": false
+    },
+    {
+      "name": "M\u00cbSTIZA & Facundo Mohrr & Pizzi",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mestiza-facundo-mohrr-410157?utm_source=2436&utm_medium=api",
+      "venue": "Park Slope Warehouse",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "M\u00cbSTIZA",
+          "set_time": null
+        },
+        {
+          "name": "Facundo Mohrr",
+          "set_time": null
+        },
+        {
+          "name": "Pizzi",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "410157",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Chromeo & Milk & Bone",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/chromeo-milk-and-bone-415945?utm_source=2436&utm_medium=api",
+      "venue": "Webster Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Chromeo",
+          "set_time": null
+        },
+        {
+          "name": "Milk & Bone",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "415945",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Nils Hoffmann & Coastlines",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/nils-hoffmann-coastlines-418589?utm_source=2436&utm_medium=api",
+      "venue": "99 Scott",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Nils Hoffmann",
+          "set_time": null
+        },
+        {
+          "name": "Coastlines",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "418589",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "The Locked in Tour",
       "ticket_url": "https://edmtrain.com/new-york/the-locked-in-tour-sweettooth-421373?utm_source=2436&utm_medium=api",
       "venue": "Photo City Music Hall",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "SweetTooth",
@@ -1952,7 +4371,8 @@
       "name": "House of Grooves",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/house-of-grooves-eli-escobar-422201?utm_source=2436&utm_medium=api",
       "venue": "House of Yes",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Eli Escobar",
@@ -1970,10 +4390,81 @@
       "festival_ind": false
     },
     {
+      "name": "Artifakts",
+      "ticket_url": "https://edmtrain.com/buffalo-ny/artifakts-426665?utm_source=2436&utm_medium=api",
+      "venue": "Iron Works",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Artifakts",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "426665",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "VAVO",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/vavo-427512?utm_source=2436&utm_medium=api",
+      "venue": "Mulcahy's Pub & Concert Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "VAVO",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "427512",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "TVBOO & Canabliss & JAMiAM +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/tvboo-canabliss-427927?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "TVBOO",
+          "set_time": null
+        },
+        {
+          "name": "Canabliss",
+          "set_time": null
+        },
+        {
+          "name": "JAMiAM",
+          "set_time": null
+        },
+        {
+          "name": "Bronze Sun",
+          "set_time": null
+        },
+        {
+          "name": "womp",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "427927",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Agape Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/agape-presents-mika-heggemann-428211?utm_source=2436&utm_medium=api",
       "venue": "The Chocolate Factory Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mika Heggemann",
@@ -1991,10 +4482,91 @@
       "festival_ind": false
     },
     {
+      "name": "Jauz",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/jauz-429880?utm_source=2436&utm_medium=api",
+      "venue": "Le Poisson Rouge",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Jauz",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "429880",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Ky William & Airrica",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/ky-william-airrica-434224?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Ky William",
+          "set_time": null
+        },
+        {
+          "name": "Airrica",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "434224",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Shlohmo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/shlohmo-435209?utm_source=2436&utm_medium=api",
+      "venue": "Market Hotel",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Shlohmo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "435209",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Luke Blovad & Olswel",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/luke-blovad-olswel-435330?utm_source=2436&utm_medium=api",
+      "venue": "Trans-Pecos",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Luke Blovad",
+          "set_time": null
+        },
+        {
+          "name": "Olswel",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "435330",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-loofy-435683?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Loofy",
@@ -2012,10 +4584,29 @@
       "festival_ind": false
     },
     {
+      "name": "Lost Frequencies",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/lost-frequencies-436314?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Lost Frequencies",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "436314",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Tuff Nyc",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/tuff-nyc-436885?utm_source=2436&utm_medium=api",
       "venue": "9 Bob Note at 3 Dollar Bill",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -2024,10 +4615,63 @@
       "festival_ind": false
     },
     {
+      "name": "Barbara Boeing & JDH & Dave P. & Seedy J +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/barbara-boeing-jdh-and-dave-p-436950?utm_source=2436&utm_medium=api",
+      "venue": "Good Room",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Barbara Boeing",
+          "set_time": null
+        },
+        {
+          "name": "JDH & Dave P.",
+          "set_time": null
+        },
+        {
+          "name": "Seedy J",
+          "set_time": null
+        },
+        {
+          "name": "Extra Meesh",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "436950",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "ithqdetroit & T.Wan",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/ithqdetroit-t-wan-437009?utm_source=2436&utm_medium=api",
+      "venue": "Love's Club",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "ithqdetroit",
+          "set_time": null
+        },
+        {
+          "name": "T.Wan",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "437009",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Xiranda Presents Symphony of Shadows",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/xiranda-presents-symphony-of-shadows-437180?utm_source=2436&utm_medium=api",
       "venue": "The Red Pavilion",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -2036,10 +4680,37 @@
       "festival_ind": false
     },
     {
+      "name": "Pat Lok & KITA & Robert PM",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/pat-lok-kita-437426?utm_source=2436&utm_medium=api",
+      "venue": "Dead Letter No. 9",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Pat Lok",
+          "set_time": null
+        },
+        {
+          "name": "KITA",
+          "set_time": null
+        },
+        {
+          "name": "Robert PM",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "437426",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Label Night - TIMEDANCE",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/label-night-timedance-batu-449295?utm_source=2436&utm_medium=api",
       "venue": "Nowadays",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Batu",
@@ -2061,10 +4732,45 @@
       "festival_ind": false
     },
     {
+      "name": "Mia Koden & SP:MC & Skeptical +2 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mia-koden-sp-mc-449313?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mia Koden",
+          "set_time": null
+        },
+        {
+          "name": "SP:MC",
+          "set_time": null
+        },
+        {
+          "name": "Skeptical",
+          "set_time": null
+        },
+        {
+          "name": "Carr\u00e9",
+          "set_time": null
+        },
+        {
+          "name": "Sepehr",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "449313",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "ReSolute XL w/ Guesthouse",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/resolute-xl-w-guesthouse-fumiya-tanaka-449472?utm_source=2436&utm_medium=api",
       "venue": "H0L0",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Fumiya Tanaka",
@@ -2106,10 +4812,99 @@
       "festival_ind": false
     },
     {
+      "name": "Mark Francis",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mark-francis-449999?utm_source=2436&utm_medium=api",
+      "venue": "Atolye Venue & Bar",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mark Francis",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "449999",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "DVS1 & Demi Riqu\u00edsimo & Tommy Hart +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dvs1-demi-riquisimo-450986?utm_source=2436&utm_medium=api",
+      "venue": "BASEMENT NY",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "DVS1",
+          "set_time": null
+        },
+        {
+          "name": "Demi Riqu\u00edsimo",
+          "set_time": null
+        },
+        {
+          "name": "Tommy Hart",
+          "set_time": null
+        },
+        {
+          "name": "Meilgaarden",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "450986",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Goth Jafar",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/goth-jafar-451271?utm_source=2436&utm_medium=api",
+      "venue": "Paragon",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Goth Jafar",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451271",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Cecily & Heidy P",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/cecily-heidy-p-451475?utm_source=2436&utm_medium=api",
+      "venue": "Jupiter Disco",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Cecily",
+          "set_time": null
+        },
+        {
+          "name": "Heidy P",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451475",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Anime Rave",
       "ticket_url": "https://edmtrain.com/new-york/anime-rave-451512?utm_source=2436&utm_medium=api",
       "venue": "No Fun",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Fri",
@@ -2118,10 +4913,83 @@
       "festival_ind": false
     },
     {
+      "name": "DJ Adoni",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dj-adoni-451573?utm_source=2436&utm_medium=api",
+      "venue": "Viva Toro",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "DJ Adoni",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451573",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Cheyenne Giles",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/cheyenne-giles-451830?utm_source=2436&utm_medium=api",
+      "venue": "Nebula",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Cheyenne Giles",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451830",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "So Dope",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/so-dope-451901?utm_source=2436&utm_medium=api",
+      "venue": "Music For A While",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "So Dope",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "451901",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
+      "name": "Mina",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mina-452038?utm_source=2436&utm_medium=api",
+      "venue": "Baby's All Right",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Mina",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "452038",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Undergr\u00f8und - Twilight",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/underground-twilight-lefti-452789?utm_source=2436&utm_medium=api",
       "venue": "Mehanata",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "LEFTI",
@@ -2143,10 +5011,29 @@
       "festival_ind": false
     },
     {
+      "name": "Harji",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/harji-452897?utm_source=2436&utm_medium=api",
+      "venue": "Laissez Faire",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Harji",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "452897",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Divergence Presents 2 Year Anniversary Brooklyn Edition",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/divergence-presents-2-year-anniversary-brooklyn-edition-yazz-453252?utm_source=2436&utm_medium=api",
       "venue": "The Wood Shop",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Yazz",
@@ -2180,10 +5067,37 @@
       "festival_ind": false
     },
     {
+      "name": "DJ Three & Ageless & Arianna Danae",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dj-three-ageless-453342?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "DJ Three",
+          "set_time": null
+        },
+        {
+          "name": "Ageless",
+          "set_time": null
+        },
+        {
+          "name": "Arianna Danae",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Fri",
+      "event_id": "453342",
+      "event_date": "2025-12-05",
+      "festival_ind": false
+    },
+    {
       "name": "Trance Legend RAM - Lost In Trancelation",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/trance-legend-ram-lost-in-trancelation-ram-453399?utm_source=2436&utm_medium=api",
       "venue": "The House NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "RAM",
@@ -2201,10 +5115,37 @@
       "festival_ind": false
     },
     {
+      "name": "Notion & BAMBII & Klo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/notion-bambii-404400?utm_source=2436&utm_medium=api",
+      "venue": "Great Hall at Avant Gardner",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Notion",
+          "set_time": null
+        },
+        {
+          "name": "BAMBII",
+          "set_time": null
+        },
+        {
+          "name": "Klo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "404400",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "Throwback tour",
       "ticket_url": "https://edmtrain.com/buffalo-ny/throwback-tour-adventure-club-407778?utm_source=2436&utm_medium=api",
       "venue": "Town Ballroom",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Adventure Club",
@@ -2230,10 +5171,99 @@
       "festival_ind": false
     },
     {
+      "name": "Kompany & Calcium & THE STOOG3S (BLVNKSPVCE x HAMRO x SQISHI)",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/kompany-calcium-411670?utm_source=2436&utm_medium=api",
+      "venue": "Brooklyn Steel",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Kompany",
+          "set_time": null
+        },
+        {
+          "name": "Calcium",
+          "set_time": null
+        },
+        {
+          "name": "THE STOOG3S (BLVNKSPVCE x HAMRO x SQISHI)",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "411670",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Martin Ikin & Chelina Manuhutu & Manu Gonzalez",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/martin-ikin-chelina-manuhutu-412979?utm_source=2436&utm_medium=api",
+      "venue": "Superior Ingredients (Main Room)",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Martin Ikin",
+          "set_time": null
+        },
+        {
+          "name": "Chelina Manuhutu",
+          "set_time": null
+        },
+        {
+          "name": "Manu Gonzalez",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "412979",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Desert Hearts",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/desert-hearts-417168?utm_source=2436&utm_medium=api",
+      "venue": "99 Scott",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Desert Hearts",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "417168",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Laidback Luke",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/laidback-luke-425224?utm_source=2436&utm_medium=api",
+      "venue": "00:00",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Laidback Luke",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "425224",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "GLITTERBOX",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/glitterbox-the-brothers-macklovitch-a-trak-and-dave-1-of-chromeo-426175?utm_source=2436&utm_medium=api",
       "venue": "House of Yes",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "The Brothers Macklovitch (A-Trak & Dave 1 of Chromeo)",
@@ -2259,10 +5289,33 @@
       "festival_ind": false
     },
     {
+      "name": "Chromeo & Shallowhalo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/chromeo-shallowhalo-428982?utm_source=2436&utm_medium=api",
+      "venue": "Webster Hall",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Chromeo",
+          "set_time": null
+        },
+        {
+          "name": "Shallowhalo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "428982",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "Reggaeton Rave",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/reggaeton-rave-431433?utm_source=2436&utm_medium=api",
       "venue": "Brooklyn Monarch",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -2271,10 +5324,47 @@
       "festival_ind": false
     },
     {
+      "name": "Green Velvet",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/green-velvet-432047?utm_source=2436&utm_medium=api",
+      "venue": "Marquee",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Green Velvet",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "432047",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "MGNA Crrrta",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/mgna-crrrta-434866?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere Zone One",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "MGNA Crrrta",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "434866",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "Sights & Sounds",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/sights-and-sounds-floorplan-robert-hood-and-lyric-hood-435050?utm_source=2436&utm_medium=api",
       "venue": "53 Scott Ave",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Floorplan (Robert Hood & Lyric Hood)",
@@ -2316,10 +5406,29 @@
       "festival_ind": false
     },
     {
+      "name": "Dark Heart",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/dark-heart-435263?utm_source=2436&utm_medium=api",
+      "venue": "SILO Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Dark Heart",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "435263",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "Presented by Forest D\u00f6wn Under",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/presented-by-forest-down-under-435684?utm_source=2436&utm_medium=api",
       "venue": "Somewhere Nowhere",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
@@ -2331,7 +5440,8 @@
       "name": "YES SIR Brooklyn",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/yes-sir-brooklyn-acid-cowboy-435826?utm_source=2436&utm_medium=api",
       "venue": "9 Bob Note at 3 Dollar Bill",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Acid Cowboy",
@@ -2345,10 +5455,67 @@
       "festival_ind": false
     },
     {
+      "name": "\u00d8rjan Nilsen & Adam Scott & Pinny B",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/orjan-nilsen-adam-scott-436348?utm_source=2436&utm_medium=api",
+      "venue": "New York, NY",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "\u00d8rjan Nilsen",
+          "set_time": null
+        },
+        {
+          "name": "Adam Scott",
+          "set_time": null
+        },
+        {
+          "name": "Pinny B",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436348",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "IMOGEN & KXAH & Day Cart +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/imogen-kxah-436951?utm_source=2436&utm_medium=api",
+      "venue": "Good Room",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "IMOGEN",
+          "set_time": null
+        },
+        {
+          "name": "KXAH",
+          "set_time": null
+        },
+        {
+          "name": "Day Cart",
+          "set_time": null
+        },
+        {
+          "name": "Wig-Wam",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "436951",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "The Ornate Project",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/the-ornate-project-sabo-437195?utm_source=2436&utm_medium=api",
       "venue": "UNVEILED",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Sabo",
@@ -2369,7 +5536,8 @@
       "name": "Green Room Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/green-room-presents-ryan-elliott-437224?utm_source=2436&utm_medium=api",
       "venue": "Green Room NYC",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Ryan Elliott",
@@ -2391,10 +5559,75 @@
       "festival_ind": false
     },
     {
+      "name": "Djrum & Eamon Harkin & Loidis +3 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/djrum-eamon-harkin-449291?utm_source=2436&utm_medium=api",
+      "venue": "Nowadays",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Djrum",
+          "set_time": null
+        },
+        {
+          "name": "Eamon Harkin",
+          "set_time": null
+        },
+        {
+          "name": "Loidis",
+          "set_time": null
+        },
+        {
+          "name": "Vladimir Ivkovic",
+          "set_time": null
+        },
+        {
+          "name": "Miss Parker",
+          "set_time": null
+        },
+        {
+          "name": "BATTYGYAL",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449291",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Bradley Zero & Millie McKee & Lovie",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/bradley-zero-millie-mckee-449314?utm_source=2436&utm_medium=api",
+      "venue": "Public Records",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Bradley Zero",
+          "set_time": null
+        },
+        {
+          "name": "Millie McKee",
+          "set_time": null
+        },
+        {
+          "name": "Lovie",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "449314",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "PLANT BASS",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/plant-bass-taina-enikeyi-449716?utm_source=2436&utm_medium=api",
       "venue": "New York, NY",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Taina Enikeyi",
@@ -2419,7 +5652,8 @@
       "name": "SMACK x REACT SOUND PRESENT",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/smack-x-react-sound-present-kursa-450368?utm_source=2436&utm_medium=api",
       "venue": "The Meadows Brooklyn",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Kursa",
@@ -2444,7 +5678,8 @@
       "name": "Heaven's Feel After Dark - Black Coffee",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/heavens-feel-after-dark-black-coffee-mr-gomez-450643?utm_source=2436&utm_medium=api",
       "venue": "Mehanata",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mr. Gomez",
@@ -2458,10 +5693,29 @@
       "festival_ind": false
     },
     {
+      "name": "Sleepy & Boo",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/sleepy-and-boo-450792?utm_source=2436&utm_medium=api",
+      "venue": "ArtSpace at PUBLIC Hotels",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Sleepy & Boo",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "450792",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "Elsewhere Presents",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/elsewhere-presents-mura-masa-450963?utm_source=2436&utm_medium=api",
       "venue": "154 Scott Ave",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "Mura Masa",
@@ -2475,10 +5729,59 @@
       "festival_ind": false
     },
     {
+      "name": "Phase Fatale & Makadsi & Ron Like Hell +1 more",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/phase-fatale-makadsi-450987?utm_source=2436&utm_medium=api",
+      "venue": "BASEMENT NY",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Phase Fatale",
+          "set_time": null
+        },
+        {
+          "name": "Makadsi",
+          "set_time": null
+        },
+        {
+          "name": "Ron Like Hell",
+          "set_time": null
+        },
+        {
+          "name": "Ryan Smith",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "450987",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Laylit",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/laylit-451058?utm_source=2436&utm_medium=api",
+      "venue": "Elsewhere",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Laylit",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "451058",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
       "name": "church.exe",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/church-exe-leya-452567?utm_source=2436&utm_medium=api",
       "venue": "Christ & St Stephen's Church",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [
         {
           "name": "LEYA",
@@ -2503,14 +5806,77 @@
       "name": "Nocturnal Emissions",
       "ticket_url": "https://edmtrain.com/new-york-city-ny/nocturnal-emissions-452573?utm_source=2436&utm_medium=api",
       "venue": "New York, NY",
-      "event_time": null,
+      "start_time": null,
+      "end_time": null,
       "artists": [],
       "tags": [],
       "day_marker": "Sat",
       "event_id": "452573",
       "event_date": "2025-12-06",
       "festival_ind": false
+    },
+    {
+      "name": "Bri Lessie",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/bri-lessie-453048?utm_source=2436&utm_medium=api",
+      "venue": "Nebula",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Bri Lessie",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "453048",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Pascal Moscheni & Alci & J. Richards",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/pascal-moscheni-alci-453343?utm_source=2436&utm_medium=api",
+      "venue": "Signal Brooklyn",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Pascal Moscheni",
+          "set_time": null
+        },
+        {
+          "name": "Alci",
+          "set_time": null
+        },
+        {
+          "name": "J. Richards",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "453343",
+      "event_date": "2025-12-06",
+      "festival_ind": false
+    },
+    {
+      "name": "Tony Humphries",
+      "ticket_url": "https://edmtrain.com/new-york-city-ny/tony-humphries-453586?utm_source=2436&utm_medium=api",
+      "venue": "Le Bain",
+      "start_time": null,
+      "end_time": null,
+      "artists": [
+        {
+          "name": "Tony Humphries",
+          "set_time": null
+        }
+      ],
+      "tags": [],
+      "day_marker": "Sat",
+      "event_id": "453586",
+      "event_date": "2025-12-06",
+      "festival_ind": false
     }
   ],
-  "count": 114
+  "count": 254
 }

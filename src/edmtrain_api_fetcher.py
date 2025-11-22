@@ -32,6 +32,7 @@ EDMTRAIN_API_KEY = os.getenv("EDMTRAIN_API_KEY")
 NYC_LOCATION_ID = 38  # New York Metropolitan Area
 API_BASE_URL = "https://edmtrain.com/api"
 LOOKAHEAD_DAYS = 14
+MAX_ARTISTS_IN_GENERATED_NAME = 3  # Show first N artists in generated event names
 
 
 def fetch_edmtrain_events(
@@ -114,24 +115,22 @@ def _transform_api_event(api_event: dict) -> Event | None:
     # Early exit for required fields
     event_id = api_event.get("id", "unknown")
 
-    if not api_event.get("name"):
-        logger.warning("Skipping event %s: missing name", event_id)
-        return None
-
-    event_name = api_event["name"]
+    # Check for event name - if missing, we'll generate from artists
+    event_name = api_event.get("name")
+    needs_generated_name = not event_name
 
     if not api_event.get("link"):
-        logger.warning("Skipping event '%s': missing ticket link", event_name)
+        logger.warning("Skipping event %s: missing ticket link", event_id)
         return None
     if not api_event.get("date"):
-        logger.warning("Skipping event '%s': missing date", event_name)
+        logger.warning("Skipping event %s: missing date", event_id)
         return None
 
     # Extract venue name (early exit if missing)
     venue_data = api_event.get("venue", {})
     venue_name = venue_data.get("name")
     if not venue_name:
-        logger.warning("Skipping event '%s': missing venue name", event_name)
+        logger.warning("Skipping event %s: missing venue name", event_id)
         return None
 
     # Parse event date to derive day_marker
@@ -146,8 +145,15 @@ def _transform_api_event(api_event: dict) -> Event | None:
     # Parse artists
     artists = _parse_artists(api_event.get("artistList", []))
 
+    # Generate event name from artists if needed
+    if needs_generated_name:
+        event_name = _generate_event_name_from_artists(artists, event_id)
+        if not event_name:
+            logger.warning("Skipping event %s: no name and no artists", event_id)
+            return None
+
     return Event(
-        name=api_event["name"],
+        name=event_name,
         ticket_url=api_event["link"],
         venue=venue_name,
         start_time=start_time,
@@ -176,6 +182,38 @@ def _parse_artists(artist_list: list[dict]) -> list[Artist]:
         for artist in artist_list
         if artist.get("name")
     ]
+
+
+def _generate_event_name_from_artists(
+    artists: list[Artist], event_id: str | int
+) -> str | None:
+    """
+    Generate an event name from the artist lineup.
+
+    Args:
+        artists: List of Artist objects
+        event_id: Event ID for logging
+
+    Returns:
+        Generated event name or None if no artists
+    """
+    if not artists:
+        return None
+
+    # Single artist: use their name
+    if len(artists) == 1:
+        return artists[0].name
+
+    # Show up to MAX_ARTISTS_IN_GENERATED_NAME artists
+    if len(artists) <= MAX_ARTISTS_IN_GENERATED_NAME:
+        return " & ".join(artist.name for artist in artists)
+
+    # More artists than max: show first MAX_ARTISTS_IN_GENERATED_NAME and indicate more
+    artist_names = [
+        artist.name for artist in artists[:MAX_ARTISTS_IN_GENERATED_NAME]
+    ]
+    remaining = len(artists) - MAX_ARTISTS_IN_GENERATED_NAME
+    return f"{' & '.join(artist_names)} +{remaining} more"
 
 
 def _derive_day_marker(event_date: str) -> str:
