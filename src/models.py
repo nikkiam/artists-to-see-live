@@ -1,6 +1,7 @@
 """Data models for events and artists."""
 
 from dataclasses import dataclass, field
+from datetime import time
 
 # Tier classification thresholds for artist connections
 TIER_VERY_SIMILAR_THRESHOLD = 7.0
@@ -52,7 +53,8 @@ class Event:
     name: str
     ticket_url: str
     venue: str | None = None
-    event_time: str | None = None
+    start_time: time | None = None  # Event start time (time object, no date)
+    end_time: time | None = None  # Event end time (time object, no date)
     artists: list[Artist] = field(default_factory=list)
     tags: list[str] = field(default_factory=list)
     day_marker: str | None = None
