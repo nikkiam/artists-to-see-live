@@ -523,7 +523,7 @@ def main():
         sys.exit(1)
 
     date_str = date_match.group(1)
-    output_file = f"output/events_{date_str}.json"
+    output_file = f"output/techno_queers_events_{date_str}.json"
 
     # Parse the HTML file with reference date
     events = parse_html_file(html_file, date_str)

@@ -8,6 +8,7 @@ then finds optimal paths connecting them using weighted Dijkstra search.
 
 import json
 import logging
+import re
 import subprocess
 import sys
 from collections import defaultdict
@@ -470,21 +471,75 @@ def git_commit_and_push(message: str, files: list[Path]):
         logger.warning("⚠ Git operation failed: %s", e)
 
 
+def parse_events_filename(filepath: Path) -> tuple[str, str]:
+    """
+    Parse source prefix and date from events filename.
+
+    Expected pattern: {source}_events_{date}.json
+    Examples:
+        - edmtrain_events_2025-11-22.json -> ("edmtrain", "2025-11-22")
+        - techno_queers_events_2025-11-8.json -> ("techno_queers", "2025-11-8")
+
+    Args:
+        filepath: Path to events file
+
+    Returns:
+        Tuple of (source_prefix, date_str)
+
+    Raises:
+        ValueError: If filename doesn't match expected pattern
+    """
+    filename = filepath.stem  # Remove .json extension
+
+    # Pattern: {source}_events_{date}
+    # source can contain underscores (e.g., techno_queers)
+    # date is YYYY-MM-DD or YYYY-M-D
+    pattern = r"^(.+)_events_(\d{4}-\d{1,2}-\d{1,2})$"
+    match = re.match(pattern, filename)
+
+    if not match:
+        raise ValueError(
+            f"Invalid events filename: {filepath.name}\n"
+            f"Expected pattern: {{source}}_events_{{date}}.json\n"
+            f"Examples: edmtrain_events_2025-11-22.json, "
+            f"techno_queers_events_2025-11-8.json"
+        )
+
+    source_prefix = match.group(1)
+    date_str = match.group(2)
+
+    return source_prefix, date_str
+
+
 def main():
     """Main function to find and report artist connections."""
     # Get parameters from command line
-    if len(sys.argv) < 3:
-        logger.error("Usage: python -m src.find_event_connections <events_file> <date>")
+    min_args = 2  # Script name + events_file
+    if len(sys.argv) < min_args:
+        logger.error("Usage: python -m src.find_event_connections <events_file>")
+        logger.error(
+            "Example: python -m src.find_event_connections "
+            "output/edmtrain_events_2025-11-22.json"
+        )
         sys.exit(1)
 
     events_file = Path(sys.argv[1])
-    date_str = sys.argv[2]
+
+    # Parse source and date from filename
+    try:
+        source_prefix, date_str = parse_events_filename(events_file)
+    except ValueError as e:
+        logger.error(str(e))
+        sys.exit(1)
+
+    # Create prefix string for output files (with underscore separator)
+    prefix_str = f"{source_prefix}_"
 
     # Configure logging
     output_dir = Path("output")
     output_dir.mkdir(exist_ok=True)
 
-    log_file = output_dir / f"connection_search_{date_str}.log"
+    log_file = output_dir / f"{prefix_str}connection_search_{date_str}.log"
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
@@ -558,8 +613,8 @@ def main():
         path for group in grouped_connections for path in group.paths
     ]
 
-    # Create full_reports subdirectory
-    full_reports_dir = output_dir / "full_reports"
+    # Create source-specific full_reports subdirectory
+    full_reports_dir = output_dir / f"{prefix_str}full_reports"
     full_reports_dir.mkdir(exist_ok=True)
 
     # Group by tier for full report
@@ -570,10 +625,14 @@ def main():
         logger.info("  - %s: %d", tier, count)
 
     # Generate full reports
-    full_md_output = full_reports_dir / f"event_connections_{date_str}.md"
+    full_md_output = (
+        full_reports_dir / f"{prefix_str}event_connections_{date_str}.md"
+    )
     generate_markdown_report(tiers, stats, full_md_output)
 
-    full_json_output = full_reports_dir / f"event_connections_{date_str}.json"
+    full_json_output = (
+        full_reports_dir / f"{prefix_str}event_connections_{date_str}.json"
+    )
     save_json_report(flat_connections, stats, full_json_output)
 
     logger.info("  ✓ Full reports generated in full_reports/")
@@ -598,7 +657,9 @@ def main():
     connections_by_tier = group_pairs_by_tier(grouped_connections)
 
     # Generate summary reports
-    summary_md_output = output_dir / f"connections_summary_{date_str}.md"
+    summary_md_output = (
+        output_dir / f"{prefix_str}connections_summary_{date_str}.md"
+    )
     generate_summary_markdown_report(
         top_five_by_hops,
         top_five_by_score,
@@ -607,7 +668,9 @@ def main():
         summary_md_output,
     )
 
-    summary_json_output = output_dir / f"connections_summary_{date_str}.json"
+    summary_json_output = (
+        output_dir / f"{prefix_str}connections_summary_{date_str}.json"
+    )
     save_summary_json_report(
         top_five_by_hops,
         top_five_by_score,
@@ -626,7 +689,9 @@ def main():
         summary_md_output,
         summary_json_output,
     ]
-    git_commit_and_push(f"Generated connection reports for {date_str}", all_outputs)
+    git_commit_and_push(
+        f"Generated {source_prefix} connection reports for {date_str}", all_outputs
+    )
 
     # Final summary
     logger.info("=" * 60)
