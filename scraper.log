@@ -3854,3 +3854,421 @@ Scraping complete!
 2025-11-08 21:05:42 - __main__ - INFO -   ✗ Total errors: 453
 2025-11-08 21:05:42 - __main__ - INFO -   Output: output/similar_artists_map.json
 2025-11-08 21:05:42 - __main__ - INFO - ============================================================
+2025-11-22 18:55:57 - __main__ - INFO - Loaded 545 unique artists from output/edmtrain_events_2025-11-22.json
+2025-11-22 18:55:57 - __main__ - INFO - Found 20 artists already processed - skipping them
+2025-11-22 18:55:57 - __main__ - INFO - Will process 525 new artists
+2025-11-22 18:55:57 - __main__ - INFO - Starting scraping process...
+2025-11-22 18:55:57 - __main__ - INFO - [1/525] $EJ
+2025-11-22 18:55:57 - __main__ - INFO - Scraping: $EJ
+2025-11-22 18:55:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:55:58 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /$ej HTTP/1.1" 404 1049
+2025-11-22 18:55:58 - __main__ - INFO -   ✗ Artist not found: $EJ
+2025-11-22 18:56:00 - __main__ - INFO - [2/525] &ily
+2025-11-22 18:56:00 - __main__ - INFO - Scraping: &ily
+2025-11-22 18:56:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:00 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /&ily HTTP/1.1" 404 1049
+2025-11-22 18:56:00 - __main__ - INFO -   ✗ Artist not found: &ily
+2025-11-22 18:56:02 - __main__ - INFO - [3/525] 24/7 Love
+2025-11-22 18:56:02 - __main__ - INFO - Scraping: 24/7 Love
+2025-11-22 18:56:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:02 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /24/7+love HTTP/1.1" 404 1049
+2025-11-22 18:56:02 - __main__ - INFO -   ✗ Artist not found: 24/7 Love
+2025-11-22 18:56:04 - __main__ - INFO - [4/525] 4YÛ
+2025-11-22 18:56:04 - __main__ - INFO - Scraping: 4YÛ
+2025-11-22 18:56:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:05 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /4y%C3%BB HTTP/1.1" 404 1049
+2025-11-22 18:56:05 - __main__ - INFO -   ✗ Artist not found: 4YÛ
+2025-11-22 18:56:07 - __main__ - INFO - [5/525] AADJA
+2025-11-22 18:56:07 - __main__ - INFO - Scraping: AADJA
+2025-11-22 18:56:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:07 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aadja HTTP/1.1" 200 1206
+2025-11-22 18:56:07 - __main__ - INFO -   ✓ Found 2 similar artists
+2025-11-22 18:56:09 - __main__ - INFO - [6/525] AG (NYC)
+2025-11-22 18:56:09 - __main__ - INFO - Scraping: AG (NYC)
+2025-11-22 18:56:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:10 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ag+(nyc) HTTP/1.1" 404 1049
+2025-11-22 18:56:10 - __main__ - INFO -   ✗ Artist not found: AG (NYC)
+2025-11-22 18:56:12 - __main__ - INFO - [7/525] AIDA
+2025-11-22 18:56:12 - __main__ - INFO - Scraping: AIDA
+2025-11-22 18:56:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:12 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aida HTTP/1.1" 200 1926
+2025-11-22 18:56:12 - __main__ - INFO -   ✓ Found 15 similar artists
+2025-11-22 18:56:14 - __main__ - INFO - [8/525] ANICHE
+2025-11-22 18:56:14 - __main__ - INFO - Scraping: ANICHE
+2025-11-22 18:56:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:15 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aniche HTTP/1.1" 404 1049
+2025-11-22 18:56:15 - __main__ - INFO -   ✗ Artist not found: ANICHE
+2025-11-22 18:56:17 - __main__ - INFO - [9/525] AceMo
+2025-11-22 18:56:17 - __main__ - INFO - Scraping: AceMo
+2025-11-22 18:56:17 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:17 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /acemo HTTP/1.1" 200 4204
+2025-11-22 18:56:17 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 18:56:19 - __main__ - INFO - [10/525] Acid Cowboy
+2025-11-22 18:56:19 - __main__ - INFO - Scraping: Acid Cowboy
+2025-11-22 18:56:19 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:19 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /acid+cowboy HTTP/1.1" 404 1049
+2025-11-22 18:56:19 - __main__ - INFO -   ✗ Artist not found: Acid Cowboy
+2025-11-22 18:56:21 - __main__ - INFO - [11/525] Adam Scott
+2025-11-22 18:56:21 - __main__ - INFO - Scraping: Adam Scott
+2025-11-22 18:56:21 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:22 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adam+scott HTTP/1.1" 404 1049
+2025-11-22 18:56:22 - __main__ - INFO -   ✗ Artist not found: Adam Scott
+2025-11-22 18:56:24 - __main__ - INFO - [12/525] Adam X
+2025-11-22 18:56:24 - __main__ - INFO - Scraping: Adam X
+2025-11-22 18:56:24 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:24 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adam+x HTTP/1.1" 200 5091
+2025-11-22 18:56:24 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 18:56:26 - __main__ - INFO - [13/525] Adi Oasis
+2025-11-22 18:56:26 - __main__ - INFO - Scraping: Adi Oasis
+2025-11-22 18:56:26 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:27 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adi+oasis HTTP/1.1" 200 3036
+2025-11-22 18:56:27 - __main__ - INFO -   ✓ Found 33 similar artists
+2025-11-22 18:56:29 - __main__ - INFO - [14/525] Adree
+2025-11-22 18:56:29 - __main__ - INFO - Scraping: Adree
+2025-11-22 18:56:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:29 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adree HTTP/1.1" 404 1049
+2025-11-22 18:56:29 - __main__ - INFO -   ✗ Artist not found: Adree
+2025-11-22 18:56:31 - __main__ - INFO - [15/525] Adventure Club
+2025-11-22 18:56:31 - __main__ - INFO - Scraping: Adventure Club
+2025-11-22 18:56:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:31 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adventure+club HTTP/1.1" 200 5572
+2025-11-22 18:56:31 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 18:56:33 - __main__ - INFO - [16/525] Afriqua
+2025-11-22 18:56:33 - __main__ - INFO - Scraping: Afriqua
+2025-11-22 18:56:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:34 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /afriqua HTTP/1.1" 200 1383
+2025-11-22 18:56:34 - __main__ - INFO -   ✓ Found 5 similar artists
+2025-11-22 18:56:36 - __main__ - INFO - [17/525] Airrica
+2025-11-22 18:56:36 - __main__ - INFO - Scraping: Airrica
+2025-11-22 18:56:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:36 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /airrica HTTP/1.1" 404 1049
+2025-11-22 18:56:36 - __main__ - INFO -   ✗ Artist not found: Airrica
+2025-11-22 18:56:38 - __main__ - INFO - [18/525] Alci
+2025-11-22 18:56:38 - __main__ - INFO - Scraping: Alci
+2025-11-22 18:56:38 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:38 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /alci HTTP/1.1" 200 1574
+2025-11-22 18:56:38 - __main__ - INFO -   ✓ Found 8 similar artists
+2025-11-22 18:56:40 - __main__ - INFO - [19/525] Amber Valentine
+2025-11-22 18:56:40 - __main__ - INFO - Scraping: Amber Valentine
+2025-11-22 18:56:40 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:41 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /amber+valentine HTTP/1.1" 404 1049
+2025-11-22 18:56:41 - __main__ - INFO -   ✗ Artist not found: Amber Valentine
+2025-11-22 18:56:43 - __main__ - INFO - [20/525] Amelia Holt
+2025-11-22 18:56:43 - __main__ - INFO - Scraping: Amelia Holt
+2025-11-22 18:56:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:43 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /amelia+holt HTTP/1.1" 404 1049
+2025-11-22 18:56:43 - __main__ - INFO -   ✗ Artist not found: Amelia Holt
+2025-11-22 18:56:45 - __main__ - INFO - [21/525] Ana B
+2025-11-22 18:56:45 - __main__ - INFO - Scraping: Ana B
+2025-11-22 18:56:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:45 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ana+b HTTP/1.1" 404 1049
+2025-11-22 18:56:45 - __main__ - INFO -   ✗ Artist not found: Ana B
+2025-11-22 18:56:47 - __main__ - INFO - [22/525] Anané
+2025-11-22 18:56:47 - __main__ - INFO - Scraping: Anané
+2025-11-22 18:56:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:48 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anan%C3%A9 HTTP/1.1" 404 1049
+2025-11-22 18:56:48 - __main__ - INFO -   ✗ Artist not found: Anané
+2025-11-22 18:56:50 - __main__ - INFO - [23/525] Andg Luna
+2025-11-22 18:56:50 - __main__ - INFO - Scraping: Andg Luna
+2025-11-22 18:56:50 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:50 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /andg+luna HTTP/1.1" 404 1049
+2025-11-22 18:56:50 - __main__ - INFO -   ✗ Artist not found: Andg Luna
+2025-11-22 18:56:52 - __main__ - INFO - [24/525] Anjali Taneja
+2025-11-22 18:56:52 - __main__ - INFO - Scraping: Anjali Taneja
+2025-11-22 18:56:52 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:52 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anjali+taneja HTTP/1.1" 404 1049
+2025-11-22 18:56:52 - __main__ - INFO -   ✗ Artist not found: Anjali Taneja
+2025-11-22 18:56:54 - __main__ - INFO - [25/525] Anthony Middleton
+2025-11-22 18:56:54 - __main__ - INFO - Scraping: Anthony Middleton
+2025-11-22 18:56:54 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:55 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+middleton HTTP/1.1" 404 1049
+2025-11-22 18:56:55 - __main__ - INFO -   ✗ Artist not found: Anthony Middleton
+2025-11-22 18:56:57 - __main__ - INFO - [26/525] Anthony Naples
+2025-11-22 18:56:57 - __main__ - INFO - Scraping: Anthony Naples
+2025-11-22 18:56:57 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:56:57 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+naples HTTP/1.1" 200 4765
+2025-11-22 18:56:57 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 18:56:59 - __main__ - INFO - [27/525] Anthony Romano
+2025-11-22 18:56:59 - __main__ - INFO - Scraping: Anthony Romano
+2025-11-22 18:56:59 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:00 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+romano HTTP/1.1" 404 1049
+2025-11-22 18:57:00 - __main__ - INFO -   ✗ Artist not found: Anthony Romano
+2025-11-22 18:57:02 - __main__ - INFO - [28/525] Apache
+2025-11-22 18:57:02 - __main__ - INFO - Scraping: Apache
+2025-11-22 18:57:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:02 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /apache HTTP/1.1" 200 4643
+2025-11-22 18:57:02 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 18:57:04 - __main__ - INFO - [29/525] Ardeshir Azari
+2025-11-22 18:57:04 - __main__ - INFO - Scraping: Ardeshir Azari
+2025-11-22 18:57:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:05 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ardeshir+azari HTTP/1.1" 404 1049
+2025-11-22 18:57:05 - __main__ - INFO -   ✗ Artist not found: Ardeshir Azari
+2025-11-22 18:57:07 - __main__ - INFO - [30/525] Arianna Danae
+2025-11-22 18:57:07 - __main__ - INFO - Scraping: Arianna Danae
+2025-11-22 18:57:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:07 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /arianna+danae HTTP/1.1" 404 1049
+2025-11-22 18:57:07 - __main__ - INFO -   ✗ Artist not found: Arianna Danae
+2025-11-22 18:57:09 - __main__ - INFO - [31/525] Armii1n
+2025-11-22 18:57:09 - __main__ - INFO - Scraping: Armii1n
+2025-11-22 18:57:09 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:09 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /armii1n HTTP/1.1" 404 1049
+2025-11-22 18:57:09 - __main__ - INFO -   ✗ Artist not found: Armii1n
+2025-11-22 18:57:11 - __main__ - INFO - [32/525] Artifakts
+2025-11-22 18:57:11 - __main__ - INFO - Scraping: Artifakts
+2025-11-22 18:57:11 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 18:57:12 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /artifakts HTTP/1.1" 200 5116
+2025-11-22 18:57:12 - __main__ - INFO -   ✓ Found 47 similar artists
+2025-11-22 19:04:16 - __main__ - INFO - Loaded 545 unique artists from output/edmtrain_events_2025-11-22.json
+2025-11-22 19:04:16 - __main__ - INFO - Found 20 artists already processed - skipping them
+2025-11-22 19:04:16 - __main__ - INFO - Will process 525 new artists
+2025-11-22 19:04:16 - __main__ - INFO - Starting scraping process...
+2025-11-22 19:04:16 - __main__ - INFO - [1/525] $EJ
+2025-11-22 19:04:16 - __main__ - INFO - Scraping: $EJ
+2025-11-22 19:04:16 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:16 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /$ej HTTP/1.1" 404 1049
+2025-11-22 19:04:16 - __main__ - INFO -   ✗ Artist not found: $EJ
+2025-11-22 19:04:18 - __main__ - INFO - [2/525] &ily
+2025-11-22 19:04:18 - __main__ - INFO - Scraping: &ily
+2025-11-22 19:04:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:18 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /&ily HTTP/1.1" 404 1049
+2025-11-22 19:04:18 - __main__ - INFO -   ✗ Artist not found: &ily
+2025-11-22 19:04:20 - __main__ - INFO - [3/525] 24/7 Love
+2025-11-22 19:04:20 - __main__ - INFO - Scraping: 24/7 Love
+2025-11-22 19:04:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:20 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /24/7+love HTTP/1.1" 404 1049
+2025-11-22 19:04:20 - __main__ - INFO -   ✗ Artist not found: 24/7 Love
+2025-11-22 19:04:22 - __main__ - INFO - [4/525] 4YÛ
+2025-11-22 19:04:22 - __main__ - INFO - Scraping: 4YÛ
+2025-11-22 19:04:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:23 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /4y%C3%BB HTTP/1.1" 404 1049
+2025-11-22 19:04:23 - __main__ - INFO -   ✗ Artist not found: 4YÛ
+2025-11-22 19:04:25 - __main__ - INFO - [5/525] AADJA
+2025-11-22 19:04:25 - __main__ - INFO - Scraping: AADJA
+2025-11-22 19:04:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:25 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aadja HTTP/1.1" 200 1206
+2025-11-22 19:04:25 - __main__ - INFO -   ✓ Found 2 similar artists
+2025-11-22 19:04:27 - __main__ - INFO - [6/525] AG (NYC)
+2025-11-22 19:04:27 - __main__ - INFO - Scraping: AG (NYC)
+2025-11-22 19:04:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:27 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ag+(nyc) HTTP/1.1" 404 1049
+2025-11-22 19:04:27 - __main__ - INFO -   ✗ Artist not found: AG (NYC)
+2025-11-22 19:04:29 - __main__ - INFO - [7/525] AIDA
+2025-11-22 19:04:29 - __main__ - INFO - Scraping: AIDA
+2025-11-22 19:04:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:29 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aida HTTP/1.1" 200 1926
+2025-11-22 19:04:29 - __main__ - INFO -   ✓ Found 15 similar artists
+2025-11-22 19:04:31 - __main__ - INFO - [8/525] ANICHE
+2025-11-22 19:04:31 - __main__ - INFO - Scraping: ANICHE
+2025-11-22 19:04:31 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:31 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /aniche HTTP/1.1" 404 1049
+2025-11-22 19:04:31 - __main__ - INFO -   ✗ Artist not found: ANICHE
+2025-11-22 19:04:33 - __main__ - INFO - [9/525] AceMo
+2025-11-22 19:04:33 - __main__ - INFO - Scraping: AceMo
+2025-11-22 19:04:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:33 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /acemo HTTP/1.1" 200 4204
+2025-11-22 19:04:33 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:04:35 - __main__ - INFO - [10/525] Acid Cowboy
+2025-11-22 19:04:35 - __main__ - INFO - Scraping: Acid Cowboy
+2025-11-22 19:04:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:35 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /acid+cowboy HTTP/1.1" 404 1049
+2025-11-22 19:04:35 - __main__ - INFO -   ✗ Artist not found: Acid Cowboy
+2025-11-22 19:04:37 - __main__ - INFO - [11/525] Adam Scott
+2025-11-22 19:04:37 - __main__ - INFO - Scraping: Adam Scott
+2025-11-22 19:04:37 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:37 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adam+scott HTTP/1.1" 404 1049
+2025-11-22 19:04:37 - __main__ - INFO -   ✗ Artist not found: Adam Scott
+2025-11-22 19:04:39 - __main__ - INFO - [12/525] Adam X
+2025-11-22 19:04:39 - __main__ - INFO - Scraping: Adam X
+2025-11-22 19:04:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:39 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adam+x HTTP/1.1" 200 5091
+2025-11-22 19:04:39 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:04:41 - __main__ - INFO - [13/525] Adi Oasis
+2025-11-22 19:04:41 - __main__ - INFO - Scraping: Adi Oasis
+2025-11-22 19:04:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:41 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adi+oasis HTTP/1.1" 200 3036
+2025-11-22 19:04:41 - __main__ - INFO -   ✓ Found 33 similar artists
+2025-11-22 19:04:43 - __main__ - INFO - [14/525] Adree
+2025-11-22 19:04:43 - __main__ - INFO - Scraping: Adree
+2025-11-22 19:04:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:43 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adree HTTP/1.1" 404 1049
+2025-11-22 19:04:43 - __main__ - INFO -   ✗ Artist not found: Adree
+2025-11-22 19:04:45 - __main__ - INFO - [15/525] Adventure Club
+2025-11-22 19:04:45 - __main__ - INFO - Scraping: Adventure Club
+2025-11-22 19:04:45 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:45 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /adventure+club HTTP/1.1" 200 5572
+2025-11-22 19:04:45 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:04:47 - __main__ - INFO - [16/525] Afriqua
+2025-11-22 19:04:47 - __main__ - INFO - Scraping: Afriqua
+2025-11-22 19:04:47 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:47 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /afriqua HTTP/1.1" 200 1383
+2025-11-22 19:04:47 - __main__ - INFO -   ✓ Found 5 similar artists
+2025-11-22 19:04:49 - __main__ - INFO - [17/525] Airrica
+2025-11-22 19:04:49 - __main__ - INFO - Scraping: Airrica
+2025-11-22 19:04:49 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:49 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /airrica HTTP/1.1" 404 1049
+2025-11-22 19:04:49 - __main__ - INFO -   ✗ Artist not found: Airrica
+2025-11-22 19:04:51 - __main__ - INFO - [18/525] Alci
+2025-11-22 19:04:51 - __main__ - INFO - Scraping: Alci
+2025-11-22 19:04:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:51 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /alci HTTP/1.1" 200 1574
+2025-11-22 19:04:51 - __main__ - INFO -   ✓ Found 8 similar artists
+2025-11-22 19:04:53 - __main__ - INFO - [19/525] Amber Valentine
+2025-11-22 19:04:53 - __main__ - INFO - Scraping: Amber Valentine
+2025-11-22 19:04:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:54 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /amber+valentine HTTP/1.1" 404 1049
+2025-11-22 19:04:54 - __main__ - INFO -   ✗ Artist not found: Amber Valentine
+2025-11-22 19:04:56 - __main__ - INFO - [20/525] Amelia Holt
+2025-11-22 19:04:56 - __main__ - INFO - Scraping: Amelia Holt
+2025-11-22 19:04:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:56 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /amelia+holt HTTP/1.1" 404 1049
+2025-11-22 19:04:56 - __main__ - INFO -   ✗ Artist not found: Amelia Holt
+2025-11-22 19:04:58 - __main__ - INFO - [21/525] Ana B
+2025-11-22 19:04:58 - __main__ - INFO - Scraping: Ana B
+2025-11-22 19:04:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:04:58 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ana+b HTTP/1.1" 404 1049
+2025-11-22 19:04:58 - __main__ - INFO -   ✗ Artist not found: Ana B
+2025-11-22 19:05:00 - __main__ - INFO - [22/525] Anané
+2025-11-22 19:05:00 - __main__ - INFO - Scraping: Anané
+2025-11-22 19:05:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:00 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anan%C3%A9 HTTP/1.1" 404 1049
+2025-11-22 19:05:00 - __main__ - INFO -   ✗ Artist not found: Anané
+2025-11-22 19:05:02 - __main__ - INFO - [23/525] Andg Luna
+2025-11-22 19:05:02 - __main__ - INFO - Scraping: Andg Luna
+2025-11-22 19:05:02 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:02 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /andg+luna HTTP/1.1" 404 1049
+2025-11-22 19:05:02 - __main__ - INFO -   ✗ Artist not found: Andg Luna
+2025-11-22 19:05:04 - __main__ - INFO - [24/525] Anjali Taneja
+2025-11-22 19:05:04 - __main__ - INFO - Scraping: Anjali Taneja
+2025-11-22 19:05:04 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:04 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anjali+taneja HTTP/1.1" 404 1049
+2025-11-22 19:05:04 - __main__ - INFO -   ✗ Artist not found: Anjali Taneja
+2025-11-22 19:05:06 - __main__ - INFO - [25/525] Anthony Middleton
+2025-11-22 19:05:06 - __main__ - INFO - Scraping: Anthony Middleton
+2025-11-22 19:05:06 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:06 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+middleton HTTP/1.1" 404 1049
+2025-11-22 19:05:06 - __main__ - INFO -   ✗ Artist not found: Anthony Middleton
+2025-11-22 19:05:08 - __main__ - INFO - [26/525] Anthony Naples
+2025-11-22 19:05:08 - __main__ - INFO - Scraping: Anthony Naples
+2025-11-22 19:05:08 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:08 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+naples HTTP/1.1" 200 4765
+2025-11-22 19:05:08 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:05:10 - __main__ - INFO - [27/525] Anthony Romano
+2025-11-22 19:05:10 - __main__ - INFO - Scraping: Anthony Romano
+2025-11-22 19:05:10 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:10 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /anthony+romano HTTP/1.1" 404 1049
+2025-11-22 19:05:10 - __main__ - INFO -   ✗ Artist not found: Anthony Romano
+2025-11-22 19:05:12 - __main__ - INFO - [28/525] Apache
+2025-11-22 19:05:12 - __main__ - INFO - Scraping: Apache
+2025-11-22 19:05:12 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:12 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /apache HTTP/1.1" 200 4643
+2025-11-22 19:05:12 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:05:14 - __main__ - INFO - [29/525] Ardeshir Azari
+2025-11-22 19:05:14 - __main__ - INFO - Scraping: Ardeshir Azari
+2025-11-22 19:05:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:14 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ardeshir+azari HTTP/1.1" 404 1049
+2025-11-22 19:05:14 - __main__ - INFO -   ✗ Artist not found: Ardeshir Azari
+2025-11-22 19:05:16 - __main__ - INFO - [30/525] Arianna Danae
+2025-11-22 19:05:16 - __main__ - INFO - Scraping: Arianna Danae
+2025-11-22 19:05:16 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:16 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /arianna+danae HTTP/1.1" 404 1049
+2025-11-22 19:05:16 - __main__ - INFO -   ✗ Artist not found: Arianna Danae
+2025-11-22 19:05:18 - __main__ - INFO - [31/525] Armii1n
+2025-11-22 19:05:18 - __main__ - INFO - Scraping: Armii1n
+2025-11-22 19:05:18 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:18 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /armii1n HTTP/1.1" 404 1049
+2025-11-22 19:05:18 - __main__ - INFO -   ✗ Artist not found: Armii1n
+2025-11-22 19:05:20 - __main__ - INFO - [32/525] Artifakts
+2025-11-22 19:05:20 - __main__ - INFO - Scraping: Artifakts
+2025-11-22 19:05:20 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:20 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /artifakts HTTP/1.1" 200 5116
+2025-11-22 19:05:20 - __main__ - INFO -   ✓ Found 47 similar artists
+2025-11-22 19:05:22 - __main__ - INFO - [33/525] Arvi
+2025-11-22 19:05:22 - __main__ - INFO - Scraping: Arvi
+2025-11-22 19:05:22 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:23 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /arvi HTTP/1.1" 404 1049
+2025-11-22 19:05:23 - __main__ - INFO -   ✗ Artist not found: Arvi
+2025-11-22 19:05:25 - __main__ - INFO - [34/525] Asmot
+2025-11-22 19:05:25 - __main__ - INFO - Scraping: Asmot
+2025-11-22 19:05:25 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:25 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /asmot HTTP/1.1" 404 1049
+2025-11-22 19:05:25 - __main__ - INFO -   ✗ Artist not found: Asmot
+2025-11-22 19:05:27 - __main__ - INFO - [35/525] Astrid
+2025-11-22 19:05:27 - __main__ - INFO - Scraping: Astrid
+2025-11-22 19:05:27 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:27 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /astrid HTTP/1.1" 200 4981
+2025-11-22 19:05:27 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:05:29 - __main__ - INFO - [36/525] Audrey Chou
+2025-11-22 19:05:29 - __main__ - INFO - Scraping: Audrey Chou
+2025-11-22 19:05:29 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:30 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /audrey+chou HTTP/1.1" 404 1049
+2025-11-22 19:05:30 - __main__ - INFO -   ✗ Artist not found: Audrey Chou
+2025-11-22 19:05:32 - __main__ - INFO - [37/525] Ay Papi
+2025-11-22 19:05:32 - __main__ - INFO - Scraping: Ay Papi
+2025-11-22 19:05:32 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:32 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ay+papi HTTP/1.1" 404 1049
+2025-11-22 19:05:32 - __main__ - INFO -   ✗ Artist not found: Ay Papi
+2025-11-22 19:05:34 - __main__ - INFO - [38/525] BA1i
+2025-11-22 19:05:34 - __main__ - INFO - Scraping: BA1i
+2025-11-22 19:05:34 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:34 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /ba1i HTTP/1.1" 404 1049
+2025-11-22 19:05:34 - __main__ - INFO -   ✗ Artist not found: BA1i
+2025-11-22 19:05:36 - __main__ - INFO - [39/525] BAMBII
+2025-11-22 19:05:36 - __main__ - INFO - Scraping: BAMBII
+2025-11-22 19:05:36 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:37 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /bambii HTTP/1.1" 200 1734
+2025-11-22 19:05:37 - __main__ - INFO -   ✓ Found 12 similar artists
+2025-11-22 19:05:39 - __main__ - INFO - [40/525] BANGLABOY
+2025-11-22 19:05:39 - __main__ - INFO - Scraping: BANGLABOY
+2025-11-22 19:05:39 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:39 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /banglaboy HTTP/1.1" 404 1049
+2025-11-22 19:05:39 - __main__ - INFO -   ✗ Artist not found: BANGLABOY
+2025-11-22 19:05:41 - __main__ - INFO - [41/525] BATTYGYAL
+2025-11-22 19:05:41 - __main__ - INFO - Scraping: BATTYGYAL
+2025-11-22 19:05:41 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:42 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /battygyal HTTP/1.1" 404 1049
+2025-11-22 19:05:42 - __main__ - INFO -   ✗ Artist not found: BATTYGYAL
+2025-11-22 19:05:44 - __main__ - INFO - [42/525] BIJOU
+2025-11-22 19:05:44 - __main__ - INFO - Scraping: BIJOU
+2025-11-22 19:05:44 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:44 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /bijou HTTP/1.1" 200 4457
+2025-11-22 19:05:44 - __main__ - INFO -   ✓ Found 48 similar artists
+2025-11-22 19:05:46 - __main__ - INFO - [43/525] BOLO
+2025-11-22 19:05:46 - __main__ - INFO - Scraping: BOLO
+2025-11-22 19:05:46 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:46 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /bolo HTTP/1.1" 404 1049
+2025-11-22 19:05:46 - __main__ - INFO -   ✗ Artist not found: BOLO
+2025-11-22 19:05:48 - __main__ - INFO - [44/525] BOYDELL
+2025-11-22 19:05:48 - __main__ - INFO - Scraping: BOYDELL
+2025-11-22 19:05:48 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:49 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /boydell HTTP/1.1" 404 1049
+2025-11-22 19:05:49 - __main__ - INFO -   ✗ Artist not found: BOYDELL
+2025-11-22 19:05:51 - __main__ - INFO - [45/525] BRAINRACK
+2025-11-22 19:05:51 - __main__ - INFO - Scraping: BRAINRACK
+2025-11-22 19:05:51 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:51 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /brainrack HTTP/1.1" 404 1049
+2025-11-22 19:05:51 - __main__ - INFO -   ✗ Artist not found: BRAINRACK
+2025-11-22 19:05:53 - __main__ - INFO - [46/525] BRIMAC
+2025-11-22 19:05:53 - __main__ - INFO - Scraping: BRIMAC
+2025-11-22 19:05:53 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:53 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /brimac HTTP/1.1" 404 1049
+2025-11-22 19:05:53 - __main__ - INFO -   ✗ Artist not found: BRIMAC
+2025-11-22 19:05:55 - __main__ - INFO - [47/525] Baby Prince
+2025-11-22 19:05:55 - __main__ - INFO - Scraping: Baby Prince
+2025-11-22 19:05:55 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:56 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /baby+prince HTTP/1.1" 404 1049
+2025-11-22 19:05:56 - __main__ - INFO -   ✗ Artist not found: Baby Prince
+2025-11-22 19:05:58 - __main__ - INFO - [48/525] Bamba
+2025-11-22 19:05:58 - __main__ - INFO - Scraping: Bamba
+2025-11-22 19:05:58 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:05:58 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /bamba HTTP/1.1" 200 1276
+2025-11-22 19:05:58 - __main__ - INFO -   ✓ Found 4 similar artists
+2025-11-22 19:06:00 - __main__ - INFO - [49/525] Bambi
+2025-11-22 19:06:00 - __main__ - INFO - Scraping: Bambi
+2025-11-22 19:06:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:06:01 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /bambi HTTP/1.1" 200 3228
+2025-11-22 19:06:01 - __main__ - INFO -   ✓ Found 38 similar artists
+2025-11-22 19:06:03 - __main__ - INFO - [50/525] Barbara Boeing
+2025-11-22 19:06:03 - __main__ - INFO - Scraping: Barbara Boeing
+2025-11-22 19:06:03 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.music-map.com:443
+2025-11-22 19:06:03 - urllib3.connectionpool - DEBUG - https://www.music-map.com:443 "GET /barbara+boeing HTTP/1.1" 404 1049
+2025-11-22 19:06:03 - __main__ - INFO -   ✗ Artist not found: Barbara Boeing
